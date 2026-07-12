@@ -1,0 +1,11 @@
+# Temp-Dateien
+*.zip
+*.pyc
+__pycache__/
+.venv312/
+.zcode/
+_extracted/
+_extract_*.py
+MC_Fragen_Extra.md
+extract_all_questions.py
+extract_questions.py

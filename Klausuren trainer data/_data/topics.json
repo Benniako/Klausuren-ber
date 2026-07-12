@@ -1,0 +1,569 @@
+{
+  "vwl": [
+    {
+      "id": "vwl_B",
+      "name": "Was ist VWL & Denken wie ein Volkswirt",
+      "icon": "🧠",
+      "filter": [
+        "VWL Kap. B",
+        "VWL Kap. A"
+      ],
+      "explanation": "## Denken wie ein Volkswirt\n\n### Methodische Grundlagen\nVWL untersucht, wie Gesellschaften knappe Ressourcen allozieren. Im Gegensatz zu Naturwissenschaften sind **kontrollierte Experimente** oft nicht durchführbar (ethisch, praktisch).\n\n### Zentrale Herausforderungen\n1. **Ausgelassene Variablen** (omitted variable bias): Ein scheinbarer Zusammenhang verschwindet, wenn eine dritte Variable berücksichtigt wird.\n2. **Umgekehrte Kausalität** (reverse causality): Ursache und Wirkung sind unklar.\n3. **Ethische Grenzen**: Viele Experimente wären unmoralisch.\n\n### Lösung: Natürliche Experimente\nÖkonomen nutzen „natürliche Experimente\" (z.B. Gesetzesänderungen, Naturkatastrophen), um kausale Schlüsse zu ziehen.\n\n### Positiv vs. Normativ\n- **Positive Ökonomik**: Beschreibt, was IST (objektiv prüfbar)\n- **Normative Ökonomik**: Beschreibt, was SEIN SOLLTE (Werturteil)"
+    },
+    {
+      "id": "vwl_C",
+      "name": "Angebot und Nachfrage",
+      "icon": "📈",
+      "filter": [
+        "VWL Kap. C"
+      ],
+      "explanation": "## Angebot und Nachfrage\n\n### Das Gesetz der Nachfrage\n**Ceteris paribus**: Steigt der Preis, sinkt die nachgefragte Menge (negative Steigung der Nachfragekurve D).\n- **Substitutionseffekt**: Konsumenten weichen auf billigere Alternativen aus\n- **Einkommenseffekt**: Höherer Preis = weniger Kaufkraft\n\n### Das Gesetz des Angebots\nSteigt der Preis, steigt die angebotene Menge (positive Steigung der Angebotskurve S).\n\n### Marktgleichgewicht\nSchnittpunkt von Angebot und Angebot: **Gleichgewichtspreis P\\*** und **Gleichgewichtsmenge Q\\***.\n\n- Preis **über** P\\* → **Angebotsüberschuss** (Überschuss): Angebot > Nachfrage\n- Preis **unter** P\\* → **Nachfrageüberschuss** (Knappheit): Nachfrage > Angebot\n\n### Güterarten\n| Güterart | Eigenschaft | Beispiel |\n|----------|-------------|----------|\n| **Komplemente** | Werden gemeinsam konsumiert | Auto & Benzin |\n| **Substitute** | Ersetzen einander | Butter & Margarine |\n| **Normal** | Bei Einkommen↑ → Nachfrage↑ | Bio-Lebensmittel |\n| **Inferior** | Bei Einkommen↑ → Nachfrage↓ | Billigprodukte |\n\n**Komplemente**: Steigt Preis von Gut A → sinkt Nachfrage nach Gut B\n**Substitute**: Steigt Preis von Gut A → STEIGT Nachfrage nach Gut B"
+    },
+    {
+      "id": "vwl_D",
+      "name": "Effizienz und Wohlfahrt",
+      "icon": "⚖️",
+      "filter": [
+        "VWL Kap. D"
+      ],
+      "explanation": "## Konsumenten- und Produzentenrente\n\n### Konsumentenrente (KR)\nDifferenz zwischen dem, was Konsumenten **maximal zahlen würden** (Fläche unter D-Kurve), und dem, was sie **tatsächlich zahlen** (Marktpreis).\n\n> KR = Fläche unter der Nachfragekurve und über dem Marktpreis\n\n### Produzentenrente (PR)\nDifferenz zwischen dem Marktpreis und den minimalen Grenzkosten (Bereitschaft zu verkaufen).\n\n> PR = Fläche über der Angebotskurve und unter dem Marktpreis\n\n### Gesamtrente (Wohlfahrt)\n**W = KR + PR** ist im Wettbewerbsgleichgewicht maximal. Das ist dasEffizienztheorem: Freie Märkte allozieren Ressourcen effizient."
+    },
+    {
+      "id": "vwl_E",
+      "name": "Preiskontrollen und Steuern",
+      "icon": "🏛️",
+      "filter": [
+        "VWL Kap. E"
+      ],
+      "explanation": "## Preiskontrollen und Steuern\n\n### Preisobergrenze (Höchstpreis / Price Ceiling)\nStaatlicher Maximalpreis **unterhalb** des Gleichgewichtspreises → **Knappheit** (Nachfrage > Angebot).\nBeispiel: Mietpreisbremse.\n\n### Preisuntergrenze (Mindestpreis / Price Floor)\nStaatlicher Minimalpreis **oberhalb** des Gleichgewichts → **Überschuss** (Angebot > Nachfrage).\nBeispiel: Mindestlohn, agrarische Garantiepreise.\n\n### Steuern\nEine **Mengensteuer** verschiebt die Angebotskurve um den Steuerbetrag nach oben.\n\n**Nettowohlfahrtsverlust (Deadweight Loss, DWL)**: Dreieck zwischen alter und neuer Menge. Er entsteht, weil die Steuer Transaktionen verhindert, die ohne Steuer vorteilhaft gewesen wären.\n\n> DWL ist umso GRÖSSER, je **elastischer** Angebot und Nachfrage sind (mehr Transaktionen fallen weg).\n\n### Steuerlast\nDie Seite mit der **geringeren Elastizität** trägt den größeren Teil der Steuerlast (kann weniger ausweichen)."
+    },
+    {
+      "id": "vwl_F",
+      "name": "Externalitäten und öffentliche Güter",
+      "icon": "🌱",
+      "filter": [
+        "VWL Kap. F"
+      ],
+      "explanation": "## Externalitäten und öffentliche Güter\n\n### Externalitäten\nWirkungen auf Dritte, die nicht über den Preis abgerechnet werden.\n\n**Negative Externalität** (z.B. Umweltverschmutzung):\n- Soziale Grenzkosten (SK) = private Grenzkosten (PK) + externer Schaden\n- SK-Kurve liegt **über** der privaten Angebotskurve\n- Markt produziert **zu viel** (Mengen Q_Markt > Q_optimal)\n\n### Pigou-Steuer\nSteuer in Höhe des externen Grenzschadens verschiebt PK-Kurve nach oben → entspricht SK-Kurve → effiziente Menge.\n\n### Coase-Theorem\nBei **klaren Eigentumsrechten** und **vernachlässigbaren Transaktionskosten** führen private Verhandlungen zu effizientem Ergebnis (unabhängig von Eigentumsverteilung). Grenzen: viele Beteiligte, hohe Transaktionskosten.\n\n### Güterklassifikation\n| Typ | Ausschließbar? | Rivalisierend? | Beispiel |\n|-----|----------------|----------------|----------|\n| **Privat** | Ja | Ja | Brot |\n| **Club** | Ja | Nein | Netflix |\n| **Allmende** | Nein | Ja | Fischgründe |\n| **Öffentlich** | Nein | Nein | Landesverteidigung |\n\n**Trittbrettfahrerproblem**: Bei öffentlichen Gütern will niemand zahlen → Marktversagen."
+    },
+    {
+      "id": "vwl_G",
+      "name": "Handel und Handelsbeschränkungen",
+      "icon": "🌍",
+      "filter": [
+        "VWL Kap. G"
+      ],
+      "explanation": "## Internationaler Handel\n\n### Komparativer Vorteil (Ricardo)\nEin Land soll sich auf die Güter spezialisieren, bei denen es die **geringsten Opportunitätskosten** hat (nicht zwingend die absolut niedrigsten Kosten).\n\nDurch Spezialisierung und Handel können BEIDE Länder über das Autarkie-Niveau hinaus konsumieren.\n\n### Argumente für Freihandel\n- Niedrigere Preise, mehr Produktvielfalt\n- Skaleneffekte, Innovation\n\n### Argumente gegen Freihandel\n- **Infant-Industry-Argument**: Junge Industrien brauchen Schutz\n- Beschäftigung, nationale Sicherheit, Umweltschutz\n\n### Handelsbeschränkungen\n**Zölle** verteuern Importe → Preis steigt → inländische Produktion steigt, Importe sinken. Entspricht einer Steuer → erzeugt Wohlfahrtsverlust."
+    },
+    {
+      "id": "vwl_H",
+      "name": "BIP, Inflation und Messgrößen",
+      "icon": "📊",
+      "filter": [
+        "VWL Kap. H",
+        "VWL Kap. I"
+      ],
+      "explanation": "## BIP und Inflation\n\n### Bruttoinlandsprodukt (BIP)\nGesamtwert aller **endgültigen** in einer Volkswirtschaft innerhalb einer Periode produzierten Güter und Dienstleistungen.\n\n> BIP = Konsum (C) + Investitionen (I) + Staatsausgaben (G) + Nettoexporte (NX = Ex - Im)\n\n### BIP vs. BNE\n- **BIP** = **Inlandsprinzip**: Produktion INNERHALB der Landesgrenzen\n- **BNE** (Bruttonationaleinkommen) = **Inländerprinzip**: Produktion von Inländern weltweit\n\n### Inflation\nAnhaltender **Anstieg** des allgemeinen Preisniveaus.\n\n| Begriff | Bedeutung |\n|---------|-----------|\n| **Deflation** | Sinkendes Preisniveau |\n| **Disinflation** | Verlangsamung der Inflationsrate |\n| **Stagflation** | Inflation + stagnierendes Wachstum |\n| **Realzins** | Nominalzins minus Inflationsrate |\n\n### Verbraucherpreisindex (VPI)\nMisst Preisentwicklung eines repräsentativen Warenkorbs. Wichtigstes Inflationsmaß (Basisjahr = 100%)."
+    }
+  ],
+  "perso": [
+    {
+      "id": "perso_02",
+      "name": "Cross-Cultural Management",
+      "icon": "🌏",
+      "filter": [
+        "Perso Folie 02 CrossCultural"
+      ],
+      "explanation": "## Cross-Cultural Management\n\n### Kulturelle Dimensionen (Hofstede)\nGeert Hofstede unterscheidet 6 Kulturdimensionen:\n\n1. **Machtdistanz** (Power Distance): Akzeptanz ungleicher Machtverteilung\n2. **Individualismus vs. Kollektivismus**\n3. **Maskulinität vs. Feminität** (Leistung vs. Fürsorge)\n4. **Unsicherheitsvermeidung** (Uncertainty Avoidance)\n5. **Langfrist- vs. Kurzfristorientierung**\n6. **Indulgence vs. Restraint** (Genuss vs. Kontrolle)\n\n### Kulturschock-Phasen\n1. Euphorie (Honeymoon)\n2. Frustration / Kulturschock\n3. Anpassung\n4. Akzeptanz / Biculturalism\n\n### Cross-Cultural Training\nSensibilisierung für kulturelle Unterschiede, um Missverständnisse in internationalen Teams zu vermeiden."
+    },
+    {
+      "id": "perso_03",
+      "name": "Kommunikation",
+      "icon": "💬",
+      "filter": [
+        "Perso Folie 03 Kommunikation"
+      ],
+      "explanation": "## Kommunikation\n\n### Kommunikationsmodelle\n**Sender-Empfänger-Modell**: Sender → Kodierung → Kanal → Dekodierung → Empfänger. Störquellen (Rauschen) können überall auftreten.\n\n### 4 Seiten einer Nachricht (Schulz von Thun)\n1. **Sachinhalt**: Was wird faktisch mitgeteilt?\n2. **Selbstoffenbarung**: Was sagt der Sender über sich selbst?\n3. **Beziehung**: Wie steht der Sender zum Empfänger?\n4. **Appell**: Was will der Sender erreichen?\n\n### Aktives Zuhören\n- Paraphrasieren (Inhalt wiedergeben)\n- Verbalisieren (Gefühle ansprechen)\n- Nachfragen\n\n### Barrieren\nSelektive Wahrnehmung, Werturteile, semantische Störungen, kulturelle Unterschiede."
+    },
+    {
+      "id": "perso_04",
+      "name": "Führung",
+      "icon": "👤",
+      "filter": [
+        "Perso Folie 04 Führung",
+        "Perso Menti 10 Fuehrungsspanne"
+      ],
+      "explanation": "## Führung\n\n### Führungstheorien\n1. **Eigenschaftstheorie** (Trait): Führer haben bestimmte Persönlichkeitsmerkmale\n2. **Verhaltenstheorie**: Aufgaben- vs. personenorientiert\n3. **Situationstheorie**: Führung muss zur Situation passen\n\n### Situative Führung (Hersey/Blanchard)\nAbhängig vom **Reifegrad** der Mitarbeiter:\n\n| Reifegrad | Stil |\n|-----------|------|\n| Niedrig (R1) | Anweisen (directing) |\n| Mittel (R2) | Überzeugen (selling) |\n| Hoch (R3) | Partizipieren (participating) |\n| Sehr hoch (R4) | Delegieren (delegating) |\n\n### Management vs. Führung\n- **Management**: Dinge richtig tun (Prozesse, Effizienz)\n- **Führung**: Die richtigen Dinge tun (Vision, Strategie)\n\n### Transformationale vs. transaktionale Führung\n- **Transaktional**: Tausch „Leistung gegen Belohnung\"\n- **Transformational**: Inspiration, Vision, Entwicklung"
+    },
+    {
+      "id": "perso_05",
+      "name": "Team und Konflikt",
+      "icon": "👥",
+      "filter": [
+        "Perso Folie 05 TeamKonflikt",
+        "Perso Klausur 71007",
+        "Perso Menti 09 Grundlagen"
+      ],
+      "explanation": "## Teams und Konflikte\n\n### Teamentwicklung (Tuckman)\n1. **Forming**: Kennenlernen, Höflichkeit\n2. **Storming**: Konflikte, Machtkämpfe\n3. **Norming**: Regeln, Konsens\n4. **Performing**: Leistung, Zusammenarbeit\n5. **Adjourning**: Auflösung\n\n### Konfliktarten\n- **Sachkonflikt**: Verschiedene Meinungen zur Aufgabe\n- **Beziehungskonflikt**: Persönliche Spannungen\n- **Wertkonflikt**: Unterschiedliche Werte/Normen\n- **Verteilungskonflikt**: Kampf um Ressourcen\n\n### Konfliktstile (Thomas-Kilmann)\n| Stil | Durchsetzungsgrad | Kooperationsgrad |\n|------|-------------------|------------------|\n| Konkurrenz | Hoch | Niedrig |\n| Nachgeben | Niedrig | Hoch |\n| Vermeiden | Niedrig | Niedrig |\n| Kompromiss | Mittel | Mittel |\n| Kooperation | Hoch | Hoch (Win-Win) |\n\n### Vorteile von Teams\nSynergieeffekte,互补 skills, bessere Entscheidungen (vielfältige Perspektiven)."
+    },
+    {
+      "id": "perso_06",
+      "name": "Arbeitsrecht",
+      "icon": "⚖️",
+      "filter": [
+        "Perso Folie 06 Arbeitsrecht"
+      ],
+      "explanation": "## Arbeitsrecht\n\n### Quellen\n- **BGB** (Dienstvertrag § 611 ff.)\n- **HGB** (für Handlungsgehilfen)\n- **Tarifverträge**, **Betriebsvereinbarungen**\n- **Einzelarbeitsvertrag**\n\n### Allgemeines Gleichbehandlungsgesetz (AGG)\nDiskriminierung wegen Rasse, ethnischer Herkunft, Geschlecht, Religion, Weltanschauung, Behinderung, Alter oder sexueller Identität ist verboten.\n\n### Grundpflichten\n- Arbeitgeber: Vergütung, Fürsorge\n- Arbeitnehmer: Arbeitsleistung, Treue\n\n### Kündigung\n- **Fristen**: Probezeit 2 Wochen, danach nach Betriebszugehörigkeit (steigend)\n- **Kündigungsschutz** (KSchG) ab 6 Monaten + 10 Mitarbeiter\n- **Arten**: ordentlich, außerordentlich (fristlos), Änderungskündigung"
+    },
+    {
+      "id": "perso_07",
+      "name": "Motivation",
+      "icon": "🔥",
+      "filter": [
+        "Perso Folie 07 Motivation"
+      ],
+      "explanation": "## Motivation\n\n### Inhaltstheorien (Was motiviert?)\n\n**Maslow** – Bedürfnispyramide:\n1. Physische Bedürfnisse\n2. Sicherheit\n3. Soziale Bedürfnisse\n4. Wertschätzung\n5. Selbstverwirklichung\n\n**Herzberg** – Zweifaktorentheorie:\n- **Hygienefaktoren** (verhindern Unzufriedenheit): Gehalt, Bedingungen, Sicherheit\n- **Motivatoren** (erzeugen Zufriedenheit): Anerkennung, Verantwortung, Sinn\n\n### Prozesstheorien (Wie entsteht Motivation?)\n\n**Vroom – VIE-Theorie**:\n> Motivation = Valenz × Instrumentalität × Erwartung\n\n**Equity-Theorie** (Adams): Vergleiche Input/Output mit anderen (Gerechtigkeit).\n\n### intrinsisch vs. extrinsisch\n- **Intrinsisch**: Aus der Tätigkeit selbst (Freude, Sinn)\n- **Extrinsisch**: Äußere Anreize (Geld, Status)"
+    },
+    {
+      "id": "perso_08",
+      "name": "Personalmanagement",
+      "icon": "🎯",
+      "filter": [
+        "Perso Folie 08 Personalbeschaffung",
+        "Perso Folie 08 Personalentwicklung",
+        "Perso Folie 08-2 Performance"
+      ],
+      "explanation": "## Personalmanagement\n\n### Personalbeschaffung (Recruitment)\n- **Intern**: Beförderung, Versetzung, Stellenanzeigen im Intranet\n- **Extern**: Jobbörsen, Headhunter, Hochschulmarketing\n\n**Schritte**: Personalbedarf → Anzeige → Auswahl → Einstellung\n\n### Auswahlverfahren\n- Bewerbungsunterlagen\n- Interviews (strukturiert > unstrukturiert)\n- Assessment Center\n- Tests (kognitiv, Persönlichkeit)\n\n### Personalentwicklung\nQualifizierung durch Schulung, Coaching, Job Rotation. Ziel: Kompetenzaufbau, Bindung.\n\n### Performance Management\nSystematische Beurteilung der Mitarbeiterleistung.\n- **Ziele**: leistungsbezogene Vergütung, Entwicklung, Feedback\n- **Kritik**: Subjektivität, Einfluss des Vorgesetzten\n\n### New Work Konzepte\nAgile Arbeit, Remote Work, 4-Tage-Woche, Sinnorientierung."
+    },
+    {
+      "id": "perso_09_10",
+      "name": "Organisation und Aufbauorganisation",
+      "icon": "🏢",
+      "filter": [
+        "Perso Folie 09 Grundlagen",
+        "Perso Folie 09-10",
+        "Perso Folie 10 Aufbauorganisation"
+      ],
+      "explanation": "## Organisation\n\n### Grundlagen\nOrganisation = dauerhafte Regelung der Aufgabenerfüllung. Unterschieden:\n- **Aufbauorganisation**: Wer macht was? (Struktur)\n- **Ablauforganisation**: Wie/Wann wird es gemacht? (Prozesse)\n\n### Einlinienorganisation\nJeder Mitarbeiter hat EINEN Vorgesetzten. Klarheit, aber Überlastung bei Spitze.\n\n### Mehrlinienorganisation\nMehrere Weisungsbefugnisse (Funktionsspezialisten). Gefahr: widersprüchliche Anweisungen.\n\n### Matrixorganisation\nSchnittstelle von Funktion und Produkt/Projekt. Doppelte Unterstellung → Konflikte, aber Flexibilität.\n\n### Divisionale Organisation (Sparten)\nGliederung nach Produkten, Regionen oder Kundengruppen. Dezentral, marktnah.\n\n### Stäbe\nBeratende Einheiten ohne Weisungsbefugnis (z.B. Rechtsabteilung, Controlling).\n\n### Vor-/Nachteile\n- **Zentralisation**: Standardisierung, Skaleneffekte\n- **Dezentralisation**: Marktnähe, Flexibilität"
+    },
+    {
+      "id": "perso_11",
+      "name": "Organisationsentwicklung",
+      "icon": "🔄",
+      "filter": [
+        "Perso Folie 11 Organisationsentwicklung"
+      ],
+      "explanation": "## Organisationsentwicklung (OE)\n\n### Definition\nGeplanter, systematischer Wandel von Organisationen zur Steigerung der Problemlösungsfähigkeit.\n\n### Phasen des Wandels (Lewin)\n1. **Auftauen** (Unfreezing): Alte Strukturen hinterfragen\n2. **Verändern** (Changing): Neue Lösungen implementieren\n3. **Einfrieren** (Refreezing): Neue Strukturen verankern\n\n### Widerstand gegen Veränderung\n- Rational (Aufwand, Risiko)\n- Emotional (Angst, Gewohnheit)\n- Sozial (Gruppendruck)\n\n### Change Management Ansätze\n- Top-Down (Führung getrieben)\n- Bottom-Up (Mitarbeiter beteiligt)\n- Partizipativ (gemeinsam)"
+    }
+  ],
+  "bwl1": [
+    {
+      "id": "bwl1_1_1",
+      "name": "Ökonomisches Prinzip & Güter",
+      "icon": "💡",
+      "filter": [
+        "Folienskript Chwallek Kap. 1.1"
+      ],
+      "explanation": "## Ökonomisches Prinzip & Güter\n\n### Ökonomisches Prinzip\nKnappheit der Ressourcen zwingt zu wirtschaftlichem Handeln:\n\n- **Minimalprinzip**: Bestimmter Erfolg mit **minimalen** Mitteln\n- **Maximalprinzip**: Gegebene Mittel → **maximaler** Erfolg\n\n### Güterklassifikation\n| Güterart | Eigenschaft | Beispiel |\n|----------|-------------|----------|\n| **Freie Güter** | Unbegrenzt, kein Preis | Luft, Sonnenlicht |\n| **Wirtschaftliche Güter** | Knapp, mit Preis | Brot, Auto |\n| **Sachgüter** | Materiell | Maschine |\n| **Dienstleistungen** | Immateriell | Beratung |\n| **Rechte** | Z.B. Patente | Lizenz |\n\n### Corporate Social Responsibility (CSR)\nVerantwortung von Unternehmen über die rechtlichen Pflichten hinaus: ökologisch, sozial, ökonomisch.\n\n### Sustainable Development Goals (SDGs)\n17 UN-Ziele für nachhaltige Entwicklung (z.B. kein Armut, Klimaschutz)."
+    },
+    {
+      "id": "bwl1_1_2",
+      "name": "Betrieb und Bestimmungsfaktoren",
+      "icon": "🏭",
+      "filter": [
+        "Folienskript Chwallek Kap. 1.2",
+        "Folienskript Chwallek Kap. 2.1"
+      ],
+      "explanation": "## Definition Betrieb\n\n### Betrieb\nWirtschaftliche Einheit, die Güter erstellt und absetzt. Planvoll und dauerhaft.\n\n### Bestimmungsfaktoren eines Betriebs\n1. **Art** der Leistung (Produkt/Dienstleistung)\n2. **Menge** der Leistung\n3. **Ort** der Leistungserstellung\n4. **Zeit** der Leistungserstellung\n\n### Phasenmodell des Unternehmens\n1. Gründung\n2. Wachstum\n3. Reife\n4. Schrumpfung / Transformation"
+    },
+    {
+      "id": "bwl1_2_2",
+      "name": "Anspruchsgruppen",
+      "icon": "🤝",
+      "filter": [
+        "Folienskript Chwallek Kap. 2.2"
+      ],
+      "explanation": "## Anspruchsgruppen (Stakeholder)\n\n### Stakeholder-Modell\nGruppen, die ein berechtigtes Interesse am Unternehmen haben.\n\n**Intern**:\n- Eigentümer / Gesellschafter\n- Management\n- Mitarbeiter\n\n**Extern**:\n- Kunden\n- Lieferanten\n- Staat (Steuern, Regulierung)\n- Gesellschaft\n- Banken / Kapitalgeber\n\n### Stakeholder-Interessen (konfliktär)\n- **Eigentümer**: Rendite, Wertsteigerung\n- **Mitarbeiter**: Gehalt, Sicherheit\n- **Kunden**: Qualität, günstiger Preis\n- **Lieferanten**: pünktliche Zahlung\n- **Staat**: Steuern, Arbeitsplätze\n\n### Stakeholder-Management\nAusbalancieren der Interessen, um langfristigen Erfolg zu sichern."
+    },
+    {
+      "id": "bwl1_2_4",
+      "name": "Kennzahlen",
+      "icon": "📐",
+      "filter": [
+        "Folienskript Chwallek Kap. 2.4"
+      ],
+      "explanation": "## Kennzahlen\n\n### Arten\n- **Absolute Kennzahlen**: Stückzahlen, Umsatz\n- **Verhältniszahlen**: Quotient aus zwei Größen\n  - Gliederungszahlen (Anteil am Ganzen)\n  - Beziehungszahlen (verschiedene Basen)\n  - Indexzahlen (Zeitvergleich)\n\n### Wichtige Kennzahlen\n\n**Liquidität**:\n- Liquiditätsgrad 1 = Umlaufvermögen / kurzfristiges Fremdkapital\n- **Goldene Bilanzregel**: Anlagevermögen sollte durch Eigenkapital gedeckt sein\n\n**Rentabilität**:\n- Eigenkapitalrentabilität = Gewinn / Eigenkapital\n- Gesamtkapitalrentabilität = (Gewinn + Zinsen) / Gesamtkapital\n- Umsatzrentabilität = Gewinn / Umsatz\n\n### ROI (Return on Investment)\n> ROI = Umsatzrentabilität × Kapitalumschlag\n\n### Phasenmodell des Unternehmenslebenszyklus\nGründung → Wachstum → Reife → Sättigung → Schrumpfung."
+    },
+    {
+      "id": "bwl1_2_5",
+      "name": "Entscheidungsmodelle",
+      "icon": "🧭",
+      "filter": [
+        "Folienskript Chwallek Kap. 2.5"
+      ],
+      "explanation": "## Entscheidungsmodelle\n\n### Entscheidungen unter...\n1. **Sicherheit**: Alle Daten bekannt\n2. **Risiko**: Wahrscheinlichkeiten bekannt\n3. **Unsicherheit**: Wahrscheinlichkeiten unbekannt\n\n### Entscheidungsregeln unter Unsicherheit\n- **Maximax**: Maximum der Maxima (optimistisch)\n- **Maximin**: Maximum der Minima (pessimistisch, Wald)\n- **Hurwicz**: Gewichtung von Optimum und Pessimismus\n- **Laplace**: Gleichverteilung der Wahrscheinlichkeiten\n- **Savage-Niehaus**: Minimierung des Bedauerns (Opportunitätskosten)"
+    },
+    {
+      "id": "bwl1_2_6",
+      "name": "Unternehmenstypologie",
+      "icon": "📋",
+      "filter": [
+        "Folienskript Chwallek Kap. 2.6",
+        "Folienskript Chwallek Kap. 2.7",
+        "Folienskript Chwallek Kap. 2.1"
+      ],
+      "explanation": "## Unternehmenstypologie\n\nKlassifikation nach verschiedenen Merkmalen:\n\n- **Rechtsform**: Einzelunternehmen, GmbH, AG, etc.\n- **Größe**: Klein, mittel, groß (Mitarbeiter, Umsatz)\n- **Branche**: Industrie, Handel, Dienstleistung\n- **Eigentum**: Privat, öffentlich, genossenschaftlich\n- **Region**: lokal, national, international"
+    },
+    {
+      "id": "bwl1_3_1",
+      "name": "Standortwahl",
+      "icon": "📍",
+      "filter": [
+        "Folienskript Chwallek Kap. 3.1"
+      ],
+      "explanation": "## Standortwahl\n\n### Standortfaktoren\n**Harte Faktoren** (quantifizierbar):\n- Lohnkosten\n- Grundstückspreise\n- Steuern\n- Verkehrsanbindung\n\n**Weiche Faktoren** (qualitativ):\n- Qualifikation der Arbeitskräfte\n- Lebensqualität\n- Image der Region\n- Cluster / Netzwerke\n\n### Internationalisierung\nAuslagerung von Produktion (Offshoring) an günstigere Standorte."
+    },
+    {
+      "id": "bwl1_3_2",
+      "name": "Rechtsformen",
+      "icon": "📜",
+      "filter": [
+        "Folienskript Chwallek Kap. 3.2"
+      ],
+      "explanation": "## Rechtsformen\n\n### Personengesellschaften\n**Einzelunternehmen**: Eine Person, unbeschränkte Haftung, volle Gewinne.\n\n**OHG** (Offene Handelsgesellschaft): ≥ 2 Gesellschafter, persönliche Haftung, rechtliche Selbständigkeit.\n\n**KG** (Kommanditgesellschaft): Vollhafter (unbeschränkt) + Kommanditist (beschränkt auf Einlage).\n\n### Kapitalgesellschaften\n**GmbH**: Haftungsbeschränkung auf Gesellschaftsvermögen, Mindeststammkapital 25.000 €.\n\n**AG** (Aktiengesellschaft): Aktien als Anteile, Mindestkapital 50.000 €, börsenfähig, strenge Publizität.\n\n### Vergleichskriterien\n| Kriterium | Einzel | GmbH | AG |\n|-----------|--------|------|-----|\n| Haftung | Unbeschränkt | Beschränkt | Beschränkt |\n| Kapital | Selbst | 25.000 € | 50.000 € |\n| Mitbestimmung | – | Gering | Hoch |\n| Publizität | Keine | Mittel | Hoch |\n| Flexibilität | Hoch | Mittel | Niedrig |"
+    },
+    {
+      "id": "bwl1_3_3",
+      "name": "Unternehmensverbindungen",
+      "icon": "🔗",
+      "filter": [
+        "Folienskript Chwallek Kap. 3.3",
+        "Folienskript Chwallek Kap. 3.3.4.2"
+      ],
+      "explanation": "## Unternehmensverbindungen\n\n### Kartell\nZusammenschluss rechtlich selbständiger Unternehmen (Wettbewerbsbeschränkung). Meist verboten (Kartellverbot § 1 GWB), Ausnahmen zulässig.\n\n### Konzern\nMuttergesellschaft beherrscht Tochtergesellschaft(en). rechtlich selbständig, wirtschaftlich einheitlich geführt.\n\n### Trust\nVollständige Verschmelzung, rechtliche Einheit.\n\n### Syndikat\nGemeinsame Vertriebsstelle.\n\n### Joint Venture\nZwei oder mehr Unternehmen gründen gemeinsame Gesellschaft (Risikoteilung, Marktentry)."
+    },
+    {
+      "id": "bwl1_other",
+      "name": "Weitere Themen",
+      "icon": "📚",
+      "filter": [
+        "VWL Kap. C",
+        "Zusatzübung 1",
+        "Folienskript Chwallek Kap. 2.3"
+      ],
+      "explanation": "## Weitere BWL-Themen\n\nHier findest du Cross-Listing-Fragen aus VWL und weitere Zusatzthemen:\n- Güterklassifikation\n- Querverbindungen zur VWL (Angebot & Nachfrage)"
+    }
+  ],
+  "bwl2": [
+    {
+      "id": "bwl2_grundlagen",
+      "name": "Grundlagen Buchführung",
+      "icon": "📚",
+      "filter": [
+        "Foliensatz BUF Kap. 1-3",
+        "Aufgabensammlung Buchfuehrung",
+        "Reading-Week 4",
+        "Reading-Week 5"
+      ],
+      "explanation": "## Grundlagen Buchführung\n\n### Aufgabe der Buchführung\n- Dokumentation aller Geschäftsvorfälle\n- Grundlage für Jahresabschluss (Bilanz, GuV)\n- Information von Eigentümern, Staat, Gläubigern\n\n### Buchungspflicht (§ 238 HGB)\nJeder Kaufmann ist zur Buchführung verpflichtet. Grundsätze:\n- **Vollständigkeit**, **Richtigkeit**, **Klarheit**\n- **Vorsicht** (Gläubigerschutz)\n- **Stetigkeit** (gleiche Methoden)\n\n### Inventur\nKörperliche und bookmäßige Bestandsaufnahme aller Vermögenswerte und Schulden zu einem Stichtag."
+    },
+    {
+      "id": "bwl2_inventur",
+      "name": "Inventur und Bilanz",
+      "icon": "📋",
+      "filter": [
+        "Foliensatz BUF Kap. 4"
+      ],
+      "explanation": "## Inventur → Bilanz\n\n### Inventur\nPhysische Bestandsaufnahme aller Vermögenswerte und Schulden.\n\n### Inventar\nDetaillierte Auflistung (in Geld bewertet). Drei Teile:\n1. **Vermögen** (Anlage- + Umlaufvermögen)\n2. **Schulden** (langfristig + kurzfristig)\n3. **Eigenkapital** = Vermögen − Schulden\n\n### Bilanz\nZusammenfassung in **Staffelform**:\n\n```\n        AKTIVA          =          PASSIVA\n   (Mittelverwendung)       (Mittelherkunft)\nAnlagevermögen              Eigenkapital\n+ Umlaufvermögen            + Fremdkapital\n```\n\n### Bilanzgleichung\n> **Aktiva = Passiva** (immer!)\n> Eigenkapital = Vermögen − Schulden\n\n### Erfolgsbilanz\nGewinn ↑ Eigenkapital, Verlust ↓ Eigenkapital."
+    },
+    {
+      "id": "bwl2_konten",
+      "name": "Konten und Kontenarten",
+      "icon": "📂",
+      "filter": [
+        "Foliensatz BUF Kap. 5-9",
+        "Foliensatz BUF Kap. 5.1-5.3"
+      ],
+      "explanation": "## Konten und Kontenarten\n\n### T-Konto (Kontenrahmen)\n```\n    Soll  |  Haben\n----------+----------\n   Mehrung|  Minderung\n```\n\n### Bestandskonten\n- **Aktivkonten** (Vermögen): Soll = Mehrung (Zugang), Haben = Minderung (Abgang)\n  - Anfangsbestand im SOLL\n- **Passivkonten** (Schulden): Haben = Mehrung (Zugang), Soll = Minderung (Abgang)\n  - Anfangsbestand im HABEN\n\n### Erfolgskonten\n- **Aufwandskonten**: Soll = Aufwand (z.B. Lohnaufwand)\n- **Ertragskonten**: Haben = Ertrag (z.B. Umsatzerlös)\n\n### Soll-Wen-Prinzip\n„Soll wissen, wen es angeht\" – jedes Konto hat einen klaren Funktionstyp:\n- Aktiv: Bestandsmehrung im **Soll**, Minderung im **Haben**\n- Passiv: Bestandsmehrung im **Haben**, Minderung im **Soll**"
+    },
+    {
+      "id": "bwl2_sollwen",
+      "name": "Soll-Wen-Prinzip & Buchungssatz",
+      "icon": "✍️",
+      "filter": [
+        "Foliensatz BUF Kap. 5.4-7",
+        "Foliensatz BUF Kap. 5-7",
+        "Foliensatz BUF Kap. 5-6"
+      ],
+      "explanation": "## Buchungssatz und Soll-Wen-Prinzip\n\n### Buchungssatz-Logik\n**„Soll an Haben\"** – erster Konto: Soll, zweiter Konto: Haben.\n\nBeispiel: *Barzahlung einer Rechnung*\n> Bank (Aktivzunahme) an Kasse (Aktivabnahme)\n\n### Regeln\n1. **Aktivkonto** im **Soll** = **Mehrung** des Vermögens\n2. **Aktivkonto** im **Haben** = **Minderung** des Vermögens\n3. **Passivkonto** im **Haben** = **Mehrung** der Schulden\n4. **Passivkonto** im **Soll** = **Minderung** der Schulden\n5. **Aufwand** immer im **Soll**\n6. **Ertrag** immer im **Haben**\n\n### Tausch-Prinzip\nJeder Buchungssatz tauscht: **etwas kommt, etwas geht** (oder beides).\n\n**Beispiel Kauf auf Ziel**:\n> Wareneingang (Aktiv+) an Verbindlichkeiten (Passiv+)"
+    },
+    {
+      "id": "bwl2_erfolgskonten",
+      "name": "Erfolgskonten & GuV",
+      "icon": "💰",
+      "filter": [
+        "Foliensatz BUF Kap. 8-9"
+      ],
+      "explanation": "## Erfolgskonten und GuV\n\n### Aufwandskonten (Soll)\n- Lohnaufwand, Mietaufwand, Zinsaufwand, Abschreibungen\n- Erhöhen Aufwand → mindern Gewinn → mindern Eigenkapital\n\n### Ertragskonten (Haben)\n- Umsatzerlös, Zinsertrag, Mietertrag\n- Erhöhen Ertrag → erhöhen Gewinn → erhöhen Eigenkapital\n\n### Gewinn- und Verlustrechnung (GuV)\n```\n   Erträge\n-  Aufwendungen\n=  Gewinn / Verlust\n```\n\n### Schlussbilanz\nNach GuV: Erfolgskonten werden auf das Eigenkapital abgeschlossen."
+    },
+    {
+      "id": "bwl2_abschreibung",
+      "name": "Abschreibungen",
+      "icon": "📉",
+      "filter": [
+        "Foliensatz BUF Kap. 9.2"
+      ],
+      "explanation": "## Abschreibungen\n\n### Begriff\nWertminderung von Anlagevermögen durch Verschleiß, Alterung, technischen Fortschritt.\n\n### Methoden\n**Lineare Abschreibung** (gleichmäßig):\n> Abschreibung = Anschaffungskosten / Nutzungsdauer\n\n**Degressive Abschreibung** (fallend): Höherer Betrag in frühen Jahren.\n\n### Buchwert\nAnschaffungskosten − kumulierte Abschreibungen.\n\n### Poolmethode\nVereinfachte Sammelabschreibung für geringwertige Wirtschaftsgüter (GWG ≤ 800 €)."
+    },
+    {
+      "id": "bwl2_umsatzsteuer",
+      "name": "Umsatzsteuer",
+      "icon": "🧾",
+      "filter": [
+        "Foliensatz BUF Kap. 10.2"
+      ],
+      "explanation": "## Umsatzsteuer / Vorsteuer\n\n### Umsatzsteuer (USt)\nMehrwertsteuer auf Verkäufe. **Verbindlichkeit** gegenüber dem Finanzamt.\n\n> Buchung: Forderung an Umsatzerlös + Umsatzsteuer (Passiv+)\n\n### Vorsteuer (VSt)\nUmsatzsteuer, die das Unternehmen selbst beim Einkauf bezahlt. **Forderung** gegen das Finanzamt.\n\n> Buchung: Wareneingang (Aktiv+) + Vorsteuer (Aktiv+) an Verbindlichkeit\n\n### Zahllast\n> Umsatzsteuer − Vorsteuer = an Finanzamt zu zahlen"
+    },
+    {
+      "id": "bwl2_privat",
+      "name": "Privatkonten",
+      "icon": "🏠",
+      "filter": [
+        "Foliensatz BUF Kap. 12-13"
+      ],
+      "explanation": "## Privatkonten\n\n### Privatentnahme\nEntnahmen des Inhabers für private Zwecke (Geld, Waren). Eigenkapitalminderung.\n\n> Buchung: Privat an Kasse (oder Ware)\n\n### Privateinlage\nEinlagen des Inhabers in den Betrieb. Eigenkapitalmehrung.\n\n> Buchung: Kasse an Privat\n\n### Schlussbilanz\nPrivatkonto wird auf das Eigenkapital abgeschlossen."
+    },
+    {
+      "id": "bwl2_beschaffung",
+      "name": "Beschaffungsbereich",
+      "icon": "🚚",
+      "filter": [
+        "Foliensatz BUF Kap. 15 ",
+        "Foliensatz BUF Kap. 15-16"
+      ],
+      "explanation": "## Beschaffungsbereich\n\n### Einkauf\nWareneingang + Vorsteuer (Aktiv+) an Verbindlichkeiten (Passiv+)\n\n### Bezugsnebenkosten\nTransport, Versicherung, Zoll → erhöhen Anschaffungskosten.\n\n### Skonto\nPreisnachlass bei vorzeitiger Zahlung:\n> Buchung: Verbindlichkeiten an Kasse + Wareneingang (Rabatt Minderung)\n\n### Rabatt\nNachlass auf den Listenpreis (vorab)."
+    },
+    {
+      "id": "bwl2_absatz",
+      "name": "Absatzbereich",
+      "icon": "🛒",
+      "filter": [
+        "Foliensatz BUF Kap. 16 "
+      ],
+      "explanation": "## Absatzbereich\n\n### Verkauf\nForderungen (Aktiv+) an Umsatzerlös (Ertrag) + Umsatzsteuer (Passiv+)\n\n### Erlösschmälerungen\n- **Rabatt**: vorab auf Preis\n- **Skonto**: bei vorzeitiger Zahlung\n- **Bonus**: nachträglich\n- **Umsatzboni**: Bonus für Umsatzvolumen\n\n### Forderungsverlust\n**Einzelfallwertberichtigung**: Konkrete Forderung uneinbringbar → direkter Abgang.\n\n**Pauschalwertberichtigung**: Allgemeines Risiko, statistisch geschätzt."
+    },
+    {
+      "id": "bwl2_jahresabgrenzung",
+      "name": "Jahresabgrenzung",
+      "icon": "📅",
+      "filter": [
+        "Foliensatz BUF Kap. 17.4"
+      ],
+      "explanation": "## Jahresabgrenzung\n\n### Transitorische Posten\n**Aktiver Rechnungsabgrenzungsposten (ARAP)**: Bereits bezahlt, gehört ins nächste Jahr (z.B. Miete vorausgezahlt).\n\n**Passiver Rechnungsabgrenzungsposten (PRAP)**: Bereits vereinnahmt, Ertrag gehört ins nächste Jahr.\n\n### Antizipative Posten\nNoch nicht bezahlt/vereinnahmt, aber Aufwand/Ertrag schon in diesem Jahr:\n- **Antizipativer Aufwand** (z.B. noch offene Stromrechnung)\n- **Antizipativer Ertrag** (z.B. noch offene Zinsforderung)\n\n### Rückstellungen\nFür ungewisse Verbindlichkeiten (z.B. Prozessrisiko, Urlaubsrückstellung)."
+    },
+    {
+      "id": "bwl2_other",
+      "name": "Sonstiges (Beispielklausur/Kontenplan)",
+      "icon": "📑",
+      "filter": [
+        "Beispielklausur Buchführung",
+        "Foliensatz BUF; Kontenplan"
+      ],
+      "explanation": "## Sonstige Buchführungsthemen\n\nHier findest du übergreifende Fragen aus Beispielklausuren und Kontenplan."
+    }
+  ],
+  "mawi1": [
+    {
+      "id": "mawi1_1_1",
+      "name": "Funktionen und Grundlagen",
+      "icon": "📈",
+      "filter": [
+        "WiMa 1 Kap. 1.1",
+        "WiMa 1 Kap. 1"
+      ],
+      "explanation": "## Funktionen einer Variablen\n\n### Funktionsbegriff\nEine Funktion f ordnet jedem x aus der Definitionsmenge D genau ein y zu.\n\n> y = f(x)\n\n### Wichtige Begriffe\n- **Definitionsmenge D**: zulässige x-Werte\n- **Wertemenge W**: erreichbare y-Werte\n- **Nullstelle**: f(x) = 0\n- **Schnittpunkt mit y-Achse**: f(0)\n\n### Kostenfunktion\n> K(x) = K_f + K_v(x)\n>   Fixkosten + variable Kosten\n\n- **Stückkosten**: k(x) = K(x) / x\n- **Stückvariable Kosten**: k_v(x) = K_v(x) / x\n- **Grenzkosten**: K'(x) = dK/dx\n\n### Erlösfunktion\n> E(x) = p · x  (Preis · Menge)\n\n### Gewinnfunktion\n> G(x) = E(x) − K(x) = Umsatz − Kosten\n\nGewinnmaximum: G'(x) = 0  →  E'(x) = K'(x) (Grenzerlös = Grenzkosten)"
+    },
+    {
+      "id": "mawi1_1_2",
+      "name": "Wichtige Funktionstypen",
+      "icon": "🔣",
+      "filter": [
+        "WiMa 1 Kap. 1.2",
+        "WiMa 1 Kap. 1.3"
+      ],
+      "explanation": "## Wichtige Funktionstypen\n\n### Lineare Funktion\n> f(x) = m·x + b\n- Steigung m = Δy/Δx\n- y-Achsenabschnitt b\n\n### Quadratische Funktion\n> f(x) = ax² + bx + c\n- Parabel, Scheitelpunkt bei x = -b/(2a)\n- Nullstellen: Mitternachtsformel\n\n### Polynomfunktion\n> f(x) = a_n·x^n + ... + a_1·x + a_0\n\n### Gebrochen-rationale Funktion\n> f(x) = p(x) / q(x)\n- Polstellen: Nenner = 0\n- Asymptoten\n\n### Exponentialfunktion\n> f(x) = a·e^(kx)\n- Wachstum (k>0) / Zerfall (k<0)\n\n### Logarithmusfunktion\n> ln(x), log(x)\n- Inverse zur Exponentialfunktion"
+    },
+    {
+      "id": "mawi1_2",
+      "name": "Differentialrechnung",
+      "icon": "∫",
+      "filter": [
+        "WiMa 1 Kap. 2"
+      ],
+      "explanation": "## Differentialrechnung\n\n### Ableitung\nDie Ableitung f'(x) ist die Steigung der Tangente an einem Punkt.\n\n### Ableitungsregeln\n**Potenzregel**: f(x) = x^n → f'(x) = n·x^(n-1)\n\n**Summenregel**: (f+g)' = f' + g'\n\n**Produktregel**: (f·g)' = f'·g + f·g'\n\n**Quotientenregel**: (f/g)' = (f'·g − f·g') / g²\n\n**Kettenregel**: f(g(x)) → f'(g(x))·g'(x)\n\n### Extremwerte\n- **Notwendige Bedingung**: f'(x) = 0\n- **Hinreichende Bedingung**: f''(x) < 0 (Maximum) bzw. f''(x) > 0 (Minimum)\n\n### Wendepunkt\nf''(x) = 0 und f'''(x) ≠ 0"
+    },
+    {
+      "id": "mawi1_3",
+      "name": "Grenzwerte und Stetigkeit",
+      "icon": "∞",
+      "filter": [
+        "WiMa 1 Kap. 3"
+      ],
+      "explanation": "## Grenzwerte und Stetigkeit\n\n### Grenzwert\n> lim_(x→a) f(x) = L\n\nf nähert sich L, wenn x gegen a geht.\n\n### Stetigkeit\nEine Funktion ist stetig an x=a, wenn:\n1. f(a) definiert ist\n2. lim_(x→a) f(x) existiert\n3. lim_(x→a) f(x) = f(a)\n\n### Unstetigkeiten\n- **Sprung**: links/rechts verschieden\n- **Lücke**: Definitionslücke\n- **Pol**: Grenzwert geht gegen ±∞\n\n### Regel von L'Hôpital\nBei 0/0 oder ∞/∞:\n> lim f(x)/g(x) = lim f'(x)/g'(x)"
+    },
+    {
+      "id": "mawi1_4",
+      "name": "Matrizenrechnung",
+      "icon": "🔲",
+      "filter": [
+        "WiMa 1 Kap. 4"
+      ],
+      "explanation": "## Matrizenrechnung\n\n### Matrix\nRechteckiges Zahlenschema mit m Zeilen und n Spalten.\n\n### Operationen\n**Addition**: A + B (gleiche Dimensionen)\n**Multiplikation mit Skalar**: k·A\n**Matrixmultiplikation**: A·B\n- Zeile × Spalte\n- Bedingung: Spalten von A = Zeilen von B\n\n### Einheitsmatrix I\nDiagonal 1, sonst 0. A·I = A.\n\n### Inverse\nA^(-1)·A = I\n- Nur für quadratische, reguläre Matrizen (Det ≠ 0)\n\n### Determinante\nSkalar, der einer quadratischen Matrix zugeordnet ist.\n- 2×2: |A| = ad − bc\n- Wichtig für Invertierbarkeit und Lösung von Gleichungssystemen"
+    }
+  ],
+  "mawi2": [
+    {
+      "id": "mawi2_1",
+      "name": "Grundlagen Statistik",
+      "icon": "📊",
+      "filter": [
+        "Statistik Kap. 1"
+      ],
+      "explanation": "## Grundlagen Statistik\n\n### Grundbegriffe\n- **Grundgesamtheit** (Population, N): alle relevanten Objekte\n- **Stichprobe** (sample, n): Teilmenge der Grundgesamtheit\n- **Merkmal** (Variable, X): Eigenschaft, die beobachtet wird\n- **Ausprägung**: konkreter Wert eines Merkmals\n\n### Merkmalsarten\n**Skalenniveaus** (vom niedrigen zum hohen):\n1. **Nominal**: nur Gleichheit (Augenfarbe)\n2. **Ordinal**: Reihenfolge (Schulnote)\n3. **Interval**: Abstände (Temperatur °C)\n4. **Verhältnis**: natürlicher Nullpunkt (Körpergröße)\n\n### Häufigkeit\n- **Absolute Häufigkeit** h_i: Anzahl\n- **Relative Häufigkeit** f_i = h_i / n\n\n### Verteilung\nTabellarische oder grafische Darstellung der Häufigkeiten."
+    },
+    {
+      "id": "mawi2_3",
+      "name": "Verteilungen",
+      "icon": "📊",
+      "filter": [
+        "Statistik Kap. 2",
+        "Statistik Kap. 3"
+      ],
+      "explanation": "## Verteilungen\n\n### Häufigkeitsverteilung\nTabelle mit Merkmalsausprägungen und Häufigkeiten.\n\n### Grafische Darstellung\n- **Histogramm**: Säulendiagramm (kategorial/intervallskaliert)\n- **Kreisdiagramm**: Anteile (nominal)\n- **Stabdiagramm**: diskret\n\n### Kumulierte Häufigkeit\nF(x) = Anzahl der Werte ≤ x."
+    },
+    {
+      "id": "mawi2_4",
+      "name": "Lageparameter",
+      "icon": "📍",
+      "filter": [
+        "Statistik Kap. 4"
+      ],
+      "explanation": "## Lageparameter (Maße der zentralen Tendenz)\n\n### Modus (Modalwert)\nHäufigster Wert. Für alle Skalenniveaus.\n\n### Median (Zentralwert)\nWert in der Mitte der sortierten Reihe. Bei gerader Anzahl: Mittel der beiden mittleren.\n\n### Arithmetisches Mittel (Mittelwert)\n> x̄ = (1/n) · Σx_i\n\nEmpfindlich gegenüber Ausreißern.\n\n### Quartile\n- Q1 (25%-Quantil)\n- Q2 = Median\n- Q3 (75%-Quantil)\n\n### Zusammenhang\nBei symmetrischer Verteilung: Modus ≈ Median ≈ Mittelwert.\nBei linkssteil: Mittel < Median < Modus."
+    },
+    {
+      "id": "mawi2_5",
+      "name": "Streuungsmaße",
+      "icon": "📡",
+      "filter": [
+        "Statistik Kap. 5"
+      ],
+      "explanation": "## Streuungsmaße (Dispersion)\n\n### Spannweite (Range)\n> R = max − min\n\n### Varianz\nDurchschnittliche quadratische Abweichung vom Mittelwert:\n\n> σ² = (1/n) · Σ(x_i − x̄)²  (Population)\n> s² = (1/(n-1)) · Σ(x_i − x̄)²  (Stichprobe, korrigiert)\n\n### Standardabweichung\n> σ = √σ²  bzw.  s = √s²\n\nSelbe Einheit wie die Daten.\n\n### Interquartilsabstand (IQR)\n> IQR = Q3 − Q1\n\nRobust gegenüber Ausreißern.\n\n### Variationskoeffizient\n> CV = σ / x̄\n\nVergleich von Streuung unterschiedlicher Skalen."
+    },
+    {
+      "id": "mawi2_6",
+      "name": "Indexzahlen",
+      "icon": "🔢",
+      "filter": [
+        "Statistik Kap. 6"
+      ],
+      "explanation": "## Indexzahlen\n\n### Preisindex\nMisst die zeitliche Entwicklung von Preisen oder Mengen.\n\n### Laspeyres-Index\nGewichtung mit Basisjahr-Mengen:\n> I_L = (Σ p_1·q_0) / (Σ p_0·q_0) · 100\n\nVorteil: stabile Gewichte. Nachteil: veraltetes Konsumverhalten.\n\n### Paasche-Index\nGewichtung mit Berichtsjahr-Mengen:\n> I_P = (Σ p_1·q_1) / (Σ p_0·q_1) · 100\n\nVorteil: aktuelles Konsumverhalten. Nachteil:每年 neue Berechnung.\n\n### Fisher-Index\n> I_F = √(I_L · I_P)\n\nIdeal-Index, vereint Vorteile."
+    }
+  ],
+  "wpr": [
+    {
+      "id": "wpr_1",
+      "name": "Einführung ins Recht",
+      "icon": "⚖️",
+      "filter": [
+        "WPR Foliensatz Kap. 1",
+        "WPR Grundlagen"
+      ],
+      "explanation": "## Einführung Wirtschaftsprivatrecht\n\n### Rechtsgebiete\n**Privatrecht** (Bürger zu Bürger) vs. **Öffentliches Recht** (Staat zu Bürger).\n\nWPR = Privatrecht mit wirtschaftlichem Bezug.\n\n### Wichtigste Gesetze\n- **BGB** (Bürgerliches Gesetzbuch)\n- **HGB** (Handelsgesetzbuch)\n- Spezialgesetze (AGG, AGBG, VerbrG)\n\n### BGB-Aufbau (5 Bücher)\n1. **Allgemeiner Teil** (§§ 1–240): Rechtsgeschäftslehre\n2. **Schuldrecht** (§§ 241–853): Verträge, Schadensersatz\n3. **Sachenrecht** (§§ 854–1296): Eigentum, Besitz\n4. **Familienrecht** (§§ 1297–1921)\n5. **Erbrecht** (§§ 1922–2385)"
+    },
+    {
+      "id": "wpr_2",
+      "name": "Natürliche Personen & Rechtsfähigkeit",
+      "icon": "👤",
+      "filter": [
+        "WPR Foliensatz Kap. 2",
+        "WPR Foliensatz Kap. 2-7"
+      ],
+      "explanation": "## Personenrecht\n\n### Natürliche Personen\nMenschen. Ab Geburt **rechtsfähig** (§ 1 BGB).\n\n### Rechtsfähigkeit\nFähigkeit, Träger von Rechten und Pflichten zu sein.\n\n### Geschäftsfähigkeit\n- **Voll geschäftsfähig** (§ 2): ab 18 Jahren\n- **Beschränkt geschäftsfähig** (§§ 106–113): 7–18 Jahre\n  - Alltagsgeschäfte (Taschengeldparagraph)\n  - Sonst mit Zustimmung der Eltern\n- **Geschäftsunfähig**: unter 7 Jahre, psychisch Kranke\n\n### Deliktsfähigkeit\nVerantwortlichkeit für unerlaubte Handlungen (§ 823 BGB). Ab 7 bzw. 18 Jahren."
+    },
+    {
+      "id": "wpr_3",
+      "name": "Rechtsgeschäftslehre",
+      "icon": "📜",
+      "filter": [
+        "WPR Foliensatz Kap. 3",
+        "WPR Rechtsgeschaeftslehre",
+        "WPR Willenserkl.",
+        "WPR Vertragsschluss",
+        "WPR Auslegung",
+        "WPR AGB",
+        "WPR Anfechtung",
+        "WPR Stellvertretung",
+        "WPR Formvorschr."
+      ],
+      "explanation": "## Rechtsgeschäftslehre\n\n### Rechtsgeschäft\nMind. eine Willenserklärung, die auf Rechtsfolge gerichtet ist.\n\n### Willenserklärung\n- **Antrag** (Angebot) und **Annahme** → Vertrag (§ 145 BGB)\n- Schweigen ist grundsätzlich keine Willenserklärung\n\n### Nichtigkeit\nEin Rechtsgeschäft ist **nichtig**, wenn es nichtigkeitsgründe hat:\n- **Geschäftsunfähigkeit** (§ 105)\n- **Sittenwidrigkeit** (§ 138)\n- **Wucher** (§ 138 II)\n- **Formmangel** (z.B. § 311b: Grundstückskauf muss notariell beurkundet werden)\n- **Anfängliche Unmöglichkeit** (§ 275)\n\n### Anfechtung (§ 119)\nRückwirkende Vernichtung einer Willenserklärung bei Irrtum:\n- Inhaltsirrtum\n- Erklärungsirrtum\n- Eigenschaftsirrtum\n- Täuschung / Drohung (§ 123)\n\n### Lateinische Begriffe\n- **caveat emptor** – Käufer, pass auf!\n- **dolo agit** – arglistig handeln\n- **pacta sunt servanda** – Verträge sind einzuhalten\n- **condictio** – Rückforderung"
+    },
+    {
+      "id": "wpr_4",
+      "name": "Schuldrecht AT",
+      "icon": "💵",
+      "filter": [
+        "WPR Foliensatz Kap. 4"
+      ],
+      "explanation": "## Schuldrecht Allgemeiner Teil\n\n### Schuldverhältnis\nRechtliches Band zwischen Gläubiger und Schuldner mit Leistungspflicht.\n\n### Entstehung\n- **Vertrag** (z.B. Kaufvertrag § 433)\n- **Gesetzlich** (z.B. § 823: unerlaubte Handlung)\n- **Bereicherungsrecht** (§ 812: ungerechtfertigte Bereicherung)\n\n### Vertragsarten\n- **Kauf** (§ 433): Pflicht zur Übergabe und Übereignung\n- **Dienstvertrag** (§ 611): Dienstleistung\n- **Werkvertrag** (§ 631): Erfolgsbezogen\n- **Miete** (§ 535)\n- **Darlehen** (§ 488)\n\n### Pflichtverletzung\nBei Nichterfüllung:\n- **Schadensersatz** (§§ 280 ff.)\n- **Rücktritt** (§ 323)\n- **Minderung**"
+    },
+    {
+      "id": "wpr_5",
+      "name": "Verjährung",
+      "icon": "⏰",
+      "filter": [
+        "WPR Foliensatz Kap. 5",
+        "WPR Verjaehrung"
+      ],
+      "explanation": "## Verjährung\n\n### Begriff\nNach Ablauf der Frist kann der Schuldner die Leistung verweigern (§ 214). Die Schuld besteht weiter (naturliche obligation), ist aber nicht einklagbar.\n\n### Regelfrist\n**3 Jahre** ab Kenntnis von Anspruch und Schuldner (§ 195).\n\n### Sonstige Fristen\n- 10 Jahre (§ 199): ab Entstehung, maximal\n- 30 Jahre: dingliche Ansprüche (z.B. Herausgabe einer Sache § 194)\n- 30 Jahre: familien- und erbrechtliche Ansprüche\n\n### Hemmung\nVerjährung läuft nicht (z.B. Verhandlungen, Insolvenzverfahren).\n\n### Neubeginn (Unterbrechung)\nDurch Anerkenntnis, Klageerhebung."
+    },
+    {
+      "id": "wpr_6",
+      "name": "Handelsrecht",
+      "icon": "🏪",
+      "filter": [
+        "WPR Foliensatz Kap. 6"
+      ],
+      "explanation": "## Handelsrecht\n\n### Kaufmann (§ 1 HGB)\nWer ein Handelsgewerbe betreibt.\n\n### Handelsregister\nÖffentliches Register beim Amtsgericht:\n- **Abteilung A**: Personengesellschaften (OHG, KG, Einzelkaufleute)\n- **Abteilung B**: Kapitalgesellschaften (GmbH, AG)\n\n### Firmenrecht\nFirma = Name des Kaufmanns im Rechtsverkehr:\n- **Personenfirma**: Name der Gesellschafter\n- **Sachfirma**: Gegenstand\n- **Phantasiename**: frei erfunden\n\n### Publizität\n negative Publizität: Nicht-Eingetragenes gilt als nicht geschehen (für Dritten).\n positive Publizität: Eingetragenes gilt als bekannt."
+    },
+    {
+      "id": "wpr_7",
+      "name": "Kaufrecht",
+      "icon": "🛍️",
+      "filter": [
+        "WPR Foliensatz Kap. 7"
+      ],
+      "explanation": "## Kaufvertrag (§ 433 BGB)\n\n### Pflichten\n**Verkäufer**: Übergabe und Übereignung der Sache; verschaffung frei von Sach- und Rechtsmängeln.\n\n**Käufer**: Zahlung des Kaufpreises; Abnahme.\n\n### Gewährleistung (Sachmangel § 434)\n- Falschlieferung\n- Montagemangel\n- Aliud-Lieferung (falsche Sache)\n\n### Rechte des Käufers (§ 437)\n1. **Nacherfüllung** (Reparatur oder Nachlieferung)\n2. **Rücktritt** oder **Minderung**\n3. **Schadensersatz**\n\n### Verjährung\n- **BGB**: 2 Jahre ab Ablieferung (§ 438)\n- **Verbrauchsgüterkauf**: 2 Jahre, zwingend\n\n### Eigentumsvorbehalt\nVerkäufer bleibt Eigentümer bis vollständiger Zahlung."
+    },
+    {
+      "id": "wpr_8",
+      "name": "Sachenrecht",
+      "icon": "🏠",
+      "filter": [
+        "WPR Foliensatz Kap. 8",
+        "WPR Sachenrecht"
+      ],
+      "explanation": "## Sachenrecht\n\n### Besitz vs. Eigentum\n- **Besitz** (§ 854): tatsächliche Herrschaft\n- **Eigentum** (§ 903): rechtliche Herrschaft\n\n### Übereignung (§ 929)\nEigentumsübertragung:\n1. **Einigung** (Verbal)\n2. **Übergabe** der Sache\n3. Berechtigter Erwerber\n\n### Besitzarten\n- **Eigenbesitz**: Eigener Willen\n- **Fremdbesitz**: Für andere (z.B. Mieter)\n- **Unmittelbarer** / **mittelbarer** Besitz\n\n### Grundbuch\n- Bestandsverzeichnis (Parzelle)\n- Abteilung I: Eigentümer\n- Abteilung II: Lasten (Dienstbarkeiten)\n- Abteilung III: Grundschulden, Hypotheken\n\n### Grundbuchprinzipien\n- **Eintragungsprinzip**: Wirkung durch Eintragung\n- **Publizität**: Vertrauen auf Grundbuch"
+    },
+    {
+      "id": "wpr_other",
+      "name": "Beweisrecht & Fallbeispiele",
+      "icon": "🔍",
+      "filter": [
+        "WPR Foliensatz – Beweis",
+        "WPR Foliensatz – Fallbeispiel",
+        "WPR Foliensatz – Rechtsgrundsätze"
+      ],
+      "explanation": "## Beweisrecht und Fallbeispiele\n\n### Beweislast\nGrundsatz: **Jeder muss die Tatsachen beweisen, die für ihn günstig sind.**\n\n### Beweismaß\nVollbeweis: hoher Grad an Wahrscheinlichkeit.\n\n### Arten\n- **Beweis unmittelbar**: Zeuge, Urkunde\n- **Beweis mittelbar**: Indizien\n\nHier findest du praktische Fallbeispiele zur Anwendung der WPR-Konzepte."
+    }
+  ]
+}

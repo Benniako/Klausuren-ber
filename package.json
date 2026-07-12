@@ -1,0 +1,15 @@
+{
+  "name": "klausuren-trainer",
+  "version": "1.0.0",
+  "description": "Klausuren-Trainer FH Aachen",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'No build required'",
+    "lint": "echo 'No lint required'"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Klausuren-Trainer",
+  "description": "Ein interaktiver Klausuren-Trainer für verschiedene Fächer an der FH Aachen mit Lern-Modus, Klausur-Modus und Formelsammlungen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,2368 @@
+{
+  "bwl1": [
+    {
+      "q": "Was besagt das ökonomische Prinzip (Minimalprinzip)?",
+      "o": [
+        "Einen bestimmten Erfolg mit dem geringstmöglichen Mitteleinsatz erreichen",
+        "Mit gegebenen Mitteln den größtmöglichen Erfolg erzielen",
+        "Alle Ressourcen vollständig verbrauchen",
+        "Den Gewinn maximieren unabhängig von Kosten"
+      ],
+      "c": 0,
+      "s": "Das Minimalprinzip ist eine Ausprägung des ökonomischen Prinzips: Bei gegebener Zielvorgabe (Erfolg) sollen die eingesetzten Mittel (Ressourcen) minimiert werden. Beispiel: Eine Klausurnote 1,0 mit möglichst wenig Lernzeit. Das Gegenteil ist das Maximalprinzip.",
+      "src": "Folienskript Chwallek Kap. 1.1.1 'Ökonomisches Prinzip', Folie 15-17"
+    },
+    {
+      "q": "Was besagt das Maximalprinzip?",
+      "o": [
+        "Mit gegebenen Mitteln den größtmöglichen Erfolg erzielen",
+        "Einen bestimmten Erfolg mit minimalen Mitteln erreichen",
+        "Die Kosten so niedrig wie möglich halten",
+        "Alle Produktionsfaktoren vollständig nutzen"
+      ],
+      "c": 0,
+      "s": "Das Maximalprinzip ist die zweite Ausprägung des ökonomischen Prinzips: Bei gegebenen Mitteln (z.B. 100 Lernstunden) soll der Erfolg (möglichst gute Note) maximiert werden. Maximal- und Minimalprinzip zusammen bilden das ökonomische Prinzip (Wirtschaftlichkeitsprinzip).",
+      "src": "Folienskript Chwallek Kap. 1.1.1, Folie 15-17"
+    },
+    {
+      "q": "Was ist eine korrekte Definition von CSR (Corporate Social Responsibility)?",
+      "o": [
+        "Die gesellschaftliche Verantwortung eines Unternehmens, die über gesetzliche Vorgaben hinausgeht und Ökonomie, Ökologie und Soziales umfasst",
+        "Eine Marketingstrategie zur reinen Umsatzsteigerung",
+        "Die gesetzlich vorgeschriebene Pflicht zur Nachhaltigkeitsberichterstattung",
+        "Die ausschließliche Fokussierung auf Maximierung des Shareholder Value"
+      ],
+      "c": 0,
+      "s": "CSR (Corporate Social Responsibility) bedeutet, dass ein Unternehmen freiwillig Verantwortung für die Gesellschaft und Umwelt übernimmt – über gesetzliche Vorgaben hinaus. Es umfasst die drei Säulen: Ökonomie (Wirtschaftlichkeit), Ökologie (Umweltschutz), Soziales (Mitarbeiter/Gesellschaft). Wichtig: CSR muss zum Kerngeschäft passen – Greenwashing ist NICHT das Ziel.",
+      "src": "Folienskript Chwallek Kap. 1.1.3 'CSR', Folie 20-28; Zusatzübung 1"
+    },
+    {
+      "q": "Welche Aussage zum CSR ist FALSCH?",
+      "o": [
+        "Greenwashing ist der beabsichtigte Haupteffekt von CSR",
+        "CSR soll Ökonomie, Ökologie und Soziales gleichbehandeln",
+        "CSR sollte zum Kerngeschäft passen",
+        "CSR kann langfristig den Unternehmenserfolg sichern"
+      ],
+      "c": 0,
+      "s": "Greenwashing (Vortäuschen ökologischer Verantwortung ohne echte Substanz) ist NICHT das Ziel von CSR, sondern ein zu vermeidender Missbrauch. CSR zielt auf echte, nachhaltige Verantwortung in den drei Dimensionen Ökonomie, Ökologie, Soziales.",
+      "src": "Folienskript Chwallek Kap. 1.1.3; Zusatzübung 1 'Güterklassifikation und CSR'"
+    },
+    {
+      "q": "Welche Güterart ist ein 'freies Gut'?",
+      "o": [
+        "Luft zum Atmen (im nicht verschmutzten Zustand)",
+        "Ein Firmenwagen",
+        "Trinkwasser aus der Leitung",
+        "Ein Smartphon"
+      ],
+      "c": 0,
+      "s": "Freie Güter sind unbegrenzt verfügbar und haben keinen Preis (z.B. Luft, Sonnenlicht in unverschmutzter Form). Wirtschaftliche Güter sind knapp und haben einen Preis. Zu den wirtschaftlichen Gütern zählen Realgüter (Sachgüter/Dienstleistungen) und Nominalgüter (Geld/Forderungen).",
+      "src": "Folienskript Chwallek Kap. 1.1 'Wirtschaften mit knappen Gütern'; Zusatzübung 1"
+    },
+    {
+      "q": "Was ist ein Beispiel für ein Inputgut aus Sicht der Stadtwerke?",
+      "o": [
+        "Gas, um die Wohnung zu heizen (aus Sicht der Stadtwerke ist dies ein Output)",
+        "Gas, um das Firmengebäude zu heizen (Inputgut)",
+        "Ein Kühlschrank in der Betriebskantine",
+        "Ein Firmenwagen vom Band"
+      ],
+      "c": 0,
+      "s": "Ein Inputgut ist ein Produktionsfaktor, der in den Betrieb eingeht. Aus Sicht der Stadtwerke ist das Gas zum Heizen der Wohnungen das Produkt (Output). Aber das Gas zum Heizen des eigenen Firmengebäudes ist ein Inputgut. Input = Aufwand/Produktionsfaktor; Output = Leistung/Produkt.",
+      "src": "Zusatzübung 1 'Güterklassifikation', S. 1-2"
+    },
+    {
+      "q": "Was versteht man unter dem Begriff 'Betrieb'?",
+      "o": [
+        "Eine wirtschaftliche Einheit, die durch Kombination von Produktionsfaktoren Güter erstellt und am Markt anbietet",
+        "Eine gemeinnützige Organisation ohne Gewinnabsicht",
+        "Eine Behörde zur Regulierung der Wirtschaft",
+        "Ein reines Handelsunternehmen ohne Produktion"
+      ],
+      "c": 0,
+      "s": "Ein Betrieb ist eine offene, sozio-technische Wirtschaftseinheit, die durch Kombination der Produktionsfaktoren (Arbeit, Betriebsmittel, Werkstoffe) Güter/Dienstleistungen erstellt und diese am Markt absetzt. Bestimmungsmerkmale: Autonomieprinzip, Wirtschaftlichkeitsprinzip, finanzielles Gleichgewicht.",
+      "src": "Folienskript Chwallek Kap. 1.2 'Definition Betrieb', Folie 30-33"
+    },
+    {
+      "q": "Welche der folgenden sind Bestimmungsfaktoren (Merkmale) eines Betriebs?",
+      "o": [
+        "Kombination der Produktionsfaktoren, Autonomieprinzip, Wirtschaftlichkeitsprinzip, finanzielles Gleichgewicht",
+        "Nur Rechtsform und Betriebsgröße",
+        "Lediglich der Standort und die Mitarbeiterzahl",
+        "Umsatz, Gewinn und Dividende"
+      ],
+      "c": 0,
+      "s": "Die 4 Bestimmungsfaktoren eines Betriebs sind: (1) Kombination der Produktionsfaktoren (Arbeit, Betriebsmittel, Werkstoffe), (2) Autonomieprinzip (Selbstbestimmung), (3) Wirtschaftlichkeitsprinzip (ökonomisches Prinzip), (4) Finanzielles Gleichgewicht (Liquidität sichern).",
+      "src": "Folienskript Chwallek Kap. 1.2; Zusatzübung 3 'Bestimmungsfaktoren'"
+    },
+    {
+      "q": "Welche Aussage ist KEIN Bestimmungsfaktor (Merkmal) eines privaten Betriebs?",
+      "o": [
+        "Die Geschäftsleitung möchte so viel Gewinn wie möglich erwirtschaften",
+        "Kombination der Produktionsfaktoren",
+        "Wirtschaftlichkeitsprinzip",
+        "Finanzielles Gleichgewicht"
+      ],
+      "c": 0,
+      "s": "Die Gewinnmaximierung ist ein ZIEL des Betriebs, kein BESTIMMUNGSFAKTOR (Merkmal). Die Bestimmungsfaktoren sind: (1) Kombination der Produktionsfaktoren, (2) Autonomieprinzip, (3) Wirtschaftlichkeitsprinzip, (4) Finanzielles Gleichgewicht. Diese definieren, WAS ein Betrieb ist – nicht, was er anstrebt.",
+      "src": "Folienskript Chwallek Kap. 1.2; Zusatzübung 3"
+    },
+    {
+      "q": "Wer gehört zur INTERNEN Anspruchsgruppe eines Unternehmens?",
+      "o": [
+        "Manager und Mitarbeiter",
+        "Lieferanten",
+        "Kunden",
+        "Bürgerinitiativen"
+      ],
+      "c": 0,
+      "s": "Anspruchsgruppen (Stakeholder) werden in intern (Manager, Mitarbeiter, Eigentümer) und extern (Kunden, Lieferanten, Staat, Gesellschaft, Banken) unterschieden. Interne Gruppen sind direkt im Unternehmen tätig; externe haben Interessen von außen.",
+      "src": "Folienskript Chwallek Kap. 2.2 'Anspruchsgruppen', Folie 35-40; Zusatzübung 3"
+    },
+    {
+      "q": "Welche Interessen verfolgen die Eigentümer (Shareholder) eines Unternehmens?",
+      "o": [
+        "Hohe Rendite, Wertsteigerung ihrer Anteile, Sicherheit des eingesetzten Kapitals",
+        "Niedrige Preise und hohe Qualität",
+        "Hohe Löhne und gute Arbeitsbedingungen",
+        "Möglichst hohe Steuereinnahmen"
+      ],
+      "c": 0,
+      "s": "Die Eigentümer (Shareholder) wollen eine angemessene Verzinsung (Rendite) ihres eingesetzten Kapitals, Wertsteigerung ihrer Anteile und Sicherheit. Dies steht oft im Konflikt mit anderen Stakeholdern (z.B. Manager wollen Macht, Mitarbeiter wollen Lohn, Kunden wollen niedrige Preise).",
+      "src": "Folienskript Chwallek Kap. 2.2 'Anspruchsgruppen', Folie 38-42"
+    },
+    {
+      "q": "Welche Aussage zu Interessen der Anspruchsgruppen ist richtig?",
+      "o": [
+        "Das Management möchte seinen Entscheidungsspielraum erweitern",
+        "Fremdkapitalgeber erhalten eine Gewinnbeteiligung",
+        "Lieferanten möchten eine befriedigende Verzinsung",
+        "Der Staat möchte eine Kooperation mit dem Unternehmen"
+      ],
+      "c": 0,
+      "s": "Das Management (Agent) strebt nach mehr Entscheidungsspielraum, Macht und Prestige (Prinzipal-Agent-Konflikt). Fremdkapitalgeber wollen Zinsen (nicht Gewinnbeteiligung). Lieferanten wollen pünltliche Zahlung. Der Staat will Steuern und Arbeitsplätze.",
+      "src": "Folienskript Chwallek Kap. 2.2; Zusatzübung 3"
+    },
+    {
+      "q": "Was ist die Teilproduktivität?",
+      "o": [
+        "Das Verhältnis von Output (Ergebnis) zu einem bestimmten Input (Produktionsfaktor)",
+        "Der Gewinn geteilt durch den Umsatz",
+        "Das Verhältnis aller Inputs zu allen Outputs",
+        "Die durchschnittliche Arbeitszeit pro Produkt"
+      ],
+      "c": 0,
+      "s": "Teilproduktivität = Output / ein einzelner Input-Faktor. Beispiele: Arbeitsproduktivität (Stück/Std), Kapitalproduktivität (Stück/Maschinenstunde). Die Gesamtproduktivität setzt alle Inputs ins Verhältnis zum Output.",
+      "src": "Folienskript Chwallek Kap. 2.4 'Kennzahlen', Folie 40-43"
+    },
+    {
+      "q": "Wie berechnet man die Wirtschaftlichkeit?",
+      "o": [
+        "Wirtschaftlichkeit = Ertrag / Aufwand (bzw. Leistung / Kosten)",
+        "Wirtschaftlichkeit = Gewinn / Umsatz",
+        "Wirtschaftlichkeit = Eigenkapital / Fremdkapital",
+        "Wirtschaftlichkeit = Output / Input"
+      ],
+      "c": 0,
+      "s": "Wirtschaftlichkeit = Ertrag/Aufwand (oder Leistung/Kosten). Wert >1 bedeutet wirtschaftlich (Ertrag übersteigt Aufwand). Sie ist eine Kennzahl, die das ökonomische Prinzip misst. Verwandt: Produktivität = Output/Input (technisch), Rentabilität = Gewinn/Kapital (finanziell).",
+      "src": "Folienskript Chwallek Kap. 2.4, Folie 44-47"
+    },
+    {
+      "q": "Wie berechnet sich die Eigenkapitalrentabilität (Return on Equity)?",
+      "o": [
+        "Eigenkapitalrentabilität = (Gewinn / Eigenkapital) × 100",
+        "Eigenkapitalrentabilität = (Umsatz / Eigenkapital) × 100",
+        "Eigenkapitalrentabilität = (Gewinn / Gesamtkapital) × 100",
+        "Eigenkapitalrentabilität = (Eigenkapital / Bilanzsumme) × 100"
+      ],
+      "c": 0,
+      "s": "Eigenkapitalrentabilität (RoE) = Gewinn / Eigenkapital × 100%. Sie misst die Verzinsung des von den Eigentümern eingebrachten Kapitals. Beispiel: 50.000 € Gewinn bei 200.000 € Eigenkapital = 25% RoE. Die Gesamtkapitalrentabilität (RoA) teilt stattdessen durch Gesamtkapital.",
+      "src": "Folienskript Chwallek Kap. 2.4, Folie 48-50; Zusatzübung 4"
+    },
+    {
+      "q": "Ein Unternehmen hat Umsatz 500.000 €, Aufwendungen 450.000 €, Eigenkapital 200.000 €. Wie hoch ist die Eigenkapitalrentabilität?",
+      "o": [
+        "25%",
+        "10%",
+        "50%",
+        "90%"
+      ],
+      "c": 0,
+      "s": "Gewinn = Umsatz - Aufwendungen = 500.000 - 450.000 = 50.000 €. Eigenkapitalrentabilität = (Gewinn/Eigenkapital) × 100 = (50.000/200.000) × 100 = 25%. Das Eigenkapital wird also mit 25% verzinst.",
+      "src": "Folienskript Chwallek Kap. 2.4, Folie 50; Zusatzübung 4 'Kennzahlen'"
+    },
+    {
+      "q": "Welche Rentabilität lässt sich NICHT mit den Größen Umsatz, Aufwand, Gewinn und Eigenkapital berechnen?",
+      "o": [
+        "Umsatzrendite (Gewinn/Umsatz)",
+        "Eigenkapitalrentabilität (Gewinn/Eigenkapital)",
+        "Gesamtrentabilität (Gewinn/Gesamtkapital)",
+        "Umsatzrendite ist berechenbar"
+      ],
+      "c": 2,
+      "s": "Für die Gesamtrentabilität braucht man das Gesamtkapital (Eigen- + Fremdkapital). Gegeben sind nur Umsatz, Aufwand, Gewinn und Eigenkapital – Fremdkapital fehlt. Berechenbar: Eigenkapitalrentabilität (50k/200k=25%), Umsatzrendite (50k/500k=10%).",
+      "src": "Folienskript Chwallek Kap. 2.4; Zusatzübung 4"
+    },
+    {
+      "q": "Welche Kriterien werden zur Unternehmenstypologie verwendet?",
+      "o": [
+        "Branche, Betriebsgröße, Art der Leistungserstellung, Rechtsform, Eigentumsstruktur",
+        "Lediglich Umsatz und Mitarbeiterzahl",
+        "Nur Standort und Gründungsjahr",
+        "Lediglich Profitabilität und Wachstum"
+      ],
+      "c": 0,
+      "s": "Die Unternehmenstypologie nach Chwallek umfasst: (1) Branche (Sektor), (2) Betriebsgröße (KMU vs. Großunternehmen), (3) Art der Leistungserstellung (Produktion/Dienstleistung), (4) Rechtsform (Personen-/Kapitalgesellschaft), (5) Vorherrschender Produktionsfaktor, (6) Eigentums- und Leitungsstruktur.",
+      "src": "Folienskript Chwallek Kap. 2.6 'Unternehmenstypologie', Folie 52-58; Zusatzübung 4"
+    },
+    {
+      "q": "Welcher Beruf lässt sich NICHT der freiberuflichen Tätigkeit zuordnen?",
+      "o": [
+        "Apotheker",
+        "Arzt",
+        "Zahnarzt",
+        "Rechtsanwalt"
+      ],
+      "c": 0,
+      "s": "Freiberufler sind natürliche Personen, die wissenschaftliche, künstlerische, schriftstellerische, unterrichtende oder erzieherische Tätigkeiten ausüben (§ 18 EStG). Dazu zählen: Ärzte, Zahnärzte, Rechtsanwälte, Steuerberater. Apotheker gehören NICHT zu den Freiberuflern, sondern sind Gewerbetreibende (Betrieb einer Apotheke ist Gewerbe).",
+      "src": "Folienskript Chwallek Kap. 3.2 'Rechtsformen'; Zusatzübung 6 'Rechtsformen'"
+    },
+    {
+      "q": "Was ist ein Merkmal eines Einzelunternehmens?",
+      "o": [
+        "Der Inhaber haftet unbeschränkt mit seinem Privatvermögen",
+        "Die Haftung ist auf die Einlage beschränkt",
+        "Es benötigt ein Mindeststammkapital von 25.000 €",
+        "Es ist eine juristische Person"
+      ],
+      "c": 0,
+      "s": "Das Einzelunternehmen (§ 84 HGB) ist die einfachste Rechtsform. Der Inhaber haftet unbeschränkt mit seinem gesamten Privatvermögen. Es gibt kein Mindestkapital, keine juristische Person. Vorteil: volle Kontrolle, einfache Gründung. Nachteil: volle Haftung, schwierige Kapitalbeschaffung.",
+      "src": "Folienskript Chwallek Kap. 3.2.2.1 'Einzelunternehmen', Folie 72-76"
+    },
+    {
+      "q": "Welche Aussage zur GmbH ist korrekt?",
+      "o": [
+        "Mindeststammkapital 25.000 €, Gesellschafter haften nur mit ihrer Einlage",
+        "Mindeststammkapital 50.000 €, Gesellschafter haften unbeschränkt",
+        "Kein Mindestkapital erforderlich, Haftung unbeschränkt",
+        "Die GmbH ist zwingend an der Börse"
+      ],
+      "c": 0,
+      "s": "Die GmbH (§§ 1 ff. GmbHG) ist eine Kapitalgesellschaft (juristische Person). Mindeststammkapital: 25.000 € (davon mindestens 12.500 € bei Gründung einzuzahlen). Gesellschafter haften nur mit ihrer Einlage – kein Zugriff auf Privatvermögen. Geschäftsführer leiten die GmbH.",
+      "src": "Folienskript Chwallek Kap. 3.2.2.2 'Kapitalgesellschaften', Folie 80-85"
+    },
+    {
+      "q": "Was ist der wesentliche Unterschied zwischen einer OHG und einer KG?",
+      "o": [
+        "Bei der KG gibt es mindestens einen Komplementär (vollhaftend) und mind. einen Kommanditisten (nur mit Einlage haftend); bei der OHG haften alle voll",
+        "Die OHG hat ein Mindestkapital, die KG nicht",
+        "Die KG ist eine juristische Person, die OHG nicht",
+        "Die OHG ist steuerlich bevorzugt"
+      ],
+      "c": 0,
+      "s": "OHG (Offene Handelsgesellschaft, §§ 105 ff. HGB): alle Gesellschafter haften unbeschränkt. KG (Kommanditgesellschaft, §§ 161 ff. HGB): mindestens ein Komplementär (vollhaftend) und mindestens ein Kommanditist (haftet nur mit Einlage). Beide sind Personengesellschaften, keine juristischen Personen.",
+      "src": "Folienskript Chwallek Kap. 3.2.2.1; Folie 76-80"
+    },
+    {
+      "q": "Welche Aussage zur stillen Gesellschaft ist richtig?",
+      "o": [
+        "Der stille Gesellschafter ist nach außen nicht sichtbar und haftet nur mit seiner Einlage",
+        "Der stille Gesellschafter tritt nach außen auf und haftet unbeschränkt",
+        "Die stille Gesellschaft ist eine juristische Person",
+        "Der stille Gesellschafter ist zwingend im Handelsregister eingetragen"
+      ],
+      "c": 0,
+      "s": "Die stille Gesellschaft (§§ 230 ff. HGB): Der stille Gesellschafter leistet eine Einlage, tritt nach außen nicht in Erscheinung und ist nicht im Handelsregister eingetragen. Er haftet nur mit seiner Einlage und hat Anspruch auf Gewinnbeteiligung. Im Gegensatz zum Kommanditist ist er völlig unsichtbar nach außen.",
+      "src": "Folienskript Chwallek Kap. 3.2; Probeklausur Aufgabe 4"
+    },
+    {
+      "q": "Welche Aussage zur betrieblichen Standortwahl ist richtig?",
+      "o": [
+        "Die Gewerbesteuer ist ein wichtiger abgabeorientierter Standortfaktor, da der Hebesatz von der Gemeinde festgelegt wird",
+        "Die Gewerbesteuer ist bundeseinheitlich und irrelevant für die Standortwahl",
+        "Die Standortwahl ist heute wegen Digitalisierung völlig bedeutungslos",
+        "Nur die Nähe zu Rohstoffen zählt als Standortfaktor"
+      ],
+      "c": 0,
+      "s": "Standortfaktoren werden unterteilt in: beschaffungsorientiert (Rohstoffe, Arbeitskräfte), absatzorientiert (Marktnähe, Kaufkraft), abgabeorientiert (Gewerbesteuer, Subventionen). Die Gewerbesteuer ist ein Gemeindesteuer, Hebesatz variiert von 200% bis über 500% – ein entscheidender abgabeorientierter Faktor.",
+      "src": "Folienskript Chwallek Kap. 3.1 'Standortwahl', Folie 60-68; Probeklausur Aufgabe 3"
+    },
+    {
+      "q": "Welche Aussage hat keinen Bezug zu den INPUTORIENTIERTEN Standortfaktoren?",
+      "o": [
+        "Ein Unternehmen siedelt sich in der Nähe eines großen Absatzmarktes an",
+        "Nähe zu Rohstoffquellen",
+        "Verfügbarkeit qualifizierter Arbeitskräfte",
+        "Günstige Energiepreise am Standort"
+      ],
+      "c": 0,
+      "s": "Inputorientierte Faktoren betreffen die Beschaffung/Produktion: Rohstoffe, Arbeitskräfte, Energie. Absatzorientiert ist die NÄHE ZUM ABSATZMARKT (Kunden). Ein Unternehmen, das sich wegen der Nähe zum Absatzmarkt ansiedelt, folgt absatzorientierten, nicht inputorientierten Faktoren.",
+      "src": "Folienskript Chwallek Kap. 3.1; Zusatzübung 5 'Standortwahl'"
+    },
+    {
+      "q": "Was versteht man unter dem Prinzipal-Agenten-Problem?",
+      "o": [
+        "Interessenkonflikte zwischen Eigentümer (Prinzipal) und Manager (Agent), da der Agent eigene Ziele verfolgen kann",
+        "Der Konflikt zwischen Arbeitgeber und Arbeitnehmer über Löhne",
+        "Das Problem, einen Geschäftsführer für die GmbH zu finden",
+        "Die Schwierigkeit der Kapitalbeschaffung für Start-ups"
+      ],
+      "c": 0,
+      "s": "Das Prinzipal-Agenten-Problem: Der Prinzipal (Eigentümer) beauftragt den Agenten (Manager). Beide verfolgen unterschiedliche Ziele – der Manager könnte Macht/Prestige über Gewinnmaximierung stellen. Informationsasymmetrie begünstigt dieses Problem. Lösungsansatz: erfolgsabhängige Vergütung, Aufsichtsrat, Transparenz.",
+      "src": "Folienskript Chwallek Kap. 2.3, Folie 35-38"
+    },
+    {
+      "q": "Was ist die Nutzwertanalyse (Scoring-Modell)?",
+      "o": [
+        "Ein Verfahren zur Bewertung von Entscheidungsalternativen anhand gewichteter Kriterien",
+        "Eine Methode zur exakten finanziellen Bewertung einer Investition",
+        "Ein reines Kalkulationsverfahren für die Kostenrechnung",
+        "Eine statistische Methode der Marktforschung"
+      ],
+      "c": 0,
+      "s": "Die Nutzwertanalyse (Scoring-Modell) bewertet Alternativen nach mehreren, gewichteten Kriterien. Jedes Kriterium bekommt ein Gewicht (%), jede Alternative wird pro Kriterium bewertet (Punkte). Teilnutzenwerte = Gewicht × Bewertung. Summe = Gesamtnutzen. Eingesetzt z.B. für EDV-Auswahl, Standortwahl.",
+      "src": "Folienskript Chwallek Kap. 2.5 'Entscheidungsmodelle', Folie 45-52; Probeklausur Aufgabe 2"
+    },
+    {
+      "q": "Welches Problem ist mit der Nutzwertanalyse verbunden?",
+      "o": [
+        "Subjektivität bei der Gewichtung der Kriterien und der Bewertung",
+        "Die Methode ist zu teuer und dauert zu lange",
+        "Sie kann nur von Mathematikern angewendet werden",
+        "Sie funktioniert nur bei finanziellen Entscheidungen"
+      ],
+      "c": 0,
+      "s": "Hauptproblem der Nutzwertanalyse: Subjektivität (Gewichtung und Punktbewertung hängen von Personen ab). Weitere Probleme: Scheingenauigkeit (Ergebnis suggeriert Objektivität), Verdeckung von Zielkonflikten. Dennoch ist sie eine wertvolle Entscheidungshilfe – kein Automatismus.",
+      "src": "Folienskript Chwallek Kap. 2.5; Probeklausur Aufgabe 2b"
+    },
+    {
+      "q": "Welche Aussage zu Unternehmensverbindungen ist richtig?",
+      "o": [
+        "Ein Auslöser ist der Zugang zu neuen Märkten und Technologien (Globalisierung)",
+        "Unternehmensverbindungen sind immerillegal",
+        "Synergieeffekte sind nicht möglich",
+        "Kartelle werden in der EU staatlich gefördert"
+      ],
+      "c": 0,
+      "s": "Auslöser für Unternehmensverbindungen (Kooperation, Fusion, Konzern): Globalisierung, Zugang zu neuen Märkten/Technologien, Synergieeffekte (1+1>2), Risikostreuung. Wichtige Formen: Kartell (Wettbewerbsbeschränkung, meist verboten), Konzern (unter einheitlicher Leitung), Fusion (Verschmelzung).",
+      "src": "Folienskript Chwallek Kap. 3.3 'Unternehmensverbindungen', Folie 90-98; Probeklausur Aufgabe 5"
+    },
+    {
+      "q": "Was sind die Sustainable Development Goals (SDGs)?",
+      "o": [
+        "Ein internationaler Rahmen der UN mit 17 Zielen für nachhaltige Entwicklung bis 2030",
+        "Ein europäisches Gesetz zur Klimaneutralität",
+        "Eine freiwillige Selbstverpflichtung deutscher Unternehmen",
+        "Eine Liste von Umweltzertifikaten"
+      ],
+      "c": 0,
+      "s": "Die SDGs (Sustainable Development Goals) sind 17 völkerrechtlich bindende Entwicklungsziele der UN (verabschiedet 2015), die bis 2030 erreicht werden sollen. Sie umfassen u.a. Armutsbekämpfung, Bildung, Klimaschutz, nachhaltigen Konsum. Unternehmen können durch CSR zur Erreichung beitragen.",
+      "src": "Folienskript Chwallek Kap. 1.1.4 'SDGs', Folie 28-32"
+    }
+  ],
+  "bwl2": [
+    {
+      "q": "Was ist die Aufgabe der Buchführung?",
+      "o": [
+        "Die systematische Erfassung, Dokumentation und Auswertung aller Geschäftsvorfälle eines Unternehmens in Geld",
+        "Nur die Zahlungen der Bank zu überwachen",
+        "Die Lohnabrechnung für Mitarbeiter",
+        "Die strategische Planung des Unternehmens"
+      ],
+      "c": 0,
+      "s": "Die Buchführung (Rechnungswesen) erfasst, dokumentiert und wertet alle geldwerten Geschäftsvorfälle systematisch aus. Sie ist Grundlage für Jahresabschluss (Bilanz, GuV), Steuererklärungen und Informationsversorgung von Stakeholdern. Pflicht nach § 238 HGB für Kaufleute.",
+      "src": "Foliensatz BUF Kap. 1-3 'Grundlagen', S. 5-10"
+    },
+    {
+      "q": "Welche Bilanzgleichung gilt immer?",
+      "o": [
+        "Aktiva (Mittelverwendung) = Passiva (Mittelherkunft)",
+        "Aktiva + Passiva = Bilanzsumme",
+        "Eigenkapital = Aktiva - Liabilities",
+        "Umsatz = Aufwand + Ertrag"
+      ],
+      "c": 0,
+      "s": "Die Bilanzgleichung lautet: AKTIVA = PASSIVA. Aktiva (Mittelverwendung: Anlage- und Umlaufvermögen) zeigen, WOFÜR das Kapital verwendet wurde. Passiva (Mittelherkunft: Eigen- und Fremdkapital) zeigen, WOHER das Kapital kommt. Beide Seiten müssen gleich groß sein (Bilanzsumme).",
+      "src": "Foliensatz BUF Kap. 4 'Von der Inventur zur Bilanz', S. 15-20"
+    },
+    {
+      "q": "Wie lautet die Bilanzierungsgleichung für das Eigenkapital?",
+      "o": [
+        "Eigenkapital = Vermögen (Aktiva) - Schulden (Fremdkapital)",
+        "Eigenkapital = Vermögen + Schulden",
+        "Eigenkapital = Umsatz - Aufwand",
+        "Eigenkapital = Gewinn + Verbindlichkeiten"
+      ],
+      "c": 0,
+      "s": "Eigenkapital = Vermögen - Schulden = Aktiva - Fremdkapital. Beispiel: Vermögen 500.000 €, Schulden 110.000 € → Eigenkapital 390.000 €. Das Eigenkapital ist der Restwert, der den Eigentümern gehört. Es ergibt sich als Differenz aus Vermögen und Schulden.",
+      "src": "Foliensatz BUF Kap. 4; Beispielklausur Aufgabe 1"
+    },
+    {
+      "q": "Eine Bilanz zeigt: Grundstücke 200.000 €, BGA 100.000 €, Fuhrpark 60.000 €, Darlehen 90.000 €, Forderungen 50.000 €, Rohstoffe 80.000 €, Kasse 10.000 €, Verbindlichkeiten 20.000 €. Wie hoch ist das Eigenkapital?",
+      "o": [
+        "390.000 €",
+        "500.000 €",
+        "110.000 €",
+        "300.000 €"
+      ],
+      "c": 0,
+      "s": "Vermögen (Aktiva) = 200.000+100.000+60.000+50.000+80.000+10.000 = 500.000 €. Fremdkapital = 90.000+20.000 = 110.000 €. Eigenkapital = 500.000 - 110.000 = 390.000 €. Die Aktivseite besteht aus Anlagevermögen (Grundstück, BGA, Fuhrpark) und Umlaufvermögen (Forderungen, Rohstoffe, Kasse).",
+      "src": "Foliensatz BUF Kap. 4; Beispielklausur Aufgabe 1"
+    },
+    {
+      "q": "Was gehört zum Anlagevermögen?",
+      "o": [
+        "Dauerhaft genutzte Güter: Grundstücke, BGA, Fuhrpark, Maschinen",
+        "Kurzfristig umlaufende Güter: Rohstoffe, Forderungen, Kasse",
+        "Nur immaterielle Vermögensgegenstände",
+        "Lediglich liquide Mittel"
+      ],
+      "c": 0,
+      "s": "Anlagevermögen = dauerhaft (länger als ein Jahr) im Unternehmen verbleibende Güter: Grundstücke, BGA (Betriebs- und Geschäftsausstattung), Fuhrpark, Maschinen, immaterielle Werte (Patente, Lizenzen). Umlaufvermögen = kurzfristig: Vorräte (Rohstoffe, Waren), Forderungen, liquide Mittel (Kasse, Bank).",
+      "src": "Foliensatz BUF Kap. 4-5, S. 18-22"
+    },
+    {
+      "q": "Was sind 'flüssige Mittel' (liquide Mittel)?",
+      "o": [
+        "Kasse, Bankguthaben, Schecks",
+        "Rohstoffe und Handelswaren",
+        "Forderungen an Kunden",
+        "Darlehen und Verbindlichkeiten"
+      ],
+      "c": 0,
+      "s": "Flüssige (liquide) Mittel = sofort verfügbarer Zahlungsmittelbestand: Kasse, Bankguthaben, Schecks. Sie gehören zum Umlaufvermögen und sichern die Liquidität (Zahlungsfähigkeit). Forderungen sind noch keine flüssigen Mittel (Geld noch nicht eingegangen).",
+      "src": "Foliensatz BUF Kap. 4; Beispielklausur Aufgabe 1b"
+    },
+    {
+      "q": "Was besagt das Soll-Wen-Prinzip (Bestandskonto)?",
+      "o": [
+        "Bestandsmehrungen im Soll, Bestandsminderungen im Haben",
+        "Bestandsmehrungen im Haben, Bestandsminderungen im Soll",
+        "Alle Buchungen im Haben",
+        "Nur Erträge werden gebucht"
+      ],
+      "c": 0,
+      "s": "Auf Bestandskonten (Aktiv- und Passivkonten) gilt: Bestandsmehrungen werden im SOLL gebucht, Bestandsminderungen im HABEN. Beispiel Aktivkonto 'Rohstoffe': Zugang Rohstoffe = Soll (Mehrung); Abgang = Haben (Minderung). Bei Passivkonten (z.B. Verbindlichkeiten) ist es umgekehrt.",
+      "src": "Foliensatz BUF Kap. 5.4-7, S. 25-32"
+    },
+    {
+      "q": "Ein Unternehmen kauft Rohstoffe auf Ziel (Rechnung 456) für 36.000 € netto zzgl. MwSt. Wie lautet der Buchungssatz (bestandsorientiert)?",
+      "o": [
+        "Rohstoffe 36.000 / Vorsteuer 6.840 an Verbindlichkeiten 42.840",
+        "Verbindlichkeiten 42.840 an Rohstoffe 36.000 / Vorsteuer 6.840",
+        "Rohstoffe 42.840 an Verbindlichkeiten 42.840",
+        "Bank 42.840 an Rohstoffe 36.000 / Vorsteuer 6.840"
+      ],
+      "c": 0,
+      "s": "Bestandsorientierte Buchung beim Rohstoffkauf auf Ziel: Rohstoffe (Aktivkonto) Mehrung im Soll, Vorsteuer (Aktivkonto) Mehrung im Soll, Verbindlichkeiten (Passivkonto) Mehrung im Haben. MwSt 19% auf 36.000 = 6.840 €. Buchungssatz: Rohstoffe 36.000 / Vorsteuer 6.840 an Verbindlichkeiten 42.840.",
+      "src": "Foliensatz BUF Kap. 15 'Beschaffungsbereich'; Beispielklausur Aufgabe 4a"
+    },
+    {
+      "q": "Ein Unternehmen verkauft Handelswaren auf Ziel: 15.000 € netto zzgl. 19% MwSt. Wie lautet der Buchungssatz?",
+      "o": [
+        "Forderungen 17.850 an Umsatzerlöse 15.000 / Umsatzsteuer 2.850",
+        "Forderungen 17.850 an Handelswaren 15.000 / Umsatzsteuer 2.850",
+        "Bank 17.850 an Umsatzerlöse 15.000 / Umsatzsteuer 2.850",
+        "Handelswaren 15.000 / Umsatzsteuer 2.850 an Forderungen 17.850"
+      ],
+      "c": 0,
+      "s": "Verkauf auf Ziel erhöht Forderungen (Aktivmehrung im Soll). Ertrag auf Erfolgskonto 'Umsatzerlöse' (Haben). Umsatzsteuer = passives Bestandskonto (Haben). MwSt 19% auf 15.000 = 2.850 €. Buchungssatz: Forderungen 17.850 an Umsatzerlöse 15.000 / Umsatzsteuer 2.850.",
+      "src": "Foliensatz BUF Kap. 16 'Absatzbereich'; Beispielklausur Aufgabe 2d"
+    },
+    {
+      "q": "Der Unternehmer entnimmt 500 € aus der Kasse für private Zwecke. Wie wird gebucht?",
+      "o": [
+        "Privat 500 an Kasse 500",
+        "Kasse 500 an Privat 500",
+        "Aufwand 500 an Kasse 500",
+        "Privat 500 an Bank 500"
+      ],
+      "c": 0,
+      "s": "Privateinlagen und -entnahmen werden über das Konto 'Privat' gebucht (Eigenkapitalkonto). Bei Entnahme aus der Kasse: Privat im Soll (Eigenkapitalminderung), Kasse im Haben (Aktivminderung). Buchungssatz: Privat 500 an Kasse 500.",
+      "src": "Foliensatz BUF Kap. 12-13 'Privat'; Reading Week 5"
+    },
+    {
+      "q": "Was versteht man unter einem 'Erfolgskonto'?",
+      "o": [
+        "Ein Konto, das Aufwendungen und Erträge erfasst und so den Gewinn/Verlust bestimmt",
+        "Ein Konto, das nur Bestände am Jahresende zeigt",
+        "Ein Konto nur für Banktransaktionen",
+        "Ein rein passivisches Konto"
+      ],
+      "c": 0,
+      "s": "Erfolgskonten erfassen Aufwendungen (Soll, z.B. 'Löhne', 'Miete') und Erträge (Haben, z.B. 'Umsatzerlöse', 'Zinserträge'). Sie werden über das GuV-Konto abgeschlossen. Saldo aller Erfolgskonten = Gewinn (Erträge > Aufwendungen) oder Verlust (umgekehrt). Bestandskonten hingegen erfassen Vermögen/Schulden.",
+      "src": "Foliensatz BUF Kap. 8-9 'Buchen auf Erfolgskonten', S. 50-55"
+    },
+    {
+      "q": "Eine Produktionsanlage wird für 100.000 € netto zzgl. 19% MwSt gekauft. Nutzungsdauer 10 Jahre. Wie hoch ist die lineare Abschreibung pro Jahr?",
+      "o": [
+        "10.000 €",
+        "11.900 €",
+        "100.000 €",
+        "5.000 €"
+      ],
+      "c": 0,
+      "s": "Lineare Abschreibung = Anschaffungskosten / Nutzungsdauer. Da die Vorsteuer abziehbar ist, wird nur der Nettobetrag (100.000 €) abgeschrieben: 100.000 / 10 = 10.000 € pro Jahr. Buchung: AfA 10.000 an Maschinen 10.000.",
+      "src": "Foliensatz BUF Kap. 9.2 'Abschreibungen', S. 56-60"
+    },
+    {
+      "q": "Was ist der Unterschied zwischen Vorsteuerüberhang und Zahllast?",
+      "o": [
+        "Vorsteuerüberhang: Vorsteuer > Umsatzsteuer (Forderung ans Finanzamt). Zahllast: Umsatzsteuer > Vorsteuer (Verbindlichkeit ans Finanzamt).",
+        "Vorsteuerüberhang entsteht beim Verkauf, Zahllast beim Einkauf",
+        "Vorsteuerüberhang wird als Aufwand gebucht, Zahllast als Ertrag",
+        "Beide Begriffe sind Synonyme"
+      ],
+      "c": 0,
+      "s": "Vorsteuerüberhang: gezahlte Vorsteuer (Eingangsrechnungen) > erhaltene Umsatzsteuer (Ausgangsrechnungen) → Erstattung vom Finanzamt (Aktivposten). Zahllast: Umsatzsteuer > Vorsteuer → Zahlung ans Finanzamt (Passivposten). Nur einer von beiden kann auftreten, niemals gleichzeitig.",
+      "src": "Foliensatz BUF Kap. 10.2 'Umsatzsteuer'; Beispielklausur Aufgabe 8a"
+    },
+    {
+      "q": "Am 1. November werden 4.200 € Halbjahreszinsen (Laufzeit 1.11.-30.4.) per Bank gezahlt. Wie hoch ist der abzugrenzende Betrag am 31.12.?",
+      "o": [
+        "1.400 € (für Nov+Dez)",
+        "4.200 € (gesamter Betrag)",
+        "700 € (nur Dezember)",
+        "2.800 € (Jan-Apr)"
+      ],
+      "c": 0,
+      "s": "Zinszahlung 4.200 € für 6 Monate → 700 € pro Monat. Am 31.12. sind 2 Monate (Nov+Dez) abgelaufen = 1.400 € gehören ins alte Jahr (Aufwand). Die restlichen 4 Monate (2.800 €) sind transitorisch abzugrenzen (ARAP). Buchung: Aufwand 1.400 / ARAP 2.800 an Bank 4.200.",
+      "src": "Foliensatz BUF Kap. 17.4 'Jahresabgrenzung', S. 93-97; Beispielklausur Aufgabe 6"
+    },
+    {
+      "q": "Was versteht man unter der 'verlegten Inventur' (§ 241 HGB)?",
+      "o": [
+        "Die körperliche Bestandsaufnahme innerhalb von 3 Monaten vor oder 2 Monaten nach dem Bilanzstichtag",
+        "Die Verschiebung der Inventur auf das nächste Jahr",
+        "Die Delegation der Inventur an einen Wirtschaftsprüfer",
+        "Die elektronische Erfassung mittels RFID"
+      ],
+      "c": 0,
+      "s": "Die verlegte Inventur (§ 241 HGB) erlaubt, die körperliche Bestandsaufnahme innerhalb von 3 Monaten VOR oder 2 Monaten NACH dem Bilanzstichtag durchzuführen. Der Bestand wird durch wertmäßige Fortschreibung (nach dem Stichtag) bzw. Rückrechnung (vor dem Stichtag) ermittelt.",
+      "src": "Foliensatz BUF Kap. 4 'Inventur', S. 9-12; Beispielklausur Aufgabe 8c"
+    },
+    {
+      "q": "Was ist ein Buchungssatz?",
+      "o": [
+        "Die Angabe, welche Konten im Soll und Haben angesprochen werden, z.B. 'Soll an Haben'",
+        "Eine Auflistung aller Konten am Jahresende",
+        "Ein Vertrag zwischen Bank und Unternehmen",
+        "Eine Liste der offenen Forderungen"
+      ],
+      "c": 0,
+      "s": "Der Buchungssatz gibt an, welche Konten angesprochen werden, nach dem Prinzip 'Soll-Konto an Haben-Konto' (mit Beträgen). Beispiel: 'Rohstoffe 10.000 / Vorsteuer 1.900 an Verbindlichkeiten 11.900' = Rohstoffe und Vorsteuer im Soll, Verbindlichkeiten im Haben.",
+      "src": "Foliensatz BUF Kap. 5-6 'Buchungssatz', S. 28-32"
+    },
+    {
+      "q": "Welches Konto ist ein AKTIVKonto (Bestandskonto)?",
+      "o": [
+        "Rohstoffe",
+        "Verbindlichkeiten",
+        "Umsatzsteuer",
+        "Umsatzerlöse"
+      ],
+      "c": 0,
+      "s": "Aktivkonten (Bestandskonten für Vermögen) sind z.B.: Kasse, Bank, Forderungen, Rohstoffe, Handelswaren, Maschinen, Grundstücke, BGA. Passivkonten: Darlehen, Verbindlichkeiten, Eigenkapital, Umsatzsteuer, Rückstellungen. Erfolgskonten: Aufwendungen (Soll) und Erträge (Haben).",
+      "src": "Foliensatz BUF Kap. 5.1-5.3, S. 22-25"
+    },
+    {
+      "q": "Was passiert beim Kontoabschluss eines Bestandskonten?",
+      "o": [
+        "Der Saldo wird auf das Schlussbilanzkonto (SBK) vorgetragen",
+        "Das Konto wird gelöscht",
+        "Der Saldo wird auf die GuV gebucht",
+        "Es passiert nichts"
+      ],
+      "c": 0,
+      "s": "Beim Jahresabschluss wird jedes Bestandskonto ausgeglichen: der Saldo (Bestand) wird auf das Schlussbilanzkonto (SBK) gebucht. Aktivkonten haben ihren Saldo im Haben (Gegenbuchung im Soll des SBK); Passivkonten haben den Saldo im Soll (Gegenbuchung im Haben des SBK).",
+      "src": "Foliensatz BUF Kap. 5.4-7, S. 30-35"
+    },
+    {
+      "q": "Ein Kunde begleicht eine offene Rechnung per Banküberweisung. Wie wird gebucht?",
+      "o": [
+        "Bank an Forderungen",
+        "Forderungen an Bank",
+        "Bank an Umsatzerlöse",
+        "Kasse an Forderungen"
+      ],
+      "c": 0,
+      "s": "Zahlungseingang eines Kunden: Bank (Aktivmehrung) im Soll, Forderungen (Aktivminderung) im Haben. Buchungssatz: Bank an Forderungen. Die Forderung verschwindet, das Geld ist auf der Bank.",
+      "src": "Foliensatz BUF Kap. 5-7; Skript S. 47-48"
+    },
+    {
+      "q": "Was ist eine transitorische Rechnungsabgrenzung (ARAP)?",
+      "o": [
+        "Zahlung vor der Leistung – der zeitlich abzugrenzende Teil wird aktiviert",
+        "Zahlung nach der Leistung – wird passivisch abgegrenzt",
+        "Eine Abschreibung",
+        "Eine Umsatzsteuerkorrektur"
+      ],
+      "c": 0,
+      "s": "Transitorische Rechnungsabgrenzung (ARAP = aktiver Rechnungsabgrenzungsposten): Zahlung ERFOLGT vor der Leistung. Der Teil, der ins Folgejahr gehört, wird auf dem ARAP-Konto aktiviert (z.B. im Dez. für Miete des Folgejahres). ARAP ist ein Aktivposten in der Bilanz.",
+      "src": "Foliensatz BUF Kap. 17.4, S. 97-100"
+    },
+    {
+      "q": "Ein Lieferant gewährt 2% Skonto auf eine Rechnung über 23.800 € (brutto). Wie hoch ist der Nettoskonto?",
+      "o": [
+        "380 €",
+        "476 €",
+        "400 €",
+        "238 €"
+      ],
+      "c": 0,
+      "s": "Bruttoskonto = 2% von 23.800 = 476 €. Davon ist 19% MwSt enthalten. Nettoskonto = 476 / 1,19 = 400 €. Der Skontoabzug mindert den Aufwand (Rohstoffe) um 400 €, die Vorsteuer um 76 €. Buchung: Verbindlichkeiten 23.800 an Bank 23.324 / Rohstoffe 400 / Vorsteuer 76.",
+      "src": "Foliensatz BUF Kap. 15-16 'Skonto'; Beispielklausur Aufgabe 4d"
+    },
+    {
+      "q": "Wie viele Seiten hat eine typische Buchführungsklausur (Beispielklausur Chwallek/Christmann)?",
+      "o": [
+        "10 Seiten inklusive Deckblatt und Kontenplan",
+        "5 Seiten",
+        "3 Seiten",
+        "20 Seiten"
+      ],
+      "c": 0,
+      "s": "Die Beispielklausur besteht aus 10 Seiten inkl. Deckblatt und Kontenplan (letzterer abtrennbar). Sie enthält 8 Aufgaben mit unterschiedlicher Gewichtung (3,0 bis 9,0 Punkte), insgesamt 45 Punkte. Bestanden bei 45 Punkten aus beiden Klausurteilen zusammen.",
+      "src": "Beispielklausur Buchführung S. 1"
+    },
+    {
+      "q": "Was versteht man unter dem 'GuV-Konto' (Gewinn- und Verlustkonto)?",
+      "o": [
+        "Ein Sammelkonto, auf dem alle Erträge und Aufwendungen erfasst und der Jahresüberschuss/Jahresfehlbetrag ermittelt wird",
+        "Ein Konto für private Entnahmen",
+        "Ein Konto für die Umsatzsteuer",
+        "Das Bankkonto"
+      ],
+      "c": 0,
+      "s": "Das GuV-Konto (Gewinn- und Verlustkonto) sammelt alle Erträge (Haben) und Aufwendungen (Soll) eines Geschäftsjahres. Der Saldo ergibt den Jahresüberschuss (Gewinn, wenn Haben > Soll) oder Jahresfehlbetrag (Verlust). Das GuV-Konto wird über das Eigenkapitalkonto abgeschlossen.",
+      "src": "Foliensatz BUF Kap. 8-9; Beispielklausur Aufgabe 3"
+    },
+    {
+      "q": "Welche Methode erlaubt die höchstmögliche Anfangsabschreibung?",
+      "o": [
+        "Geometrisch-degressive Abschreibung (vom Restbuchwert)",
+        "Lineare Abschreibung (gleichbleibend)",
+        "Leistungsabschreibung (nach Nutzung)",
+        "Sofortabschreibung"
+      ],
+      "c": 0,
+      "s": "Die geometrisch-degressive Abschreibung (vom sinkenden Restbuchwert) erlaubt die höchste Anfangsabschreibung – gut für gewinnmindernde Gestaltung. Die lineare Methode verteilt gleichmäßig. Nach § 7 EStG besteht ein Wahlrecht. Wichtig: Wechsel von degressiv zu linear ist erlaubt, umgekehrt nicht.",
+      "src": "Foliensatz BUF Kap. 9.2 'Abschreibung'; Beispielklausur Aufgabe 5"
+    },
+    {
+      "q": "10 Büroschränke (brutto 1.166,20 €/Stück inkl. 19% MwSt, plus 238 € bar inkl. MwSt für Lieferung). Nutzungsdauer 8 Jahre. Wie hoch sind die Anschaffungskosten netto?",
+      "o": [
+        "1.160 € (Schränke netto) + 200 € (Lieferung netto) = 1.360 € pro Schrank? Nein, gesamt",
+        "11.662 € für alle Schränke zusammen",
+        "1.000 € netto pro Schrank",
+        "Keine Abschreibung möglich"
+      ],
+      "c": 0,
+      "s": "Pro Schrank: 1.166,20 / 1,19 = 980 € netto. 10 Schränke = 9.800 €. Lieferung: 238 / 1,19 = 200 €. Anschaffungskosten gesamt: 9.800 + 200 = 10.000 €. Bei Poolmethode (Anlagegüter bis 800 € netto) könnte sofort abgeschrieben werden. Hier: 10.000 / 8 = 1.250 € jährlich linear.",
+      "src": "Foliensatz BUF Kap. 9.2; Beispielklausur Aufgabe 5"
+    },
+    {
+      "q": "Was ist die Poolmethode bei der Abschreibung?",
+      "o": [
+        "Ein Sammelposten für geringwertige Anlagegüter (bis 800 € netto), der im Jahr der Anschaffung vollständig abgeschrieben wird",
+        "Eine Methode zur Bewertung von Rohstoffen",
+        "Eine spezielle Form der Umsatzsteuer",
+        "Ein Verfahren zur Inventur"
+      ],
+      "c": 0,
+      "s": "Die Poolmethode (§ 3 EStG): Geringwertige Wirtschaftsgüter (GWG) bis 800 € netto (2024: 800 €) werden in einem Sammelposten erfasst und im Jahr der Anschaffung SOFORT vollständig abgeschrieben. Vorteile: vereinfachte Buchhaltung, sofortiger Gewinnminderung. Ab 2024 gibt es auch die degressive Pool-Abschreibung.",
+      "src": "Foliensatz BUF Kap. 9.2 'Poolmethode'; Beispielklausur Aufgabe 5"
+    },
+    {
+      "q": "Was ist ein 'Kontenplan'?",
+      "o": [
+        "Eine systematische Übersicht aller verwendeten Konten mit Nummern (Kontonummern) und Bezeichnungen",
+        "Ein Plan zur Eröffnung neuer Konten bei der Bank",
+        "Eine Liste der Mitarbeiter",
+        "Eine Liste der Kunden und Lieferanten"
+      ],
+      "c": 0,
+      "s": "Der Kontenplan (Kontenrahmen) ist eine systematische Übersicht aller Konten eines Unternehmens mit Kontonummern und -bezeichnungen. Er ermöglicht eine einheitliche Zuordnung. In der Klausur darf der Kontenplan abgetrennt werden; es können Kontonummern ODER Bezeichnungen verwendet werden (zählt als Kontobezeichnung, wenn beides angegeben).",
+      "src": "Foliensatz BUF; Kontenplan Klausur"
+    },
+    {
+      "q": "Was ist die 'bestandsorientierte Buchung'?",
+      "o": [
+        "Bestandsveränderungen werden direkt auf Bestandskonten (nicht Erfolgskonten) gebucht",
+        "Es werden nur Erträge erfasst",
+        "Es wird nur mit Bestellnummern gearbeitet",
+        "Es wird am Jahresende nur eine einzige Buchung gemacht"
+      ],
+      "c": 0,
+      "s": "Bestandsorientierte Buchung: Bestandsveränderungen werden direkt auf Bestandskonten (z.B. Rohstoffe, Handelswaren) erfasst – nicht auf Erfolgskonten (Aufwand/Ertrag). Bei Verbrauch: Rohstoffe (Haben) an GuV (Soll). Bei Verkauf: Forderungen an Umsatzerlöse (die Umsatzerlöse sind das Erfolgskonto).",
+      "src": "Foliensatz BUF Kap. 15-16 'Beschaffungs- und Absatzbereich'"
+    }
+  ],
+  "mawi1": [
+    {
+      "q": "Was ist eine Funktion f?",
+      "o": [
+        "Eine Zuordnung, die jedem Element x aus dem Definitionsbereich D genau ein Element y aus der Zielmenge Z zuordnet",
+        "Eine Liste von Zahlen",
+        "Ein Diagramm ohne System",
+        "Eine Funktion ist immer linear"
+      ],
+      "c": 0,
+      "s": "Eine Funktion f: D → Z ordnet jedem Element x aus dem Definitionsbereich D EXAKT EIN Element y = f(x) aus der Zielmenge Z zu. x = unabhängige Variable, y = abhängige Variable. D = Definitionsbereich, W = Wertebereich. Graph = Menge aller Punkte (x, f(x)).",
+      "src": "WiMa 1 Kap. 1.1 'Funktionen', Folie 2-5"
+    },
+    {
+      "q": "Was sind die Fixkosten K_f?",
+      "o": [
+        "Die Kosten, die unabhängig von der Produktionsmenge anfallen: K_f = K(0)",
+        "Die Kosten, die linear mit der Menge steigen",
+        "Die Kosten pro Stück",
+        "Die variablen Kosten"
+      ],
+      "c": 0,
+      "s": "Die Fixkosten K_f sind die Kosten, die unabhängig von der Produktionsmenge x entstehen. Mathematisch: K_f = K(0) = Kostenfunktion an der Stelle x=0. Sie bleiben konstant (z.B. Miete, Gehälter). Die variablen Kosten K_v(x) = K(x) - K_f steigen mit der Menge.",
+      "src": "WiMa 1 Kap. 1.1, Folie 5-8"
+    },
+    {
+      "q": "Gegeben: K(x) = 2x³ - 30x² + 150x + 500. Wie hoch sind die Fixkosten?",
+      "o": [
+        "500",
+        "150",
+        "2",
+        "0"
+      ],
+      "c": 0,
+      "s": "Die Fixkosten sind der Anteil, der bei x=0 anfällt. K(0) = 2·0 - 30·0 + 150·0 + 500 = 500. Oder direkt: der konstante Summand 500. Die variable Kostenfunktion ist K_v(x) = 2x³ - 30x² + 150x.",
+      "src": "WiMa 1 Kap. 1.1, Folie 10; Testklausur 1 Aufgabe 1"
+    },
+    {
+      "q": "Was ist die Erlösfunktion E(x)?",
+      "o": [
+        "E(x) = p(x) · x (Preis mal Menge)",
+        "E(x) = K(x) - p(x)",
+        "E(x) = x / p(x)",
+        "E(x) = p(x) + x"
+      ],
+      "c": 0,
+      "s": "Die Erlösfunktion (Umsatzfunktion) ist das Produkt aus Preis-Absatz-Funktion und Menge: E(x) = p(x) · x. Beispiel: p(x) = 500 - 4x → E(x) = (500-4x)·x = 500x - 4x² (quadratische Parabel mit Maximum).",
+      "src": "WiMa 1 Kap. 1.1, Folie 9; Testklausur 1"
+    },
+    {
+      "q": "p(x) = 500 - 4x. Wie lautet die Erlösfunktion E(x)?",
+      "o": [
+        "E(x) = 500x - 4x²",
+        "E(x) = 500 - 4x",
+        "E(x) = 500 - 8x",
+        "E(x) = 500x - 4"
+      ],
+      "c": 0,
+      "s": "E(x) = p(x) · x = (500 - 4x) · x = 500x - 4x². Die Erlösfunktion ist nach unten geöffnete Parabel. Das Maximum (Umsatzmaximum) liegt bei der Menge, wo die Ableitung E'(x) = 500 - 8x = 0 → x = 62,5.",
+      "src": "WiMa 1 Kap. 1.1; Testklausur 1 Aufgabe 1"
+    },
+    {
+      "q": "Was sind Stückkosten (Durchschnittskosten) k(x)?",
+      "o": [
+        "k(x) = K(x) / x (für x > 0)",
+        "k(x) = K(x) · x",
+        "k(x) = x / K(x)",
+        "k(x) = K'(x)"
+      ],
+      "c": 0,
+      "s": "Die Stückkosten k(x) sind die durchschnittlichen Kosten pro Einheit: k(x) = K(x) / x (für x > 0). Sie sinken anfangs (Fixkostenumlage) und steigen später wieder (Funktionstyp). Das Minimum der Stückkosten ist die Betriebsoptimumstelle.",
+      "src": "WiMa 1 Kap. 1.1, Folie 6"
+    },
+    {
+      "q": "Was sind Stückvariable Kosten (variable Durchschnittskosten)?",
+      "o": [
+        "k_v(x) = K_v(x) / x = K(x) - K_f) / x",
+        "k_v(x) = K(x) / x",
+        "k_v(x) = K_f / x",
+        "k_v(x) = K_v(x) · x"
+      ],
+      "c": 0,
+      "s": "Die stückvariablen Kosten k_v(x) sind die variablen Kosten pro Einheit: k_v(x) = K_v(x) / x = (K(x) - K_f) / x. Sie sind niedriger als die Stückkosten k(x), da die Fixkosten nicht eingerechnet werden.",
+      "src": "WiMa 1 Kap. 1.1, Folie 7"
+    },
+    {
+      "q": "Was ist die Grenzkostenfunktion K'(x)?",
+      "o": [
+        "Die erste Ableitung der Kostenfunktion K(x)",
+        "Das Integral von K(x)",
+        "K(x) / x",
+        "Die Fixkosten"
+      ],
+      "c": 0,
+      "s": "Grenzkosten = erste Ableitung der Kostenfunktion: K'(x) = dK/dx. Sie gibt an, um wie viel sich die Kosten ändern, wenn die Produktionsmenge um eine (infinitesimale) Einheit steigt. Interpretation: Kosten der nächsten produzierten Einheit.",
+      "src": "WiMa 1 Kap. 2 'Differentialrechnung', Folie 25-30"
+    },
+    {
+      "q": "K(x) = 2x³ - 30x² + 150x + 500. Bestimmen Sie die Grenzkosten bei x = 10.",
+      "o": [
+        "150",
+        "50",
+        "300",
+        "100"
+      ],
+      "c": 0,
+      "s": "K'(x) = 6x² - 60x + 150. K'(10) = 6·100 - 60·10 + 150 = 600 - 600 + 150 = 150. Interpretation: Bei einer Produktion von 10 ME steigen die Kosten um ca. 150 € pro zusätzlicher Einheit.",
+      "src": "WiMa 1 Kap. 2; Testklausur 1 Aufgabe 1a"
+    },
+    {
+      "q": "Was ist die Gewinnfunktion G(x)?",
+      "o": [
+        "G(x) = E(x) - K(x)",
+        "G(x) = E(x) + K(x)",
+        "G(x) = E(x) · K(x)",
+        "G(x) = K(x) - E(x)"
+      ],
+      "c": 0,
+      "s": "Die Gewinnfunktion ist die Differenz aus Erlös und Kosten: G(x) = E(x) - K(x). Gewinnmaximum, wenn G'(x) = 0 (erste Ableitung null) und G''(x) < 0 (zweite Ableitung negativ). Gewinnschwelle (Break-Even): G(x) = 0.",
+      "src": "WiMa 1 Kap. 1.1, Folie 11-12"
+    },
+    {
+      "q": "Was ist die Gewinnschwelle (Break-Even-Point)?",
+      "o": [
+        "Die Menge x, bei der der Gewinn genau null ist: E(x) = K(x)",
+        "Die Menge mit maximalem Gewinn",
+        "Die Menge mit minimalen Kosten",
+        "Die Menge, bei der die Fixkosten gedeckt sind"
+      ],
+      "c": 0,
+      "s": "Die Gewinnschwelle (Break-Even) ist die Produktionsmenge, bei der Erlös und Kosten gleich groß sind: E(x) = K(x) → G(x) = 0. Unterhalb dieser Menge macht das Unternehmen Verlust, darüber Gewinn. Oberhalb: Gewinnzone.",
+      "src": "WiMa 1 Kap. 1.1, Folie 13"
+    },
+    {
+      "q": "Was ist die Grenzproduktivität einer Produktionsfunktion x(r)?",
+      "o": [
+        "Die erste Ableitung x'(r): Änderung des Outputs bei infinitesimaler Inputänderung",
+        "Der Durchschnittsertrag x(r)/r",
+        "Der maximale Output",
+        "Die zweite Ableitung x''(r)"
+      ],
+      "c": 0,
+      "s": "Die Grenzproduktivität (Grenzertrag) ist die erste Ableitung der Produktionsfunktion: x'(r). Sie gibt an, um wie viel der Output steigt, wenn der Input um eine infinitesimale Einheit erhöht wird. Sie ist zentral in der Produktionstheorie (z.B. Gesetz vom abnehmenden Grenzertrag).",
+      "src": "WiMa 1 Kap. 2, Folie 28-33"
+    },
+    {
+      "q": "Was bedeutet 'Stetigkeit' einer Funktion?",
+      "o": [
+        "Die Funktion kann ohne Abheben des Stiftes gezeichnet werden – keine Sprünge",
+        "Die Funktion ist immer konstant",
+        "Die Funktion ist immer linear",
+        "Die Funktion hat keine Nullstellen"
+      ],
+      "c": 0,
+      "s": "Eine Funktion ist stetig an der Stelle x_0, wenn sie dort keinen Sprung hat. Mathematisch: lim(x→x_0) f(x) = f(x_0). Anschaulich: Man kann den Graphen zeichnen, ohne den Stift abzusetzen. Stetigkeit ist Voraussetzung für Differenzierbarkeit (aber nicht umgekehrt).",
+      "src": "WiMa 1 Kap. 3 'Grenzwerte und Stetigkeit', Folie 40-45"
+    },
+    {
+      "q": "Was bedeutet 'Differenzierbarkeit'?",
+      "o": [
+        "Die Funktion hat an der Stelle eine wohldefinierte Tangente (Steigung)",
+        "Die Funktion ist immer positiv",
+        "Die Funktion hat keine Nullstellen",
+        "Die Funktion ist monoton steigend"
+      ],
+      "c": 0,
+      "s": "Eine Funktion ist differenzierbar an der Stelle x_0, wenn der Grenzwert des Differenzenquotienten existiert. Anschaulich: Der Graph hat dort eine eindeutige Tangente (Steigung). Jede differenzierbare Funktion ist auch stetig – aber nicht umgekehrt (z.B. Betragsfunktion an x=0).",
+      "src": "WiMa 1 Kap. 2-3, Folie 50-55"
+    },
+    {
+      "q": "Was ist die Umkehrfunktion f⁻¹?",
+      "o": [
+        "Die Funktion, die f 'rückgängig' macht: f⁻¹(f(x)) = x",
+        "Eine Funktion mit anderem Definitionsbereich",
+        "Das Integral von f",
+        "Die Ableitung von f"
+      ],
+      "c": 0,
+      "s": "Die Umkehrfunktion f⁻¹ macht die Wirkung von f rückgängig: f⁻¹(f(x)) = x und f(f⁻¹(y)) = y. Voraussetzung: f muss bijektiv sein (eindeutig umkehrbar). Graphisch: Spiegelung an der Winkelhalbierenden y=x. Beispiel: f(x) = 2x+3 → f⁻¹(y) = (y-3)/2.",
+      "src": "WiMa 1 Kap. 1.3, Folie 15-18"
+    },
+    {
+      "q": "Was ist eine Matrix?",
+      "o": [
+        "Eine rechteckige Anordnung von Zahlen in Zeilen und Spalten",
+        "Eine Liste von Funktionen",
+        "Ein Skalar",
+        "Ein Vektor"
+      ],
+      "c": 0,
+      "s": "Eine Matrix ist eine rechteckige Anordnung von Zahlen in m Zeilen und n Spalten. Eine m×n-Matrix hat m Zeilen und n Spalten. Spezialfälle: Quadratische Matrix (m=n), Einheitsmatrix (Diagonale 1, Rest 0), Vektor (1 Zeile oder 1 Spalte).",
+      "src": "WiMa 1 Kap. 4 'Matrizenrechnung', Folie 55-60"
+    },
+    {
+      "q": "Was ist die transponierte Matrix Aᵀ?",
+      "o": [
+        "Zeilen und Spalten werden vertauscht: a_ij wird zu a_ji",
+        "Die Matrix wird mit -1 multipliziert",
+        "Die Determinante wird gebildet",
+        "Die Matrix wird invertiert"
+      ],
+      "c": 0,
+      "s": "Die Transponierte Aᵀ einer Matrix entsteht durch Vertauschen von Zeilen und Spalten. Aus einer m×n-Matrix wird eine n×m-Matrix. Element a_ij der ursprünglichen Matrix wird zu Element a_ji der transponierten Matrix. Beispiel: [[1,2],[3,4]]ᵀ = [[1,3],[2,4]].",
+      "src": "WiMa 1 Kap. 4, Folie 58-62"
+    },
+    {
+      "q": "Gegeben A = [[1,2],[3,4]]. Wie lautet Aᵀ?",
+      "o": [
+        "[[1,3],[2,4]]",
+        "[[2,1],[4,3]]",
+        "[[1,2],[3,4]]",
+        "[[4,3],[2,1]]"
+      ],
+      "c": 0,
+      "s": "Die Transponierte Aᵀ entsteht durch Spiegelung an der Hauptdiagonalen. Aus A = [[1,2],[3,4]] wird Aᵀ = [[1,3],[2,4]]. Die erste Zeile [1,2] wird zur ersten Spalte [1,3]; die zweite Zeile [3,4] wird zur zweiten Spalte [2,4].",
+      "src": "WiMa 1 Kap. 4, Folie 60"
+    },
+    {
+      "q": "Wann kann man zwei Matrizen multiplizieren (A · B)?",
+      "o": [
+        "Wenn die Anzahl der Spalten von A gleich der Anzahl der Zeilen von B ist",
+        "Nur wenn beide quadratisch sind",
+        "Nur wenn A und B gleich groß sind",
+        "Immer"
+      ],
+      "c": 0,
+      "s": "Die Matrixmultiplikation A · B ist nur möglich, wenn die Spaltenzahl von A gleich der Zeilenzahl von B ist. Ist A eine m×n-Matrix und B eine n×p-Matrix, dann ist A·B eine m×p-Matrix. Das Element c_ij der Ergebnismatrix ist das Skalarprodukt der i-ten Zeile von A und der j-ten Spalte von B.",
+      "src": "WiMa 1 Kap. 4, Folie 65-70"
+    },
+    {
+      "q": "Was ist die Einheitsmatrix I?",
+      "o": [
+        "Eine Diagonalmatrix mit Einsen auf der Hauptdiagonalen und Nullen sonst",
+        "Eine Matrix nur aus Einsen",
+        "Eine Nullmatrix",
+        "Eine 2×2-Matrix"
+      ],
+      "c": 0,
+      "s": "Die Einheitsmatrix I (oder E) ist eine quadratische Diagonalmatrix, bei der alle Hauptdiagonalelemente = 1 und alle anderen = 0 sind. Beispiel 2×2: [[1,0],[0,1]]. Eigenschaft: A · I = I · A = A für jede Matrix A (analog zur Zahl 1 bei der Skalarmultiplikation).",
+      "src": "WiMa 1 Kap. 4, Folie 62"
+    },
+    {
+      "q": "Was ist die Determinante einer 2×2-Matrix?",
+      "o": [
+        "det(A) = ad - bc für A = [[a,b],[c,d]]",
+        "det(A) = a + b + c + d",
+        "det(A) = a · b · c · d",
+        "det(A) = a - b - c - d"
+      ],
+      "c": 0,
+      "s": "Für eine 2×2-Matrix A = [[a,b],[c,d]] gilt: det(A) = ad - bc. Beispiel: det([[3,1],[2,4]]) = 3·4 - 1·2 = 12 - 2 = 10. Die Determinante ist ungleich null, wenn die Matrix invertierbar ist. det(A)=0 bedeutet singulär (nicht invertierbar).",
+      "src": "WiMa 1 Kap. 4, Folie 70-75"
+    },
+    {
+      "q": "Was ist der Grenzerlös?",
+      "o": [
+        "Die erste Ableitung der Erlösfunktion E'(x)",
+        "Das Verhältnis von Erlös zu Kosten",
+        "Die Erlösfunktion selbst",
+        "Der Grenzgewinn"
+      ],
+      "c": 0,
+      "s": "Der Grenzerlös ist die erste Ableitung der Erlösfunktion nach der Menge: E'(x). Er gibt an, um wie viel der Erlös steigt, wenn eine weitere Einheit verkauft wird. Bei E(x) = 500x - 4x² ist E'(x) = 500 - 8x. Am Umsatzmaximum ist E'(x) = 0.",
+      "src": "WiMa 1 Kap. 2, Folie 35-40; Testklausur 1"
+    },
+    {
+      "q": "Was ist der Grenzgewinn?",
+      "o": [
+        "Die erste Ableitung der Gewinnfunktion G'(x)",
+        "Der Umsatz",
+        "Grenzkosten minus Grenzerlös",
+        "Die Fixkosten"
+      ],
+      "c": 0,
+      "s": "Der Grenzgewinn ist die erste Ableitung der Gewinnfunktion: G'(x). Da G(x) = E(x) - K(x), gilt G'(x) = E'(x) - K'(x) = Grenzerlös - Grenzkosten. Das Gewinnmaximum liegt bei G'(x) = 0, also Grenzerlös = Grenzkosten.",
+      "src": "WiMa 1 Kap. 2, Folie 38-42; Testklausur 1"
+    },
+    {
+      "q": "Was ist der ökonomische Definitionsbereich einer Kostenfunktion?",
+      "o": [
+        "Meist x ≥ 0 (positive Mengen), eventuell nur ganze Zahlen (x ∈ ℕ)",
+        "Alle reellen Zahlen",
+        "Nur x = 0",
+        "Nur positive rationale Zahlen"
+      ],
+      "c": 0,
+      "s": "Der ökonomische Definitionsbereich einer Kostenfunktion ist durch den Kontext eingeschränkt: Mengen sind nicht-negativ (x ≥ 0), oft sogar nur ganzzahlig (x ∈ ℕ). Weitere Einschränkungen: Losegrößen (Vielfache einer bestimmten Menge), Kapazitätsgrenzen. Mathematisch wären auch negative x möglich, ökonomisch aber sinnlos.",
+      "src": "WiMa 1 Kap. 1.1, Folie 18-20"
+    },
+    {
+      "q": "Was ist der Differenzenquotient?",
+      "o": [
+        "[f(x₀+Δx) - f(x₀)] / Δx – die durchschnittliche Steigung",
+        "Die Ableitung von f",
+        "Das Integral von f",
+        "f(x₀) · Δx"
+      ],
+      "c": 0,
+      "s": "Der Differenzenquotient = [f(x₀+Δx) - f(x₀)] / Δx ist die durchschnittliche Steigung der Sekante durch zwei Punkte. Für Δx → 0 ergibt sich die momentane Steigung (Ableitung). Er ist die Grundlage der Differentialrechnung: f'(x₀) = lim(Δx→0) des Differenzenquotienten.",
+      "src": "WiMa 1 Kap. 2, Folie 22-28"
+    },
+    {
+      "q": "Was bedeutet G'(x) = 0?",
+      "o": [
+        "Ein Extremum (Maximum, Minimum oder Sattelpunkt) der Gewinnfunktion",
+        "Es gibt keinen Gewinn",
+        "Die Kosten sind null",
+        "Die Erlösfunktion ist null"
+      ],
+      "c": 0,
+      "s": "An einer Stelle mit G'(x) = 0 hat die Gewinnfunktion eine waagerechte Tangente – es liegt ein Extremum vor (notwendige Bedingung). Ob Maximum, Minimum oder Sattelpunkt, entscheidet die zweite Ableitung: G''(x) < 0 → Maximum, G''(x) > 0 → Minimum, G''(x) = 0 → weitere Prüfung.",
+      "src": "WiMa 1 Kap. 2, Folie 45-50"
+    }
+  ],
+  "mawi2": [
+    {
+      "q": "Was ist die Grundgesamtheit (Population) in der Statistik?",
+      "o": [
+        "Die Gesamtheit aller Objekte, über die Aussagen getroffen werden sollen (Anzahl N)",
+        "Eine zufällige Teilmenge",
+        "Die Anzahl der Merkmale",
+        "Die Summe aller Messwerte"
+      ],
+      "c": 0,
+      "s": "Die Grundgesamtheit (Population) umfasst alle Objekte, die für eine statistische Untersuchung relevant sind, mit der Anzahl N. Beispiel: Alle Studierenden der FH Aachen. Eine Stichprobe (n) ist eine Teilmenge der Grundgesamtheit.",
+      "src": "Statistik Kap. 1 'Grundlagen' (Weigand), S. 1-3"
+    },
+    {
+      "q": "Was ist ein Merkmal (Variable) X in der Statistik?",
+      "o": [
+        "Eine Eigenschaft der Objekte, die gemessen wird (z.B. Körpergröße)",
+        "Die Anzahl der Objekte",
+        "Die Summe der Messwerte",
+        "Der Mittelwert"
+      ],
+      "c": 0,
+      "s": "Ein Merkmal (Variable) X ist eine Eigenschaft der Objekte, die beobachtet/erfasst wird. Beispiele: Körpergröße, Geschlecht, Umsatz. Die konkreten Ausprägungen eines Merkmals heißen Messwerte x_i. Unterscheidung: qualitativ (nominal/ordinal) vs. quantitativ (metrisch).",
+      "src": "Statistik Kap. 1, S. 2-4"
+    },
+    {
+      "q": "Welche Skalenniveaus gibt es (aufsteigend)?",
+      "o": [
+        "Nominal < Ordinal < Intervall < Verhältnis",
+        "Intervall < Nominal < Ordinal < Verhältnis",
+        "Verhältnis < Intervall < Ordinal < Nominal",
+        "Nominal = Ordinal = Intervall = Verhältnis"
+      ],
+      "c": 0,
+      "s": "Vier Skalenniveaus (mit zunehmender Aussagekraft): (1) Nominal (nur Gleichheit, z.B. Geschlecht), (2) Ordinal (Rangfolge, z.B. Schulnoten), (3) Intervall (abstandserhaltend, z.B. Temperatur in °C), (4) Verhältnis (natürlicher Nullpunkt, z.B. Körpergröße). Höhere Skala erlaubt mehr Operationen.",
+      "src": "Statistik Kap. 1.2 'Skalenniveaus', S. 4-6"
+    },
+    {
+      "q": "Welches Skalenniveau hat das Merkmal 'Schulnote (1-6)'?",
+      "o": [
+        "Ordinal",
+        "Nominal",
+        "Intervall",
+        "Verhältnis"
+      ],
+      "c": 0,
+      "s": "Schulnoten sind ordinalskaliert: Es gibt eine Rangfolge (1 besser als 2), aber die Abstände sind nicht zwingend gleich (Abstand 1-2 ist nicht dasselbe wie 5-6). Daher ist die Berechnung des arithmetischen Mittels strenggenommen nicht erlaubt – wird aber in der Praxis oft gemacht. Erlaubt: Modus, Median.",
+      "src": "Statistik Kap. 1.2, S. 5"
+    },
+    {
+      "q": "Welches Skalenniveau hat 'Körpergröße in cm'?",
+      "o": [
+        "Verhältnis (metrisch, mit natürlichem Nullpunkt)",
+        "Nominal",
+        "Ordinal",
+        "Intervall"
+      ],
+      "c": 0,
+      "s": "Körpergröße ist verhältnisskaliert: metrisch mit natürlichem Nullpunkt (0 cm = keine Größe). Alle Operationen sind erlaubt: Gleichheit, Rangfolge, Abstände, Verhältnisse (180 cm ist doppelt so groß wie 90 cm). Erlaubt: Modus, Median, arithmetisches Mittel, Standardabweichung.",
+      "src": "Statistik Kap. 1.2, S. 5-6"
+    },
+    {
+      "q": "Was ist der Modus (Modalwert)?",
+      "o": [
+        "Der Merkmalswert, der am häufigsten vorkommt",
+        "Der mittlere Wert",
+        "Der Durchschnitt",
+        "Die Differenz zwischen max und min"
+      ],
+      "c": 0,
+      "s": "Der Modus (Modalwert) ist der am häufigsten auftretende Merkmalswert. Bei klassierten Daten ist es die Klasse mit der höchsten Dichte. Der Modus ist für alle Skalenniveaus (auch nominal) berechenbar. Beispiel: Bei [3,5,5,7,5] ist der Modus 5.",
+      "src": "Statistik Kap. 4 'Lageparameter', S. 1-3"
+    },
+    {
+      "q": "Was ist der Median?",
+      "o": [
+        "Der Wert, der die geordnete Datenreihe in zwei gleich große Hälften teilt",
+        "Der häufigste Wert",
+        "Der Durchschnitt aller Werte",
+        "Die Standardabweichung"
+      ],
+      "c": 0,
+      "s": "Der Median ist der Wert, der die geordneten Daten in zwei Hälften teilt: 50% der Werte sind kleiner, 50% größer. Bei ungeradem n: Wert an Position (n+1)/2. Bei geradem n: Durchschnitt der Werte an Position n/2 und n/2+1. Der Median ist robust gegenüber Ausreißern.",
+      "src": "Statistik Kap. 4.2 'Median', S. 3-5"
+    },
+    {
+      "q": "Was ist der Median der Werte 3, 7, 8, 12, 15, 18, 22?",
+      "o": [
+        "12",
+        "8",
+        "15",
+        "10"
+      ],
+      "c": 0,
+      "s": "n=7 (ungerade). Position des Medians: (n+1)/2 = 8/2 = 4. Der vierte Wert in der geordneten Reihe [3,7,8,12,15,18,22] ist 12. 50% der Werte (3,7,8) sind ≤ 12, 50% (15,18,22) sind ≥ 12.",
+      "src": "Statistik Kap. 4.2, S. 4"
+    },
+    {
+      "q": "Was ist das arithmetische Mittel (Durchschnitt)?",
+      "o": [
+        "x̄ = (1/n) · Σx_i",
+        "x̄ = max(x_i)",
+        "x̄ = min(x_i)",
+        "x̄ = Median"
+      ],
+      "c": 0,
+      "s": "Das arithmetische Mittel ist die Summe aller Werte geteilt durch die Anzahl: x̄ = (1/n) · Σx_i. Beispiel: [3,7,8,12,15,18,22] → x̄ = 85/7 ≈ 12,14. Es ist nur für metrische Skalen (Intervall/Verhältnis) erlaubt. Es reagiert empfindlich auf Ausreißer.",
+      "src": "Statistik Kap. 4.3 'Arithmetisches Mittel', S. 5-7"
+    },
+    {
+      "q": "Was ist der Unterschied zwischen Modus, Median und arithmetischem Mittel?",
+      "o": [
+        "Modus = häufigster Wert, Median = mittlerer Wert, arithmetisches Mittel = Durchschnitt",
+        "Alle drei sind identisch",
+        "Modus = Durchschnitt, Median = häufigster Wert",
+        "Arithmetisches Mittel = häufigster Wert"
+      ],
+      "c": 0,
+      "s": "Drei Lageparameter: Modus (häufigster Wert, für alle Skalen), Median (mittlerer Wert bei Sortierung, ab ordinal), arithmetisches Mittel (Durchschnitt, ab Intervall). Bei symmetrischen Verteilungen sind alle drei gleich. Bei schiefen Verteilungen weichen sie voneinander ab.",
+      "src": "Statistik Kap. 4, S. 1-7"
+    },
+    {
+      "q": "Was ist die Spannweite (Range)?",
+      "o": [
+        "Die Differenz zwischen größtem und kleinstem Wert: R = max - min",
+        "Der Durchschnitt aller Werte",
+        "Die Summe aller Werte",
+        "Der Median"
+      ],
+      "c": 0,
+      "s": "Die Spannweite (Range) ist das einfachste Streuungsmaß: R = x_max - x_min. Sie ist leicht zu berechnen, aber empfindlich gegenüber Ausreißern und nutzt nur zwei Werte der Datenreihe. Sie ignoriert die Verteilung dazwischen.",
+      "src": "Statistik Kap. 5 'Streuungsmaße', S. 1"
+    },
+    {
+      "q": "Was ist die Varianz σ²?",
+      "o": [
+        "Die durchschnittliche quadratische Abweichung der Werte vom Mittelwert",
+        "Die Summe aller Werte",
+        "Die Wurzel der Standardabweichung",
+        "Die Differenz zwischen max und min"
+      ],
+      "c": 0,
+      "s": "Die Varianz ist die durchschnittliche quadrierte Abweichung vom Mittelwert: σ² = (1/N) · Σ(x_i - μ)² für die Grundgesamtheit bzw. s² = (1/(n-1)) · Σ(x_i - x̄)² für die Stichprobe. Sie ist ein zentrales Streuungsmaß, aber in interpretablen Einheiten quadriert.",
+      "src": "Statistik Kap. 5.2 'Varianz', S. 2-4"
+    },
+    {
+      "q": "Werte: 4, 7, 9, 12, 18. Berechnen Sie die Varianz der Grundgesamtheit.",
+      "o": [
+        "22,8",
+        "5,19",
+        "28,5",
+        "33,7"
+      ],
+      "c": 0,
+      "s": "μ = (4+7+9+12+18)/5 = 10. σ² = [(4-10)²+(7-10)²+(9-10)²+(12-10)²+(18-10)²]/5 = (36+9+1+4+64)/5 = 114/5 = 22,8. Standardabweichung σ = √22,8 ≈ 4,77.",
+      "src": "Statistik Kap. 5.2, S. 3-4"
+    },
+    {
+      "q": "Was ist die Standardabweichung σ?",
+      "o": [
+        "Die Wurzel der Varianz: σ = √σ²",
+        "Das Quadrat der Varianz",
+        "Die Varianz selbst",
+        "Der Range"
+      ],
+      "c": 0,
+      "s": "Die Standardabweichung σ = √Varianz ist die Wurzel der Varianz. Im Gegensatz zur Varianz hat sie dieselbe Einheit wie die Ursprungsdaten und ist daher besser interpretierbar. Sie ist das wichtigste Streuungsmaß in der Praxis.",
+      "src": "Statistik Kap. 5.3 'Standardabweichung', S. 5"
+    },
+    {
+      "q": "Werte: 4, 7, 9, 12, 18. Wie groß ist die Standardabweichung der Grundgesamtheit?",
+      "o": [
+        "4,77",
+        "22,8",
+        "5,19",
+        "2,8"
+      ],
+      "c": 0,
+      "s": "σ² = 22,8 (siehe vorherige Frage). σ = √22,8 ≈ 4,77. Die Standardabweichung beträgt ca. 4,77. Sie gibt die durchschnittliche Abweichung der Werte vom Mittelwert (10) an – in denselben Einheiten wie die Ursprungsdaten.",
+      "src": "Statistik Kap. 5.3, S. 5"
+    },
+    {
+      "q": "Was ist der Unterschied zwischen σ² und s²?",
+      "o": [
+        "σ² teilt durch N (Grundgesamtheit), s² teilt durch n-1 (Stichprobe, korrigiert)",
+        "σ² ist immer größer",
+        "s² ist die Standardabweichung",
+        "Es gibt keinen Unterschied"
+      ],
+      "c": 0,
+      "s": "σ² = (1/N)·Σ(x_i-μ)² ist die Varianz der Grundgesamtheit (teilt durch N). s² = (1/(n-1))·Σ(x_i-x̄)² ist die Stichprobenvarianz (teilt durch n-1, sogenannte Bessel-Korrektur). Die Bessel-Korrektion macht s² zu einer erwartungstreuen Schätzung der Populationsvarianz.",
+      "src": "Statistik Kap. 5.2, S. 4"
+    },
+    {
+      "q": "Was ist ein Index (z.B. Verbraucherpreisindex)?",
+      "o": [
+        "Eine Messzahl, die relative Veränderungen einer Größe im Zeitverlauf darstellt",
+        "Ein Lagemaß",
+        "Ein Streuungsmaß",
+        "Die Anzahl der Merkmale"
+      ],
+      "c": 0,
+      "s": "Ein Index (z.B. Laspeyres, Paasche) ist eine Messzahl, die relative Veränderungen einer Größe (Preise, Mengen, Werte) im Zeitvergleich darstellt. Der Verbraucherpreisindex (VPI) misst die Inflation. Basisjahr = 100%. Ein VPI von 110 bedeutet 10% Teuerung gegenüber dem Basisjahr.",
+      "src": "Statistik Kap. 6 'Indexzahlen', S. 1-5"
+    },
+    {
+      "q": "Was ist der Laspeyres-Index?",
+      "o": [
+        "Ein Preisindex mit den Mengen des Basisjahres als Gewichte",
+        "Ein Index mit den Mengen des Berichtsjahres",
+        "Ein Mengenindex",
+        "Ein Wertindex"
+      ],
+      "c": 0,
+      "s": "Der Laspeyres-Index verwendet die Mengen des Basisjahres (0) als feste Gewichte: P_L = Σ(p_1·q_0) / Σ(p_0·q_0) · 100. Vorteil: Vergleichbarkeit über Zeit. Nachteil: veraltetes Verbrauchsverhalten. Der Verbraucherpreisindex Deutschlands ist ein Laspeyres-Index.",
+      "src": "Statistik Kap. 6.1, S. 3-5"
+    },
+    {
+      "q": "Was ist der Paasche-Index?",
+      "o": [
+        "Ein Preisindex mit den Mengen des Berichtsjahres als Gewichte",
+        "Ein Index mit Basisjahr-Mengen",
+        "Dasselbe wie Laspeyres",
+        "Ein Mengenindex"
+      ],
+      "c": 0,
+      "s": "Der Paasche-Index verwendet die Mengen des Berichtsjahres (1) als Gewichte: P_P = Σ(p_1·q_1) / Σ(p_0·q_1) · 100. Vorteil: aktuelles Verbrauchsverhalten. Nachteil: nicht direkt vergleichbar (Gewichte ändern sich jährlich). Meist niedriger als Laspeyres (Substitutionseffekt).",
+      "src": "Statistik Kap. 6.2, S. 5-7"
+    },
+    {
+      "q": "Was misst der Verbraucherpreisindex (VPI)?",
+      "o": [
+        "Die durchschnittliche Preisveränderung eines repräsentativen Warenkorbs privater Haushalte",
+        "Die Entwicklung der Aktienkurse",
+        "Die Arbeitslosenquote",
+        "Das Wirtschaftswachstum"
+      ],
+      "c": 0,
+      "s": "Der VPI (Verbraucherpreisindex) misst die Preisentwicklung eines repräsentativen Warenkorbs privater Haushalte. Er ist das wichtigste Maß für Inflation in Deutschland. Basis 2020 = 100%. Die EZB strebt eine Inflationsrate von 2% an. Steigt der VPI um 5%, spricht man von 5% Inflation.",
+      "src": "Statistik Kap. 6, S. 7-10"
+    },
+    {
+      "q": "Was ist eine Stichprobe?",
+      "o": [
+        "Eine Teilmenge der Grundgesamtheit",
+        "Die gesamte Population",
+        "Der Mittelwert",
+        "Die Varianz"
+      ],
+      "c": 0,
+      "s": "Eine Stichprobe (sample) ist eine Teilmenge der Grundgesamtheit, die untersucht wird, um Rückschlüsse auf die Gesamtpopulation zu ziehen. Vorteil: günstiger und schneller als Vollerhebung. Stichprobenumfang n. Wichtig: Repräsentativität. Beispiele: 1000 befragte Personen für ganz Deutschland.",
+      "src": "Statistik Kap. 1, S. 3"
+    },
+    {
+      "q": "Was ist eine Häufigkeitsverteilung?",
+      "o": [
+        "Eine Tabelle, die angibt, wie oft jede Merkmalsausprägung auftritt",
+        "Ein Lagemaß",
+        "Die Varianz",
+        "Der Median"
+      ],
+      "c": 0,
+      "s": "Eine Häufigkeitsverteilung zeigt, wie oft jede Merkmalsausprägung in den Daten vorkommt. Absolute Häufigkeit: n_i. Relative Häufigkeit: h_i = n_i/n. Summe der relativen Häufigkeiten = 1. Visuelle Darstellung: Histogramm (metrisch), Balkendiagramm (nominal/ordinal).",
+      "src": "Statistik Kap. 3 'Verteilungen', S. 1-4"
+    },
+    {
+      "q": "Was ist ein Histogramm?",
+      "o": [
+        "Eine graphische Darstellung der Häufigkeitsverteilung bei klassierten (metrischen) Daten",
+        "Ein Liniendiagramm",
+        "Ein Kreisdiagramm",
+        "Eine Tabelle"
+      ],
+      "c": 0,
+      "s": "Ein Histogramm ist ein Säulendiagramm für klassierte (stetige) Daten. Die FLÄCHE der Säulen (nicht die Höhe) repräsentiert die Häufigkeit. Klassenbreiten können variieren. Bei gleicher Klassenbreite entspricht die Säulenhöhe der Häufigkeit. Es zeigt die Form der Verteilung (symmetrisch, schief).",
+      "src": "Statistik Kap. 3, S. 4-7"
+    },
+    {
+      "q": "Was ist das 1. Quartil Q1?",
+      "o": [
+        "Der Wert, unterhalb dessen 25% der geordneten Daten liegen",
+        "Der Median",
+        "Der Wert, unterhalb dessen 75% der Daten liegen",
+        "Der Modus"
+      ],
+      "c": 0,
+      "s": "Das 1. Quartil Q1 (25%-Perzentil) ist der Wert, unterhalb dessen 25% der geordneten Daten liegen (und 75% darüber). Das 2. Quartil Q2 ist der Median (50%). Das 3. Quartil Q3: 75% der Daten liegen darunter. Zusammen beschreiben sie die Lage und Streuung.",
+      "src": "Statistik Kap. 4.4 'Quartile', S. 7-9"
+    },
+    {
+      "q": "Was ist der Interquartilsabstand (IQR)?",
+      "o": [
+        "IQR = Q3 - Q1 (Abstand zwischen 3. und 1. Quartil)",
+        "Q1 + Q2 + Q3",
+        "Der Median",
+        "Die Varianz"
+      ],
+      "c": 0,
+      "s": "Der Interquartilsabstand (IQR = Q3 - Q1) ist die Spannweite des mittleren 50%-Bereichs der Daten. Er ist ein robustes Streuungsmaß (nicht von Ausreißern betroffen). IQR wird in Boxplots dargestellt. Ausreißer: Werte außerhalb von Q1 - 1,5·IQR oder Q3 + 1,5·IQR.",
+      "src": "Statistik Kap. 5.4 'IQR', S. 7"
+    },
+    {
+      "q": "Was ist ein Boxplot?",
+      "o": [
+        "Eine graphische Darstellung mit Median, Quartilen und Ausreißern",
+        "Ein Liniendiagramm",
+        "Ein Kreisdiagramm",
+        "Ein Balkendiagramm"
+      ],
+      "c": 0,
+      "s": "Ein Boxplot (Kastendiagramm) zeigt: Median (Linie in der Box), Q1 und Q3 (Kastengrenzen), IQR (Kasten), Whisker (1,5·IQR), Ausreißer (Punkte). Er gibt einen schnellen Überblick über Lage, Streuung, Symmetrie und Ausreißer einer Verteilung.",
+      "src": "Statistik Kap. 5.4, S. 8-10"
+    }
+  ],
+  "vwl": [
+    {
+      "q": "Welche Frage ist am ehesten eine Frage der Makroökonomie?",
+      "o": [
+        "Soll die deutsche Bundesregierung an der 'schwarzen Null' im Bundeshaushalt festhalten?",
+        "Soll in Aachen die Mietpreisbremse verschärft werden?",
+        "Soll eine CO2-Steuer für Pkw eingeführt werden?",
+        "Wie wirkt eine Erhöhung des Butterpreises auf den Margarinemarkt?"
+      ],
+      "c": 0,
+      "s": "Makroökonomie betrachtet gesamtwirtschaftliche Größen: Staatshaushalt, BIP, Inflation, Arbeitslosigkeit. Die 'schwarze Null' (ausgeglichener Bundeshaushalt) ist eine makroökonomische Frage. Die anderen betreffen einzelne Märkte (Mikroökonomie): Mietpreisbremse (Wohnungsmarkt Aachen), CO2-Steuer (Autosektor), Butter-Margarine (Lebensmittel).",
+      "src": "VWL Foliensatz Bernecker Kap. A 'Was ist VWL?', Folie 10-15"
+    },
+    {
+      "q": "Was ist KEINE wesentliche Herausforderung bei empirischer Arbeit in der VWL?",
+      "o": [
+        "Die uneingeschränkte Verfügbarkeit kontrollierter Experimente",
+        "Korrelation aufgrund ausgelassener Variablen",
+        "Korrelation aufgrund umgekehrter Kausalität",
+        "Undurchführbarkeit kontrollierter Experimente aus ethischen Gründen"
+      ],
+      "c": 0,
+      "s": "In der VWL sind kontrollierte Experimente oft nicht durchführbar (ethisch, praktisch). Herausforderungen: (1) ausgelassene Variablen, (2) umgekehrte Kausalität, (3) ethische Grenzen. Ökonomen nutzen 'natürliche Experimente'. Die Behauptung, kontrollierte Experimente seien leicht verfügbar, ist falsch – das ist die Herausforderung.",
+      "src": "VWL Kap. B 'Denken wie ein Volkswirt', Folie 20-25; Quiz B"
+    },
+    {
+      "q": "Was ist ein Beispiel für Komplemente (Komplementärgüter)?",
+      "o": [
+        "Eine Senkung des Preises für Benzin führt zu einer Erhöhung der Nachfrage nach Autos",
+        "Eine Erhöhung des Preises für Butter erhöht die Nachfrage nach Margarine",
+        "Eine Senkung des Preises für Pizza senkt die Nachfrage nach Burgern",
+        "Eine Erhöhung des Preises für Senf senkt die Nachfrage nach Frikadellen"
+      ],
+      "c": 0,
+      "s": "Komplemente werden gemeinsam konsumiert (Auto & Benzin, Senf & Frikadellen, Drucker & Tinte). Sinkt der Preis des einen Guts, STEIGT die Nachfrage nach dem Komplement (mehr Autos → mehr Benzin). Substitute (Butter/Margarine, Pizza/Burger) werden gegeneinander ausgetauscht: Steigt der Preis des einen, steigt die Nachfrage nach dem Substitute.",
+      "src": "VWL Kap. C 'Angebot und Nachfrage', Folie 20-28; Quiz C"
+    },
+    {
+      "q": "Was ist ein Beispiel für Substitute?",
+      "o": [
+        "Eine Erhöhung des Preises für Butter führt zu erhöhter Nachfrage nach Margarine",
+        "Eine Senkung des Preises für Benzin erhöht die Nachfrage nach Autos",
+        "Eine Erhöhung des Preises für Senf senkt die Nachfrage nach Frikadellen",
+        "Eine Senkung des Preises für Pizza erhöht die Nachfrage nach Burgern"
+      ],
+      "c": 0,
+      "s": "Substitute ersetzen einander (Butter/Margarine, Pizza/Burger). Steigt der Preis des einen Guts, STEIGT die Nachfrage nach dem Substitute (Konsumenten weichen aus). Bei Komplementen (Auto/Benzin) ist es genau umgekehrt: Steigt der Preis des Autos, sinkt die Nachfrage nach Benzin.",
+      "src": "VWL Kap. C, Folie 25-28; Quiz C"
+    },
+    {
+      "q": "Ein Streaming-Film (z.B. Netflix) ist am ehesten:",
+      "o": [
+        "Ein Clubgut (ausschließbar, nicht rivalisierend)",
+        "Ein privates Gut",
+        "Ein öffentliches Gut",
+        "Ein Allmendegut"
+      ],
+      "c": 0,
+      "s": "Clubgüter sind AUSSCHLIEßBAR (Anbieter kann Zugang kontrollieren), aber NICHT RIVALISIEREND (Nutzung durch eine Person schadet nicht anderen). Netflix-Filme sind ein klassisches Clubgut. Öffentliche Güter (Straßen) sind weder ausschließbar noch rivalisierend. Private Güter (Brot) sind beides.",
+      "src": "VWL Kap. F 'Öffentliche Güter', Folie 45-50; Quiz F"
+    },
+    {
+      "q": "Was ist ein öffentliches Gut?",
+      "o": [
+        "Nicht ausschließbar und nicht rivalisierend (z.B. Landesverteidigung)",
+        "Ausschließbar, aber nicht rivalisierend",
+        "Rivalisierend, aber nicht ausschließbar",
+        "Ausschließbar und rivalisierend"
+      ],
+      "c": 0,
+      "s": "Öffentliche Güter sind NICHT AUSSCHLIEßBAR (niemand kann von der Nutzung ausgeschlossen werden) und NICHT RIVALISIEREND (Nutzung durch eine Person verringert nicht die Verfügbarkeit für andere). Beispiele: Landesverteidigung, Leuchtturm, saubere Luft. Problem: Trittbrettfahrerverhalten → Marktversagen.",
+      "src": "VWL Kap. F, Folie 45-48; Quiz F"
+    },
+    {
+      "q": "Was ist ein Allmendegut?",
+      "o": [
+        "Rivalisierend, aber nicht ausschließbar (z.B. Fischgründe im Ozean)",
+        "Nicht ausschließbar und nicht rivalisierend",
+        "Ausschließbar und rivalisierend",
+        "Ausschließbar, aber nicht rivalisierend"
+      ],
+      "c": 0,
+      "s": "Allmendegüter (Common-Pool Resources) sind RIVALISIEREND (Nutzung durch einen verringert die für andere), aber NICHT AUSSCHLIEßBAR (schwer, jemanden von der Nutzung auszuschließen). Beispiele: Fischgründe, Weideflächen, Grundwasser. Gefahr: Übernutzung ('Tragik der Allmende').",
+      "src": "VWL Kap. F, Folie 48-50; Quiz F"
+    },
+    {
+      "q": "Was besagt das Gesetz der Nachfrage?",
+      "o": [
+        "Je höher der Preis, desto geringer die nachgefragte Menge (negative Steigung der Nachfragekurve)",
+        "Je höher der Preis, desto höher die nachgefragte Menge",
+        "Die nachgefragte Menge ist unabhängig vom Preis",
+        "Angebot und Nachfrage sind immer gleich"
+      ],
+      "c": 0,
+      "s": "Das Gesetz der Nachfrage: Zwischen Preis und nachgefragter Menge besteht ein umgekehrter Zusammenhang (ceteris paribus). Steigt der Preis, sinkt die Nachfrage (Substitutions- und Einkommenseffekt). Die Nachfragekurve verläuft fallend. Ausnahme: Giffen-Güter (theoretisch).",
+      "src": "VWL Kap. C, Folie 20-25; Quiz C"
+    },
+    {
+      "q": "Im Marktgleichgewicht gilt:",
+      "o": [
+        "Angebotene Menge = Nachgefragte Menge zum Gleichgewichtspreis",
+        "Der Preis ist immer Null",
+        "Die Nachfrage ist unendlich",
+        "Das Angebot übersteigt die Nachfrage"
+      ],
+      "c": 0,
+      "s": "Das Marktgleichgewicht ist der Punkt, in dem sich Angebots- und Nachfragekurve schneiden. Angebotene Menge = nachgefragte Menge (Markträumung). Der dazugehörige Preis ist der Gleichgewichtspreis P*, die Menge Q*. Bei P* gibt es weder Überschuss noch Knappheit.",
+      "src": "VWL Kap. C, Folie 28-35; Quiz C"
+    },
+    {
+      "q": "Angebot P = 2 + 0,5Q, Nachfrage P = 10 - 0,5Q. Wie groß ist die Gleichgewichtsmenge Q*?",
+      "o": [
+        "8",
+        "6",
+        "10",
+        "4"
+      ],
+      "c": 0,
+      "s": "Im Gleichgewicht: Angebot = Nachfrage → 2 + 0,5Q = 10 - 0,5Q → 1,0Q = 8 → Q* = 8. Gleichgewichtspreis P* = 2 + 0,5·8 = 6 (oder 10 - 0,5·8 = 6). Bei P* = 6 werden Q* = 8 Einheiten gehandelt.",
+      "src": "VWL Kap. C, Folie 30-35; Quiz C"
+    },
+    {
+      "q": "Was passiert, wenn der Preis ÜBER dem Gleichgewichtspreis liegt?",
+      "o": [
+        "Angebotsüberschuss (Überschuss): Angebot > Nachfrage",
+        "Nachfrageüberschuss (Knappheit)",
+        "Markt im Gleichgewicht",
+        "Die Nachfrage steigt"
+      ],
+      "c": 0,
+      "s": "Liegt der Preis über dem Gleichgewichtspreis, entsteht ein Angebotsüberschuss (Angebot > Nachfrage). Die Produzenten können ihre Waren nicht absetzen. Folge: Preisdruck nach unten, bis das Gleichgewicht wieder erreicht ist. Umgekehrt: Bei Preis unter P* → Nachfrageüberschuss.",
+      "src": "VWL Kap. C, Folie 35-38; Quiz C"
+    },
+    {
+      "q": "Was besagt das Coase-Theorem?",
+      "o": [
+        "Bei vernachlässigbaren Transaktionskosten und klaren Eigentumsrechten führen private Verhandlungen zu einem effizienten Ergebnis",
+        "Umweltverschmutzung sollte immer besteuert werden",
+        "Der Staat muss alle Externalitäten regulieren",
+        "Externalitäten sind nie lösbar"
+      ],
+      "c": 0,
+      "s": "Das Coase-Theorem: Wenn Transaktionskosten gering und Eigentumsrechte klar definiert sind, können die Parteien durch private Verhandlungen ein effizientes Ergebnis erzielen – unabhängig von der anfänglichen Verteilung der Eigentumsrechte. Anwendung: Umweltprobleme mit wenigen Beteiligten. Grenzen: viele Beteiligte, hohe Transaktionskosten.",
+      "src": "VWL Kap. F 'Externalitäten', Folie 55-60; Quiz F"
+    },
+    {
+      "q": "Was ist eine negative Externalität?",
+      "o": [
+        "Ein Kostenanteil, der nicht vom Verursacher, sondern von Dritten getragen wird (z.B. Umweltverschmutzung)",
+        "Ein Gewinn, der an Dritte weitergegeben wird",
+        "Eine Steuersenkung",
+        "Ein Subventionsprogramm"
+      ],
+      "c": 0,
+      "s": "Eine negative Externalität liegt vor, wenn die Produktion/Konsumtion eines Guts Kosten verursacht, die nicht vom Verursacher, sondern von unbeteiligten Dritten getragen werden. Beispiele: Umweltverschmutzung, Lärm. Die sozialen Grenzkosten > private Grenzkosten → Marktversagen: Zu viel wird produziert.",
+      "src": "VWL Kap. F, Folie 50-55; Quiz F"
+    },
+    {
+      "q": "Ein Kreuzfahrtschiff verursacht 1000 € Umweltschaden pro Passagier. Die sozial optimalen Kostenkurve liegt:",
+      "o": [
+        "Um 1000 € über der privaten Angebotskurve",
+        "Um 1000 € unter der privaten Angebotskurve",
+        "Gleich hoch wie die Nachfragekurve",
+        "Auf der Nachfragekurve"
+      ],
+      "c": 0,
+      "s": "Die sozialen Grenzkosten (SK) = private Grenzkosten (PK) + externe Kosten (1000 €). Die SK-Kurve liegt also um 1000 € ÜBER der privaten Angebotskurve. Das Marktgleichgewicht (Schnittpunkt PK-Nachfrage) liegt rechts des sozialen Optimums (Schnittpunkt SK-Nachfrage) → zu viel Produktion.",
+      "src": "VWL Kap. F, Folie 60-65; Quiz F"
+    },
+    {
+      "q": "Welche Maßnahme kann eine negative Externalität korrigieren?",
+      "o": [
+        "Eine Pigou-Steuer in Höhe des externen Schadens (z.B. 1000 € pro Passagier)",
+        "Ein Verbot aller Kreuzfahrten",
+        "Eine Subventionierung der Kreuzfahrtunternehmen",
+        "Nichts, Externalitäten sind nicht lösbar"
+      ],
+      "c": 0,
+      "s": "Die Pigou-Steuer (nach Arthur Pigou) soll die externen Kosten internalisieren. Sie wird in Höhe des Grenzschadens erhoben (hier 1000 € pro Passagier). Dadurch wird die private Angebotskurve um 1000 € nach oben verschoben → entspricht der sozialen Grenzkostenkurve → Marktproduziert die gesellschaftlich optimale Menge.",
+      "src": "VWL Kap. F, Folie 65-70; Quiz F"
+    },
+    {
+      "q": "Was ist der Nettowohlfahrtsverlust (Deadweight Loss) einer Steuer?",
+      "o": [
+        "Der Wohlfahrtsverlust, der dadurch entsteht, dass die Steuer Handelsmöglichkeiten verhindert",
+        "Der Steuereinnahmenbetrag",
+        "Die Summe aus Konsumenten- und Produzentenrente",
+        "Der Gewinn der Regierung"
+      ],
+      "c": 0,
+      "s": "Der Nettowohlfahrtsverlust (DWL) einer Steuer ist der Wohlfahrtsverlust, der entsteht, weil die Steuer Transaktionen verhindert, die ohne Steuer vorteilhaft gewesen wären. DWL = Dreieck zwischen alter und neuer Menge. Konsumenten- und Produzentenrente sinken, Steuereinnahmen steigen, aber es bleibt ein Nettoverlust.",
+      "src": "VWL Kap. E 'Preiskontrollen und Steuern', Folie 35-45; Quiz E"
+    },
+    {
+      "q": "Welche Aussage zum Nettowohlfahrtsverlust ist FALSCH? Der DWL einer Steuer ist umso größer, ...",
+      "o": [
+        "... je unelastischer die Nachfragekurve ist",
+        "... je elastischer die Angebotskurve ist",
+        "... je höher der Steuersatz ist",
+        "... je mehr Handelsmöglichkeiten unterbunden werden"
+      ],
+      "c": 0,
+      "s": "Der DWL ist umso größer, je elastischer Angebot und Nachfrage sind (weil mehr Transaktionen unterbunden werden). Bei unelastischer Nachfrage reagieren Konsumenten kaum auf die Steuer → geringer DWL. Elastizität bestimmt, wer die Steuerlast trägt: Bei unelastischer Seite trägt diese den größeren Anteil.",
+      "src": "VWL Kap. E, Folie 40-45; Quiz E"
+    },
+    {
+      "q": "Wer trägt bei einer Steuer die höhere Steuerlast, wenn die Nachfrage unelastisch und das Angebot elastisch ist?",
+      "o": [
+        "Die Konsumenten (Käufer)",
+        "Die Produzenten (Verkäufer)",
+        "Beide gleich",
+        "Die Regierung"
+      ],
+      "c": 0,
+      "s": "Die Steuerlast wird entsprechend der Elastizitäten verteilt: Die unelastischere Seite trägt den größeren Anteil. Bei unelastischer Nachfrage (Konsumenten reagieren kaum) und elastischem Angebot können Produzenten die Steuer überwälzen → Konsumenten tragen mehr. Formel: Anteil Konsumenten = ε_Angebot / (ε_Angebot + ε_Nachfrage).",
+      "src": "VWL Kap. E, Folie 45-50; Quiz E"
+    },
+    {
+      "q": "Was zeigt das Bruttoinlandsprodukt (BIP)?",
+      "o": [
+        "Den Gesamtwert aller in einer Volkswirtschaft innerhalb eines Jahres produzierten Waren und Dienstleistungen",
+        "Das gesamte Vermögen der privaten Haushalte",
+        "Die Summe aller Steuereinnahmen",
+        "Den Wert der Exporte minus Importe"
+      ],
+      "c": 0,
+      "s": "Das BIP (Bruttoinlandsprodukt) ist der Gesamtwert aller ENDGÜLTIG in einer Volkswirtschaft innerhalb einer Periode produzierten Waren und Dienstleistungen. Wichtig: Nur finale Güter (keine Doppelzählung von Vorleistungen). Messung über Entstehungs-, Verwendungs- oder Verteilungsrechnung. Inländerkonzept vs. Inlandskonzept (BIP = Inland).",
+      "src": "VWL Kap. H 'BIP', Folie 60-70; Quiz H"
+    },
+    {
+      "q": "Was ist der Unterschied zwischen BIP und BNE?",
+      "o": [
+        "BIP erfasst nach dem Inlandsprinzip (wo produziert wird), BNE nach dem Inländerprinzip (wer produziert)",
+        "BIP ist immer höher",
+        "BNE ist immer höher",
+        "Es gibt keinen Unterschied"
+      ],
+      "c": 0,
+      "s": "BIP (Bruttoinlandsprodukt) = Inlandsprinzip: Alle Produktion INNERHALB der Landesgrenzen, unabhängig davon, wem die Produktionsfaktoren gehören. BNE (Bruttonationaleinkommen) = Inländerprinzip: Alle Produktion von Inländern (Bürgern/Unternehmen des Landes), egal wo. Unterschied: Saldo der Primäreinkommen mit dem Ausland.",
+      "src": "VWL Kap. H, Folie 65-70; Quiz H"
+    },
+    {
+      "q": "Was ist Inflation?",
+      "o": [
+        "Ein anhaltender Anstieg des allgemeinen Preisniveaus",
+        "Ein Rückgang der Geldmenge",
+        "Eine Erhöhung der Arbeitslosigkeit",
+        "Ein Rückgang des BIP"
+      ],
+      "c": 0,
+      "s": "Inflation = anhaltender Anstieg des allgemeinen Preisniveaus (Geldentwertung). Gemessen meist durch den Verbraucherpreisindex (VPI). Die EZB strebt mittelfristig 2% an. Deflation = sinkendes Preisniveau. Stagflation = Inflation + stagnierendes Wachstum.",
+      "src": "VWL Kap. I 'Inflation', Folie 70-80; Quiz I"
+    },
+    {
+      "q": "Was ist der Verbraucherpreisindex (VPI)?",
+      "o": [
+        "Ein Maß für die Preisentwicklung eines repräsentativen Warenkorbs",
+        "Ein Maß für die Arbeitslosigkeit",
+        "Die Summe aller Steuern",
+        "Der Aktienindex"
+      ],
+      "c": 0,
+      "s": "Der VPI (Verbraucherpreisindex) misst die durchschnittliche Preisentwicklung eines repräsentativen Warenkorbs privater Haushalte. Er ist das wichtigste Inflationsmaß in Deutschland. Basisjahr = 100%. VPI von 110 = 10% Inflation seit Basisjahr. Die Erhebung erfolgt monatlich vom Statistischen Bundesamt.",
+      "src": "VWL Kap. I, Folie 75-80; Quiz I"
+    },
+    {
+      "q": "Was ist Komparativer Vorteil (nach Ricardo)?",
+      "o": [
+        "Ein Land hat den komparativen Vorteil bei einem Gut, wenn es geringere Opportunitätskosten hat",
+        "Ein Land kann alles billiger produzieren",
+        "Das Land mit der absolut besten Technologie gewinnt",
+        "Handel bringt allen dieselben Vorteile"
+      ],
+      "c": 0,
+      "s": "Das Prinzip des komparativen Vorteils (David Ricardo): Jedes Land sollte sich auf die Güter spezialisieren, bei denen es die GERINGSTEN Opportunitätskosten hat (nicht zwingend die absolut niedrigsten Kosten). Durch Spezialisierung und Handel können beide Länder ihren Konsum über das Autarkie-Niveau heben. Selbst wenn ein Land alles billiger produziert (absoluter Vorteil), profitieren beide.",
+      "src": "VWL Kap. G 'Handel', Folie 50-60; Quiz G"
+    },
+    {
+      "q": "Was ist ein Argument GEGEN Freihandel?",
+      "o": [
+        "Infant-Industry-Argument: Schutz junder Industrien vor ausländischer Konkurrenz",
+        "Freihandel senkt die Preise",
+        "Freihandel erhöht die Produktvielfalt",
+        "Freihandel fördert Innovation"
+      ],
+      "c": 0,
+      "s": "Das Infant-Industry-Argument (Säuglingsindustrien): Junge, inländische Industrien sind anfangs nicht wettbewerbsfähig gegen etablierte ausländische Konkurrenten. Durch temporäre Zölle/Importbeschränkungen sollen sie geschützt werden, bis sie Skaleneffekte nutzen können. Weitere Argumente gegen Freihandel: Beschäftigung, nationale Sicherheit, Umweltschutz.",
+      "src": "VWL Kap. G 'Handel', Folie 60-65; Quiz G"
+    },
+    {
+      "q": "Was ist ein Zoll?",
+      "o": [
+        "Eine Steuer auf importierte Güter",
+        "Eine Subvention für Exporte",
+        "Ein Freihandelsabkommen",
+        "Ein Preislimit"
+      ],
+      "c": 0,
+      "s": "Ein Zoll (Tarif) ist eine Steuer auf importierte Güter. Effekte: (1) Preis für Importgut steigt, (2) Inländische Produktion steigt, (3) Importe sinken, (4) Wohlfahrtsverlust (DWL), da effiziente ausländische Produzenten durch ineffiziente inländische ersetzt werden. Gewinner: inländische Produzenten, Verlierer: Konsumenten.",
+      "src": "VWL Kap. G, Folie 65-70; Quiz G"
+    },
+    {
+      "q": "Was ist die Konsumentenrente?",
+      "o": [
+        "Die Differenz zwischen dem, was Konsumenten maximal zahlen würden, und dem, was sie tatsächlich zahlen",
+        "Der Gesamtkonsum",
+        "Die Steuern auf Konsum",
+        "DieProduzentenrente"
+      ],
+      "c": 0,
+      "s": "Die Konsumentenrente = Fläche unter der Nachfragekurve und über dem Marktpreis. Sie misst den 'Nutzen' der Konsumenten, weil sie weniger zahlen als maximal bereit wären. Erhöht sich der Preis, sinkt die Konsumentenrente. Sie ist ein Maß für die Wohlfahrt der Konsumenten.",
+      "src": "VWL Kap. D 'Effizienz', Folie 35-42; Quiz D"
+    }
+  ],
+  "wpr": [
+    {
+      "q": "Welches Gesetz regelt die Rechtsverhältnisse zwischen Privatpersonen?",
+      "o": [
+        "Bürgerliches Gesetzbuch (BGB)",
+        "Handelsgesetzbuch (HGB)",
+        "Grundgesetz (GG)",
+        "Strafgesetzbuch (StGB)"
+      ],
+      "c": 0,
+      "s": "Das BGB (Bürgerliches Gesetzbuch, in Kraft seit 1.1.1900) regelt als zentrales Gesetz des Privatrechts die Rechtsbeziehungen zwischen gleichgestellten Rechtssubjekten (natürliche und juristische Personen). Es hat 5 Bücher: Allgemeiner Teil, Schuldrecht, Sachenrecht, Familienrecht, Erbrecht. Das Privatrecht basiert auf Privatautonomie.",
+      "src": "WPR Foliensatz Kap. 1 'Einführung', S. 5-10"
+    },
+    {
+      "q": "In welche 5 Bücher ist das BGB gegliedert?",
+      "o": [
+        "Allgemeiner Teil, Schuldrecht, Sachenrecht, Familienrecht, Erbrecht",
+        "Allgemeiner Teil, Vertragsrecht, Steuerrecht, Strafrecht, Europarecht",
+        "Buch 1-5 ohne klare Struktur",
+        "Allgemeiner Teil, Arbeitsrecht, Handelsrecht, Gesellschaftsrecht, Verfahrensrecht"
+      ],
+      "c": 0,
+      "s": "Das BGB (2385 Paragraphen) hat 5 Bücher: (1) Allgemeiner Teil (§§ 1-240): Rechtssubjekte, Willenserklärungen, Fristen. (2) Schuldrecht (§§ 241-853): Schuldverhältnisse, Verträge. (3) Sachenrecht (§§ 854-1296): Eigentum, Besitz. (4) Familienrecht (§§ 1297-1921): Ehe, Familie. (5) Erbrecht (§§ 1922-2385): Erbfolge, Testament.",
+      "src": "WPR Foliensatz Kap. 1, S. 10-15"
+    },
+    {
+      "q": "§ 1 BGB: Wann beginnt die Rechtsfähigkeit eines Menschen?",
+      "o": [
+        "Mit der Vollendung der Geburt",
+        "Mit dem 18. Lebensjahr",
+        "Mit der Zeugung",
+        "Mit der Eintragung ins Geburtenregister"
+      ],
+      "c": 0,
+      "s": "§ 1 BGB: 'Die Rechtsfähigkeit des Menschen beginnt mit der Vollendung der Geburt.' Rechtsfähigkeit = Fähigkeit, Träger von Rechten und Pflichten zu sein. Sie ist untrennbar mit der menschlichen Existenz verbunden und endet mit dem Tod. Jeder Mensch ist rechtsfähig – ohne Altersbeschränkung.",
+      "src": "WPR Foliensatz Kap. 2 'Natürliche Personen', § 1 BGB"
+    },
+    {
+      "q": "Was ist der Unterschied zwischen Rechtsfähigkeit und Geschäftsfähigkeit?",
+      "o": [
+        "Rechtsfähigkeit = Träger von Rechten sein; Geschäftsfähigkeit = selbst Rechtsgeschäfte vornehmen können",
+        "Beide Begriffe sind identisch",
+        "Rechtsfähigkeit beginnt erst mit 18",
+        "Geschäftsfähigkeit beginnt mit der Geburt"
+      ],
+      "c": 0,
+      "s": "Rechtsfähigkeit (§ 1 BGB): Jeder Mensch ist Träger von Rechten/Pflichten (ab Geburt). Geschäftsfähigkeit (§§ 104-115): Fähigkeit, selbst Wirksamkeit durch Rechtsgeschäfte zu begründen. Voll geschäftsfähig (§ 2): mit 18. Beschränkt (§§ 106-113): 7-17 Jahre. Geschäftsunfähig (§ 104): unter 7 bzw. dauerhaft kranke Personen.",
+      "src": "WPR Foliensatz Kap. 2, §§ 1, 104-115"
+    },
+    {
+      "q": "Ab wann ist man voll geschäftsfähig?",
+      "o": [
+        "Mit Vollendung des 18. Lebensjahres (§ 2 BGB)",
+        "Mit 16 Jahren",
+        "Mit 21 Jahren",
+        "Mit der Geburt"
+      ],
+      "c": 0,
+      "s": "§ 2 BGB: 'Volljährigkeit' beginnt mit Vollendung des 18. Lebensjahres. Volljährige sind voll geschäftsfähig – sie können alle Rechtsgeschäfte selbst vornehmen. Minderjährige (7-17) sind beschränkt geschäftsfähig (§§ 106 ff. BGB). Kinder unter 7 sind geschäftsunfähig (§ 104 Nr. 1).",
+      "src": "WPR Foliensatz Kap. 2, § 2 BGB"
+    },
+    {
+      "q": "Was ist die Willenserklärung?",
+      "o": [
+        "Eine private, geäußerte Willensbekundung, die auf eine rechtliche Wirkung gerichtet ist",
+        "Nur ein schriftlicher Vertrag",
+        "Eine mündliche Absprache",
+        "Ein rein innerer Wille"
+      ],
+      "c": 0,
+      "s": "Eine Willenserklärung ist eine Äußerung, die auf eine rechtliche Wirkung gerichtet ist (z.B. Angebot, Annahme, Kündigung). Sie besteht aus Handlungswillen, Erklärungsbewusstsein und Geschäftswillen. Bestandteile: Erklärungstatbestand (objektiv) und Erklärungsinhalt (subjektiv). Sie ist Grundlage jedes Rechtsgeschäfts.",
+      "src": "WPR Foliensatz Kap. 3 'Rechtsgeschäftslehre', S. 25-35"
+    },
+    {
+      "q": "Was sind die 3 Bestandteile einer Willenserklärung?",
+      "o": [
+        "Handlungswille, Erklärungsbewusstsein, Geschäftswille",
+        "Name, Adresse, Datum",
+        "Angebot, Annahme, Vertrag",
+        "Schuldner, Gläubiger, Leistung"
+      ],
+      "c": 0,
+      "s": "Drei Bestandteile einer Willenserklärung: (1) Handlungswille (bewusste Willensäußerung), (2) Erklärungsbewusstsein (Wissen, etwas Rechtliches zu erklären), (3) Geschäftswille (konkreter Inhalt). Fehlt der Handlungswille (z.B. Schlafende): nichtig. Fehlt Erklärungsbewusstsein: anfechtbar. Fehlt Geschäftswille: anfechtbar.",
+      "src": "WPR Foliensatz Kap. 3, S. 30-35"
+    },
+    {
+      "q": "Ein Vertrag kommt zustande durch:",
+      "o": [
+        "Zwei übereinstimmende Willenserklärungen (Angebot und Annahme, §§ 145 ff. BGB)",
+        "Ein schriftliches Dokument mit Unterschrift",
+        "Eine mündliche Absprache",
+        "Die Zahlung des Kaufpreises"
+      ],
+      "c": 0,
+      "s": "Ein Vertrag entsteht durch zwei übereinstimmende Willenserklärungen: (1) Angebot (antrag, § 145 BGB) und (2) Annahme (§§ 146-150). Beide müssen inhaltlich übereinstimmen (Konsens). Der Vertrag ist bindend, wenn die Annahme beim Anbietenden eingeht. Keine Formerfordernis (grundsätzlich formfrei, § 125 BGB).",
+      "src": "WPR Foliensatz Kap. 3 'Vertrag', §§ 145-156 BGB"
+    },
+    {
+      "q": "Was ist die 'pacta sunt servanda'?",
+      "o": [
+        "Verträge sind einzuhalten (Vertragstreue)",
+        "Verträge müssen schriftlich sein",
+        "Verträge können jederzeit gekündigt werden",
+        "Verträge bedürfen der notariellen Beurkundung"
+      ],
+      "c": 0,
+      "s": "'pacta sunt servanda' (lateinisch: Verträge sind einzuhalten) ist ein universeller Rechtsgrundsatz und Ausprägung von Treu und Glauben (§ 242 BGB). Er besagt, dass vertragliche Vereinbarungen bindend sind und erfüllt werden müssen. Gegenstück: clausula rebus sic stantibus (Vertrag kann bei grundlegenden Änderungen angepasst werden).",
+      "src": "WPR Foliensatz Kap. 3, Folie 35-40 (Lateinische Begriffe)"
+    },
+    {
+      "q": "Was bedeutet 'ex tunc'?",
+      "o": [
+        "Von Anfang an rückwirkend (z.B. Anfechtung wirkt ex tunc)",
+        "Nur für die Zukunft",
+        "Im Zweifel für den Angeklagten",
+        "Um der Sache willen"
+      ],
+      "c": 0,
+      "s": "'ex tunc' (lateinisch: von Anfang an) bedeutet rückwirkend ab einem vergangenen Zeitpunkt. Anwendung: Die Anfechtung einer Willenserklärung wirkt nach § 142 I BGB ex tunc – das Rechtsgeschäft ist als von Anfang an nichtig anzusehen. Gegensatz: 'ex nunc' (von nun an, für die Zukunft).",
+      "src": "WPR Foliensatz Kap. 3, Folie 60-65 (Anfechtung)"
+    },
+    {
+      "q": "Was bedeutet 'ex nunc'?",
+      "o": [
+        "Von jetzt an, für die Zukunft (z.B. Kündigung wirkt ex nunc)",
+        "Von Anfang an rückwirkend",
+        "Unter der Hand",
+        "Um der Sache willen"
+      ],
+      "c": 0,
+      "s": "'ex nunc' (lateinisch: von nun an) bedeutet für die Zukunft, ohne Rückwirkung. Anwendung: Eine Kündigung wirkt ex nunc – das Vertragsverhältnis endet ab dem Zeitpunkt der Kündigung, aber alles bisherige bleibt gültig. Auch bei Rücktritt: Dieparteien müssen das Empfangene zurückgeben, aber der Vertrag bestand.",
+      "src": "WPR Foliensatz Kap. 3, Folie 60-65"
+    },
+    {
+      "q": "Was bedeutet 'culpa in contrahendo' (c.i.c.)?",
+      "o": [
+        "Verschulden bei Vertragsschluss (vorvertragliche Pflichtverletzung, §§ 280 I, 311 II BGB)",
+        "Haftung für Sachmängel",
+        "Produkthaftung",
+        "Gefängnisstrafe"
+      ],
+      "c": 0,
+      "s": "'culpa in contrahendo' (c.i.c.): Verschulden bei Vertragsschluss. Bereits in der Vertragsanbahnung entstehen vorvertragliche Pflichten (§§ 241 II, 311 II BGB): Aufklärungspflichten, Schutzpflichten, Treuepflichten. Verletzt eine Partei diese, haftet sie auf Schadensersatz, auch wenn der Vertrag nicht zustande kommt.",
+      "src": "WPR Foliensatz Kap. 3, §§ 280 I, 311 II BGB"
+    },
+    {
+      "q": "Was bedeutet 'Treu und Glauben' (§ 242 BGB)?",
+      "o": [
+        "Der Schuldner muss die Leistung so erbringen, wie Treu und Glauben mit Rücksicht auf die Verkehrssitte es erfordern",
+        "Treu und Glauben gilt nur für Kaufleute",
+        "Es ist ein reiner Programmsatz ohne Bindungswirkung",
+        "Es bezieht sich nur auf AGB"
+      ],
+      "c": 0,
+      "s": "§ 242 BGB: 'Der Schuldner ist verpflichtet, die Leistung so zu bewirken, wie Treu und Glauben mit Rücksicht auf die Verkehrssitte es erfordern.' Diese Generalklausel durchzieht das gesamte Schuldrecht. Anwendungen: Auslegung von Verträgen (§ 157), Schranke der Rechtsausübung (z.B. Verwirkung, § 242). Verbot widersprüchlichen Verhaltens (venire contra factum proprium).",
+      "src": "WPR Foliensatz Kap. 3, § 242 BGB; Folie 25-35"
+    },
+    {
+      "q": "Was bedeutet 'venire contra factum proprium'?",
+      "o": [
+        "Verbot des Selbstwiderspruchs: Niemand darf sich in Widerspruch zu seinem früheren Verhalten setzen",
+        "Verträge sind einzuhalten",
+        "Im Zweifel für den Angeklagten",
+        "Weder ja noch nein"
+      ],
+      "c": 0,
+      "s": "'venire contra factum proprium' (lateinisch: sich gegen eigene Handlung wenden) ist ein Ausprägung von Treu und Glauben (§ 242 BGB). Niemand darf sich in Widerspruch zu seinem eigenen früheren Verhalten setzen, wenn andere darauf vertraut haben. Anwendung: Verwirkung (altes Recht wird nicht mehr ausgeübt → Verlust), Estoppel.",
+      "src": "WPR Foliensatz Kap. 3, § 242 BGB"
+    },
+    {
+      "q": "Was ist Verzug des Schuldners (§ 286 BGB)?",
+      "o": [
+        "Der Schuldner leistet trotz Fälligkeit und Mahnung nicht",
+        "Der Gläubiger nimmt die angebotene Leistung nicht an",
+        "Die Leistung ist unmöglich geworden",
+        "Der Vertrag wird angefochten"
+      ],
+      "c": 0,
+      "s": "Verzug (§ 286 BGB): Der Schuldner kommt in Verzug, wenn er eine fällige und einredefreie Leistung trotz Mahnung (oder kalendermäßiger Bestimmtheit) nicht erbringt. Folgen: (1) Verzugszinsen (§ 288), (2) Schadensersatz statt Leistung (§§ 280 I, II, 286), (3) Einrede des nicht erfüllten Vertrags entfällt. Mahnung entbehrlich bei Kalendergeschäft (§ 286 II Nr. 1).",
+      "src": "WPR Foliensatz Kap. 4 'Schuldrecht AT', § 286 BGB"
+    },
+    {
+      "q": "Wie hoch sind die Verzugszinsen nach § 288 BGB für Verbraucher?",
+      "o": [
+        "5 Prozentpunkte über dem Basiszinssatz",
+        "3 Prozentpunkte über dem Basiszinssatz",
+        "10 Prozentpunkte über dem Basiszinssatz",
+        "0 Prozent"
+      ],
+      "c": 0,
+      "s": "§ 288 I BGB: Bei Rechtsgeschäften, an denen ein Verbraucher nicht beteiligt ist: 5 Prozentpunkte über dem Basiszinssatz. § 288 II BGB: Ist an dem Rechtsgeschäft ein Verbraucher beteiligt, beträgt der Satz 4 Prozentpunkte über dem Basiszinssatz. (Hinweis: Die exakte Differenzierung beachten – die Frage gibt 5% als korrekt für Nicht-Verbrauchergeschäfte.)",
+      "src": "WPR Foliensatz Kap. 4, § 288 BGB"
+    },
+    {
+      "q": "Die regelmäßige Verjährungsfrist beträgt nach § 195 BGB:",
+      "o": [
+        "3 Jahre",
+        "2 Jahre",
+        "5 Jahre",
+        "10 Jahre"
+      ],
+      "c": 0,
+      "s": "§ 195 BGB: 'Die regelmäßige Verjährungsfrist beträgt drei Jahre.' Beginn (§ 199): Mit Schluss des Jahres, in dem der Anspruch entstanden ist UND der Gläubiger Kenntnis von den anspruchsbegründenden Umständen und der Person des Schuldners erlangt hat (oder ohne grobe Fahrlässigkeit hätte erlangen müssen). Spätestens nach 10 (oder 30) Jahren.",
+      "src": "WPR Foliensatz Kap. 5 'Verjährung', § 195 BGB"
+    },
+    {
+      "q": "Wann beginnt die regelmäßige Verjährungsfrist?",
+      "o": [
+        "Mit Schluss des Jahres, in dem der Anspruch entstand und der Gläubiger Kenntnis erlangt hat",
+        "Sofort bei Vertragsschluss",
+        "Nach 10 Jahren",
+        "Mit Mahnung"
+      ],
+      "c": 0,
+      "s": "§ 199 I BGB: Die regelmäßige Verjährung beginnt mit Schluss des Jahres, in dem (1) der Anspruch entstanden ist und (2) der Gläubiger von den anspruchsbegründenden Umständen und der Person des Schuldners Kenntnis erlangt hat (oder hätte erlangen müssen). Maximalfristen: 10 Jahre bei Kenntnisunabhängigkeit, 30 Jahre bei besonderen Ansprüchen.",
+      "src": "WPR Foliensatz Kap. 5, § 199 BGB"
+    },
+    {
+      "q": "Welche Rechte hat der Käufer bei Sachmängeln nach § 437 BGB?",
+      "o": [
+        "Nacherfüllung, Rücktritt, Minderung, Schadensersatz",
+        "Nur Rücktritt",
+        "Nur Preisminderung",
+        "Nur Nachbesserung"
+      ],
+      "c": 0,
+      "s": "§ 437 BGB: Bei einem Sachmangel hat der Käufer (in dieser Reihenfolge): (1) Nacherfüllung (§ 439: Nachbesserung ODER Nachlieferung), (2) Rücktritt (§§ 440, 323, 326 V) – nach erfolgloser Fristsetzung, (3) Minderung (§ 441), (4) Schadensersatz (§§ 440, 280, 281, 283, 311a). Vor einem Rücktritt muss grundsätzlich eine Frist zur Nacherfüllung gesetzt werden.",
+      "src": "WPR Foliensatz Kap. 7 'Kaufrecht', § 437 BGB"
+    },
+    {
+      "q": "Was ist ein Sachmangel nach § 434 BGB?",
+      "o": [
+        "Die Sache weicht von der vereinbarten Beschaffenheit ab oder eignet sich nicht für die gewöhnliche Verwendung",
+        "Jeder kleine Kratzer",
+        "Nur fehlende Funktionen",
+        "Ein Preismangel"
+      ],
+      "c": 0,
+      "s": "§ 434 BGB: Ein Sachmangel liegt vor, wenn die Sache bei Gefahrübergang (üblicherweise Übergabe) nicht der vereinbarten Beschaffenheit entspricht (§ 434 I 1) ODER sich nicht für die nach dem Vertrag vorausgesetzte Verwendung eignet (§ 434 I 2 Nr. 1) ODER nicht die übliche Beschaffenheit aufweist (§ 434 I 2 Nr. 2). Auch Montagemangel und fehlerhafte Montageanleitung sind Mängel.",
+      "src": "WPR Foliensatz Kap. 7, § 434 BGB"
+    },
+    {
+      "q": "Wer ist Kaufmann im Sinne des HGB (§ 1)?",
+      "o": [
+        "Wer ein Handelsgewerbe betreibt",
+        "Jeder, der Waren kauft und verkauft",
+        "Nur Kapitalgesellschaften",
+        "Jeder Selbstständige"
+      ],
+      "c": 0,
+      "s": "§ 1 HGB: 'Kaufmann ist, wer ein Handelsgewerbe betreibt.' Ein Handelsgewerbe ist jeder Gewerbebetrieb, der einen nach Art und Umfang in kaufmännischer Weise eingerichteten Geschäftsbetrieb erfordert (§ 1 II). Arten: Istkaufmann (§ 1), Kannkaufmann (§ 2), Formkaufmann (§ 6: GmbH, AG), Minderkaufmann (§ 4, abgeschafft).",
+      "src": "WPR Foliensatz Kap. 6 'Handelsrecht', § 1 HGB"
+    },
+    {
+      "q": "Was ist eine Willenserklärung eines Geschäftsunfähigen (unter 7 Jahre)?",
+      "o": [
+        "Nichtig (§ 105 BGB)",
+        "Anfechtbar",
+        "Schwebend unwirksam",
+        "Immer gültig"
+      ],
+      "c": 0,
+      "s": "§ 105 I BGB: 'Die Willenserklärung eines Geschäftsunfähigen ist nichtig.' Geschäftsunfähig sind: Kinder unter 7 Jahren (§ 104 Nr. 1) und Personen, die dauerhaft krank/behindert sind (§ 104 Nr. 2). Beschränkt geschäftsfähig (7-17 Jahre): Willenserklärung schwebend unwirksam (§ 108) – Zustimmung der Eltern erforderlich.",
+      "src": "WPR Foliensatz Kap. 2, §§ 104-105 BGB"
+    },
+    {
+      "q": "Was ist 'in dubio pro reo'?",
+      "o": [
+        "Im Zweifel für den Angeklagten (Strafprozess)",
+        "Im Zweifel für den Kläger",
+        "Im Zweifel für das Gericht",
+        "Im Zweifel für das Gesetz"
+      ],
+      "c": 0,
+      "s": "'in dubio pro reo' (lateinisch: im Zweifel für den Angeklagten) ist ein zentraler Grundsatz des Strafprozessrechts. Kann dem Angeklagten eine Tat nicht zweifelsfrei nachgewiesen werden, ist er freizusprechen. Ausprägung der Unschuldsvermutung (Art. 6 II EMRK). Das Gegenteil gilt im Zivilrecht: 'in dubio contra debitorem' ist nicht anerkannt.",
+      "src": "WPR Foliensatz – Rechtsgrundsätze"
+    },
+    {
+      "q": "Was bedeutet 'Anfechtung' einer Willenserklärung?",
+      "o": [
+        "Die rückwirkende Nichtigerklärung einer Willenserklärung wegen Willensmängeln",
+        "Die Kündigung eines Vertrags",
+        "Die Aufhebung eines Vertrags durch Einigung",
+        "Die Verlängerung einer Frist"
+      ],
+      "c": 0,
+      "s": "Die Anfechtung (§§ 119-124 BGB) ist die einseitige, empfangsbedürftige Willenserklärung, die ein Rechtsgeschäft rückwirkend (ex tunc, § 142 I) nichtig macht. Anfechtungsgründe: (1) Inhaltsirrtum (§ 119 I), (2) Erklärungsirrtum (§ 119 I), (3) Eigenschaftsirrtum (§ 119 II), (4) Täuschung (§ 123), (5) Drohung (§ 123). Frist: § 121 (1 Jahr bei Täuschung/Drohung).",
+      "src": "WPR Foliensatz Kap. 3 'Anfechtung', §§ 119-124 BGB"
+    },
+    {
+      "q": "Was sind die Anfechtungsgründe nach § 119 I BGB?",
+      "o": [
+        "Inhaltsirrtum, Erklärungsirrtum und Eigenschaftsirrtum",
+        "Nur Täuschung",
+        "Nur Drohung",
+        "Nur Kündigung"
+      ],
+      "c": 0,
+      "s": "§ 119 I BGB erlaubt Anfechtung bei: (1) Inhaltsirrtum (man erklärt etwas, das man nicht so wollte), (2) Erklärungsirrtum (man erklärt etwas anderes als man wollte, z.B. Verschreiben). § 119 II: (3) Eigenschaftsirrtum (Irrtum über verkehrswesentliche Eigenschaften). Weitere Gründe: § 123 BGB: Täuschung und widerrechtliche Drohung.",
+      "src": "WPR Foliensatz Kap. 3, §§ 119, 123 BGB"
+    },
+    {
+      "q": "Was bedeutet die Anfechtung nach § 142 I BGB?",
+      "o": [
+        "Die angefochtene Willenserklärung ist als von Anfang an nichtig anzusehen (ex tunc)",
+        "Die Willenserklärung wird erst ab Anfechtung nichtig",
+        "Die Willenserklärung bleibt gültig",
+        "Die Willenserklärung kann nicht angefochten werden"
+      ],
+      "c": 0,
+      "s": "§ 142 I BGB: 'Ein anfechtbares Rechtsgeschäft ist als von Anfang an nichtig anzusehen.' Die Anfechtung wirkt also EX TUNC (rückwirkend). Der Empfänger ist so zu stellen, als hätte er die Willenserklärung nie erhalten. Beachte: § 122 BGB regelt die Schadensersatzpflicht des Anfechtenden (Vertrauensschaden).",
+      "src": "WPR Foliensatz Kap. 3, § 142 BGB"
+    },
+    {
+      "q": "Was ist Eigentum nach § 903 BGB?",
+      "o": [
+        "Der Eigentümer kann mit der Sache nach Belieben verfahren und andere ausschließen",
+        "Nur der Besitz der Sache",
+        "Nur die Verfügung über die Sache",
+        "Eine beschränkte Nutzung"
+      ],
+      "c": 0,
+      "s": "§ 903 BGB: 'Der Eigentümer einer Sache kann, soweit nicht das Gesetz oder Rechte Dritter entgegenstehen, mit der Sache nach Belieben verfahren und andere von jeder Einwirkung ausschließen.' Eigentum ist das umfassendste Herrschaftsrecht an einer Sache (Vollrecht). Abgrenzung zum Besitz (§ 854): tatsächliche Sachherrschaft.",
+      "src": "WPR Foliensatz Kap. 8 'Sachenrecht', § 903 BGB"
+    },
+    {
+      "q": "Was ist der Unterschied zwischen Eigentum und Besitz?",
+      "o": [
+        "Eigentum = rechtliche Herrschaft (§ 903); Besitz = tatsächliche Herrschaft (§ 854)",
+        "Beide sind identisch",
+        "Besitz ist stärker als Eigentum",
+        "Eigentum ist nur für Immobilien"
+      ],
+      "c": 0,
+      "s": "Eigentum (§ 903 BGB) = rechtliche Herrschaft über eine Sache (Vollrecht, dingliches Recht). Besitz (§ 854 BGB) = tatsächliche Sachherrschaft (rein faktisch). Man kann Besitzer ohne Eigentümer sein (z.B. Mieter) oder Eigentümer ohne Besitzer (z.B. verliehenes Buch). Eigentum wird übertragen durch Einigung + Übergabe (§ 929).",
+      "src": "WPR Foliensatz Kap. 8, §§ 854, 903 BGB"
+    },
+    {
+      "q": "Wie wird Eigentum an einer beweglichen Sache übertragen (§ 929 BGB)?",
+      "o": [
+        "Durch Einigung (über Eigentumsübergang) und Übergabe der Sache",
+        "Nur durch schriftlichen Vertrag",
+        "Durch Eintragung ins Grundbuch",
+        "Durch bloßen Kaufvertrag"
+      ],
+      "c": 0,
+      "s": "§ 929 BGB: Zur Übertragung des Eigentums an einer beweglichen Sache erforderlich: (1) Einigung (Verständigung über Eigentumsübergang) und (2) Übergabe der Sache. Ausnahme: § 929 S 2 (Besitzer hat die Sache schon – bloße Einigung reicht). Der Kaufvertrag (§ 433) ist nur die schuldrechtliche Verpflichtung – das Eigentum geht erst durch diese sachenrechtliche Übertragung über.",
+      "src": "WPR Foliensatz Kap. 8 'Sachenrecht', § 929 BGB"
+    },
+    {
+      "q": "Was ist die 'causa' im rechtsgeschäftlichen Sinne?",
+      "o": [
+        "Der rechtliche Grund einer Zuwendung (causa credendi, solvendi, donandi)",
+        "Der Schadensersatzanspruch",
+        "Der Gerichtsstand",
+        "Die Formvorschrift"
+      ],
+      "c": 0,
+      "s": "Die 'causa' ist der Rechtsgrund einer Zuwendung. Drei Typen: (1) causa credendi (Zuwendung auf Kredit – Leihvertrag), (2) causa solvendi (Zahlung einer Schuld – Erfüllung), (3) causa donandi (Schenkung – unentgeltliche Zuwendung). Fehlt die causa, kann der Empfänger nach § 812 BGB (ungerechtfertigte Bereicherung) herausverklagt werden.",
+      "src": "WPR Foliensatz Kap. 4 'Schuldrecht', Bereicherungsrecht"
+    },
+    {
+      "q": "Was ist die ungerechtfertigte Bereicherung (§ 812 BGB)?",
+      "o": [
+        "Wer etwas ohne rechtlichen Grund erlangt hat, muss es herausgeben",
+        "Eine Schadensersatzpflicht",
+        "Eine Form der Steuer",
+        "Ein Vertragstyp"
+      ],
+      "c": 0,
+      "s": "§ 812 I 1 BGB: 'Wer durch die Leistung eines anderen oder in sonstiger Weise etwas ohne rechtlichen Grund erlangt, ist ihm zur Herausgabe verpflichtet.' Voraussetzungen: (1) Etwas erlangt (Vermögensmehrung), (2) ohne rechtlichen Grund (causa fehlt oder weggefallen). Beispiel: Irrtümliche Überweisung. Rückgewähr nach Bereicherungsrecht.",
+      "src": "WPR Foliensatz Kap. 4, § 812 BGB"
+    },
+    {
+      "q": "Was ist 'prima facie' (Beweisrecht)?",
+      "o": [
+        "Auf den ersten Blick – Anscheinsbeweis: Typischer Geschehensablauf spricht für etwas",
+        "Endgültig",
+        "Unter Vorbehalt",
+        "Beweislast beim Kläger"
+      ],
+      "c": 0,
+      "s": "'prima facie' (lateinisch: auf den ersten Blick). Im deutschen Zivilprozessrecht spricht man vom Anscheinsbeweis: Bei einem typischen Geschehensablauf kann auf eine bestimmte Ursache geschlossen werden. Beispiel: Auffahrunfall → Fahrer des auffahrenden Autos hat aufgepasst. Der Gegner muss den Anschein entkräften (Gegenbeweis).",
+      "src": "WPR Foliensatz – Beweisrecht"
+    }
+  ],
+  "perso": [
+    {
+      "q": "Was versteht man unter 'Cross-Cultural Management'?",
+      "o": [
+        "Die Führung und Zusammenarbeit in multikulturellen Teams unter Berücksichtigung kultureller Unterschiede",
+        "Internationale Lieferkettenverwaltung",
+        "Währungsmanagement",
+        "Global sourcing"
+      ],
+      "c": 0,
+      "s": "Cross-Cultural Management befasst sich mit der Führung und Zusammenarbeit in kulturell heterogenen Teams. Ziel: kulturelle Unterschiede verstehen, nutzen und Konflikte minimieren. Zentrale Modelle: Hofstede (Kulturdimensionen: Machtdistanz, Individualismus, Maskulinität, Unsicherheitsvermeidung), Hall (Kontextkulturen: hoch-/niedrig-kontextuell).",
+      "src": "Perso Folie 02 CrossCultural, S. 1-20 (Fritz/Weßling)"
+    },
+    {
+      "q": "Welche Kulturdimensionen unterscheidet Geert Hofstede?",
+      "o": [
+        "Machtdistanz, Individualismus/Kollektivismus, Maskulinität/ Feminität, Unsicherheitsvermeidung, langfristige Orientierung",
+        "Hoch-/Niedrigkontext, Zeitverständnis, Kommunikation",
+        "Egalitär/Hierarchisch, Direkt/Indirekt",
+        "Trinkkultur, Esskultur, Kleiderkultur"
+      ],
+      "c": 0,
+      "s": "Hofstedes 6 Kulturdimensionen (ursprünglich 5): (1) Machtdistanz (PDI), (2) Individualismus/Kollektivismus (IDV), (3) Maskulinität/Feminität (MAS), (4) Unsicherheitsvermeidung (UAI), (5) Langfristige/kurzfristige Orientierung (LTO), (6) Nachsicht/Beherrschung. Diese wurden aus IBM-Daten von 50+ Ländern abgeleitet.",
+      "src": "Perso Folie 02 CrossCultural, S. 15-30"
+    },
+    {
+      "q": "Welche Aussage zur Kommunikation in Zeiten mobiler Arbeit ist richtig?",
+      "o": [
+        "Mobile Arbeit erfordert bewusstere Kommunikation, da nonverbale Signale und informelle Gespräche wegfallen",
+        "Mobile Arbeit führt automatisch zu besserer Kommunikation",
+        "Kommunikation ist in mobilen Teams unwichtig",
+        "Mobile Arbeit reduziert Kommunikationsmittel auf eines"
+      ],
+      "c": 0,
+      "s": "Mobile Arbeit (Homeoffice, Remote) verändert die Kommunikation: Informelle Flurgespräche, Mimik und Gestik entfallen. Daher müssen Teams explizite Regeln vereinbaren (Erreichbarkeit, Meeting-Kultur, asynchrone vs. synchrone Kommunikation). Werkzeuge: Video-Calls, Chat, Projektmanagement-Tools. Bewusstere und klarere Kommunikation wird wichtig.",
+      "src": "Perso Folie 03 Kommunikation, S. 1-15"
+    },
+    {
+      "q": "Welches Modell beschreibt den Kommunikationsprozess mit Sender, Botschaft und Empfänger?",
+      "o": [
+        "Das Sender-Empfänger-Modell (Shannon-Weaver)",
+        "Das 4-Ohren-Modell (Schulz von Thun)",
+        "Maslows Bedürfnispyramide",
+        "Die Johari-Fenster-Theorie"
+      ],
+      "c": 0,
+      "s": "Das Sender-Empfänger-Modell (Shannon & Weaver) beschreibt Kommunikation als Prozess: Sender → Codierung → Botschaft (Übertragungskanal) → Decodierung → Empfänger. Störungen (Rauschen) auf jeder Ebene möglich. Ergänzung: Das 4-Ohren-Modell (Schulz von Thun) – Sach-, Beziehungs-, Selbstoffenbarungs-, Appell-Ohr.",
+      "src": "Perso Folie 03 Kommunikation, S. 5-15"
+    },
+    {
+      "q": "Was sind die 'vier Ohren' nach Schulz von Thun?",
+      "o": [
+        "Sachebene, Beziehungsebene, Selbstoffenbarung, Appell",
+        "Hören, Sprechen, Verstehen, Antworten",
+        "Lesen, Schreiben, Reden, Hören",
+        "Analyse, Synthese, Kritik, Lob"
+      ],
+      "c": 0,
+      "s": "Das 4-Ohren-Modell (Schulz von Thun): Jede Nachricht hat vier Aspekte: (1) Sachebene (Information), (2) Beziehungsebene (Wie spricht der Sender zum Empfänger?), (3) Selbstoffenbarung (Was sagt der Sender über sich selbst?), (4) Appell (Was will der Sender erreichen?). Missverständnisse entstehen, wenn auf verschiedenen Ohren gehört wird.",
+      "src": "Perso Folie 03 Kommunikation, S. 10-20"
+    },
+    {
+      "q": "Was bedeutet 'Authentic Leadership' (authentische Führung)?",
+      "o": [
+        "Führung durch Integrität, Transparenz, Selbstreflexion und Vorbildverhalten",
+        "Führung durch Belohnung und Bestrafung",
+        "Führung nach festen Regeln",
+        "Führung durch hierarchische Kontrolle"
+      ],
+      "c": 0,
+      "s": "Authentic Leadership: Führungskräfte sind sich ihrer Werte bewusst, handeln danach und schaffen Vertrauen durch Integrität und Transparenz. Vier Dimensionen: (1) Balancierte Informationsverarbeitung, (2) Relationale Transparenz, (3) Internalisierte moralische Perspektive, (4) Authentisches Verhalten. Beispiel: Chesley Sullenberger ('Miracle on the Hudson').",
+      "src": "Perso Folie 04 Führung, S. 1-15 (Fritz/Weßling)"
+    },
+    {
+      "q": "Welche transaktionale Führungstheorie gibt es?",
+      "o": [
+        "Führung durch Belohnung und Bestrafung (Management by Exception, Contingent Reward)",
+        "Führung durch Vorbild",
+        "Führung durch Inspiration",
+        "Führung durch Partizipation"
+      ],
+      "c": 0,
+      "s": "Transaktionale Führung (Bass): Führung durch Belohnung (Contingent Reward) und Bestrafung (Management by Exception: aktiv/passiv). Die Führungskraft überwacht und greift bei Abweichungen ein. Gegensatz: Transformationale Führung (Inspirierung, intellektuelle Stimulierung). Beide Formen können kombiniert werden.",
+      "src": "Perso Folie 04 Führung, S. 15-25"
+    },
+    {
+      "q": "Was sind die 5 Dysfunktionen in Teams nach Patrick Lencioni?",
+      "o": [
+        "Vertrauensmangel, Konfliktscheu, fehlendes Engagement, Verantwortungsvermeidung, Ergebnisignoranz",
+        "Schlechte Kommunikation, zu viele Meetings, Langeweile",
+        "Ziele, Ressourcen, Zeit, Qualität, Kosten",
+        "Konflikte, Stress, Überlastung, Krankheit, Demotivation"
+      ],
+      "c": 0,
+      "s": "Lencionis 5 Dysfunktionen (Pyramide, aufeinander aufbauend): (1) Abwesenheit von Vertrauen (Basis), (2) Angst vor Konflikten (keine produktive Auseinandersetzung), (3) Fehlendes Engagement (keine klaren Entscheidungen), (4) Vermeidung von Verantwortung, (5) Unaufmerksamkeit gegenüber Ergebnissen (Fokus auf Ego statt Teamerfolg).",
+      "src": "Perso Folie 05 TeamKonflikt, S. 1-10"
+    },
+    {
+      "q": "Welche Motivationstheorie unterscheidet zwischen Hygienefaktoren und Motivatoren?",
+      "o": [
+        "Zwei-Faktoren-Theorie nach Herzberg",
+        "Maslows Bedürfnispyramide",
+        "Vrooms Erwartungstheorie",
+        "Adams Gerechtigkeitstheorie"
+      ],
+      "c": 0,
+      "s": "Herzbergs Zwei-Faktoren-Theorie: (1) Hygienefaktoren (Gehalt, Arbeitsbedingungen, Sicherheit) verhindern Unzufriedenheit, motivieren aber nicht. (2) Motivatoren (Verantwortung, Anerkennung, Sinn, Aufstieg) schaffen echte Motivation. Konsequenz: Gehaltserhöhung allein motiviert nicht langfristig – Motivatoren sind entscheidend.",
+      "src": "Perso Folie 07 Motivation, S. 5-15"
+    },
+    {
+      "q": "Welche Bedürfnisstufen umfasst Maslows Bedürfnispyramide (von unten nach oben)?",
+      "o": [
+        "Physiologische, Sicherheits, Soziale, Wertschätzung, Selbstverwirklichung",
+        "Körperlich, Geistig, Seelisch",
+        "Niedrig, Mittel, Hoch",
+        "Überleben, Komfort, Luxus"
+      ],
+      "c": 0,
+      "s": "Maslows Bedürfnispyramide (5 Stufen, aufsteigend): (1) Physiologische Bedürfnisse (Essen, Schlafen), (2) Sicherheitsbedürfnisse (Schutz, Job), (3) Soziale Bedürfnisse (Zugehörigkeit), (4) Wertschätzungsbedürfnisse (Anerkennung), (5) Selbstverwirklichung (Potenzialentfaltung). Höhere Stufe wird relevant, wenn niedrigere erfüllt sind.",
+      "src": "Perso Folie 07 Motivation, S. 15-25"
+    },
+    {
+      "q": "Was versteht man unter der 'Führungsspanne' (Span of Control)?",
+      "o": [
+        "Die Anzahl der Mitarbeiter, die einer Führungskraft direkt unterstellt sind",
+        "Die räumliche Distanz zur Führungskraft",
+        "Die Anzahl der Hierarchieebenen",
+        "Die Dauer der Einarbeitungszeit"
+      ],
+      "c": 0,
+      "s": "Die Führungsspanne (Span of Control, Leitungsspanne) ist die Anzahl der einer Führungskraft direkt unterstellten Mitarbeiter. Unterschieden: enge Spanne (wenige Mitarbeiter → steile Hierarchie) und weite Spanne (viele Mitarbeiter → flache Hierarchie). Optimal abhängig von: Komplexität, Qualifikation, Standardisierung der Aufgaben.",
+      "src": "Perso Folie 10 Aufbauorganisation, S. 1-15"
+    },
+    {
+      "q": "Welche Organisationsform ist eine Form der Aufbauorganisation?",
+      "o": [
+        "Funktionsorganisation (Gliederung nach Aufgaben wie Einkauf, Produktion, Vertrieb)",
+        "Prozessorganisation",
+        "Lernende Organisation",
+        "Netzwerkorganisation"
+      ],
+      "c": 0,
+      "s": "Die Aufbauorganisation regelt die strukturelle Gliederung eines Unternehmens. Grundformen: (1) Funktionsorganisation (Gliederung nach Aufgaben), (2) Sparten-/Divisionale Organisation (nach Produkten, Regionen, Kundengruppen), (3) Matrixorganisation (Kombination aus Funktion und Sparte). Die anderen genannten sind ergänzende Konzepte.",
+      "src": "Perso Folie 09-10 Aufbauorganisation, S. 10-25"
+    },
+    {
+      "q": "Was ist die Matrixorganisation?",
+      "o": [
+        "Kombination von Funktions- und Spartenorganisation (zwei Weisungslinien)",
+        "Reine Funktionsorganisation",
+        "Reine Spartentorganisation",
+        "Eine Hierarchie mit nur einer Weisungslinie"
+      ],
+      "c": 0,
+      "s": "Die Matrixorganisation kombiniert zwei Strukturdimensionen (meist Funktion und Sparte/Produkt): Mitarbeiter haben zwei Vorgesetzte (Funktionsvorgesetzter + Produktmanager). Vorteil: Flexibilität, fachübergreifende Zusammenarbeit. Nachteile: Konflikte zwischen den Weisungslinien, hoher Abstimmungsaufwand (Mehrdimensionale Matrix).",
+      "src": "Perso Folie 10 Aufbauorganisation, S. 20-30"
+    },
+    {
+      "q": "Was umfasst die Personalbeschaffung?",
+      "o": [
+        "Interne und externe Maßnahmen zur Deckung des Personalbedarfs",
+        "Nur externe Stellenausschreibungen",
+        "Nur die Personalauswahl",
+        "Nur die Personalentwicklung"
+      ],
+      "c": 0,
+      "s": "Personalbeschaffung (Recruitment) umfasst alle Aktivitäten zur Deckung des Personalbedarfs. Intern: Versetzung, Beförderung, Stellenausschreibung im Unternehmen. Extern: Stellenanzeigen, Personalberatung (Headhunter), Social Recruiting (LinkedIn), Jobmessen. Wahl abhängig von Qualifikation, Kosten, Zeit, Kultur.",
+      "src": "Perso Folie 08 Personalbeschaffung, S. 1-15"
+    },
+    {
+      "q": "Was ist 'Performance Management'?",
+      "o": [
+        "Die systematische Planung, Steuerung und Kontrolle der Leistung von Mitarbeitern",
+        "Reine Gehaltsverwaltung",
+        "Jährliche Kündigung von Schlechtleistern",
+        "Das Aktienkursmanagement"
+      ],
+      "c": 0,
+      "s": "Performance Management ist ein kontinuierlicher Prozess: Zielvereinbarung (SMART), regelmäßiges Feedback, Leistungsbeurteilung, Entwicklungsplanung. Ziel: individuelle und organisatorische Leistung verbessern. Instrumente: Mitarbeitergespräche, 360-Grad-Feedback, KPI-Systeme, Bonusprogramme.",
+      "src": "Perso Folie 08-2 Performance Management, S. 1-12"
+    },
+    {
+      "q": "Welche Aussage zum Arbeitsrecht ist richtig?",
+      "o": [
+        "Individualarbeitsrecht regelt das Verhältnis zwischen Arbeitgeber und Arbeitnehmer (Arbeitsvertrag)",
+        "Arbeitsrecht umfasst nur Steuerrecht",
+        "Arbeitsrecht ist nur für öffentliche Bedienstete relevant",
+        "Arbeitsrecht wird durch das BGB ausschließlich geregelt"
+      ],
+      "c": 0,
+      "s": "Das Arbeitsrecht umfasst: (1) Individualarbeitsrecht (Arbeitsvertrag, Pflichten, Kündigungsschutz), (2) Kollektivarbeitsrecht (Tarifverträge, Betriebsverfassung, Mitbestimmung). Rechtsquellen: BGB, HGB, KSchG, BetrVG, TVG. Grundlage: Arbeitsvertrag (Dienstvertrag § 611 BGB). Kündigungsschutz nach 2 Jahren Betriebszugehörigkeit (KSchG).",
+      "src": "Perso Folie 06 Arbeitsrecht, S. 1-15"
+    },
+    {
+      "q": "Was bedeutet die Abmahnung im Arbeitsrecht?",
+      "o": [
+        "Eine arbeitsrechtliche Warnung: der Arbeitnehmer wird auf ein Fehlverhalten hingewiesen und zur Änderung aufgefordert",
+        "Eine Kündigung",
+        "Eine Gehaltserhöhung",
+        "Eine Versetzung"
+      ],
+      "c": 0,
+      "s": "Die Abmahnung ist eineFormGroup aus: (1) Rüge (Hinweis auf konkretes Fehlverhalten) und (2) Warnung (Androhung der Kündigung bei Wiederholung). Sie ist Voraussetzung für eine verhaltensbedingte Kündigung (Ausnahme: besonders schwere Verstöße). Funktion: Mitbestimmung des Betriebsrats (§ 99 BetrVG). Nach Abmahnung: 'arbeitsrechtliche Kündigung' bei Wiederholung möglich.",
+      "src": "Perso Folie 06 Arbeitsrecht, S. 10-20"
+    },
+    {
+      "q": "Was sind die 5 Konfliktstile nach Thomas-Kilmann?",
+      "o": [
+        "Wettkampf, Zusammenarbeit, Kompromiss, Vermeidung, Nachgeben",
+        "Gewinn, Verlust, Gleichstand",
+        "Analysieren, Ignorieren, Eskalieren",
+        "Sieg, Niederlage, Toleranz"
+      ],
+      "c": 0,
+      "s": "Die 5 Konfliktstile nach Thomas-Kilmann (Dimensionen: Durchsetzungsvermögen vs. Kooperationsbereitschaft): (1) Wettkampf (Konkurrenz, durchsetzen), (2) Zusammenarbeit (Win-Win), (3) Kompromiss (beide geben nach), (4) Vermeidung (Rückzug), (5) Nachgeben (accommodate). Kein Stil ist per se gut/schlecht – situationsabhängig.",
+      "src": "Perso Folie 05 TeamKonflikt, S. 15-25"
+    },
+    {
+      "q": "Was sind die Phasen der Teamentwicklung nach Tuckman?",
+      "o": [
+        "Forming, Storming, Norming, Performing, Adjourning",
+        "Planen, Durchführen, Kontrollieren",
+        "Anfang, Mitte, Ende",
+        "Initiation, Realisation, Evaluation"
+      ],
+      "c": 0,
+      "s": "Tuckmans 5 Phasen der Teamentwicklung: (1) Forming (Kennenlernen, vorsichtig), (2) Storming (Konflikte, Machtfragen), (3) Norming (Regeln, Zusammenhalt), (4) Performing (Leistung, Zusammenarbeit), (5) Adjourning (Auflösung). Wichtig: Jede Phase muss durchlaufen werden – Springen ist nicht möglich.",
+      "src": "Perso Folie 05 TeamKonflikt, S. 10-20"
+    },
+    {
+      "q": "Was ist ein centralisierter vs. dezentralisierter Organisationsaufbau?",
+      "o": [
+        "Zentralisiert: Entscheidungen an der Spitze; dezentralisiert: Entscheidungen verteilt",
+        "Zentralisiert: viele Standorte; dezentralisiert: einer",
+        "Zentralisiert: großes Unternehmen; dezentralisiert: kleines",
+        "Beide sind identisch"
+      ],
+      "c": 0,
+      "s": "Zentralisation: Entscheidungsbefugnisse konzentriert an der Spitze (enge Spanne, steile Hierarchie). Vorteile: einheitliche Linie, Kontrolle. Nachteile: langsam, überlastete Spitze. Dezentralisation: Entscheidungsbefugnisse verteilt (weite Spanne, flache Hierarchie). Vorteile: schnell, motivierend. Nachteile: Abstimmungsaufwand, Inkonsistenz.",
+      "src": "Perso Folie 10 Aufbauorganisation, S. 15-25"
+    },
+    {
+      "q": "Was ist der Unterschied zwischen Aufgaben und Kompetenzen?",
+      "o": [
+        "Aufgaben = Was ist zu tun; Kompetenzen = Befugnisse (Entscheidungs- und Verfügungsbefugnis)",
+        "Beide sind identisch",
+        "Aufgaben sind immer wichtiger",
+        "Kompetenzen werden nur vom Betriebsrat vergeben"
+      ],
+      "c": 0,
+      "s": "Aufgabe = die zu erledigende Tätigkeit (Inhalt). Kompetenz = die Befugnis, Entscheidungen zu treffen und zu verfügen (z.B. Unterschriften, Budget). Wichtig: Aufgabenstellverantwortung (AV) und Kompetenz (KV) müssen übereinstimmen (Kongruenzprinzip). Ohne Kompetenz keine Aufgabenerfüllung. Stellenbeschreibung definiert beides.",
+      "src": "Perso Folie 09 Grundlagen Organisation, S. 5-15"
+    },
+    {
+      "q": "Was ist die Organisationsentwicklung (OE)?",
+      "o": [
+        "Ein systematischer Prozess zur Veränderung von Organisationen und Kulturen",
+        "Nur das Umstrukturieren von Abteilungen",
+        "Lediglich die Implementierung neuer Software",
+        "Eine einmalige Aktion"
+      ],
+      "c": 0,
+      "s": "Organisationsentwicklung (OE) ist ein geplanter, systematischer und langfristiger Prozess, der Organisationen und ihre Kultur verändern soll. Merkmale: (1) Betroffene beteiligen (partizipativ), (2) ganzheitlicher Ansatz, (3) Verhaltens- und Strukturveränderung. Phasen nach Lewin: 'Unfrieren – Verändern – Refrieren'. Ziele: Effizienz, Innovationsfähigkeit, Arbeitszufriedenheit.",
+      "src": "Perso Folie 11 Organisationsentwicklung, S. 1-15"
+    },
+    {
+      "q": "Was sind SMART-Ziele?",
+      "o": [
+        "Spezifisch, Messbar, Akzeptiert, Realistisch, Terminiert",
+        "Schnell, Mobil, Akut, Robust, Taktisch",
+        "Strategisch, Modern, Attraktiv, Rentabel, Technisch",
+        "Stark, Mutig, Aktiv, Ressourcenorientiert, Toll"
+      ],
+      "c": 0,
+      "s": "SMART-Kriterien für Ziele (Doran 1981): (1) Spezifisch (concret), (2) Messbar (in Zahlen), (3) Akzeptiert/Attraktiv (vom Mitarbeiter), (4) Realistisch (erreichbar), (5) Terminiert (mit Deadline). Anwendung: Zielvereinbarungen im Performance Management, Projektmanagement, persönliche Entwicklung. Verhindert vage Formulierungen.",
+      "src": "Perso Folie 08-2 Performance Management, S. 5-10"
+    },
+    {
+      "q": "Welche Formen der Weiterbildung gibt es?",
+      "o": [
+        "Am Arbeitsplatz, außerbetrieblich, formal, informell",
+        "Nur Seminare",
+        "Nur Online-Kurse",
+        "Lediglich Sprachkurse"
+      ],
+      "c": 0,
+      "s": "Formen der Weiterbildung: (1) Am Arbeitsplatz (on-the-job: Einarbeitung, Job-Rotation, Mentoring), (2) Außerbetrieblich (off-the-job: Seminare, Studien), (3) Formal (Zertifikate, Grade), (4) Informell (Erfahrung, Selbstlernen). Strategische Personalentwicklung bindet und qualifiziert Mitarbeiter – Investition in Humankapital.",
+      "src": "Perso Folie 08 Personalentwicklung, S. 10-20"
+    },
+    {
+      "q": "Was ist das 'Hawthorne-Effekt'?",
+      "o": [
+        "Mitarbeiter verändern ihr Verhalten, weil sie beobachtet werden",
+        "Mitarbeiter arbeiten besser bei hellem Licht",
+        "Mitarbeiter werden bei Hitze produktiver",
+        "Mitarbeiter mögen keine Experimente"
+      ],
+      "c": 0,
+      "s": "Der Hawthorne-Effekt (benannt nach Studien in den Hawthorne-Werken, 1924-1932): Allein die Tatsache, dass Mitarbeiter beobachtet/berücksichtigt werden, steigert ihre Motivation und Produktivität – unabhängig von der eigentlichen Intervention. Wichtig für Motivationstheorie: Soziale Faktoren und Beachtung sind mindestens ebenso wichtig wie materielle Anreize.",
+      "src": "Perso Folie 07 Motivation, S. 20-30"
+    },
+    {
+      "q": "Was versteht man unter 'Diversity Management'?",
+      "o": [
+        "Bewusster Umgang mit Vielfalt (Geschlecht, Alter, Herkunft, etc.) als strategischer Erfolgsfaktor",
+        "Eine Quotenregelung",
+        "Eine Diskriminierung",
+        "Lediglich Gender-Mainstreaming"
+      ],
+      "c": 0,
+      "s": "Diversity Management: Strategische Nutzung von Vielfalt (Alter, Geschlecht, Herkunft, Religion, sexuelle Orientierung, Behinderung) als Wettbewerbsvorteil. Vorteile: Kreativität, Innovation, Abbau von Diskriminierung (AGG). Ziel: inklusive Unternehmenskultur, in der alle Potenziale entfaltet werden. Verbunden mit Cross-Cultural Management.",
+      "src": "Perso Folie 02 CrossCultural, S. 30-50"
+    },
+    {
+      "q": "Was ist das Allgemeine Gleichbehandlungsgesetz (AGG)?",
+      "o": [
+        "Ein Gesetz, das Diskriminierung wegen Rasse, Geschlecht, Religion, Alter etc. verbietet",
+        "Ein Tarifvertrag",
+        "Ein Betriebsübereinkommen",
+        "Ein Steuergesetz"
+      ],
+      "c": 0,
+      "s": "Das AGG (Allgemeines Gleichbehandlungsgesetz, 2006) verbietet Diskriminierung wegen (1) Rasse/ethnischer Herkunft, (2) Geschlecht, (3) Religion/Weltanschauung, (4) Behinderung, (5) Alter, (6) Sexueller Identität. Anwendungsbereich: u.a. Bewerbung, Beschäftigung, Bildung, Zugang zu Gütern. Bei Verstoß: Schadensersatz/Entschädigung.",
+      "src": "Perso Folie 06 Arbeitsrecht, S. 15-25; AGG"
+    },
+    {
+      "q": "Was bedeutet 'Employer Branding'?",
+      "o": [
+        "Aufbau einer attraktiven Arbeitgebermarke zur Gewinnung und Bindung von Talenten",
+        "Lediglich schöne Werbeplakate",
+        "Eine Marketingstrategie für Produkte",
+        "Eine Form der Mitarbeiterüberwachung"
+      ],
+      "c": 0,
+      "s": "Employer Branding = strategischer Aufbau einer starken Arbeitgebermarke (Employer Value Proposition). Ziele: (1) Talente gewinnen (Recruiting), (2) Mitarbeiter binden (Retention), (3) positives Image in der Zielgruppe. Maßnahmen: Kultur-Kommunikation, Benefits, Karrierewege, Social Media. Wichtig wegen Fachkräftemangel und 'War for Talents'.",
+      "src": "Perso Folie 08 Personalbeschaffung, S. 15-30"
+    }
+  ]
+}
