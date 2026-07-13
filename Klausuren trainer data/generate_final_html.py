@@ -1443,6 +1443,104 @@ function getTopicsForSubject(subjKey){
   return topics;
 }
 
+function saveQuestionProgress(q, isCorrect, points, selected) {
+  const key = state.currentSubject;
+  if (!key) return;
+  const progress = JSON.parse(localStorage.getItem('learnProgress') || '{}');
+  if (!progress[key]) progress[key] = {};
+  progress[key][q.id] = {
+    correct: isCorrect,
+    points: points,
+    selected: selected
+  };
+  localStorage.setItem('learnProgress', JSON.stringify(progress));
+}
+
+function saveActiveLearnSession() {
+  const key = state.currentSubject;
+  if (!key || !state.learn.currentTopicId) return;
+  const activeSessions = JSON.parse(localStorage.getItem('activeLearnSessions') || '{}');
+  activeSessions[key] = {
+    topicId: state.learn.currentTopicId,
+    currentIdx: state.learn.currentIdx,
+    answered: state.learn.answered
+  };
+  localStorage.setItem('activeLearnSessions', JSON.stringify(activeSessions));
+}
+
+function clearActiveLearnSession() {
+  const key = state.currentSubject;
+  if (!key) return;
+  const activeSessions = JSON.parse(localStorage.getItem('activeLearnSessions') || '{}');
+  delete activeSessions[key];
+  localStorage.setItem('activeLearnSessions', JSON.stringify(activeSessions));
+}
+
+function resumeActiveLearnSession(subjKey) {
+  const activeSessions = JSON.parse(localStorage.getItem('activeLearnSessions') || '{}');
+  const session = activeSessions[subjKey];
+  if (!session) return;
+  
+  const topics = getTopicsForSubject(subjKey);
+  const topic = topics.find(t => t.id === session.topicId);
+  if (!topic) return;
+  
+  const qs = getQuestionsForTopic(subjKey, topic.filter);
+  if (qs.length === 0) return;
+  
+  state.learn.questions = qs;
+  state.learn.currentIdx = session.currentIdx || 0;
+  state.learn.answered = session.answered || {};
+  state.learn.total = qs.length;
+  state.learn.currentTopicId = session.topicId;
+  
+  document.getElementById('learnNav').style.display = 'flex';
+  renderLearnCard();
+}
+
+function discardActiveLearnSession(subjKey) {
+  showCustomConfirm(
+    'Sitzung verwerfen',
+    'Möchtest du die unvollständige Übungs-Sitzung wirklich verwerfen?',
+    function() {
+      const activeSessions = JSON.parse(localStorage.getItem('activeLearnSessions') || '{}');
+      delete activeSessions[subjKey];
+      localStorage.setItem('activeLearnSessions', JSON.stringify(activeSessions));
+      enterLearnMode();
+    }
+  );
+}
+
+function repeatTopicQuiz() {
+  const key = state.currentSubject;
+  const qs = state.learn.questions;
+  if (key && qs) {
+    const progress = JSON.parse(localStorage.getItem('learnProgress') || '{}');
+    const subjProgress = progress[key] || {};
+    qs.forEach(q => {
+      delete subjProgress[q.id];
+    });
+    progress[key] = subjProgress;
+    localStorage.setItem('learnProgress', JSON.stringify(progress));
+  }
+  state.learn.currentIdx = 0;
+  state.learn.answered = {};
+  saveActiveLearnSession();
+  renderLearnCard();
+}
+
+function countCorrectInTopic(subjKey, filters) {
+  const qs = getQuestionsForTopic(subjKey, filters);
+  const key = subjKey;
+  const progress = JSON.parse(localStorage.getItem('learnProgress') || '{}');
+  const subjProgress = progress[key] || {};
+  let correct = 0;
+  qs.forEach(q => {
+    if (subjProgress[q.id] && subjProgress[q.id].correct) correct++;
+  });
+  return correct;
+}
+
 function enterLearnMode(){
   const key=state.currentSubject;
   if(!key){
@@ -1466,12 +1564,36 @@ function enterLearnMode(){
   const progress=JSON.parse(localStorage.getItem('learnProgress')||'{}');
   const subjProgress=progress[key]||{};
   
+  // Check for saved active session
+  const activeSessions = JSON.parse(localStorage.getItem('activeLearnSessions') || '{}');
+  const savedSession = activeSessions[key];
+  
   // Themenliste rendern
-  let html='<div class="topic-list">';
+  let html='';
+  if (savedSession) {
+    const savedTopic = topics.find(t => t.id === savedSession.topicId);
+    if (savedTopic) {
+      const qCount = countQuestionsForTopic(key, savedTopic.filter);
+      const answeredCount = Object.keys(savedSession.answered || {}).length;
+      html += '<div class="resume-session-banner" style="background:var(--bg3);border:1px dashed var(--accent);border-radius:var(--radius-md);padding:16px;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">';
+      html += '  <div style="flex:1">';
+      html += '    <h3 style="margin:0 0 4px;font-size:1rem;color:var(--accent);display:flex;align-items:center;gap:6px">🔄 Letzte Sitzung fortsetzen</h3>';
+      html += '    <p style="margin:0;font-size:0.875rem;color:var(--text2)">Du warst mitten im Üben von <strong>' + savedTopic.icon + ' ' + savedTopic.name + '</strong> (Frage ' + (savedSession.currentIdx + 1) + ', ' + answeredCount + '/' + qCount + ' beantwortet).</p>';
+      html += '  </div>';
+      html += '  <div style="display:flex;gap:10px">';
+      html += `    <button class="btn btn-primary" onclick="resumeActiveLearnSession('${key}')" style="padding:8px 16px;font-size:0.875rem">Fortsetzen</button>`;
+      html += `    <button class="btn btn-secondary" onclick="discardActiveLearnSession('${key}')" style="padding:8px 16px;font-size:0.875rem;background:transparent;border:1px solid var(--border)">Verwerfen</button>`;
+      html += '  </div>';
+      html += '</div>';
+    }
+  }
+  
+  html += '<div class="topic-list">';
   topics.forEach((t,idx)=>{
     const qCount=countQuestionsForTopic(key,t.filter);
     const answered=countAnsweredInTopic(key,t.filter);
-    const topicProg=subjProgress[t.id]||{correct:0,total:0};
+    const correctCount=countCorrectInTopic(key,t.filter);
+    const topicProg={correct:correctCount,total:qCount};
     let statusClass='';
     if(answered>0&&topicProg.correct===answered)statusClass=' topic-done';
     else if(answered>0)statusClass=' topic-partial';
@@ -1585,6 +1707,8 @@ function startTopicQuiz(topicId){
   state.learn.total=qs.length;
   state.learn.currentTopicId=topicId;
   
+  saveActiveLearnSession();
+  
   document.getElementById('learnNav').style.display='flex';
   renderLearnCard();
 }
@@ -1617,7 +1741,7 @@ function renderLearnCard(){
     const a=state.learn.answered[i];
     if(a&&a.correct!==undefined)d.classList.add(a.correct?'correct':'wrong');
     else if(a)d.classList.add('answered');
-    d.onclick=()=>{state.learn.currentIdx=i;renderLearnCard();};
+    d.onclick=()=>{state.learn.currentIdx=i;saveActiveLearnSession();renderLearnCard();};
     d.title='Frage '+(i+1);
     dots.appendChild(d);
   }
@@ -1719,10 +1843,12 @@ function learnSelectOption(qIdx,oi){
     const pos=arr.indexOf(oi);
     if(pos>=0)arr.splice(pos,1);
     else arr.push(oi);
+    saveActiveLearnSession();
     renderLearnCard();
   }else{
     // MC: select single
     state.learn.answered[qIdx]={selected:oi};
+    saveActiveLearnSession();
     renderLearnCard();
   }
 }
@@ -1759,6 +1885,8 @@ function learnCheckMC(qIdx){
     answered.correct=answered.selected===q.correct;
     answered.points=answered.correct?q.points:0;
   }
+  saveQuestionProgress(q, answered.correct, answered.points, answered.selected);
+  saveActiveLearnSession();
   renderLearnCard();
 }
 
@@ -1784,12 +1912,15 @@ function learnCheckFill(){
   matched=matched||answer===correct;
   state.learn.answered[qIdx].correct=matched;
   state.learn.answered[qIdx].points=matched?q.points:0;
+  saveQuestionProgress(q, matched, state.learn.answered[qIdx].points, val);
+  saveActiveLearnSession();
   renderLearnCard();
 }
 
 function prevLearnCard(){
   if(state.learn.currentIdx>0){
     state.learn.currentIdx--;
+    saveActiveLearnSession();
     renderLearnCard();
   }
 }
@@ -1797,6 +1928,7 @@ function prevLearnCard(){
 function nextLearnCard(){
   if(state.learn.currentIdx<state.learn.questions.length-1){
     state.learn.currentIdx++;
+    saveActiveLearnSession();
     renderLearnCard();
   }else{
     // Fertig – Ergebnisse zeigen
@@ -1807,6 +1939,7 @@ function nextLearnCard(){
 function goExamMode(){switchTab('exam');}
 
 function showLearnResults(){
+  clearActiveLearnSession();
   const qs=state.learn.questions;
   let correct=0,totalP=0,earnedP=0,answeredCount=0;
   qs.forEach((q,i)=>{
@@ -1822,7 +1955,7 @@ function showLearnResults(){
   const card=document.getElementById('learnCard');
   card.innerHTML='<div style="text-align:center;padding:30px">'+
     '<div style="font-size:3rem;margin-bottom:12px">🎉</div>'+
-    '<h2 style="margin-bottom:8px">Lern-Modus abgeschlossen!</h2>'+
+     '<h2 style="margin-bottom:8px">Lern-Modus abgeschlossen!</h2>'+
     '<p style="color:var(--text2);margin-bottom:20px">Du hast '+answeredCount+' von '+qs.length+' Fragen beantwortet.</p>'+
     '<div class="result-stats" style="grid-template-columns:repeat(auto-fit,minmax(100px,1fr));max-width:500px;margin:0 auto 24px">'+
     '<div class="stat-box"><div class="num" style="color:var(--success)">'+correct+'/'+answeredCount+'</div><div class="desc">Richtig</div></div>'+
@@ -1830,7 +1963,7 @@ function showLearnResults(){
     '<div class="stat-box"><div class="num" style="color:'+(pct>=48?'var(--success)':'var(--danger)')+'">'+pct.toFixed(1)+'%</div><div class="desc">Quote</div></div>'+
     '</div>'+
     '<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">'+
-    '<button class="btn btn-primary" onclick="state.learn.currentIdx=0;state.learn.answered={};renderLearnCard()">🔄 Wiederholen</button>'+
+    '<button class="btn btn-primary" onclick="repeatTopicQuiz()">🔄 Wiederholen</button>'+
     '<button class="btn btn-secondary" onclick="goExamMode()">📝 Klausur versuchen</button>'+
     '</div></div>';
   document.getElementById('learnNav').style.display='none';
