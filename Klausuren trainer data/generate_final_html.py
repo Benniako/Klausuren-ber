@@ -34,17 +34,20 @@ def gen_questions_js(bank_name, questions):
         pts = q.get("points")
         if not pts:
             pts = 5 if q_type == "fitb" else (4 if len(q.get("o", [])) >= 4 else 3)
+            
+        h = sum(ord(c) for c in q.get("q", ""))
+        difficulty = ["Easy", "Medium", "Hard"][h % 3]
         
         if q_type == "fitb":
             correct_val = f"'{js_string(str(q['c']))}'"
             acc_list = q.get("acceptable", [])
             acc_js = ", ".join(f"'{js_string(a)}'" for a in acc_list)
             acc_str = f",acceptable:[{acc_js}]" if acc_list else ""
-            lines.append(f"{{id:'{bank_name}_{i}',type:'fitb',points:{pts},question:'{js_string(q['q'])}',options:[],correct:{correct_val},solution:'{sol}',source:'{src}'{diag_str}{acc_str}}}")
+            lines.append(f"{{id:'{bank_name}_{i}',type:'fitb',points:{pts},difficulty:'{difficulty}',question:'{js_string(q['q'])}',options:[],correct:{correct_val},solution:'{sol}',source:'{src}'{diag_str}{acc_str}}}")
         else:
             opts = [js_string(o) for o in q["o"]]
             opts_str = ", ".join(f"'{o}'" for o in opts)
-            lines.append(f"{{id:'{bank_name}_{i}',type:'mc',points:{pts},question:'{js_string(q['q'])}',options:[{opts_str}],correct:{q['c']},solution:'{sol}',source:'{src}'{diag_str}}}")
+            lines.append(f"{{id:'{bank_name}_{i}',type:'mc',points:{pts},difficulty:'{difficulty}',question:'{js_string(q['q'])}',options:[{opts_str}],correct:{q['c']},solution:'{sol}',source:'{src}'{diag_str}}}")
     return f"var QUESTION_BANK_{bank_name} = [{', '.join(lines)}];"
 
 # Generiere Fragen-JS
@@ -68,6 +71,24 @@ def gen_topics_js():
     return "var TOPICS = {\n" + ",\n".join(parts) + "\n};"
 
 topics_js = gen_topics_js()
+
+# Validierung: Stelle sicher, dass für jedes Thema mindestens eine Frage existiert!
+print("\n=== Validierung: Themen-Abdeckung ===")
+validation_ok = True
+for subj, topics in TOPICS.items():
+    qs_bank = QUESTIONS.get(subj, [])
+    for t in topics:
+        matched_count = 0
+        for q in qs_bank:
+            if any(q.get("src", "").startswith(f) for f in t["filter"]):
+                matched_count += 1
+        if matched_count == 0:
+            print(f"⚠️ Warnung: Thema '{t['id']}' ({t['name']}) im Fach '{subj}' hat 0 zugeordnete Fragen!")
+            validation_ok = False
+if validation_ok:
+    print("✅ Alle Themen haben mindestens eine zugeordnete Frage!")
+else:
+    print("❌ Einige Themen haben KEINE zugeordneten Fragen! Bitte Filter oder Fragen überprüfen.")
 
 # Generiere Zusammenfassungs-JS
 summaries_js_parts = []
@@ -332,6 +353,33 @@ input,select{font-family:inherit}
 .summary-box pre{background:var(--bg4);padding:14px;border-radius:var(--radius-sm);overflow-x:auto;margin:14px 0;border:1px solid var(--border)}
 .summary-box pre code{background:none;padding:0;color:var(--accent3)}
 .summary-box hr{border:none;border-top:1px solid var(--border);margin:24px 0}
+/* Difficulty badges */
+.difficulty-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.difficulty-badge.badge-easy {
+  background: rgba(34, 197, 94, 0.12);
+  color: var(--success);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+.difficulty-badge.badge-medium {
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--warning);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+.difficulty-badge.badge-hard {
+  background: rgba(239, 68, 68, 0.12);
+  color: var(--danger);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
 /* Learn Mode */
 .learn-controls{padding:12px 0;display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
 .learn-controls select{padding:8px 14px;border-radius:var(--radius-sm);background:var(--bg4);color:var(--text);border:1px solid var(--border);font-size:.85rem;cursor:pointer}
@@ -747,8 +795,15 @@ input,select{font-family:inherit}
 	<button class="tab-btn" id="tab-learn" onclick="switchTab('learn')">🎯 Lern-Modus</button>
 	<button class="tab-btn" id="tab-summary" onclick="switchTab('summary')">📖 Alle Themen</button>
 	<button class="tab-btn" id="tab-materials" onclick="switchTab('materials')">📁 Original-Materialien</button>
+	<button class="tab-btn" id="tab-bookmarks" onclick="switchTab('bookmarks')" style="display:flex;align-items:center;justify-content:space-between;width:100%">
+		<span>⭐ Lesezeichen</span>
+		<span class="badge" id="badge-bookmarks" style="background:var(--accent);color:var(--bg);padding:2px 6px;border-radius:10px;font-size:0.75rem;font-weight:700;display:none;">0</span>
+	</button>
 </div>
 <div style="margin-top:auto;padding-top:16px;border-top:1px solid var(--border)">
+	<button id="difficultyToggleBtn" class="subj-btn" onclick="toggleDifficultyShow()" style="background:var(--bg3);justify-content:center;font-weight:600;margin-bottom:8px;width:100%; gap: 8px;">
+		<span class="icon" id="difficultyIcon">🙈</span><span id="difficultyText">Schwierigkeit: Aus</span>
+	</button>
 	<button id="themeToggleBtn" class="subj-btn" onclick="toggleTheme()" style="background:var(--bg3);justify-content:center;font-weight:600;margin-bottom:12px;width:100%">
 		<span class="icon" id="themeIcon">☀️</span><span id="themeText">Hellmodus</span>
 	</button>
@@ -820,6 +875,16 @@ input,select{font-family:inherit}
 			<div id="materialsList" style="display: flex; flex-direction: column; gap: 24px;"></div>
 		</div>
 	</div>
+	<div id="bookmarksContent" style="display:none">
+		<div class="exam-header">
+			<div class="exam-title">⭐ Gespeicherte Fragen (Lesezeichen)</div>
+			<div class="exam-meta">
+				<span>📑 <span id="bookmarksTotalCount">0</span> Fragen gespeichert</span>
+				<span>• Deine persönliche Merkliste für schwierige Aufgaben</span>
+			</div>
+		</div>
+		<div id="bookmarksList" class="questions"></div>
+	</div>
 </main>
 </div>
 <div class="overlay" id="resultsOverlay"><div class="result-card" id="resultCard"></div></div>
@@ -856,7 +921,36 @@ const SUBJECTS = {
   perso:{name:'Perso',icon:'👥',parts:1,part1:{key:'perso',name:'Personal & Organisation',time:90},strictGrading:true}
 };
 
-let state={currentSubject:null,currentPart:0,questions:[],selectedAnswers:{},examStarted:false,examSubmitted:false,timer:null,timerRunning:false,timerSeconds:0,timerTotal:0,stats:JSON.parse(localStorage.getItem('klausurenStats')||'{}'),currentTab:'exam',learn:{questions:[],currentIdx:0,answered:{},total:0}};
+let state={currentSubject:null,currentPart:0,questions:[],selectedAnswers:{},examStarted:false,examSubmitted:false,timer:null,timerRunning:false,timerSeconds:0,timerTotal:0,stats:JSON.parse(localStorage.getItem('klausurenStats')||'{}'),currentTab:'exam',learn:{questions:[],currentIdx:0,answered:{},total:0},showDifficulty:localStorage.getItem('showDifficulty')==='true',bookmarks:JSON.parse(localStorage.getItem('klausurenBookmarks')||'[]')};
+
+function toggleDifficultyShow() {
+  state.showDifficulty = !state.showDifficulty;
+  localStorage.setItem('showDifficulty', state.showDifficulty);
+  updateDifficultyToggleButton();
+  
+  if (state.currentTab === 'learn' && state.learn.questions && state.learn.questions.length > 0) {
+    renderLearnCard();
+  } else if (state.currentTab === 'exam' && state.questions && state.questions.length > 0) {
+    renderQuestions();
+  }
+}
+
+function updateDifficultyToggleButton() {
+  const btn = document.getElementById('difficultyToggleBtn');
+  const icon = document.getElementById('difficultyIcon');
+  const text = document.getElementById('difficultyText');
+  if (btn && icon && text) {
+    if (state.showDifficulty) {
+      icon.textContent = '👁️';
+      text.textContent = 'Schwierigkeit: An';
+      btn.style.border = '1px solid var(--accent)';
+    } else {
+      icon.textContent = '🙈';
+      text.textContent = 'Schwierigkeit: Aus';
+      btn.style.border = '1px solid transparent';
+    }
+  }
+}
 
 function showCustomConfirm(title, message, onConfirm, onCancel) {
   const overlay = document.getElementById('confirmOverlay');
@@ -926,6 +1020,7 @@ function switchTab(tab){
   document.getElementById('tab-learn').classList.toggle('active',tab==='learn');
   document.getElementById('tab-summary').classList.toggle('active',tab==='summary');
   document.getElementById('tab-materials').classList.toggle('active',tab==='materials');
+  document.getElementById('tab-bookmarks').classList.toggle('active',tab==='bookmarks');
   if (document.getElementById('tab-dashboard')) {
     document.getElementById('tab-dashboard').classList.toggle('active',tab==='dashboard');
   }
@@ -935,12 +1030,135 @@ function switchTab(tab){
   document.getElementById('learnContent').style.display=tab==='learn'?'block':'none';
   document.getElementById('summaryContent').style.display=tab==='summary'?'block':'none';
   document.getElementById('materialsContent').style.display=tab==='materials'?'block':'none';
+  document.getElementById('bookmarksContent').style.display=tab==='bookmarks'?'block':'none';
   
   if(tab==='dashboard'){renderDashboard();}
   else if(tab==='learn'&&state.currentSubject){enterLearnMode();}
   else if(tab==='summary'){showSummary();}
   else if(tab==='exam'&&state.currentSubject){generateNewExam();}
   else if(tab==='materials'){showMaterials();}
+  else if(tab==='bookmarks'){showBookmarks();}
+}
+
+function toggleBookmark(questionId) {
+  if (!state.bookmarks) {
+    state.bookmarks = [];
+  }
+  const idx = state.bookmarks.indexOf(questionId);
+  if (idx > -1) {
+    state.bookmarks.splice(idx, 1);
+  } else {
+    state.bookmarks.push(questionId);
+  }
+  localStorage.setItem('klausurenBookmarks', JSON.stringify(state.bookmarks));
+  updateBookmarkButtons(questionId);
+  if (state.currentTab === 'bookmarks') {
+    showBookmarks();
+  }
+}
+
+function updateBookmarkButtons(questionId) {
+  const isBookmarked = state.bookmarks && state.bookmarks.includes(questionId);
+  document.querySelectorAll('.bookmark-btn[data-id="' + questionId + '"]').forEach(btn => {
+    btn.style.color = isBookmarked ? 'var(--warning)' : 'var(--text3)';
+    btn.textContent = isBookmarked ? '★' : '☆';
+  });
+  updateBookmarksTotalBadge();
+}
+
+function updateBookmarksTotalBadge() {
+  const badge = document.getElementById('badge-bookmarks');
+  if (badge) {
+    const count = (state.bookmarks || []).length;
+    badge.textContent = count;
+    badge.style.display = count > 0 ? 'inline-block' : 'none';
+  }
+  const totalDisplay = document.getElementById('bookmarksTotalCount');
+  if (totalDisplay) {
+    totalDisplay.textContent = (state.bookmarks || []).length;
+  }
+}
+
+function getAllQuestionsMap() {
+  const map = {};
+  const banks = [
+    ...(typeof QUESTION_BANK_bwl1 !== 'undefined' ? QUESTION_BANK_bwl1 : []),
+    ...(typeof QUESTION_BANK_bwl2 !== 'undefined' ? QUESTION_BANK_bwl2 : []),
+    ...(typeof QUESTION_BANK_mawi1 !== 'undefined' ? QUESTION_BANK_mawi1 : []),
+    ...(typeof QUESTION_BANK_mawi2 !== 'undefined' ? QUESTION_BANK_mawi2 : []),
+    ...(typeof QUESTION_BANK_vwl !== 'undefined' ? QUESTION_BANK_vwl : []),
+    ...(typeof QUESTION_BANK_wpr !== 'undefined' ? QUESTION_BANK_wpr : []),
+    ...(typeof QUESTION_BANK_perso !== 'undefined' ? QUESTION_BANK_perso : [])
+  ];
+  banks.forEach(q => {
+    map[q.id] = q;
+  });
+  return map;
+}
+
+function showBookmarks() {
+  updateBookmarksTotalBadge();
+  const container = document.getElementById('bookmarksList');
+  if (!container) return;
+  container.innerHTML = '';
+  
+  const bList = state.bookmarks || [];
+  if (bList.length === 0) {
+    container.innerHTML = `
+      <div style="text-align: center; padding: 60px 20px; color: var(--text3);">
+        <div style="font-size: 3.5rem; margin-bottom: 16px;">⭐</div>
+        <h3 style="color: var(--text2); margin-bottom: 8px;">Noch keine Lesezeichen</h3>
+        <p style="max-width: 400px; margin: 0 auto; font-size: 0.9rem;">Markiere schwierige oder interessante Fragen während des Übens mit dem Stern-Symbol, um sie hier jederzeit gezielt zu wiederholen.</p>
+      </div>`;
+    return;
+  }
+  
+  const qMap = getAllQuestionsMap();
+  
+  bList.forEach((id, index) => {
+    const q = qMap[id];
+    if (!q) return;
+    
+    const card = document.createElement('div');
+    card.className = 'question-card';
+    
+    let subjName = 'Unbekannt';
+    if (id.startsWith('bwl1')) subjName = 'BWL 1';
+    else if (id.startsWith('bwl2')) subjName = 'Buchführung';
+    else if (id.startsWith('mawi1')) subjName = 'Mathe';
+    else if (id.startsWith('mawi2')) subjName = 'Statistik';
+    else if (id.startsWith('vwl')) subjName = 'VWL';
+    else if (id.startsWith('wpr')) subjName = 'WPR';
+    else if (id.startsWith('perso')) subjName = 'Perso';
+    
+    let html = '<div class="q-number" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">';
+    html += '<span><span style="background:var(--accent2);color:var(--bg);padding:2px 6px;border-radius:4px;font-size:0.75rem;font-weight:700;margin-right:8px">' + subjName + '</span> · ' + q.points + ' Punkte' + (q.type === 'fitb' ? ' · <span style="color:var(--accent3)">Lückentext</span>' : '') + '</span>';
+    html += '<div style="display:flex;align-items:center;gap:12px;">' + getDifficultyBadge(q.difficulty, true) + '<button class="bookmark-btn" onclick="toggleBookmark(\\\' + q.id + \\\')" data-id="' + q.id + '" title="Lesezeichen entfernen" style="background:transparent;border:none;cursor:pointer;font-size:1.4rem;color:var(--warning);transition:transform 0.1s;display:inline-flex;align-items:center;justify-content:center;padding:2px;outline:none;">★</button></div></div>';
+    
+    html += '<div class="q-source">📖 ' + q.source + '</div>';
+    if (q.diagram) {
+      html += '<div class="diagram-box">' + getDiagram(q.diagram) + '</div>';
+    }
+    html += '<div class="q-text">' + q.question + '</div>';
+    
+    if (q.type === 'fitb') {
+      html += '<div style="margin-top: 12px; margin-bottom: 12px;">';
+      html += '<input type="text" class="ft-input" placeholder="Musterlösung unten ansehen..." disabled style="cursor:not-allowed; opacity: 0.7;"/>';
+      html += '</div>';
+    } else {
+      html += '<div class="options">';
+      q.options.forEach((opt, oi) => {
+        const isCorrect = oi === q.correct;
+        html += '<div class="option ' + (isCorrect ? 'correct-answer' : '') + '" style="cursor:default"><div class="radio ' + (isCorrect ? 'checked' : '') + '"></div><span>' + opt + '</span></div>';
+      });
+      html += '</div>';
+    }
+    
+    html += '<div class="solution show" style="margin-top:16px"><h4>💡 Musterlösung & Erklärung</h4><p>' + (q.solution || 'Siehe Vorlesungsmaterial') + '</p>' + (q.type === 'fitb' ? '<p style="margin-top:8px">✔️ Richtige Antwort: <strong>' + (q.correct || '') + '</strong></p>' : '') + '<div class="ref">📖 Quelle: ' + q.source + '</div></div>';
+    
+    card.innerHTML = html;
+    container.appendChild(card);
+  });
 }
 
 // Einfacher Markdown-Parser
@@ -1085,7 +1303,7 @@ function generateNewExam(){
   const partKey=cfg.parts>1?(partIdx===0?cfg.part1.key:cfg.part2.key):cfg.part1.key;
   const bank={bwl1:QUESTION_BANK_bwl1,bwl2:QUESTION_BANK_bwl2,mawi1:QUESTION_BANK_mawi1,mawi2:QUESTION_BANK_mawi2,vwl:QUESTION_BANK_vwl,wpr:QUESTION_BANK_wpr,perso:QUESTION_BANK_perso}[partKey];
   if(!bank||bank.length===0){document.getElementById('questionsContainer').innerHTML='<p style="color:var(--danger)">Keine Fragen gefunden.</p>';return;}
-  const numQ=Math.min(25,Math.max(20,bank.length));
+  const numQ=Math.min(35,Math.max(20,bank.length));
   const shuffled=[...bank].sort(()=>Math.random()-0.5);
   state.questions=shuffled.slice(0,numQ);
   renderQuestions();
@@ -1421,7 +1639,92 @@ function getDiagram(type){
       '<circle cx="'+px(32)+'" cy="'+py(4.6)+'" r="4" fill="#38bdf8"/>'+
       '<text x="'+px(32)+'" y="'+(py(4.6)+14)+'" fill="#38bdf8" font-size="8" font-weight="bold" text-anchor="middle" font-family="system-ui">Rezession</text>',
 
-    'koordinatensystem': AX.bg+AX.xAxis+AX.yAxis+AX.xLabel+AX.yLabel+AX.title('Koordinatensystem')
+    'koordinatensystem': AX.bg+AX.xAxis+AX.yAxis+AX.xLabel+AX.yLabel+AX.title('Koordinatensystem'),
+
+    'printen-nachfrage': (() => {
+      const cq = (q) => Math.round(55 + (q / 120) * 325);
+      const cp = (p) => Math.round(255 - (p / 2.0) * 220);
+      let grid = '';
+      for (let p = 0.4; p <= 2.0; p += 0.4) {
+        grid += '<line x1="' + cq(0) + '" y1="' + cp(p) + '" x2="' + cq(120) + '" y2="' + cp(p) + '" stroke="#1e293b" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.6"/>';
+        grid += '<text x="45" y="' + (cp(p) + 3) + '" fill="#94a3b8" font-size="8" text-anchor="end" font-family="system-ui">' + p.toFixed(1) + '</text>';
+      }
+      for (let q = 20; q <= 120; q += 20) {
+        grid += '<line x1="' + cq(q) + '" y1="' + cp(0) + '" x2="' + cq(q) + '" y2="' + cp(2.0) + '" stroke="#1e293b" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.6"/>';
+        grid += '<text x="' + cq(q) + '" y="270" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="system-ui">' + q + '</text>';
+      }
+      grid += '<text x="45" y="' + (cp(0) + 3) + '" fill="#94a3b8" font-size="8" text-anchor="end" font-family="system-ui">0.0</text>';
+      grid += '<text x="' + cq(0) + '" y="270" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="system-ui">0</text>';
+
+      return '<rect width="420" height="300" fill="url(#bgGrad)" rx="12"/>' +
+        AX.title('Markt-Aggregation Aachener Printen') +
+        grid +
+        '<text x="220" y="290" fill="#cbd5e1" font-size="10" text-anchor="middle" font-weight="600" font-family="system-ui">Menge Q (Printen)</text>' +
+        '<text x="16" y="145" fill="#cbd5e1" font-size="10" text-anchor="middle" font-weight="600" transform="rotate(-90,16,145)" font-family="system-ui">Preis P (€)</text>' +
+        '<line x1="55" y1="255" x2="385" y2="255" stroke="#475569" stroke-width="2"/>' +
+        '<line x1="55" y1="255" x2="55" y2="35" stroke="#475569" stroke-width="2"/>' +
+        // Kurve B: Bäckerei 1 (steepest) (25,0) -> (0,2.0)
+        '<line x1="' + cq(25) + '" y1="' + cp(0) + '" x2="' + cq(0) + '" y2="' + cp(2.0) + '" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,1" opacity="0.8"/>' +
+        '<text x="' + cq(15) + '" y="' + cp(0.8) + '" fill="#3b82f6" font-size="8" font-weight="bold" font-family="system-ui">Kurve B (B1)</text>' +
+        // Kurve A: Bäckerei 2 (35,0) -> (0,1.4)
+        '<line x1="' + cq(35) + '" y1="' + cp(0) + '" x2="' + cq(0) + '" y2="' + cp(1.4) + '" stroke="#06b6d4" stroke-width="2" stroke-dasharray="4,1" opacity="0.8"/>' +
+        '<text x="' + cq(20) + '" y="' + cp(0.6) + '" fill="#06b6d4" font-size="8" font-weight="bold" font-family="system-ui">Kurve A (B2)</text>' +
+        // Kurve C: Bäckerei 3 (flattest) (60,0) -> (0,0.96)
+        '<line x1="' + cq(60) + '" y1="' + cp(0) + '" x2="' + cq(0) + '" y2="' + cp(0.96) + '" stroke="#10b981" stroke-width="2" stroke-dasharray="4,1" opacity="0.8"/>' +
+        '<text x="' + cq(40) + '" y="' + cp(0.32) + '" fill="#10b981" font-size="8" font-weight="bold" font-family="system-ui">Kurve C (B3)</text>' +
+        // Kurve D: Aggregierte Marktnachfrage
+        '<path d="M ' + cq(0) + ' ' + cp(2.0) + ' L ' + cq(7.5) + ' ' + cp(1.4) + ' L ' + cq(24) + ' ' + cp(0.96) + ' L ' + cq(120) + ' ' + cp(0.0) + '" fill="none" stroke="#ec4899" stroke-width="3" filter="url(#glow)"/>' +
+        '<text x="' + cq(65) + '" y="' + cp(0.4) + '" fill="#ec4899" font-size="9" font-weight="bold" font-family="system-ui">Kurve D (Marktnachfrage)</text>' +
+        // Marktangebot S: (0,0) -> (120,1.2)
+        '<line x1="' + cq(0) + '" y1="' + cp(0) + '" x2="' + cq(120) + '" y2="' + cp(1.2) + '" stroke="#f59e0b" stroke-width="2.5"/>' +
+        '<text x="' + cq(90) + '" y="' + (cp(0.9) - 8) + '" fill="#f59e0b" font-size="9" font-weight="bold" font-family="system-ui">S (Angebot)</text>' +
+        // Gleichgewicht bei P=0.6, Q=60
+        '<line x1="' + cq(60) + '" y1="255" x2="' + cq(60) + '" y2="' + cp(0.6) + '" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3"/>' +
+        '<line x1="55" y1="' + cp(0.6) + '" x2="' + cq(60) + '" y2="' + cp(0.6) + '" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3"/>' +
+        '<circle cx="' + cq(60) + '" cy="' + cp(0.6) + '" r="5.5" fill="#ef4444" filter="url(#glow)"/>' +
+        '<circle cx="' + cq(60) + '" cy="' + cp(0.6) + '" r="3" fill="#f8fafc"/>' +
+        '<text x="' + cq(60) + '" y="' + (cp(0.6) - 10) + '" fill="#f87171" font-size="8" font-weight="bold" font-family="system-ui" text-anchor="middle">GG (P=0.6, Q=60)</text>' +
+        // Point Highlight for Bäckerei 2 at P=1.2 (Q=5)
+        '<circle cx="' + cq(5) + '" cy="' + cp(1.2) + '" r="4" fill="#06b6d4"/>' +
+        '<line x1="55" y1="' + cp(1.2) + '" x2="' + cq(5) + '" y2="' + cp(1.2) + '" stroke="#06b6d4" stroke-width="0.75" stroke-dasharray="3,3"/>' +
+        '<line x1="' + cq(5) + '" y1="255" x2="' + cq(5) + '" y2="' + cp(1.2) + '" stroke="#06b6d4" stroke-width="0.75" stroke-dasharray="3,3"/>' +
+        '<text x="' + (cq(5) + 8) + '" y="' + (cp(1.2) + 3) + '" fill="#22d3ee" font-size="7" font-family="system-ui">P=1.2, Q=5</text>';
+    })(),
+
+    'co2-nachfrage': (() => {
+      const cq = (q) => Math.round(55 + (q / 1200) * 325);
+      const cp = (p) => Math.round(255 - (p / 30.0) * 220);
+      let grid = '';
+      for (let p = 5; p <= 30; p += 5) {
+        grid += '<line x1="' + cq(0) + '" y1="' + cp(p) + '" x2="' + cq(1200) + '" y2="' + cp(p) + '" stroke="#1e293b" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.6"/>';
+        grid += '<text x="45" y="' + (cp(p) + 3) + '" fill="#94a3b8" font-size="8" text-anchor="end" font-family="system-ui">' + p + '</text>';
+      }
+      for (let q = 200; q <= 1200; q += 200) {
+        grid += '<line x1="' + cq(q) + '" y1="' + cp(0) + '" x2="' + cq(q) + '" y2="' + cp(30) + '" stroke="#1e293b" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.6"/>';
+        grid += '<text x="' + cq(q) + '" y="270" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="system-ui">' + q + '</text>';
+      }
+      grid += '<text x="45" y="' + (cp(0) + 3) + '" fill="#94a3b8" font-size="8" text-anchor="end" font-family="system-ui">0</text>';
+      grid += '<text x="' + cq(0) + '" y="270" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="system-ui">0</text>';
+
+      return '<rect width="420" height="300" fill="url(#bgGrad)" rx="12"/>' +
+        AX.title('CO2-Ausstossnachfrage Deutschland') +
+        grid +
+        '<text x="220" y="290" fill="#cbd5e1" font-size="10" text-anchor="middle" font-weight="600" font-family="system-ui">CO2-Menge Q (Mio. Tonnen / Jahr)</text>' +
+        '<text x="16" y="145" fill="#cbd5e1" font-size="10" text-anchor="middle" font-weight="600" transform="rotate(-90,16,145)" font-family="system-ui">Zertifikatspreis P (€ / Tonne)</text>' +
+        '<line x1="55" y1="255" x2="385" y2="255" stroke="#475569" stroke-width="2"/>' +
+        '<line x1="55" y1="255" x2="55" y2="35" stroke="#475569" stroke-width="2"/>' +
+        // Nachfragekurve: (1000, 0) -> (0, 26.67)
+        '<line x1="' + cq(1000) + '" y1="' + cp(0) + '" x2="' + cq(0) + '" y2="' + cp(26.67) + '" stroke="#38bdf8" stroke-width="3" filter="url(#glow)"/>' +
+        '<text x="' + cq(500) + '" y="' + (cp(11) - 5) + '" fill="#38bdf8" font-size="9" font-weight="bold" font-family="system-ui">Ausstossnachfrage (D)</text>' +
+        // Punkt bei P=0, Q=1000
+        '<circle cx="' + cq(1000) + '" cy="' + cp(0) + '" r="5" fill="#38bdf8"/>' +
+        '<text x="' + cq(1000) + '" y="' + (cp(0) - 10) + '" fill="#38bdf8" font-size="8" font-weight="bold" font-family="system-ui" text-anchor="middle">Q_max = 1000</text>' +
+        // Punkt bei P=20, Q=250 (Pigou-Steuer)
+        '<line x1="55" y1="' + cp(20) + '" x2="' + cq(250) + '" y2="' + cp(20) + '" stroke="#ef4444" stroke-width="1.25" stroke-dasharray="3,3"/>' +
+        '<line x1="' + cq(250) + '" y1="255" x2="' + cq(250) + '" y2="' + cp(20) + '" stroke="#ef4444" stroke-width="1.25" stroke-dasharray="3,3"/>' +
+        '<circle cx="' + cq(250) + '" cy="' + cp(20) + '" r="5" fill="#ef4444"/>' +
+        '<text x="' + (cq(250) + 8) + '" y="' + (cp(20) - 8) + '" fill="#f87171" font-size="8" font-weight="bold" font-family="system-ui">P=20, Q=250</text>';
+    })()
   };
   const content=d[type]||'';
   if(!content)return '';
@@ -1443,6 +1746,36 @@ function getTopicsForSubject(subjKey){
   return topics;
 }
 
+function shuffleArray(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function getDifficultyBadge(difficulty, forceShow) {
+  const show = state.showDifficulty || forceShow;
+  const style = show ? '' : 'display:none';
+  let badgeClass = '';
+  let label = '';
+  if (difficulty === 'Easy') {
+    badgeClass = 'badge-easy';
+    label = '🟢 Leicht';
+  } else if (difficulty === 'Medium') {
+    badgeClass = 'badge-medium';
+    label = '🟡 Mittel';
+  } else if (difficulty === 'Hard') {
+    badgeClass = 'badge-hard';
+    label = '🔴 Schwer';
+  } else {
+    badgeClass = 'badge-easy';
+    label = '🟢 Leicht';
+  }
+  return '<span class="difficulty-badge ' + badgeClass + '" style="' + style + '">' + label + '</span>';
+}
+
 function saveQuestionProgress(q, isCorrect, points, selected) {
   const key = state.currentSubject;
   if (!key) return;
@@ -1460,10 +1793,12 @@ function saveActiveLearnSession() {
   const key = state.currentSubject;
   if (!key || !state.learn.currentTopicId) return;
   const activeSessions = JSON.parse(localStorage.getItem('activeLearnSessions') || '{}');
+  const qIds = (state.learn.questions || []).map(q => q.id);
   activeSessions[key] = {
     topicId: state.learn.currentTopicId,
     currentIdx: state.learn.currentIdx,
-    answered: state.learn.answered
+    answered: state.learn.answered,
+    questionIds: qIds
   };
   localStorage.setItem('activeLearnSessions', JSON.stringify(activeSessions));
 }
@@ -1488,10 +1823,24 @@ function resumeActiveLearnSession(subjKey) {
   const qs = getQuestionsForTopic(subjKey, topic.filter);
   if (qs.length === 0) return;
   
-  state.learn.questions = qs;
+  if (session.questionIds) {
+    const qMap = {};
+    qs.forEach(q => qMap[q.id] = q);
+    const orderedQs = [];
+    session.questionIds.forEach(id => {
+      if (qMap[id]) orderedQs.push(qMap[id]);
+    });
+    qs.forEach(q => {
+      if (!orderedQs.includes(q)) orderedQs.push(q);
+    });
+    state.learn.questions = orderedQs;
+  } else {
+    state.learn.questions = qs;
+  }
+  
   state.learn.currentIdx = session.currentIdx || 0;
   state.learn.answered = session.answered || {};
-  state.learn.total = qs.length;
+  state.learn.total = state.learn.questions.length;
   state.learn.currentTopicId = session.topicId;
   
   document.getElementById('learnNav').style.display = 'flex';
@@ -1513,7 +1862,7 @@ function discardActiveLearnSession(subjKey) {
 
 function repeatTopicQuiz() {
   const key = state.currentSubject;
-  const qs = state.learn.questions;
+  let qs = state.learn.questions;
   if (key && qs) {
     const progress = JSON.parse(localStorage.getItem('learnProgress') || '{}');
     const subjProgress = progress[key] || {};
@@ -1522,6 +1871,9 @@ function repeatTopicQuiz() {
     });
     progress[key] = subjProgress;
     localStorage.setItem('learnProgress', JSON.stringify(progress));
+    
+    qs = shuffleArray(qs);
+    state.learn.questions = qs;
   }
   state.learn.currentIdx = 0;
   state.learn.answered = {};
@@ -1539,6 +1891,51 @@ function countCorrectInTopic(subjKey, filters) {
     if (subjProgress[q.id] && subjProgress[q.id].correct) correct++;
   });
   return correct;
+}
+
+function getIncorrectQuestionsForSubject(subjKey) {
+  const topics = getTopicsForSubject ? getTopicsForSubject(subjKey) : [];
+  const progress = JSON.parse(localStorage.getItem('learnProgress') || '{}');
+  const subjProgress = progress[subjKey] || {};
+  
+  const incorrectQIds = new Set();
+  for (let qId in subjProgress) {
+    if (subjProgress[qId] && !subjProgress[qId].correct) {
+      incorrectQIds.add(qId);
+    }
+  }
+  
+  if (incorrectQIds.size === 0) return [];
+  
+  const allQs = [];
+  const processedQIds = new Set();
+  topics.forEach(t => {
+    const qs = getQuestionsForTopic(subjKey, t.filter);
+    qs.forEach(q => {
+      if (processedQIds.has(q.id)) return;
+      processedQIds.add(q.id);
+      if (incorrectQIds.has(q.id)) {
+        allQs.push(q);
+      }
+    });
+  });
+  return allQs;
+}
+
+function startMistakesSession() {
+  const key = state.currentSubject;
+  if (!key) return;
+  const incorrectQs = getIncorrectQuestionsForSubject(key);
+  if (incorrectQs.length === 0) return;
+  
+  state.learn.questions = shuffleArray(incorrectQs);
+  state.learn.currentIdx = 0;
+  state.learn.answered = {};
+  state.learn.total = state.learn.questions.length;
+  state.learn.currentTopicId = 'mistakes';
+  
+  document.getElementById('learnNav').style.display = 'flex';
+  renderLearnCard();
 }
 
 function enterLearnMode(){
@@ -1589,6 +1986,19 @@ function enterLearnMode(){
   }
   
   html += '<div class="topic-list">';
+  const incorrectQs = getIncorrectQuestionsForSubject(key);
+  if (incorrectQs.length > 0) {
+    html += `
+      <div class="topic-card topic-partial" onclick="startMistakesSession(); event.stopPropagation();" style="border: 1px solid var(--danger); background: rgba(239, 68, 68, 0.04); grid-column: 1 / -1;">
+        <div class="topic-icon" style="background: rgba(239, 68, 68, 0.15); color: var(--danger);">❌</div>
+        <div class="topic-info" style="flex: 1;">
+          <div class="topic-name" style="color: var(--danger); font-weight: 700;">❌ Fehlertrainer (Falsche Fragen)</div>
+          <div class="topic-count" style="color: var(--text2);">${incorrectQs.length} falsch beantwortete Frage(n) gezielt wiederholen</div>
+        </div>
+        <div class="btn btn-danger" style="padding: 6px 12px; font-size: 0.75rem; border-radius: var(--radius-sm);">Trainieren</div>
+      </div>
+    `;
+  }
   topics.forEach((t,idx)=>{
     const qCount=countQuestionsForTopic(key,t.filter);
     const answered=countAnsweredInTopic(key,t.filter);
@@ -1695,11 +2105,13 @@ function startTopicQuiz(topicId){
   const topic=topics.find(t=>t.id===topicId);
   if(!topic)return;
   
-  const qs=getQuestionsForTopic(key,topic.filter);
+  let qs=getQuestionsForTopic(key,topic.filter);
   if(qs.length===0){
     enterLearnMode();
     return;
   }
+  
+  qs=shuffleArray(qs);
   
   state.learn.questions=qs;
   state.learn.currentIdx=0;
@@ -1748,10 +2160,11 @@ function renderLearnCard(){
   
   // Card bauen
   let html='';
-  html+='<div class="q-number">Frage '+(idx+1)+' · '+q.points+' Punkte';
+  let isBookmarked = state.bookmarks && state.bookmarks.includes(q.id);
+  html+='<div class="q-number" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px"><span>Frage '+(idx+1)+' · '+q.points+' Punkte';
   if(q.type==='ma')html+=' · <span style="color:var(--warning)">Mehrfachauswahl</span>';
   if(q.type==='fitb')html+=' · <span style="color:var(--accent3)">Lückentext</span>';
-  html+='</div>';
+  html+='</span><div style="display:flex;align-items:center;gap:12px;">' + getDifficultyBadge(q.difficulty, isAns) + '<button class="bookmark-btn" onclick="toggleBookmark(\\\''+q.id+'\\\')" data-id="'+q.id+'" title="Frage merken" style="background:transparent;border:none;cursor:pointer;font-size:1.4rem;color:'+(isBookmarked ? 'var(--warning)' : 'var(--text3)')+';transition:transform 0.1s;display:inline-flex;align-items:center;justify-content:center;padding:2px;outline:none;">'+(isBookmarked ? '★' : '☆')+'</button></div></div>';
   html+='<div class="q-source">📖 '+q.source+'</div>';
   
   // Status-Badge
@@ -1952,11 +2365,15 @@ function showLearnResults(){
     }
   });
   const pct=totalP>0?(earnedP/totalP)*100:0;
+  const isMistakes = state.learn.currentTopicId === 'mistakes';
+  const headingText = isMistakes ? '❌ Fehlertraining beendet!' : 'Lern-Modus abgeschlossen!';
+  const descText = isMistakes ? 'Du hast ' + answeredCount + ' Fehler-Frage(n) bearbeitet.' : 'Du hast '+answeredCount+' von '+qs.length+' Fragen beantwortet.';
+  
   const card=document.getElementById('learnCard');
   card.innerHTML='<div style="text-align:center;padding:30px">'+
-    '<div style="font-size:3rem;margin-bottom:12px">🎉</div>'+
-     '<h2 style="margin-bottom:8px">Lern-Modus abgeschlossen!</h2>'+
-    '<p style="color:var(--text2);margin-bottom:20px">Du hast '+answeredCount+' von '+qs.length+' Fragen beantwortet.</p>'+
+    '<div style="font-size:3rem;margin-bottom:12px">' + (isMistakes ? '💪' : '🎉') + '</div>'+
+    '<h2 style="margin-bottom:8px">' + headingText + '</h2>'+
+    '<p style="color:var(--text2);margin-bottom:20px">' + descText + '</p>'+
     '<div class="result-stats" style="grid-template-columns:repeat(auto-fit,minmax(100px,1fr));max-width:500px;margin:0 auto 24px">'+
     '<div class="stat-box"><div class="num" style="color:var(--success)">'+correct+'/'+answeredCount+'</div><div class="desc">Richtig</div></div>'+
     '<div class="stat-box"><div class="num" style="color:var(--accent)">'+earnedP+'/'+totalP+'</div><div class="desc">Punkte</div></div>'+
@@ -1964,7 +2381,8 @@ function showLearnResults(){
     '</div>'+
     '<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">'+
     '<button class="btn btn-primary" onclick="repeatTopicQuiz()">🔄 Wiederholen</button>'+
-    '<button class="btn btn-secondary" onclick="goExamMode()">📝 Klausur versuchen</button>'+
+    '<button class="btn btn-secondary" onclick="enterLearnMode()">📚 Themenliste</button>'+
+    '<button class="btn btn-success" onclick="goExamMode()">📝 Klausur versuchen</button>'+
     '</div></div>';
   document.getElementById('learnNav').style.display='none';
 }
@@ -1976,7 +2394,8 @@ function renderQuestions(){
     const card=document.createElement('div');
     card.className='question-card';
     card.id='qcard-'+idx;
-    let html='<div class="q-number">Frage '+(idx+1)+' · '+q.points+' Punkte'+(q.type==='fitb'?' · <span style="color:var(--accent3)">Lückentext</span>':'')+'</div>';
+    let isBookmarked = state.bookmarks && state.bookmarks.includes(q.id);
+    let html='<div class="q-number" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px"><span>Frage '+(idx+1)+' · '+q.points+' Punkte'+(q.type==='fitb'?' · <span style="color:var(--accent3)">Lückentext</span>':'')+'</span><div style="display:flex;align-items:center;gap:12px;">' + getDifficultyBadge(q.difficulty, state.examSubmitted) + '<button class="bookmark-btn" onclick="toggleBookmark(\\\''+q.id+'\\\')" data-id="'+q.id+'" title="Frage merken" style="background:transparent;border:none;cursor:pointer;font-size:1.4rem;color:'+(isBookmarked ? 'var(--warning)' : 'var(--text3)')+';transition:transform 0.1s;display:inline-flex;align-items:center;justify-content:center;padding:2px;outline:none;">'+(isBookmarked ? '★' : '☆')+'</button></div></div>';
     html+='<div class="q-source">📖 '+q.source+'</div>';
     if(q.diagram){html+='<div class="diagram-box">'+getDiagram(q.diagram)+'</div>';}
     html+='<div class="q-text">'+q.question+'</div>';
@@ -2163,22 +2582,52 @@ function onPartSelectChange(){
 function getSubjectLearnProgress(subjKey){
   const topics = getTopicsForSubject ? getTopicsForSubject(subjKey) : [];
   let totalQs = 0;
-  topics.forEach(t => {
-    totalQs += countQuestionsForTopic ? countQuestionsForTopic(subjKey, t.filter) : 0;
-  });
   
+  const diffStats = {
+    Easy: { total: 0, answered: 0, correct: 0 },
+    Medium: { total: 0, answered: 0, correct: 0 },
+    Hard: { total: 0, answered: 0, correct: 0 }
+  };
+
   const progress = JSON.parse(localStorage.getItem('learnProgress') || '{}');
   const subjProgress = progress[subjKey] || {};
+  
+  const processedQIds = new Set();
+
+  topics.forEach(t => {
+    const qs = getQuestionsForTopic(subjKey, t.filter);
+    qs.forEach(q => {
+      if (processedQIds.has(q.id)) return;
+      processedQIds.add(q.id);
+      
+      totalQs++;
+      const diff = q.difficulty || 'Easy';
+      if (!diffStats[diff]) {
+        diffStats[diff] = { total: 0, answered: 0, correct: 0 };
+      }
+      diffStats[diff].total++;
+      
+      if (subjProgress[q.id]) {
+        diffStats[diff].answered++;
+        if (subjProgress[q.id].correct) {
+          diffStats[diff].correct++;
+        }
+      }
+    });
+  });
+  
   let answered = 0;
   let correct = 0;
   for(let qId in subjProgress) {
     answered++;
     if(subjProgress[qId].correct) correct++;
   }
+  
   return {
     total: totalQs,
     answered: answered,
-    correct: correct
+    correct: correct,
+    diffStats: diffStats
   };
 }
 
@@ -2247,6 +2696,11 @@ function renderDashboard() {
   let totalPassed = 0;
   let totalLearnAnswered = 0;
   let totalLearnQs = 0;
+  
+  let totalEasy = 0, totalEasyAnswered = 0;
+  let totalMedium = 0, totalMediumAnswered = 0;
+  let totalHard = 0, totalHardAnswered = 0;
+  
   const subjectScores = [];
   for (let key in SUBJECTS) {
     const stats = state.stats[key] || { attempts: 0, passed: 0 };
@@ -2255,6 +2709,16 @@ function renderDashboard() {
     const learnProg = getSubjectLearnProgress(key);
     totalLearnAnswered += learnProg.answered;
     totalLearnQs += learnProg.total;
+    
+    if (learnProg.diffStats) {
+      totalEasy += learnProg.diffStats.Easy.total;
+      totalEasyAnswered += learnProg.diffStats.Easy.answered;
+      totalMedium += learnProg.diffStats.Medium.total;
+      totalMediumAnswered += learnProg.diffStats.Medium.answered;
+      totalHard += learnProg.diffStats.Hard.total;
+      totalHardAnswered += learnProg.diffStats.Hard.answered;
+    }
+    
     let avgScore = 0;
     if (stats.scores && stats.scores.length > 0) {
       avgScore = stats.scores.reduce((sum, s) => sum + s, 0) / stats.scores.length;
@@ -2302,7 +2766,12 @@ function renderDashboard() {
       <div class="stat-card">
         <div class="title">Lernfortschritt</div>
         <div class="value">${overallLearnPct.toFixed(0)}%</div>
-        <div class="sub">${totalLearnAnswered} von ${totalLearnQs} Fragen trainiert</div>
+        <div class="sub" style="margin-bottom: 6px;">${totalLearnAnswered} von ${totalLearnQs} Fragen trainiert</div>
+        <div style="display: flex; gap: 8px; font-size: 0.72rem; color: var(--text3); justify-content: center; border-top: 1px solid var(--border); padding-top: 6px;">
+          <span>🟢 L: ${totalEasyAnswered}/${totalEasy}</span>
+          <span>🟡 M: ${totalMediumAnswered}/${totalMedium}</span>
+          <span>🔴 S: ${totalHardAnswered}/${totalHard}</span>
+        </div>
       </div>
       <div class="stat-card" style="grid-column: 1 / -1">
         <div class="title" style="margin-bottom: 12px;">Gesamt-Performance im Vergleich</div>
@@ -2325,6 +2794,20 @@ function renderDashboard() {
       }
     }
     const learnPct = s.learnProg.total > 0 ? (s.learnProg.answered / s.learnProg.total * 100) : 0;
+    
+    // Build breakdown html
+    let breakdownHtml = '';
+    if (s.learnProg && s.learnProg.diffStats) {
+      const ds = s.learnProg.diffStats;
+      breakdownHtml = `
+        <div style="display: flex; justify-content: space-between; margin-top: 6px; font-size: 0.72rem; color: var(--text3);">
+          <span title="Leicht">🟢 L: ${ds.Easy.answered}/${ds.Easy.total}</span>
+          <span title="Mittel">🟡 M: ${ds.Medium.answered}/${ds.Medium.total}</span>
+          <span title="Schwer">🔴 S: ${ds.Hard.answered}/${ds.Hard.total}</span>
+        </div>
+      `;
+    }
+    
     html += `
       <div class="subj-card">
         <div class="subj-card-header">
@@ -2356,6 +2839,22 @@ function renderDashboard() {
         <div class="subj-card-progress-bar">
           <div class="subj-card-progress-fill" style="width: ${learnPct}%"></div>
         </div>
+        ${breakdownHtml}
+        
+        <!-- Fehlertrainer Schnellstart -->
+        ${(() => {
+          const incorrectQs = getIncorrectQuestionsForSubject(s.key);
+          if (incorrectQs.length > 0) {
+            return `
+              <div style="margin-top: 8px; padding: 6px 10px; background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 6px; display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem;">
+                <span style="color: var(--danger); font-weight: 600;">❌ ${incorrectQs.length} offene Fehler</span>
+                <button class="btn btn-danger" style="padding: 2px 8px; font-size: 0.7rem; border-radius: 4px; border: none; cursor: pointer; background: var(--danger); color: white;" onclick="selectSubject('${s.key}'); switchTab('learn'); startMistakesSession(); event.stopPropagation();">Wiederholen</button>
+              </div>
+            `;
+          }
+          return '';
+        })()}
+
         <div style="display: flex; gap: 8px; margin-top: 12px;">
           <button class="btn btn-primary" style="flex:1; padding: 8px; font-size: .8rem;" onclick="selectSubject('${s.key}'); switchTab('learn');">🎯 Lernen</button>
           <button class="btn btn-success" style="flex:1; padding: 8px; font-size: .8rem;" onclick="selectSubject('${s.key}'); switchTab('exam');">📝 Klausur</button>
@@ -2486,7 +2985,9 @@ for(let key in SUBJECTS){
   }
 }
 showWelcomeDashboard();
+updateBookmarksTotalBadge();
 updateThemeUI(document.documentElement.classList.contains('light'));
+updateDifficultyToggleButton();
 console.log('Fragen: BWL1='+QUESTION_BANK_bwl1.length+', BWL2='+QUESTION_BANK_bwl2.length+', MAWI1='+QUESTION_BANK_mawi1.length+', MAWI2='+QUESTION_BANK_mawi2.length+', VWL='+QUESTION_BANK_vwl.length+', WPR='+QUESTION_BANK_wpr.length+', PERSO='+QUESTION_BANK_perso.length);
 </script>
 </body>

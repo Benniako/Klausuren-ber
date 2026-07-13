@@ -1387,6 +1387,192 @@
       "s": "Kartelle schränken den Wettbewerb ein und sind nach § 1 GWB grundsätzlich verboten.",
       "src": "Folienskript Chwallek Kap. 3.3",
       "acceptable": []
+    },
+    {
+      "q": "Welcher Bestimmungsfaktor nach Gutenberg kennzeichnet das erwerbswirtschaftliche Prinzip von Betrieben im marktwirtschaftlichen System?",
+      "o": [
+        "Das Prinzip des finanziellen Gleichgewichts",
+        "Das Gewinnmaximierungsprinzip",
+        "Das Autonomieprinzip",
+        "Das Prinzip des Gemeineigentums"
+      ],
+      "c": 1,
+      "s": "Das erwerbswirtschaftliche Prinzip beschreibt das Streben nach Gewinnmaximierung.",
+      "src": "Folienskript Chwallek Kap. 1.2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welche Phase folgt im idealtypischen Lebenszyklus eines Unternehmens direkt auf die Gründungsphase?",
+      "o": [
+        "Reifephase",
+        "Wachstumsphase",
+        "Sättigungsphase",
+        "Schrumpfungsphase"
+      ],
+      "c": 1,
+      "s": "Auf die Gründung folgt die Wachstumsphase.",
+      "src": "Folienskript Chwallek Kap. 1.2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Was unterscheidet Betriebe in einer Zentralverwaltungswirtschaft wesentlich von Betrieben in einer Marktwirtschaft nach Gutenberg?",
+      "o": [
+        "Die Pflicht zur Buchführung",
+        "Das Fehlen des Autonomieprinzips und das Planerfüllungsprinzip",
+        "Die ausschließliche Nutzung von Sachgütern",
+        "Das ökonomische Prinzip"
+      ],
+      "c": 1,
+      "s": "In einer Zentralverwaltungswirtschaft gilt das Planerfüllungsprinzip und die Betriebe unterliegen staatlicher Lenkung (keine Autonomie).",
+      "src": "Folienskript Chwallek Kap. 1.2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Was ist ein 'Betrieb' im betriebswirtschaftlichen Sinne?",
+      "o": [
+        "Jede rechtliche Einheit (juristische Person)",
+        "Eine planvoll organisierte Wirtschaftseinheit zur Bedarfsdeckung",
+        "Ein Gebäude, in dem produziert wird",
+        "Eine reine Verkaufsstelle"
+      ],
+      "c": 1,
+      "s": "Ein Betrieb ist eine planvoll organisierte Wirtschaftseinheit, die Sachgüter und Dienstleistungen zur Bedarfsdeckung herstellt und absetzt.",
+      "src": "Folienskript Chwallek Kap. 1.2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welcher der folgenden Faktoren ist KEIN elementarer Produktionsfaktor nach Gutenberg?",
+      "o": [
+        "Objektbezogene Arbeit",
+        "Betriebsmittel",
+        "Werkstoffe",
+        "Geschäftsleitung (dispositiver Faktor)"
+      ],
+      "c": 3,
+      "s": "Die Geschäftsleitung ist der dispositive (leitende) Faktor, kein elementarer Faktor.",
+      "src": "Folienskript Chwallek Kap. 1.2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Nach welcher Entscheidungsregel unter Unsicherheit wählt ein Entscheider die Alternative mit dem besten Ergebnis im absolut ungünstigsten Fall (pessimistische Sicht)?",
+      "o": [
+        "Maximax-Regel",
+        "Maximin-Regel (Wald-Regel)",
+        "Laplace-Regel",
+        "Savage-Niehaus-Regel"
+      ],
+      "c": 1,
+      "s": "Die Maximin-Regel wählt das Parameter-Minimum (Sicherheit vor Risiko).",
+      "src": "Folienskript Chwallek Kap. 2.5",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welche Annahme trifft die Laplace-Regel zur Entscheidungsfindung unter Unsicherheit?",
+      "o": [
+        "Der Entscheider ist extrem optimistisch.",
+        "Alle Umweltzustände treten mit der gleichen Wahrscheinlichkeit ein.",
+        "Es wird die Alternative mit dem geringsten Bedauern gewählt.",
+        "Nur der schlechteste Umweltzustand wird betrachtet."
+      ],
+      "c": 1,
+      "s": "Die Laplace-Regel unterstellt eine Gleichverteilung aller möglichen Umweltzustände.",
+      "src": "Folienskript Chwallek Kap. 2.5",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welcher Grundsatz besagt, dass die Erstellung betrieblicher Leistungen wertmäßig über dem Einsatz der Ressourcen liegen soll?",
+      "o": [
+        "Das Wertschöpfungsprinzip",
+        "Das Liquiditätsprinzip",
+        "Das Publizitätsprinzip",
+        "Das Haftungsprinzip"
+      ],
+      "c": 0,
+      "s": "Die Wertschöpfung drückt den geschaffenen Mehrwert über die eingesetzten Vorleistungen aus.",
+      "src": "Folienskript Chwallek Kap. 2.3",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welche der folgenden Unternehmensziele stehen in einem Zielkonflikt zueinander?",
+      "o": [
+        "Gewinnmaximierung und Kostensenkung",
+        "Umsatzsteigerung und Markterschließung",
+        "Steigerung der Dividende und Erhöhung der Mitarbeiterzufriedenheit",
+        "Qualitätsverbesserung und Senkung der Fehlerquote"
+      ],
+      "c": 2,
+      "s": "Höhere Dividende (Eigentümerinteresse) und höhere Gehälter/Zufriedenheit (Mitarbeiterinteresse) stehen oft in einem Zielkonflikt.",
+      "src": "Folienskript Chwallek Kap. 2.3",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wenn zwei Unternehmensziele sich gegenseitig unterstützen (z.B. Senkung von Ausschuss und Erhöhung des Gewinns), wie nennt man diese Zielbeziehung?",
+      "o": [
+        "Komplementäre Ziele",
+        "Konkurrierende Ziele",
+        "Indifferente Ziele",
+        "Antagonistischer Widerspruch"
+      ],
+      "c": 0,
+      "s": "Komplementäre Ziele unterstützen einander.",
+      "src": "Folienskript Chwallek Kap. 2.3",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Ein Unternehmen plant eine Investition mit Anschaffungskosten von 100.000 € am Zeitpunkt t=0. In den Perioden t=1 und t=2 werden Netto-Rückflüsse (Cashflows) von jeweils 60.000 € erwartet. Der Kalkulationszinssatz beträgt 10 % p.a. Wie hoch ist der Kapitalwert (NPV) dieser Investition und ist sie vorteilhaft?",
+      "o": [
+        "-10.000 €; die Investition ist unvorteilhaft",
+        "4.132,23 €; die Investition ist vorteilhaft",
+        "20.000,00 €; die Investition ist vorteilhaft",
+        "-5.123,97 €; die Investition ist unvorteilhaft"
+      ],
+      "c": 1,
+      "s": "Der Kapitalwert berechnet sich als: NPV = -C0 + CF1 / (1+r) + CF2 / (1+r)^2. Hier: NPV = -100.000 + 60.000/1.10 + 60.000/1.21 = -100.000 + 54.545,45 + 49.586,78 = 4.132,23 €. Da der NPV > 0 ist, erhöht die Investition den Vermögenswert und ist vorteilhaft.",
+      "src": "BWL Investitionsrechnung"
+    },
+    {
+      "q": "Die Gesamtkapitalrentabilität (GKR) eines Unternehmens beträgt 8 % bei einem Zinssatz für Fremdkapital von 5 % p.a. Wie verändert sich die Eigenkapitalrentabilität (EKR), wenn der Verschuldungsgrad (FK/EK) von 1 auf 2 erhöht wird (unter Annahme eines konstanten Fremdkapitalzinssatzes)?",
+      "o": [
+        "Die EKR steigt von 11 % auf 14 %",
+        "Die EKR steigt von 13 % auf 16 %",
+        "Die EKR bleibt unverändert bei 8 %",
+        "Die EKR sinkt von 11 % auf 8 %"
+      ],
+      "c": 0,
+      "s": "Nach der Leverage-Formel gilt: EKR = GKR + (GKR - i) * (FK/EK). Bei einem Verschuldungsgrad von 1: EKR = 8 % + (8 % - 5 %) * 1 = 11 %. Bei einem Verschuldungsgrad von 2: EKR = 8 % + (8 % - 5 %) * 2 = 14 %. Dies zeigt den positiven Hebeleffekt (Leverage-Effekt) der Verschuldung, da die GKR über dem FK-Zins liegt.",
+      "src": "BWL Finanzierung"
+    },
+    {
+      "q": "Wenn ein Unternehmen seine Umsatzrentabilität von 5 % auf 6 % steigert und gleichzeitig der Kapitalumschlag von 2,0 auf 1,8 sinkt, wie verändert sich der Return on Investment (ROI) im DuPont-System?",
+      "o": [
+        "Der ROI steigt von 10,0 % auf 10,8 %",
+        "Der ROI sinkt von 10,0 % auf 9,0 %",
+        "Der ROI steigt von 5,0 % auf 6,0 %",
+        "Der ROI bleibt konstant bei 10,0 %"
+      ],
+      "c": 0,
+      "s": "Der ROI im DuPont-System berechnet sich als Produkt aus Umsatzrentabilität und Kapitalumschlag. Vorher: 5 % * 2,0 = 10 %. Nachher: 6 % * 1,8 = 10,8 %. Der ROI erhöht sich somit trotz des gesunkenen Kapitalumschlags aufgrund des starken Anstiegs der Umsatzrentabilität.",
+      "src": "BWL Controlling"
     }
   ],
   "bwl2": [
@@ -3267,6 +3453,207 @@
       "s": "Rückstellungen gehören zum Fremdkapital und dienen dem periodengerechten Aufwandsausweis.",
       "src": "Vorlesung Rückstellungen, Buchführung Kap. 8",
       "acceptable": []
+    },
+    {
+      "q": "Auf welches übergeordnete Konto wird der Saldo des Gewinn- und Verlustkontos (GuV) am Jahresende abgeschlossen?",
+      "o": [
+        "Bankkonto",
+        "Eigenkapitalkonto",
+        "Schlussbilanzkonto (SBK)",
+        "Privatkonto"
+      ],
+      "c": 1,
+      "s": "Der Erfolg (Gewinn oder Verlust) verändert das Eigenkapital des Unternehmens direkt und wird auf das Eigenkapitalkonto abgeschlossen.",
+      "src": "Foliensatz BUF Kap. 8-9",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wie werden Aufwendungen auf den Erfolgskonten erfasst?",
+      "o": [
+        "Immer im Soll",
+        "Immer im Haben",
+        "Wahlweise im Soll oder Haben",
+        "Nur am Jahresende als Sammelbuchung"
+      ],
+      "c": 0,
+      "s": "Aufwendungen mindern das Eigenkapital und werden daher immer im Soll des jeweiligen Aufwandskontos gebucht.",
+      "src": "Foliensatz BUF Kap. 8-9",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welchen Charakter hat die Umsatzsteuer (USt) beim Verkauf von Waren aus Sicht des buchenden Unternehmens?",
+      "o": [
+        "Forderung gegenüber dem Finanzamt",
+        "Verbindlichkeit gegenüber dem Finanzamt",
+        "Sofortiger betrieblicher Aufwand",
+        "Ertragserhöhendes Element"
+      ],
+      "c": 1,
+      "s": "Die eingenommene Umsatzsteuer ist eine Verbindlichkeit gegenüber dem Finanzamt und wird auf der Passivseite der Bilanz ausgewiesen.",
+      "src": "Foliensatz BUF Kap. 10.2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wann darf ein Unternehmen die gezahlte Vorsteuer (VSt) geltend machen?",
+      "o": [
+        "Nur wenn das Unternehmen keine Gewinne macht",
+        "Beim Einkauf von Waren oder Dienstleistungen von anderen umsatzsteuerpflichtigen Unternehmen",
+        "Nur am Jahresende bei der Steuererklärung",
+        "Beim privaten Einkauf des Inhabers"
+      ],
+      "c": 1,
+      "s": "Unternehmen sind vorsteuerabzugsberechtigt für betriebliche Einkäufe von anderen umsatzsteuerpflichtigen Unternehmen.",
+      "src": "Foliensatz BUF Kap. 10.2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Über welches Konto wird das Privatkonto eines Einzelunternehmers am Ende des Geschäftsjahres abgeschlossen?",
+      "o": [
+        "Gewinn- und Verlustkonto (GuV)",
+        "Eigenkapitalkonto",
+        "Schlussbilanzkonto (SBK)",
+        "Kasse"
+      ],
+      "c": 1,
+      "s": "Das Privatkonto ist ein Unterkonto des Eigenkapitalkontos und wird direkt über dieses abgeschlossen.",
+      "src": "Foliensatz BUF Kap. 12-13",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welche Auswirkung hat eine Privatentnahme des Inhabers auf den Gewinn des Unternehmens?",
+      "o": [
+        "Der Gewinn steigt",
+        "Der Gewinn sinkt",
+        "Keine Auswirkung auf den Gewinn, es mindert nur das Eigenkapital",
+        "Der Gewinn verdoppelt sich"
+      ],
+      "c": 2,
+      "s": "Privatentnahmen und -einlagen sind erfolgsneutral. Sie verändern das Eigenkapital, beeinflussen aber nicht die GuV (den Gewinn).",
+      "src": "Foliensatz BUF Kap. 12-13",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wie lautet der Buchungssatz für den Verkauf von fertigen Erzeugnissen auf Ziel?",
+      "o": [
+        "Forderungen an Umsatzerlöse und Umsatzsteuer",
+        "Umsatzerlöse an Forderungen und Umsatzsteuer",
+        "Bank an Umsatzerlöse",
+        "Forderungen an Bank und Umsatzsteuer"
+      ],
+      "c": 0,
+      "s": "Verkauf auf Ziel bedeutet eine Forderung entsteht im Soll, Erlöse und USt im Haben.",
+      "src": "Foliensatz BUF Kap. 16 ",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Was versteht man unter einer 'Einzelwertberichtigung' (EWB) auf Forderungen?",
+      "o": [
+        "Die pauschale Kürzung aller Forderungen um 5%",
+        "Die Bewertung des konkreten Ausfallrisikos einer einzelnen, bestimmten Forderung",
+        "Das Abschreiben des gesamten Forderungsbestands",
+        "Die Erhöhung von Forderungen wegen Zinsansprüchen"
+      ],
+      "c": 1,
+      "s": "Eine EWB bewertet eine konkrete, zweifelhafte Forderung einzeln nach dem Grad der Wahrscheinlichkeit des Ausfalls.",
+      "src": "Foliensatz BUF Kap. 16 ",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wie wird eine uneinbringliche Forderung (sicherer Ausfall) gebucht?",
+      "o": [
+        "Abschreibung auf Forderungen und Umsatzsteuerkorrektur an Forderungen",
+        "Forderungen an Abschreibungen",
+        "Gewinn an Forderungen",
+        "Privat an Forderungen"
+      ],
+      "c": 0,
+      "s": "Bei Uneinbringlichkeit muss die Forderung komplett abgeschrieben und auch die abgeführte Umsatzsteuer korrigiert werden.",
+      "src": "Foliensatz BUF Kap. 16 ",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welcher Wertansatz gilt für Forderungen nach dem strengen Niederstwertprinzip am Bilanzstichtag?",
+      "o": [
+        "Der Nominalwert (Nennwert) abzüglich erkennbarer Wertminderungen",
+        "Der Anschaffungswert plus Zinsansprüche",
+        "Der geschätzte Marktwert der Forderung",
+        "Ein fiktiver Wert"
+      ],
+      "c": 0,
+      "s": "Forderungen müssen nach dem Niederstwertprinzip am Bilanzstichtag zum Nominalwert abzüglich aller erkennbaren Risiken (Wertberichtigungen) bewertet werden.",
+      "src": "Foliensatz BUF Kap. 16 ",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Was ist der Unterschied zwischen einem Rabatt und einem Skonto im Absatzbereich?",
+      "o": [
+        "Skonto wird sofort bei Rechnungsstellung abgezogen, Rabatt bei schneller Zahlung",
+        "Rabatt wird direkt vom Listenpreis abgezogen, Skonto gewährt einen Nachlass bei Zahlung innerhalb einer Frist",
+        "Es gibt keinen Unterschied",
+        "Skonto erhöht den Preis, Rabatt mindert ihn"
+      ],
+      "c": 1,
+      "s": "Rabatt wird bei Kauf direkt abgezogen, Skonto ist eine nachträgliche Preisminderung für schnelle Zahlung.",
+      "src": "Foliensatz BUF Kap. 16 ",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Ein Unternehmen hat folgenden Lagerbestand für einen Rohstoff: Anfangsbestand 100 Stk. zu je 10 €. Zukauf 1: 150 Stk. zu je 12 €. Zukauf 2: 50 Stk. zu je 15 €. Es werden 120 Stk. verbraucht. Wie hoch ist der verbleibende Endbestand (180 Stk.) bewertet nach dem FIFO-Verfahren?",
+      "o": [
+        "2.310 €",
+        "2.100 €",
+        "2.550 €",
+        "1.980 €"
+      ],
+      "c": 0,
+      "s": "Die 180 verbleibenden Einheiten unter FIFO sind die am spätesten beschafften Einheiten. Diese setzen sich zusammen aus: 50 Einheiten aus Zukauf 2 (50 * 15 € = 750 €) und 130 Einheiten aus Zukauf 1 (130 * 12 € = 1.560 €). Der bewertete Endbestand beträgt somit: 750 € + 1.560 € = 2.310 €.",
+      "src": "Buchführung Vorratsbewertung"
+    },
+    {
+      "q": "Ein Unternehmen überweist am 01.11.2026 die Miete für die Büroräume im Voraus für 6 Monate (Nov 2026 bis April 2027) in Höhe von insgesamt 12.000 €. Welche Buchung ist zum Abschlussstichtag am 31.12.2026 für den Jahresabschluss 2026 vorzunehmen, wenn im November die gesamte Überweisung als Mietaufwand gebucht wurde?",
+      "o": [
+        "Aktive Rechnungsabgrenzung (ARAP) an Mietaufwand 8.000 €",
+        "Mietaufwand an Passive Rechnungsabgrenzung (PRAP) 4.000 €",
+        "Mietaufwand an Sonstige Verbindlichkeiten 8.000 €",
+        "Aktive Rechnungsabgrenzung (ARAP) an Mietaufwand 4.000 €"
+      ],
+      "c": 0,
+      "s": "Der Gesamtaufwand beträgt 12.000 € für 6 Monate, also 2.000 € pro Monat. Auf das Geschäftsjahr 2026 entfallen 2 Monate (Nov, Dez) = 4.000 €. Auf das Folgejahr 2027 entfallen 4 Monate (Jan bis Apr) = 8.000 €. Da der volle Betrag im Voraus gezahlt und als Aufwand gebucht wurde, müssen 8.000 € als Aktiver Rechnungsabgrenzungsposten (ARAP) abgegrenzt werden, um den Aufwand in 2026 zu reduzieren: Buchung 'ARAP an Mietaufwand 8.000 €'.",
+      "src": "Buchführung Rechnungsabgrenzung"
+    },
+    {
+      "q": "Eine Maschine (historische Anschaffungskosten: 50.000 €, Buchwert zu Jahresbeginn: 10.000 €) wird am 01.07. für 12.000 € netto bar verkauft. Die reguläre jährliche lineare Abschreibung beträgt 4.000 € pro Jahr. Wie hoch ist der im Geschäftsjahr realisierte Gewinn oder Verlust aus dem Anlagenabgang (unter Berücksichtigung der zeitanteiligen Abschreibung)?",
+      "o": [
+        "Gewinn aus Anlagenabgang von 4.000 €",
+        "Gewinn aus Anlagenabgang von 2.000 €",
+        "Verlust aus Anlagenabgang von 2.000 €",
+        "Gewinn aus Anlagenabgang von 12.000 €"
+      ],
+      "c": 0,
+      "s": "Zunächst ist die zeitanteilige Abschreibung bis zum Verkaufszeitpunkt (01.07., d.h. 6 Monate) nachzubuchen: 4.000 € * (6/12) = 2.000 €. Dadurch sinkt der Buchwert der Maschine auf 8.000 € (10.000 € - 2.000 €). Der Nettoverkaufserlös beträgt 12.000 €. Der Gewinn aus dem Abgang ergibt sich als Differenz zwischen Verkaufserlös und Buchwert: 12.000 € - 8.000 € = 4.000 €.",
+      "src": "Buchführung Anlagenabgang"
     }
   ],
   "mawi1": [
@@ -4106,6 +4493,102 @@
       "acceptable": [
         "Lagrange-Multiplikation"
       ]
+    },
+    {
+      "q": "Welche Eigenschaft charakterisiert eine quadratische Funktion der Form f(x) = ax² + bx + c, wenn der Koeffizient a negativ ist?",
+      "o": [
+        "Die Parabel ist nach oben geöffnet und besitzt ein Minimum.",
+        "Die Parabel ist nach unten geöffnet und besitzt ein Maximum.",
+        "Die Funktion ist streng monoton steigend.",
+        "Die Funktion hat keine Nullstellen."
+      ],
+      "c": 1,
+      "s": "Bei a < 0 ist die Parabel nach unten geöffnet und hat einen Scheitelpunkt als globales Maximum.",
+      "src": "WiMa 1 Kap. 1.2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wie verhält sich die e-Funktion f(x) = e^x für x gegen minus unendlich?",
+      "o": [
+        "Sie geht gegen unendlich.",
+        "Sie nähert sich asymptotisch der 0.",
+        "Sie geht gegen minus unendlich.",
+        "Sie nimmt den Wert 1 an."
+      ],
+      "c": 1,
+      "s": "lim (x->-inf) e^x = 0.",
+      "src": "WiMa 1 Kap. 1.2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welche Funktion ist die Umkehrfunktion der natürlichen Logarithmusfunktion f(x) = ln(x) für x > 0?",
+      "o": [
+        "g(x) = x²",
+        "g(x) = e^x",
+        "g(x) = 1/x",
+        "g(x) = 10^x"
+      ],
+      "c": 1,
+      "s": "Die Exponentialfunktion e^x ist die Umkehrfunktion zum natürlichen Logarithmus ln(x).",
+      "src": "WiMa 1 Kap. 1.2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wie lautet die erste Ableitung der Funktion f(x) = 3x^4 - 5x + 2 nach den Ableitungsregeln?",
+      "o": [
+        "f'(x) = 12x³ - 5",
+        "f'(x) = 12x^4 - 5",
+        "f'(x) = 3x³ - 5",
+        "f'(x) = 12x³"
+      ],
+      "c": 0,
+      "s": "f'(x) = 3*4*x^(4-1) - 5 = 12x³ - 5.",
+      "src": "WiMa 1 Kap. 2",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Ein Konsument maximiert seine Nutzenfunktion U(x, y) = x^0.5 * y^0.5 unter der Budgetrestriktion 2x + 4y = 80. Wie lautet die optimale Nachfragemenge x* im Nutzenmaximum unter Verwendung des Lagrange-Verfahrens?",
+      "o": [
+        "x* = 20",
+        "x* = 10",
+        "x* = 40",
+        "x* = 15"
+      ],
+      "c": 0,
+      "s": "Dies ist ein klassisches Optimierungsproblem unter Nebenbedingungen. Bei einer symmetrischen Cobb-Douglas-Nutzenfunktion U = x^0.5 * y^0.5 teilt der Konsument sein Einkommen zu gleichen Teilen auf beide Güter auf. Einkommensanteil für x = 40 €. Bei einem Preis von px = 2 € beträgt die optimale Nachfragemenge x* = 40 € / 2 € = 20 Einheiten.",
+      "src": "Wirtschaftsmathematik Lagrange-Optimierung"
+    },
+    {
+      "q": "Die Nachfragefunktion nach einem Gut lautet q(P) = 300 - 3P. Bei welchem Preis P ist die Preiselastizität der Nachfrage genau elastisch mit Einheitselastizität (Elastizität = -1)?",
+      "o": [
+        "P = 50",
+        "P = 100",
+        "P = 30",
+        "P = 150"
+      ],
+      "c": 0,
+      "s": "Die Preiselastizität der Nachfrage berechnet sich als eta = q'(P) * (P / q(P)). Hier ist q'(P) = -3. Setzt man eta = -1 ein: -3 * (P / (300 - 3P)) = -1 => 3P = 300 - 3P => 6P = 300 => P = 50. Bei einem Preis von P = 50 € beträgt die Elastizität genau -1.",
+      "src": "Wirtschaftsmathematik Elastizitäten"
+    },
+    {
+      "q": "Jemand spart jährlich nachschüssig einen Betrag von 2.000 € bei einem Zinssatz von 4 % p.a. an. Welchen Endwert hat dieses Rentensparen nach genau 10 Jahren? (Formel für Rentenendwertfaktor: ((1+i)^n - 1) / i)",
+      "o": [
+        "24.012,21 €",
+        "20.000,00 €",
+        "21.648,32 €",
+        "24.972,70 €"
+      ],
+      "c": 0,
+      "s": "Der Endwert einer nachschüssigen Jahresrente berechnet sich mit der Formel: RE = R * ((1+i)^n - 1) / i. Hier ist R = 2.000 €, i = 0,04 und n = 10. Rentenendwertfaktor = (1,04^10 - 1) / 0,04 = 0,480244 / 0,04 = 12,0061. RE = 2.000 € * 12,0061 = 24.012,21 €.",
+      "src": "Wirtschaftsmathematik Finanzmathematik"
     }
   ],
   "mawi2": [
@@ -5077,6 +5560,102 @@
       "s": "Die Standardabweichung misst die Streuung in der ursprünglichen Maßeinheit der Daten.",
       "src": "Statistik Kap. 5",
       "acceptable": []
+    },
+    {
+      "q": "Welches Skalenniveau besitzt das Merkmal 'Schulnoten (sehr gut bis ungenügend)'?",
+      "o": [
+        "Nominalskala",
+        "Ordinalskala",
+        "Intervallskala",
+        "Verhältnisskala"
+      ],
+      "c": 1,
+      "s": "Noten haben eine Rangfolge (besser/schlechter), aber Abstände sind nicht exakt messbar, daher Ordinalskala.",
+      "src": "Statistik Kap. 1",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welches Merkmal ist ein Beispiel für eine Nominalskala?",
+      "o": [
+        "Körpergröße in cm",
+        "Geburtsort (z.B. Aachen, Köln)",
+        "Zufriedenheit (sehr zufrieden bis unzufrieden)",
+        "Temperatur in Grad Celsius"
+      ],
+      "c": 1,
+      "s": "Nominale Merkmale haben keine natürliche Rangordnung, nur Kategorien zur Unterscheidung.",
+      "src": "Statistik Kap. 1",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Was unterscheidet eine Verhältnisskala von einer Intervallskala?",
+      "o": [
+        "Die Verhältnisskala hat keinen Nullpunkt.",
+        "Die Verhältnisskala besitzt einen natürlichen, absoluten Nullpunkt.",
+        "Auf der Verhältnisskala kann man keine Abstände vergleichen.",
+        "Sie sind identisch."
+      ],
+      "c": 1,
+      "s": "Ein absoluter Nullpunkt existiert nur bei der Verhältnisskala (z.B. Einkommen, Alter), nicht bei der Intervallskala (z.B. Temperatur in °C).",
+      "src": "Statistik Kap. 1",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welches Merkmal ist diskret im Gegensatz zu stetig?",
+      "o": [
+        "Körpergewicht",
+        "Anzahl der Kinder in einer Familie",
+        "Fahrzeit zur Hochschule",
+        "Benzinverbrauch eines Autos"
+      ],
+      "c": 1,
+      "s": "Diskrete Merkmale nehmen nur abzählbare, isolierte Werte an (z.B. ganze Zahlen).",
+      "src": "Statistik Kap. 1",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Eine medizinische Studie zeigt: 1 % der Bevölkerung leidet an einer Krankheit X. Ein Diagnosetest ist zu 95 % sensitiv (schlägt bei Kranken an) und weist eine Spezifität von 90 % auf (schlägt bei Gesunden fälschlicherweise zu 10 % an). Wenn ein Patient positiv getestet wird, wie hoch ist die Wahrscheinlichkeit, dass er tatsächlich krank ist?",
+      "o": [
+        "ca. 8,76 %",
+        "ca. 95,00 %",
+        "ca. 1,00 %",
+        "ca. 50,00 %"
+      ],
+      "c": 0,
+      "s": "Nach dem Satz von Bayes gilt: P(Krank|Positiv) = P(Positiv|Krank) * P(Krank) / P(Positiv). Der Nenner P(Positiv) berechnet sich über die totale Wahrscheinlichkeit: P(Positiv) = P(+|K)*P(K) + P(+|Gesund)*P(Gesund) = 0,95 * 0,01 + 0,10 * 0,99 = 0,0095 + 0,099 = 0,1085. Eingesetzt ergibt sich: P(Krank|Positiv) = 0,0095 / 0,1085 ≈ 0,0876 bzw. 8,76 %. Trotz eines sensitiven Tests ist die Wahrscheinlichkeit bei geringer Prävalenz relativ niedrig.",
+      "src": "Statistik Wahrscheinlichkeitsrechnung"
+    },
+    {
+      "q": "Um den Mittelwert einer normalverteilten Grundgesamtheit mit bekannter Standardabweichung sigma = 10 bei einer Stichprobengröße n = 100 im Konfidenzniveau von 95 % zu schätzen, wird der z-Wert z_0.975 = 1,96 verwendet. Wie breit ist der Schwankungsbereich (die maximale Fehlerbreite E, d.h. der Abstand zwischen Unter- und Obergrenze des Konfidenzintervalls)?",
+      "o": [
+        "3,92",
+        "1,96",
+        "0,39",
+        "7,84"
+      ],
+      "c": 0,
+      "s": "Das Konfidenzintervall lautet [X_bar - E, X_bar + E] mit dem halben Konfidenzintervall E = z * (sigma / sqrt(n)) = 1,96 * (10 / sqrt(100)) = 1,96 * 1 = 1,96. Die Gesamtbreite des Intervalls (Abstand zwischen Unter- und Obergrenze) beträgt somit 2 * E = 2 * 1,96 = 3,92.",
+      "src": "Statistik Intervallschätzung"
+    },
+    {
+      "q": "In einer einfachen linearen Regression zur Erklärung des Umsatzes durch Marketing-Ausgaben beträgt die Gesamtabweichungsquadratsumme (SST) 500 und die Residualquadratsumme (SSE) 150. Wie hoch ist das Bestimmtheitsmaß R² und wie ist es zu interpretieren?",
+      "o": [
+        "0,70 (70 % der Varianz des Umsatzes werden durch Marketing-Ausgaben erklärt)",
+        "0,30 (30 % der Varianz des Umsatzes werden durch Marketing-Ausgaben erklärt)",
+        "0,70 (Marketing-Ausgaben korrelieren schwach negativ mit dem Umsatz)",
+        "0,45 (Die Modellqualität ist ungenügend)"
+      ],
+      "c": 0,
+      "s": "Das Bestimmtheitsmaß R² berechnet sich nach der Formel: R² = 1 - (SSE / SST), wobei SSE die unerklärte Abweichungsquadratsumme (Residuals) und SST die Gesamtabweichungsquadratsumme darstellt. Hier gilt: R² = 1 - (150 / 500) = 1 - 0,3 = 0,70 bzw. 70 %. Das bedeutet, dass 70 % der Varianz der abhängigen Variable (Umsatz) durch die unabhängige Variable (Marketing-Ausgaben) erklärt werden.",
+      "src": "Statistik Regressionsanalyse"
     }
   ],
   "vwl": [
@@ -5934,7 +6513,8 @@
       ],
       "c": 1,
       "s": "Baeckerei 1 hat die steilste Nachfragekurve, da sie die groesste Abhaengigkeit von Printen aufweist.",
-      "src": "VWL Kap. C"
+      "src": "VWL Kap. C",
+      "diagram": "printen-nachfrage"
     },
     {
       "q": "Wie viele Printen wuerde Baeckerei 2 bei einem Preis von 1,20 Euro nachfragen?",
@@ -5946,7 +6526,8 @@
       ],
       "c": 2,
       "s": "Bei 1,20 Euro liegt Baeckerei 2 genau auf dem Punkt ihrer Nachfragekurve mit 5 Einheiten.",
-      "src": "VWL Kap. C"
+      "src": "VWL Kap. C",
+      "diagram": "printen-nachfrage"
     },
     {
       "q": "Aggregieren Sie die Nachfragekurven zur Marktnachfragekurve. Welches Marktgleichgewicht ergibt sich?",
@@ -5958,7 +6539,8 @@
       ],
       "c": 0,
       "s": "Das Marktgleichgewicht ergibt sich am Schnittpunkt der aggregierten Marktnachfrage mit dem Marktangebot.",
-      "src": "VWL Kap. C"
+      "src": "VWL Kap. C",
+      "diagram": "printen-nachfrage"
     },
     {
       "q": "Die Bauern hatten eine ertragreichere Zuckerruebenernte, wodurch der Zuckerpreis sinkt. Was passiert im Angebots-Nachfrage-Diagramm fuer Printen?",
@@ -6150,7 +6732,8 @@
       ],
       "c": 1,
       "s": "Bei Preis null (kostenloser CO2-Ausstoss) wird die gesamte Nachfrage nach CO2-Kapazitaet befriedigt, in diesem Fall 1000 Mio. Tonnen.",
-      "src": "VWL Kap. F"
+      "src": "VWL Kap. F",
+      "diagram": "co2-nachfrage"
     },
     {
       "q": "Wird der Markt ohne Staatseingriff dafuer sorgen, dass die gesellschaftlich optimale Menge an CO2 ausgestossen wird?",
@@ -6172,9 +6755,10 @@
         "Wertsteuer, 1000 Mio. Tonnen",
         "Mengensteuer, 80 Mio. Tonnen"
       ],
-      "c": 0,
-      "s": "Eine Pigousteuer ist eine Wertsteuer (Betrag pro Einheit). Bei 20 EUR/Tonne ergibt sich ein Ausstoss von 250 Mio. Tonnen.",
-      "src": "VWL Kap. F"
+      "c": 1,
+      "s": "Eine Pigou-Steuer ist eine Mengensteuer (fester Betrag pro physischer Einheit, z. B. 20 €/Tonne CO2). Bei einem Zertifikatspreis von 20 €/Tonne ergibt sich laut Abbildung ein CO2-Ausstoß von 250 Mio. Tonnen.",
+      "src": "VWL Kap. F",
+      "diagram": "co2-nachfrage"
     },
     {
       "q": "Welche Aussage zur Alternative der Mengenregulierung gegenueber der Pigousteuer ist korrekt?",
@@ -6787,6 +7371,42 @@
       "acceptable": [
         "real"
       ]
+    },
+    {
+      "q": "Zwei identische Firmen im Cournot-Duopol stehen einer linearen Marktnachfrage P = 120 - Q gegenüber. Die Grenzkosten beider Firmen sind konstant bei MC = 30. Wie hoch ist die Gleichgewichtsmenge q* pro Firma?",
+      "o": [
+        "q* = 30",
+        "q* = 45",
+        "q* = 15",
+        "q* = 20"
+      ],
+      "c": 0,
+      "s": "Im Cournot-Wettbewerb bestimmen Duopolisten ihre Reaktionsfunktionen. Für Firma 1 gilt die Gewinnfunktion pi1 = (120 - q1 - q2) * q1 - 30*q1. Ableiten nach q1 und Nullsetzen ergibt die Reaktionsfunktion: q1*(q2) = (90 - q2) / 2. Wegen Symmetrie (q1 = q2 = q*) gilt: q* = (90 - q*) / 2 => 2q* = 90 - q* => 3q* = 90 => q* = 30. Jedes Unternehmen bietet im Gleichgewicht 30 Einheiten an (Gesamtmenge Q = 60, Preis P = 60).",
+      "src": "VWL Mikroökonomie - Oligopole"
+    },
+    {
+      "q": "Im IS-LM-Modell einer geschlossenen Volkswirtschaft führt eine restriktive Geldpolitik der Zentralbank (Senkung der nominalen Geldmenge) zu welchen kurzfristigen Anpassungen bei Zinssatz und Realeinkommen?",
+      "o": [
+        "Der Zinssatz steigt, das Realeinkommen sinkt",
+        "Der Zinssatz sinkt, das Realeinkommen steigt",
+        "Sowohl der Zinssatz als auch das Realeinkommen steigen",
+        "Der Zinssatz bleibt unverändert, das Realeinkommen sinkt"
+      ],
+      "c": 0,
+      "s": "Eine restriktive Geldpolitik (Senkung der nominalen Geldmenge) verschiebt die LM-Kurve nach links/oben. Am Geldmarkt entsteht eine Übernachfrage nach Geld, weshalb der Zinssatz steigt. Der höhere Zinssatz dämpft die zinssensitiven Investitionen der Unternehmen, was über den Multiplikatoreffekt zu einem Rückgang des Realeinkommens (BIP) führt.",
+      "src": "VWL Makroökonomie - IS-LM"
+    },
+    {
+      "q": "Was beschreibt die 'Golden Rule' der Akkumulation im Solow-Wachstumsmodell einer Volkswirtschaft?",
+      "o": [
+        "Diejenige Sparquote, die den langfristigen Pro-Kopf-Konsum im Steady State maximiert",
+        "Diejenige Sparquote, die das Wirtschaftswachstum unendlich beschleunigt",
+        "Den Punkt, an dem die Sparquote genau der Abschreibungsrate der Maschinen entspricht",
+        "Die optimale staatliche Verschuldungsquote für Schwellenländer"
+      ],
+      "c": 0,
+      "s": "Die 'Golden Rule' der Kapitalakkumulation bezeichnet im Solow-Modell den Zustand im langfristigen Gleichgewicht (Steady State), in dem die Sparquote so gewählt wird, dass der Pro-Kopf-Konsum der Bevölkerung maximiert wird. An diesem Punkt entspricht die Grenzproduktivität des Kapitals der Summe aus Abschreibungsrate, Bevölkerungswachstum und technologischem Fortschritt.",
+      "src": "VWL Makroökonomie - Wachstumstheorie"
     }
   ],
   "wpr": [
@@ -8418,6 +9038,147 @@
       "acceptable": [
         "Handelsgesetzbuch"
       ]
+    },
+    {
+      "q": "Wer ist Kaufmann im Sinne des § 1 HGB?",
+      "o": [
+        "Jeder, der Waren einkauft und verkauft",
+        "Wer ein Handelsgewerbe betreibt",
+        "Nur Aktiengesellschaften",
+        "Jeder Freiberufler"
+      ],
+      "c": 1,
+      "s": "Kaufmann ist nach § 1 Abs. 1 HGB, wer ein Handelsgewerbe betreibt.",
+      "src": "WPR Handelsrecht",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welches Recht steht dem Käufer bei einer mangelhaften Lieferung nach § 437 BGB primär zu?",
+      "o": [
+        "Rücktritt vom Vertrag",
+        "Minderung des Kaufpreises",
+        "Nacherfüllung (Beseitigung des Mangels oder Lieferung einer mangelfreien Sache)",
+        "Schadensersatz statt der Leistung"
+      ],
+      "c": 2,
+      "s": "Das Recht auf Nacherfüllung (§ 439 BGB) ist im deutschen Gewährleistungsrecht primär (Vorrang der Nacherfüllung).",
+      "src": "WPR Kaufrecht / Verbraucherschutz",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wann geht die Gefahr des zufälligen Untergangs beim Versendungskauf unter Verbrauchern (Verbrauchsgüterkauf, § 474 BGB) auf den Käufer über?",
+      "o": [
+        "Bei Übergabe der Ware an den Transporteur",
+        "Erst mit der Übergabe der Ware an den Verbraucher (§ 475 Abs. 2 BGB)",
+        "Mit dem Abschluss des Kaufvertrags",
+        "Wenn die Ware das Lager des Verkäufers verlässt"
+      ],
+      "c": 1,
+      "s": "Beim Verbrauchsgüterkauf geht die Gefahr erst bei Übergabe an den Verbraucher über. § 447 BGB gilt hier im Regelfall nicht.",
+      "src": "WPR Kaufrecht / Verbraucherschutz",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wie hoch ist die gesetzliche Verjährungsfrist für Mängelansprüche bei neu hergestellten beweglichen Sachen im Regelfall (§ 438 Abs. 1 Nr. 3 BGB)?",
+      "o": [
+        "6 Monate",
+        "1 Jahr",
+        "2 Jahre",
+        "3 Jahre"
+      ],
+      "c": 2,
+      "s": "Die Gewährleistungsfrist beträgt im Regelfall zwei Jahre ab Ablieferung der Sache.",
+      "src": "WPR Kaufrecht / Verbraucherschutz",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Was ist ein Sachmangel im Sinne des § 434 BGB?",
+      "o": [
+        "Wenn die Sache bei Gefahrübergang nicht die vereinbarte Beschaffenheit aufweist",
+        "Wenn ein Dritter Rechte an der Sache geltend machen kann",
+        "Wenn der Preis zu hoch war",
+        "Wenn der Käufer die Sache nicht mehr mag"
+      ],
+      "c": 0,
+      "s": "Ein Sachmangel liegt vor, wenn die Ist-Beschaffenheit bei Gefahrübergang von der vertraglich vereinbarten Soll-Beschaffenheit abweicht.",
+      "src": "WPR Kaufrecht / Verbraucherschutz",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wer trägt im Zivilprozess grundsätzlich die Beweislast für eine anspruchsbegründende Tatsache?",
+      "o": [
+        "Der Richter",
+        "Die Partei, die sich auf diese Tatsache beruft, um eine ihr günstige Rechtsfolge abzuleiten",
+        "Stets der Beklagte",
+        "Immer der Kläger"
+      ],
+      "c": 1,
+      "s": "Im Zivilprozess trägt jede Partei die Beweislast für die Voraussetzungen der ihr günstigen Rechtsnorm (Grundsatz).",
+      "src": "WPR Foliensatz – Beweis",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welche Ausnahme von den allgemeinen Beweislastregeln gilt beim Verbrauchsgüterkauf innerhalb der ersten Monate (§ 477 BGB)?",
+      "o": [
+        "Eine Beweislastumkehr zugunsten des Verbrauchers bezüglich des Vorliegens des Mangels bei Gefahrübergang",
+        "Der Verbraucher muss gar nichts beweisen",
+        "Der Unternehmer entscheidet, wer die Beweislast trägt",
+        "Es gilt keine Ausnahme"
+      ],
+      "c": 0,
+      "s": "Zeigt sich innerhalb der ersten Monate (gesetzlich geregelt) ein Sachmangel, wird vermutet, dass dieser bereits bei Gefahrübergang vorlag (Beweislastumkehr).",
+      "src": "WPR Foliensatz – Beweis",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "A kauft im Namen seines Freundes B bei C ein edles Gemälde. Er macht jedoch weder beim Verkaufsgespräch noch beim Vertragsabschluss deutlich, dass er für B handelt. C geht davon aus, dass A für sich selbst kauft. Wer wird Vertragspartner des C?",
+      "o": [
+        "A wird Vertragspartner (Eigengeschäft nach dem Offenkundigkeitsprinzip, paragraph 164 II BGB)",
+        "B wird Vertragspartner, da A Vertretungsmacht besaß und im Innenverhältnis für B handeln sollte",
+        "Der Vertrag ist schwebend unwirksam, da C getäuscht wurde",
+        "Es kommt überhaupt kein wirksamer Vertrag zustande, da der Wille nicht mit der Erklärung übereinstimmt"
+      ],
+      "c": 0,
+      "s": "Nach dem Offenkundigkeitsprinzip (paragraph 164 I BGB) muss ein Vertreter im Namen des Vertretenen handeln, damit die Wirkungen unmittelbar für diesen eintreten. Tritt dieser Wille nicht erkennbar hervor, so kommt das Geschäft mangels Offenkundigkeit mit dem Vertreter selbst zustande (Eigengeschäft des Vertreters, paragraph 164 II BGB). Ein Anfechtungsrecht wegen Irrtums ist nach paragraph 164 II BGB ausgeschlossen.",
+      "src": "WPR BGB AT - Vertretung"
+    },
+    {
+      "q": "K kauft von Händler V einen neuen Fernseher. Nach 2 Wochen zeigt das Bild heftige Streifen (Sachmangel). K verlangt von V sofort ein fabrikneues Ersatzgerät. V weigert sich und will das Gerät stattdessen zunächst zweimal reparieren. Wer ist im Recht?",
+      "o": [
+        "K ist im Recht, da der Käufer die Art der Nacherfüllung (Reparatur oder Neulieferung) grundsätzlich frei wählen darf (paragraph 439 I BGB)",
+        "V ist im Recht, da der Verkäufer immer das Recht auf zwei Nachbesserungsversuche hat, bevor eine Neulieferung verlangt werden kann",
+        "V ist im Recht, da eine Neulieferung bei Vorliegen eines Mangels gesetzlich generell erst nach Fehlschlagen der Reparatur zulässig ist",
+        "Niemand, das Gesetz verlangt bei Mängeln im ersten Monat zwingend eine gütliche Einigung"
+      ],
+      "c": 0,
+      "s": "Gemäß paragraph 439 I BGB kann der Käufer als Nacherfüllung nach seiner Wahl die Beseitigung des Mangels (Reparatur) oder die Lieferung einer mangelfreien Sache (Neulieferung) verlangen. Der Verkäufer kann die gewählte Art der Nacherfüllung nur verweigern, wenn sie unmöglich ist oder für ihn mit unverhältnismäßigen Kosten verbunden wäre (paragraph 439 IV BGB). Das angebliche Recht des Verkäufers auf 'zwei Reparaturversuche' betrifft nur das Fehlschlagen der Nachbesserung für einen anschließenden Rücktritt oder Schadensersatz, schränkt aber das primäre Wahlrecht des Käufers nicht ein.",
+      "src": "WPR Schuldrecht - Kaufrecht"
+    },
+    {
+      "q": "Zwei Jugendliche A und B werfen aus Übermut gemeinsam Kieselsteine auf parkende Autos. Ein Stein zertrümmert die Windschutzscheibe eines PKWs im Wert von 1.500 €. Es lässt sich im Nachhinein absolut nicht feststellen, wessen Stein die Scheibe getroffen hat. Müssen A und B haften?",
+      "o": [
+        "Ja, beide haften als Gesamtschuldner für den vollen Schaden in Höhe von 1.500 € nach paragraph 830 I 2 BGB",
+        "Nein, da im Zweifel für den Angeklagten gilt und keinem die Tat individuell nachgewiesen werden kann",
+        "Sie haften jeweils nur für die Hälfte des Schadens (750 €), da der Verursacher unklar ist",
+        "Es haftet nur die Haftpflichtversicherung der Eltern im Rahmen der Aufsichtspflichtverletzung"
+      ],
+      "c": 0,
+      "s": "Kann nachgewiesen werden, dass mehrere Beteiligte eine rechtswidrige Tat begangen haben, lässt sich aber nicht ermitteln, wer von ihnen den konkreten Schaden verursacht hat, haftet jeder für den Schaden (paragraph 830 I S. 2 BGB). Dies dient dem Schutz des Geschädigten vor Gefährdungssituationen. A und B haften als Gesamtschuldner für den gesamten Schaden (paragraph 840 BGB).",
+      "src": "WPR Deliktsrecht - paragraph 830 BGB"
     }
   ],
   "perso": [
@@ -9828,6 +10589,282 @@
       "acceptable": [
         "Matrix-Organisation"
       ]
+    },
+    {
+      "q": "Welcher Begriff beschreibt nach Hofstede das Ausmaß, in dem weniger mächtige Mitglieder von Institutionen und Organisationen erwarten und akzeptieren, dass Macht ungleich verteilt ist?",
+      "o": [
+        "Unsicherheitsvermeidung",
+        "Machtdistanz",
+        "Individualismus",
+        "Feminität"
+      ],
+      "c": 1,
+      "s": "Die Machtdistanz beschreibt das Ausmaß der Akzeptanz ungleicher Machtverteilung.",
+      "src": "Perso Folie 02 CrossCultural",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welche der vier Seiten einer Nachricht nach Schulz von Thun offenbart Informationen über die Persönlichkeit, Gefühle und Absichten des Senders?",
+      "o": [
+        "Sachinhalt",
+        "Appell",
+        "Beziehung",
+        "Selbstoffenbarung"
+      ],
+      "c": 3,
+      "s": "Die Selbstoffenbarung enthält explizite oder implizite Informationen über den Sender selbst.",
+      "src": "Perso Folie 03 Kommunikation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Was versteht man im Sender-Empfänger-Modell unter 'Dekodierung'?",
+      "o": [
+        "Das Übersetzen von Gedanken in Signale durch den Sender",
+        "Das Entschlüsseln und Interpretieren der empfangenen Signale durch den Empfänger",
+        "Die physikalische Übertragung der Nachricht über einen Kanal",
+        "Das Ausfiltern von Störgeräuschen"
+      ],
+      "c": 1,
+      "s": "Dekodierung ist der Prozess des Entschlüsselns und Interpretierens der Signale durch den Empfänger.",
+      "src": "Perso Folie 03 Kommunikation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welches Verhalten gehört NICHT zum aktiven Zuhören?",
+      "o": [
+        "Paraphrasieren der Aussage des Sprechers",
+        "Verbalisieren emotionaler Untertöne",
+        "Sofortiges Anbieten einer eigenen Lösung oder Ratschläge",
+        "Aufmerksames Schweigen und Nicken"
+      ],
+      "c": 2,
+      "s": "Sofortige Ratschläge oder Bewertungen widersprechen dem Prinzip des aktiven Zuhörens.",
+      "src": "Perso Folie 03 Kommunikation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Was ist ein Sachkonflikt im Gegensatz zu einem Beziehungskonflikt?",
+      "o": [
+        "Ein Konflikt über persönliche Abneigungen",
+        "Ein Konflikt über sachliche Ziele, Aufgaben oder Methoden",
+        "Ein Konflikt über die Verteilung von Privilegien",
+        "Ein unlösbarer emotionaler Konflikt"
+      ],
+      "c": 1,
+      "s": "Ein Sachkonflikt bezieht sich auf sachliche Differenzen (Inhalte, Ziele, Wege).",
+      "src": "Perso Folie 03 Kommunikation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welcher Aspekt beschreibt die 'Beziehungsseite' einer Nachricht nach dem Vier-Ohren-Modell?",
+      "o": [
+        "Wie der Sender den Empfänger sieht und was er von ihm hält",
+        "Welche Fakten und Sachverhalte dargestellt werden",
+        "Was der Empfänger tun, lassen oder denken soll",
+        "Was der Sender von sich preisgibt"
+      ],
+      "c": 0,
+      "s": "Die Beziehungsebene drückt aus, wie der Sender zum Empfänger steht und was er von ihm hält.",
+      "src": "Perso Folie 03 Kommunikation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welche Störung wird als 'semantisches Rauschen' bezeichnet?",
+      "o": [
+        "Ein lauter Baustellenlärm während des Gesprächs",
+        "Das Verwenden von Fachbegriffen oder Abkürzungen, die der Empfänger nicht versteht",
+        "Eine schlechte Internetverbindung bei einem Videoanruf",
+        "Ein Vorurteil gegenüber dem Gesprächspartner"
+      ],
+      "c": 1,
+      "s": "Semantisches Rauschen entsteht durch unterschiedliche Bedeutungszuschreibungen (z.B. unverstandene Fachsprache).",
+      "src": "Perso Folie 03 Kommunikation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Wie wird das Wiederholen des Gesagten in eigenen Worten beim aktiven Zuhören fachsprachlich genannt?",
+      "o": [
+        "Verbalisieren",
+        "Paraphrasieren",
+        "Konditionieren",
+        "Sublimieren"
+      ],
+      "c": 1,
+      "s": "Das Paraphrasieren ist das sachliche Wiederholen des Kerninhalts in eigenen Worten.",
+      "src": "Perso Folie 03 Kommunikation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "In welcher Ebene der Maslowschen Bedürfnispyramide ist das Bedürfnis nach Anerkennung, Status und Wertschätzung angesiedelt?",
+      "o": [
+        "Physiologische Bedürfnisse",
+        "Sicherheitsbedürfnisse",
+        "Soziale Bedürfnisse",
+        "Wertschätzungsbedürfnisse"
+      ],
+      "c": 3,
+      "s": "Anerkennung und Status gehören zu den Wertschätzungsbedürfnissen (4. Ebene).",
+      "src": "Perso Folie 07 Motivation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Nach der VIE-Theorie von Vroom: Was drückt die 'Instrumentalität' aus?",
+      "o": [
+        "Die subjektive Erwartung, eine bestimmte Leistung erbringen zu können",
+        "Die Verknüpfung zwischen dem Erreichen eines Zwischenziels und dem Erhalt einer Belohnung",
+        "Der persönliche Wert oder die Attraktivität einer Belohnung",
+        "Die Wahrscheinlichkeit, dass die Anstrengung zur Leistung führt"
+      ],
+      "c": 1,
+      "s": "Instrumentalität beschreibt den perceived link zwischen Handlungsleistung und dem finalen Handlungsergebnis (Belohnung).",
+      "src": "Perso Folie 07 Motivation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welches der folgenden Beispiele stellt nach Herzbergs Zwei-Faktoren-Theorie einen typischen Motivator dar?",
+      "o": [
+        "Das Gehalt und freiwillige Sozialleistungen",
+        "Die physischen Arbeitsbedingungen am Arbeitsplatz",
+        "Die Übertragung von Verantwortung und persönliche Entfaltungsmöglichkeiten",
+        "Die Unternehmenspolitik und Richtlinien"
+      ],
+      "c": 2,
+      "s": "Verantwortung und Anerkennung sind Motivatoren (Zufriedenheitsmacher). Gehalt und Bedingungen sind Hygienefaktoren.",
+      "src": "Perso Folie 07 Motivation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welcher Effekt beschreibt die Verdrängung intrinsischer Motivation durch extrinsische Anreize (z.B. Geld)?",
+      "o": [
+        "Korrumpierungseffekt (Overjustification Effect)",
+        "Halo-Effekt",
+        "Pygmalion-Effekt",
+        "Sunk-Cost-Effekt"
+      ],
+      "c": 0,
+      "s": "Der Korrumpierungseffekt beschreibt das Phänomen, dass intrinsische Motivation durch äußere Belohnungen sinken kann.",
+      "src": "Perso Folie 07 Motivation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welches Bedürfnis steht an der Spitze der ursprünglichen Maslowschen Bedürfnispyramide?",
+      "o": [
+        "Wertschätzungsbedürfnisse",
+        "Soziale Bedürfnisse",
+        "Selbstverwirklichung",
+        "Sicherheitsbedürfnisse"
+      ],
+      "c": 2,
+      "s": "Selbstverwirklichung bildet die oberste (5.) Stufe der Maslow-Pyramide.",
+      "src": "Perso Folie 07 Motivation",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welche Phase gehört nach dem klassischen 3-Phasen-Modell von Kurt Lewin zum Wandlungsprozess?",
+      "o": [
+        "Forming, Storming, Performing",
+        "Unfreezing, Changing, Refreezing",
+        "Planung, Steuerung, Kontrolle",
+        "Einführung, Wachstum, Reife"
+      ],
+      "c": 1,
+      "s": "Lewins Modell umfasst die Phasen Unfreezing (Auftauen), Changing (Verändern) und Refreezing (Einfrieren).",
+      "src": "Perso Folie 11 Organisationsentwicklung",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Was versteht man unter 'Unfreezing' im Change-Management nach Lewin?",
+      "o": [
+        "Das dauerhafte Einfrieren neuer Prozesse und Verhaltensweisen",
+        "Die Vorbereitungsphase, um die Notwendigkeit des Wandels aufzuzeigen und Widerstände abzubauen",
+        "Den eigentlichen Veränderungsprozess durch Schulungen",
+        "Die Kündigung unwilliger Mitarbeiter"
+      ],
+      "c": 1,
+      "s": "Unfreezing dient der Mobilisierung und Aufhebung des Gleichgewichts, um Veränderungsbereitschaft zu schaffen.",
+      "src": "Perso Folie 11 Organisationsentwicklung",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Welche Methode der Organisationsentwicklung setzt stark auf Partizipation der Betroffenen durch Befragung und Feedback?",
+      "o": [
+        "Reengineering",
+        "Survey-Feedback-Methode (Aktionsforschung)",
+        "Strikter Top-Down-Wandel",
+        "Machtpromotoren-Konzept"
+      ],
+      "c": 1,
+      "s": "Die Survey-Feedback-Methode basiert auf systematischer Befragung der Mitarbeiter und anschließender gemeinsamer Reflexion.",
+      "src": "Perso Folie 11 Organisationsentwicklung",
+      "type": "mc",
+      "points": 5,
+      "difficulty": "mittel"
+    },
+    {
+      "q": "Nach der Zwei-Faktoren-Theorie von Frederick Herzberg: Welcher der folgenden Faktoren zählt zu den 'Motivatoren' (die tatsächliche Zufriedenheit erzeugen) und nicht bloß zu den 'Hygienefaktoren' (die lediglich Unzufriedenheit verhindern)?",
+      "o": [
+        "Die Anerkennung der eigenen Leistung",
+        "Die Höhe des Grundgehalts",
+        "Die physischen Arbeitsbedingungen im Büro",
+        "Das Verhältnis zu den Kollegen und Vorgesetzten"
+      ],
+      "c": 0,
+      "s": "Nach Herzbergs Zwei-Faktoren-Theorie sind Hygienefaktoren (wie Gehalt, Arbeitsbedingungen, Unternehmenspolitik und kollegiale Beziehungen) notwendig, um Unzufriedenheit zu verhindern, können aber keine echte, intrinsische Motivation erzeugen. Echte Motivatoren sind Faktoren, die sich auf den Arbeitsinhalt und das Erreichen von Zielen beziehen, wie z.B. Anerkennung, Verantwortung, persönliche Weiterentwicklung und die Arbeit selbst.",
+      "src": "Perso Motivationstheorien"
+    },
+    {
+      "q": "Welches ist ein wesentlicher struktureller Nachteil einer Matrixorganisation im Vergleich zu einer rein funktionalen Einlinienorganisation?",
+      "o": [
+        "Gefahr von Kompetenzkonflikten und unklaren Weisungsrechten durch das Mehrlinienprinzip",
+        "Geringe Flexibilität bei Marktveränderungen",
+        "Mangelnde Spezialisierungsmöglichkeiten für Führungskräfte",
+        "Extrem lange, starre Dienstwege über mehrere Hierarchieebenen"
+      ],
+      "c": 0,
+      "s": "In einer Matrixorganisation überschneiden sich funktionale (z. B. Beschaffung, Vertrieb) und objektbezogene (z. B. Produkte, Regionen) Verantwortungsbereiche. Da Mitarbeiter zwei Vorgesetzten unterstellt sind (Mehrlinienprinzip), führt dies häufig zu Kompetenzkonflikten, doppelten Priorisierungen, Abstimmungsaufwand und Rollenkonflikten.",
+      "src": "Perso Organisationsformen"
+    },
+    {
+      "q": "In einem qualifizierten Arbeitszeugnis steht der Satz: 'Er zeigte stets großes Einfühlungsvermögen für die Belange der Belegschaft.' Was bedeutet diese Formulierung im sogenannten 'Zeugnis-Geheimcode' übersetzt für zukünftige Arbeitgeber?",
+      "o": [
+        "Der Mitarbeiter hatte sexuelle Kontakte im Betrieb oder neigte zu indiskretem Verhalten",
+        "Der Mitarbeiter war besonders teamfähig und sozial engagiert",
+        "Der Mitarbeiter hatte exzellente Führungsqualitäten und war allseits geschätzt",
+        "Der Mitarbeiter war gewerkschaftlich aktiv und suchte Konfrontation mit der Leitung"
+      ],
+      "c": 0,
+      "s": "Einige Formulierungen in Arbeitszeugnissen haben eine codierte Bedeutung. Sätze, die ein 'großes Einfühlungsvermögen für die Belegschaft' oder 'Interesse an den Kollegen' betonen, deuten im Geheimcode oft verschlüsselt auf intime Kontakte im Betrieb oder mangelnde professionelle Distanz hin. Ein wohlwollend klingendes Zeugnis kann so erhebliche negative Kritik transportieren.",
+      "src": "Perso Personalentwicklung & Zeugnisse"
     }
   ]
 }
