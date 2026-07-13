@@ -1211,6 +1211,182 @@
       "c": 1,
       "s": "Ist-Kaufmann: kaufmaennische Organisation noetig (1 HGB). Kann-Kaufmann: freiwillige HR-Eintragung.",
       "src": "Folienskript Chwallek Kap. 3.2.1.2"
+    },
+    {
+      "q": "Bei welcher Gesellschaftsform haften alle Gesellschafter unbeschränkt, unmittelbar und gesamtschuldnerisch für die Verbindlichkeiten der Gesellschaft?",
+      "o": [
+        "Offene Handelsgesellschaft (OHG) gem. § 128 HGB",
+        "Gesellschaft mit beschränkter Haftung (GmbH)",
+        "Aktiengesellschaft (AG)",
+        "Kommanditgesellschaft (KG) für alle Kommanditisten"
+      ],
+      "c": 0,
+      "s": "Nach § 128 HGB haften die Gesellschafter einer OHG für die Verbindlichkeiten der Gesellschaft den Gläubigern als Gesamtschuldner persönlich, unbeschränkt und unmittelbar.",
+      "src": "Grundlagen der BWL - Rechtsformen"
+    },
+    {
+      "q": "Was beschreibt das klassische Steiner-Weber-Modell im Rahmen der betrieblichen Standortwahl?",
+      "o": [
+        "Die Bestimmung eines transportkostenminimalen Standorts bei gegebenen Quellen- und Bestimmungspunkten",
+        "Die Beurteilung der steuerlichen Attraktivität von Standorten im europäischen Ausland",
+        "Die Ermittlung von optimalen Kapazitätsgrenzen für Lagerhäuser",
+        "Die Berechnung von Verkaufsflächenproduktivität im Einzelhandel"
+      ],
+      "c": 0,
+      "s": "Das Steiner-Weber-Modell ist ein klassisches Transportkosten-Minimalpunkt-Verfahren, das die Summe der gewichteten Distanzen zu Beschaffungs- und Absatzmärkten minimiert.",
+      "src": "Grundlagen der BWL - Standortwahl"
+    },
+    {
+      "q": "Welche Aussage beschreibt das 'Stakeholder-Konzept' der Unternehmensführung zutreffend?",
+      "o": [
+        "Das Unternehmen versucht, die Interessen aller anspruchsberechtigten Gruppen (Mitarbeiter, Kunden, Lieferanten, Staat, Eigentümer) zu berücksichtigen.",
+        "Das Management orientiert sich ausschließlich an den Rendite- und Gewinnwünschen der Eigenkapitalgeber (Shareholder).",
+        "Das Unternehmen wird durch staatliche Beauftragte kontrolliert, um gemeinnützige Ziele zu verfolgen.",
+        "Es handelt sich um ein rein ökologisches Zertifizierungsverfahren ohne ökonomische Komponenten."
+      ],
+      "c": 0,
+      "s": "Im Gegensatz zum Shareholder-Value-Ansatz stellt das Stakeholder-Konzept die Interessen aller relevanten Anspruchsgruppen (Anspruchsberechtigten) in den Fokus der Unternehmensführung.",
+      "src": "Grundlagen der BWL - Anspruchsgruppen"
+    },
+    {
+      "q": "Unter dem ... versteht man das ökonomische Prinzip, bei dem ein vorgegebener Erfolg mit minimalem Mitteleinsatz (Input) erreicht werden soll.",
+      "type": "fitb",
+      "o": [],
+      "c": "Minimalprinzip",
+      "s": "Das Minimalprinzip (auch Sparprinzip) ist eine Ausprägung des ökonomischen Prinzips: Ziel ist fest vorgegeben (z.B. Bestehen der Klausur), die Mittel (z.B. Lernzeit) sollen minimiert werden.",
+      "src": "Folienskript Chwallek Kap. 1.1",
+      "acceptable": [
+        "Minimal-Prinzip",
+        "Sparprinzip"
+      ]
+    },
+    {
+      "q": "Die ... bezeichnet das Verhältnis von Gewinn zum eingesetzten Eigenkapital und zeigt, wie rentabel das Geld der Eigentümer gearbeitet hat.",
+      "type": "fitb",
+      "o": [],
+      "c": "Eigenkapitalrentabilität",
+      "s": "Formel: Eigenkapitalrentabilität = (Gewinn / Eigenkapital) * 100. Sie misst die Rendite des von den Eigentümern investierten Kapitals.",
+      "src": "Folienskript Chwallek Kap. 2.4",
+      "acceptable": [
+        "Eigenkapitalrendite",
+        "Eigenkapital-Rentabilität",
+        "EK-Rentabilität"
+      ]
+    },
+    {
+      "q": "Ein Startup steht vor einer Standortentscheidung und führt eine Nutzwertanalyse mit drei Kriterien durch: Lohnkosten (Gewichtung 40%), Verkehrsanbindung (Gewichtung 30%) und Kundennähe (Gewichtung 30%).\n\nStandort A erhält die Bewertungen: Lohnkosten = 8/10, Verkehrsanbindung = 5/10, Kundennähe = 9/10.\nStandort B erhält die Bewertungen: Lohnkosten = 6/10, Verkehrsanbindung = 9/10, Kundennähe = 7/10.\n\nBerechnen Sie die Gesamt-Nutzwerte für beide Standorte. Welcher Standort ist optimal und wie hoch ist sein Nutzwert?",
+      "type": "mc",
+      "points": 8,
+      "o": [
+        "Standort A ist optimal mit einem Nutzwert von 7,4",
+        "Standort B ist optimal mit einem Nutzwert von 7,2",
+        "Standort A ist optimal mit einem Nutzwert von 7,2",
+        "Standort B ist optimal mit einem Nutzwert von 7,4"
+      ],
+      "c": 0,
+      "s": "Rechnung:\nNutzwert A = (8 * 0,4) + (5 * 0,3) + (9 * 0,3) = 3,2 + 1,5 + 2,7 = 7,4.\nNutzwert B = (6 * 0,4) + (9 * 0,3) + (7 * 0,3) = 2,4 + 2,7 + 2,1 = 7,2.\nDa 7,4 > 7,2, ist Standort A die optimale Wahl.",
+      "src": "Folienskript Chwallek Kap. 3.1"
+    },
+    {
+      "q": "Unter dem ...-Prinzip versteht man das ökonomische Prinzip, bei dem mit gegebenen Mitteln (Input) ein maximaler Erfolg (Output) erzielt werden soll.",
+      "type": "fitb",
+      "o": [],
+      "c": "Maximalprinzip",
+      "s": "Das Maximalprinzip (auch Ergiebigkeitsprinzip) besagt, dass bei gegebenem Aufwand (z.B. 10 Stunden Lernzeit) der Ertrag maximiert werden soll (z.B. bestmögliche Note).",
+      "src": "Folienskript Chwallek Kap. 1.1",
+      "acceptable": [
+        "Maximal-Prinzip",
+        "Ergiebigkeitsprinzip"
+      ]
+    },
+    {
+      "q": "Die Kommanditgesellschaft (KG) ist eine Personengesellschaft, bei der mindestens ein Gesellschafter unbeschränkt haftet. Dieser wird als ... bezeichnet.",
+      "type": "fitb",
+      "o": [],
+      "c": "Komplementär",
+      "s": "Der Komplementär haftet persönlich und unbeschränkt mit seinem gesamten Privatvermögen, während der Kommanditist nur bis zur Höhe seiner im Handelsregister eingetragenen Hafteinlage haftet.",
+      "src": "Folienskript Chwallek Kap. 3.2",
+      "acceptable": [
+        "Komplementaer",
+        "Vollhafter"
+      ]
+    },
+    {
+      "q": "Ein Kartell beschränkt den Wettbewerb zwischen rechtlich selbstständigen Unternehmen. In Deutschland ist dieses Verbot im ... (Gesetz gegen Wettbewerbsbeschränkungen) verankert (bitte die offizielle Abkürzung angeben).",
+      "type": "fitb",
+      "o": [],
+      "c": "GWB",
+      "s": "Das GWB (Gesetz gegen Wettbewerbsbeschränkungen) ist das 'Grundgesetz der Marktwirtschaft' und regelt das Kartellverbot in Deutschland.",
+      "src": "Folienskript Chwallek Kap. 3.3",
+      "acceptable": []
+    },
+    {
+      "q": "Ein Unternehmen stellt ein Produkt mit fixen Kosten von 120.000 € pro Jahr und variablen Stückkosten von 40 € her. Der Nettoverkaufspreis beträgt 100 € pro Stück.\n\nBerechnen Sie: 1) die Break-Even-Menge, und 2) die Absatzmenge, die erforderlich ist, um einen geplanten Zielgewinn von 30.000 € vor Steuern zu erzielen.",
+      "type": "mc",
+      "points": 10,
+      "o": [
+        "Break-Even-Menge = 2.000 Stück; Zielgewinn-Menge = 2.500 Stück",
+        "Break-Even-Menge = 1.200 Stück; Zielgewinn-Menge = 1.500 Stück",
+        "Break-Even-Menge = 2.000 Stück; Zielgewinn-Menge = 3.000 Stück",
+        "Break-Even-Menge = 3.000 Stück; Zielgewinn-Menge = 3.750 Stück"
+      ],
+      "c": 0,
+      "s": "Deckungsbeitrag pro Stück (db) = Preis - variable Kosten = 100 € - 40 € = 60 €.\n1) Break-Even-Menge (x_be) = Fixkosten / db = 120.000 € / 60 € = 2.000 Stück.\n2) Menge für Zielgewinn (x_zg) = (Fixkosten + Zielgewinn) / db = (120.000 € + 30.000 €) / 60 € = 150.000 € / 60 € = 2.500 Stück.",
+      "src": "Folienskript Chwallek Kap. 2.4"
+    },
+    {
+      "q": "Das ...-Prinzip verlangt, dass ein vorgegebenes Ziel mit dem geringstmöglichen Einsatz an Mitteln realisiert wird.",
+      "type": "fitb",
+      "o": [],
+      "c": "Minimalprinzip",
+      "s": "Das Minimalprinzip (Sparprinzip) minimiert den Input bei festem Output.",
+      "src": "Folienskript Chwallek Kap. 1.1",
+      "acceptable": [
+        "Minimal-Prinzip",
+        "Sparprinzip"
+      ]
+    },
+    {
+      "q": "Eine Aktiengesellschaft (AG) hat ein gesetzliches Mindestgrundkapital von ... Euro (bitte als Zahl angeben, z.B. 50000).",
+      "type": "fitb",
+      "o": [],
+      "c": "50000",
+      "s": "Das Mindestgrundkapital einer AG beträgt nach § 7 AktG 50.000 €.",
+      "src": "Folienskript Chwallek Kap. 3.2",
+      "acceptable": [
+        "50.000"
+      ]
+    },
+    {
+      "q": "Das gesetzliche Mindeststammkapital einer Gesellschaft mit beschränkter Haftung (GmbH) beträgt ... Euro (bitte als Zahl angeben, z.B. 25000).",
+      "type": "fitb",
+      "o": [],
+      "c": "25000",
+      "s": "Das Stammkapital einer GmbH beträgt nach § 5 GmbHG mindestens 25.000 €.",
+      "src": "Folienskript Chwallek Kap. 3.2",
+      "acceptable": [
+        "25.000"
+      ]
+    },
+    {
+      "q": "Bei der ...analyse werden qualitative und quantitative Kriterien anhand einer gewichteten Punktmatrix bewertet, um eine optimale Standortentscheidung zu treffen.",
+      "type": "fitb",
+      "o": [],
+      "c": "Nutzwertanalyse",
+      "s": "Die Nutzwertanalyse (NWA) ist ein Scoring-Verfahren zur systematischen Standortbewertung.",
+      "src": "Folienskript Chwallek Kap. 3.1",
+      "acceptable": [
+        "Nutzwert-Analyse"
+      ]
+    },
+    {
+      "q": "Ein vertraglicher, meist horizontaler Zusammenschluss rechtlich selbstständig bleibender Unternehmen zur Wettbewerbsbeschränkung wird als ... bezeichnet.",
+      "type": "fitb",
+      "o": [],
+      "c": "Kartell",
+      "s": "Kartelle schränken den Wettbewerb ein und sind nach § 1 GWB grundsätzlich verboten.",
+      "src": "Folienskript Chwallek Kap. 3.3",
+      "acceptable": []
     }
   ],
   "bwl2": [
@@ -1356,7 +1532,7 @@
       ],
       "c": 0,
       "s": "Lineare Abschreibung = Anschaffungskosten / Nutzungsdauer. Da die Vorsteuer abziehbar ist, wird nur der Nettobetrag (100.000 €) abgeschrieben: 100.000 / 10 = 10.000 € pro Jahr. Buchung: AfA 10.000 an Maschinen 10.000.",
-      "src": "Foliensatz BUF Kap. 9.2 'Abschreibungen', S. 56-60"
+      "src": "Vorlesung Abschreibungen und Anlagenabgänge, Buchführung Kap. 6"
     },
     {
       "q": "Was ist der Unterschied zwischen Vorsteuerüberhang und Zahllast?",
@@ -1716,7 +1892,7 @@
       ],
       "c": 2,
       "s": "Lineare Abschreibung = Anschaffungskosten / Nutzungsdauer. Da die Vorsteuer abziehbar ist, wird nur der Nettobetrag (100,000 €) abgeschrieben: 100,000 / 10 = 10,000 € pro Jahr. Buchung: AfA 10,000 an Produktionsanlage 10,000.",
-      "src": "Foliensatz BUF Kap. 9.2 'Abschreibungen', S. 56-60"
+      "src": "Vorlesung Abschreibungen und Anlagenabgänge, Buchführung Kap. 6"
     },
     {
       "q": "Eine Maschine wird für 50,000 € netto zzgl. 19% MwSt gekauft. Nutzungsdauer 5 Jahre. Wie hoch ist die lineare Abschreibung pro Jahr?",
@@ -1728,7 +1904,7 @@
       ],
       "c": 3,
       "s": "Lineare Abschreibung = Anschaffungskosten / Nutzungsdauer. Da die Vorsteuer abziehbar ist, wird nur der Nettobetrag (50,000 €) abgeschrieben: 50,000 / 5 = 10,000 € pro Jahr. Buchung: AfA 10,000 an Maschine 10,000.",
-      "src": "Foliensatz BUF Kap. 9.2 'Abschreibungen', S. 56-60"
+      "src": "Vorlesung Abschreibungen und Anlagenabgänge, Buchführung Kap. 6"
     },
     {
       "q": "Eine Fuhrpark wird für 80,000 € netto zzgl. 19% MwSt gekauft. Nutzungsdauer 8 Jahre. Wie hoch ist die lineare Abschreibung pro Jahr?",
@@ -1740,7 +1916,7 @@
       ],
       "c": 0,
       "s": "Lineare Abschreibung = Anschaffungskosten / Nutzungsdauer. Da die Vorsteuer abziehbar ist, wird nur der Nettobetrag (80,000 €) abgeschrieben: 80,000 / 8 = 10,000 € pro Jahr. Buchung: AfA 10,000 an Fuhrpark 10,000.",
-      "src": "Foliensatz BUF Kap. 9.2 'Abschreibungen', S. 56-60"
+      "src": "Vorlesung Abschreibungen und Anlagenabgänge, Buchführung Kap. 6"
     },
     {
       "q": "Eine Gebäude wird für 250,000 € netto zzgl. 19% MwSt gekauft. Nutzungsdauer 20 Jahre. Wie hoch ist die lineare Abschreibung pro Jahr?",
@@ -1752,7 +1928,7 @@
       ],
       "c": 0,
       "s": "Lineare Abschreibung = Anschaffungskosten / Nutzungsdauer. Da die Vorsteuer abziehbar ist, wird nur der Nettobetrag (250,000 €) abgeschrieben: 250,000 / 20 = 12,500 € pro Jahr. Buchung: AfA 12,500 an Gebäude 12,500.",
-      "src": "Foliensatz BUF Kap. 9.2 'Abschreibungen', S. 56-60"
+      "src": "Vorlesung Abschreibungen und Anlagenabgänge, Buchführung Kap. 6"
     },
     {
       "q": "Eine BGA wird für 40,000 € netto zzgl. 19% MwSt gekauft. Nutzungsdauer 4 Jahre. Wie hoch ist die lineare Abschreibung pro Jahr?",
@@ -1764,7 +1940,7 @@
       ],
       "c": 0,
       "s": "Lineare Abschreibung = Anschaffungskosten / Nutzungsdauer. Da die Vorsteuer abziehbar ist, wird nur der Nettobetrag (40,000 €) abgeschrieben: 40,000 / 4 = 10,000 € pro Jahr. Buchung: AfA 10,000 an BGA 10,000.",
-      "src": "Foliensatz BUF Kap. 9.2 'Abschreibungen', S. 56-60"
+      "src": "Vorlesung Abschreibungen und Anlagenabgänge, Buchführung Kap. 6"
     },
     {
       "q": "Eine Produktionsanlage wird für 150,000 € netto zzgl. 19% MwSt gekauft. Nutzungsdauer 15 Jahre. Wie hoch ist die lineare Abschreibung pro Jahr?",
@@ -1776,7 +1952,7 @@
       ],
       "c": 3,
       "s": "Lineare Abschreibung = Anschaffungskosten / Nutzungsdauer. Da die Vorsteuer abziehbar ist, wird nur der Nettobetrag (150,000 €) abgeschrieben: 150,000 / 15 = 10,000 € pro Jahr. Buchung: AfA 10,000 an Produktionsanlage 10,000.",
-      "src": "Foliensatz BUF Kap. 9.2 'Abschreibungen', S. 56-60"
+      "src": "Vorlesung Abschreibungen und Anlagenabgänge, Buchführung Kap. 6"
     },
     {
       "q": "Am 1. eines Monats werden 3,600 € Jahreszinsen (Laufzeit: 12 Monate) per Bank gezahlt. Am Bilanzstichtag sind 4 Monate abgelaufen. Wie hoch ist der abzugrenzende Betrag (für das alte Jahr)?",
@@ -2124,7 +2300,7 @@
       ],
       "c": 2,
       "s": "Lösung: Rohstoffe im SOLL. Auf Aktivkonten: Mehrungen im SOLL, Minderungen im HABEN. Auf Passivkonten: Mehrungen im HABEN, Minderungen im SOLL. Auf Erfolgskonten: Aufwand im SOLL, Ertrag im HABEN.",
-      "src": "Foliensatz BUF Kap. 5.4-7 'Soll-Wen-Prinzip'"
+      "src": "Foliensatz BUF Kap. 5.4-7"
     },
     {
       "q": "Wo wird gebucht bei: 'Aktivkonto: Abgang (Minderung) der Forderungen'?",
@@ -2136,7 +2312,7 @@
       ],
       "c": 3,
       "s": "Lösung: Forderungen im HABEN. Auf Aktivkonten: Mehrungen im SOLL, Minderungen im HABEN. Auf Passivkonten: Mehrungen im HABEN, Minderungen im SOLL. Auf Erfolgskonten: Aufwand im SOLL, Ertrag im HABEN.",
-      "src": "Foliensatz BUF Kap. 5.4-7 'Soll-Wen-Prinzip'"
+      "src": "Foliensatz BUF Kap. 5.4-7"
     },
     {
       "q": "Wo wird gebucht bei: 'Passivkonto: Erhöhung der Verbindlichkeiten'?",
@@ -2148,7 +2324,7 @@
       ],
       "c": 0,
       "s": "Lösung: Verbindlichkeiten im HABEN. Auf Aktivkonten: Mehrungen im SOLL, Minderungen im HABEN. Auf Passivkonten: Mehrungen im HABEN, Minderungen im SOLL. Auf Erfolgskonten: Aufwand im SOLL, Ertrag im HABEN.",
-      "src": "Foliensatz BUF Kap. 5.4-7 'Soll-Wen-Prinzip'"
+      "src": "Foliensatz BUF Kap. 5.4-7"
     },
     {
       "q": "Wo wird gebucht bei: 'Passivkonto: Tilgung der Darlehen'?",
@@ -2160,7 +2336,7 @@
       ],
       "c": 2,
       "s": "Lösung: Darlehen im SOLL. Auf Aktivkonten: Mehrungen im SOLL, Minderungen im HABEN. Auf Passivkonten: Mehrungen im HABEN, Minderungen im SOLL. Auf Erfolgskonten: Aufwand im SOLL, Ertrag im HABEN.",
-      "src": "Foliensatz BUF Kap. 5.4-7 'Soll-Wen-Prinzip'"
+      "src": "Foliensatz BUF Kap. 5.4-7"
     },
     {
       "q": "Wo wird gebucht bei: 'Erfolgskonto: Aufwand (Löhne)'?",
@@ -2172,7 +2348,7 @@
       ],
       "c": 0,
       "s": "Lösung: Löhne im SOLL. Auf Aktivkonten: Mehrungen im SOLL, Minderungen im HABEN. Auf Passivkonten: Mehrungen im HABEN, Minderungen im SOLL. Auf Erfolgskonten: Aufwand im SOLL, Ertrag im HABEN.",
-      "src": "Foliensatz BUF Kap. 5.4-7 'Soll-Wen-Prinzip'"
+      "src": "Foliensatz BUF Kap. 5.4-7"
     },
     {
       "q": "Wo wird gebucht bei: 'Erfolgskonto: Ertrag (Umsatzerlöse)'?",
@@ -2184,7 +2360,7 @@
       ],
       "c": 1,
       "s": "Lösung: Umsatzerlöse im HABEN. Auf Aktivkonten: Mehrungen im SOLL, Minderungen im HABEN. Auf Passivkonten: Mehrungen im HABEN, Minderungen im SOLL. Auf Erfolgskonten: Aufwand im SOLL, Ertrag im HABEN.",
-      "src": "Foliensatz BUF Kap. 5.4-7 'Soll-Wen-Prinzip'"
+      "src": "Foliensatz BUF Kap. 5.4-7"
     },
     {
       "q": "Wo wird gebucht bei: 'Aktivmehrung: Banküberweisung erhalten'?",
@@ -2196,7 +2372,7 @@
       ],
       "c": 3,
       "s": "Lösung: Bank im SOLL. Auf Aktivkonten: Mehrungen im SOLL, Minderungen im HABEN. Auf Passivkonten: Mehrungen im HABEN, Minderungen im SOLL. Auf Erfolgskonten: Aufwand im SOLL, Ertrag im HABEN.",
-      "src": "Foliensatz BUF Kap. 5.4-7 'Soll-Wen-Prinzip'"
+      "src": "Foliensatz BUF Kap. 5.4-7"
     },
     {
       "q": "Wo wird gebucht bei: 'Aktivminderung: Barzahlung aus Kasse'?",
@@ -2208,7 +2384,7 @@
       ],
       "c": 1,
       "s": "Lösung: Kasse im HABEN. Auf Aktivkonten: Mehrungen im SOLL, Minderungen im HABEN. Auf Passivkonten: Mehrungen im HABEN, Minderungen im SOLL. Auf Erfolgskonten: Aufwand im SOLL, Ertrag im HABEN.",
-      "src": "Foliensatz BUF Kap. 5.4-7 'Soll-Wen-Prinzip'"
+      "src": "Foliensatz BUF Kap. 5.4-7"
     },
     {
       "q": "Welcher Zweck erfüllt der Jahresabschluss?",
@@ -2917,6 +3093,180 @@
       "c": 0,
       "s": "Die Maschine wird mit den vollen Anschaffungskosten von 50.000 € netto im Soll aktiviert. Die gesamte Vorsteuer beträgt 19% von 50.000 € = 9.500 €. Da bei der Anzahlung bereits 1.900 € Vorsteuer gebucht wurden, werden nun noch 7.600 € Vorsteuer erfasst. Das Netto-Anzahlungskonto 'Geleistete Anzahlungen' wird mit 10.000 € im Haben aufgelöst. Der Restzahlungsbetrag per Bank beträgt 47.600 € (59.500 € Gesamtpreis - 11.900 € Anzahlung). Buchungssatz: Maschinen 50.000, Vorsteuer 7.600 an Geleistete Anzahlungen 10.000, Bank 47.600.",
       "src": "Vorlesung Anzahlungsbuchungen, Buchführung Kap. 6"
+    },
+    {
+      "q": "Das Unternehmen zahlt am 1. Dezember die Miete für Dezember, Januar und Februar im Voraus (insgesamt 3.000 € bar). Welcher Buchungssatz ist am Abschlussstichtag (31. Dezember) aufzustellen?",
+      "o": [
+        "Aktive Rechnungsabgrenzung (ARAP) 2.000 € an Mietaufwand 2.000 €",
+        "Mietaufwand 1.000 € an Aktive Rechnungsabgrenzung (ARAP) 1.000 €",
+        "Passive Rechnungsabgrenzung (PRAP) 2.000 € an Mietaufwand 2.000 €",
+        "Sonstige Forderungen 2.000 € an Mietaufwand 2.000 €"
+      ],
+      "c": 0,
+      "s": "Da am 1.12. der gesamte Mietaufwand (3.000 €) verbucht wurde, aber 2/3 davon (2.000 € für Jan/Feb) wirtschaftlich in das neue Jahr gehören, wird am 31.12. der Aufwand mittels ARAP abgegrenzt: ARAP an Aufwand 2.000 €.",
+      "src": "Buchführung - Rechnungsabgrenzungsposten"
+    },
+    {
+      "q": "Wie lautet der korrekte Buchungssatz für den Verkauf einer gebrauchten Maschine über dem Buchwert gegen Barzahlung?",
+      "o": [
+        "Kasse an Maschinen UND an Erträge aus dem Abgang von Gegenständen des Anlagevermögens",
+        "Maschinen an Kasse",
+        "Kasse an Maschinen",
+        "Kasse an Sonstige betriebliche Aufwendungen"
+      ],
+      "c": 0,
+      "s": "Bei Verkauf über Buchwert bucht man: Kasse an Maschinen (in Höhe des Buchwerts) und an Erträge aus Anlagenabgang (Mehrwert über dem Buchwert).",
+      "src": "Buchführung - Anlagenabgänge"
+    },
+    {
+      "q": "Welche Buchung ist vorzunehmen, wenn ein Kunde eine offene Rechnung über 1.190 € (inkl. 19% USt) durch Banküberweisung unter Abzug von 2% Skonto bezahlt?",
+      "o": [
+        "Bank 1.166,20 €, Aufwand für Kundenskonto 20,00 €, Umsatzsteuer 3,80 € an Forderungen aus L.L. 1.190,00 €",
+        "Bank 1.166,20 € an Forderungen aus L.L. 1.166,20 €",
+        "Bank 1.190,00 € an Forderungen aus L.L. 1.190,00 €",
+        "Bank 1.166,20 €, Aufwand für Kundenskonto 23,80 € an Forderungen aus L.L. 1.190,00 €"
+      ],
+      "c": 0,
+      "s": "Bei Skontogewährung muss auch die Umsatzsteuer korrigiert werden. 2% von 1.190 € sind 23,80 € Bruttoskonto (20,00 € Nettoskonto + 3,80 € Umsatzsteuer). Buchungssatz: Bank 1.166,20 €, Erlösschmälerungen/Skonto 20,00 €, Umsatzsteuer 3,80 € an Forderungen 1.190,00 €.",
+      "src": "Buchführung - Skonto"
+    },
+    {
+      "q": "Ein Geschäftsvorfall betrifft ausschließlich zwei Aktivkonten (z.B. Barzahlung auf das Bankkonto). Ein solches Ereignis, das die Bilanzsumme unverändert lässt, nennt man einen ...",
+      "type": "fitb",
+      "o": [],
+      "c": "Aktivtausch",
+      "s": "Ein Aktivtausch liegt vor, wenn sich die Zusammensetzung der Aktivseite ändert, ohne dass sich die Bilanzsumme erhöht oder verringert.",
+      "src": "Foliensatz BUF Kap. 1-3",
+      "acceptable": [
+        "Aktiv-Tausch"
+      ]
+    },
+    {
+      "q": "Der Buchungssatz für die planmäßige Abschreibung von Sachanlagen lautet am Jahresende: ... an Sachanlagen.",
+      "type": "fitb",
+      "o": [],
+      "c": "Abschreibungen",
+      "s": "Der standardmäßige Buchungssatz lautet 'Abschreibungen (Aufwandskonto) an Sachanlagen (Aktivkonto)'.",
+      "src": "Vorlesung Abschreibungen und Anlagenabgänge, Buchführung Kap. 6",
+      "acceptable": [
+        "Abschreibungsaufwand",
+        "Abschreibungsaufwendungen",
+        "Abschreibungsaufwand an Sachanlagen",
+        "Abschreibung"
+      ]
+    },
+    {
+      "q": "Ein Industrieunternehmen kauft eine Produktionsmaschine am 01.07.2025 für netto 40.000 € (zzgl. 19% USt). Die betriebliche Nutzungsdauer beträgt 8 Jahre. Die Abschreibung erfolgt linear und zeitanteilig.\n\nBerechnen Sie den Buchwert der Maschine in der Handelsbilanz am 31.12.2026.",
+      "type": "mc",
+      "points": 8,
+      "o": [
+        "32.500 €",
+        "35.000 €",
+        "30.000 €",
+        "37.500 €"
+      ],
+      "c": 0,
+      "s": "Rechnung:\nAnschaffungskosten (netto) = 40.000 €.\nJährliche lineare Abschreibung = 40.000 € / 8 Jahre = 5.000 € pro Jahr.\n- Für 2025 (zeitanteilig ab 01.07.2025 = 6 Monate): 5.000 € * (6/12) = 2.500 € Abschreibung.\n- Für 2026 (volles Jahr = 12 Monate): 5.000 € Abschreibung.\nKumulierte Abschreibung zum 31.12.2026 = 2.500 € + 5.000 € = 7.500 €.\nBuchwert zum 31.12.2026 = 40.000 € - 7.500 € = 32.500 €.",
+      "src": "Vorlesung Abschreibungen und Anlagenabgänge, Buchführung Kap. 6"
+    },
+    {
+      "q": "Werden Rohstoffe auf Ziel eingekauft, lautet das Habenkonto bei diesem Buchungssatz stets 'Verbindlichkeiten aus Lieferungen und ...'.",
+      "type": "fitb",
+      "o": [],
+      "c": "Leistungen",
+      "s": "Der vollständige Buchungssatz lautet: 'Rohstoffe' und 'Vorsteuer' an 'Verbindlichkeiten aus Lieferungen und Leistungen' (VLL).",
+      "src": "Foliensatz BUF Kap. 5-9",
+      "acceptable": [
+        "Leistung"
+      ]
+    },
+    {
+      "q": "Ein Buchungssatz, bei dem ein Geschäftsvorfall sowohl das Soll- als auch das Habenkonto betrifft, lautet allgemein formuliert immer 'Soll an ...'.",
+      "type": "fitb",
+      "o": [],
+      "c": "Haben",
+      "s": "Die doppelte Buchführung verlangt, dass jeder Buchungssatz nach dem Schema 'Soll an Haben' gebildet wird.",
+      "src": "Foliensatz BUF Kap. 5.4-7",
+      "acceptable": []
+    },
+    {
+      "q": "Erhaltene Anzahlungen von Kunden werden auf der Passivseite der Bilanz ausgewiesen. Es handelt sich hierbei um ein ...konto.",
+      "type": "fitb",
+      "o": [],
+      "c": "Passiv",
+      "s": "Erhaltene Anzahlungen sind Verbindlichkeiten gegenüber dem Kunden zur Erbringung einer künftigen Leistung. Sie werden daher auf einem Passivkonto erfasst.",
+      "src": "Foliensatz BUF Kap. 5.4-7",
+      "acceptable": [
+        "Passivkonto"
+      ]
+    },
+    {
+      "q": "Ein Großhändler verkauft Handelswaren für brutto 11.900 € (inkl. 19% USt) auf Ziel. Der Kunde zahlt innerhalb der Skontofrist unter Abzug von 2% Skonto per Banküberweisung.\n\nBerechnen Sie den Überweisungsbetrag sowie den Buchungssatz für den Zahlungseingang beim Großhändler.",
+      "type": "mc",
+      "points": 10,
+      "o": [
+        "Bank 11.662 €, Erlösschmälerungen 200 €, Umsatzsteuer 38 € an Forderungen a.L.u.L. 11.900 €",
+        "Bank 11.662 €, Erlösschmälerungen 238 € an Forderungen a.L.u.L. 11.900 €",
+        "Bank 11.662 € an Forderungen a.L.u.L. 11.662 €",
+        "Bank 11.900 € an Forderungen a.L.u.L. 11.900 €"
+      ],
+      "c": 0,
+      "s": "Nettowert = 10.000 €, USt = 1.900 €, Bruttowert = 11.900 €.\n2% Skonto von 11.900 € = 238 € (Bruttoskonto).\nÜberweisungsbetrag = 11.662 €.\nNettoskonto-Minderung = 200 €, USt-Korrektur = 38 €.\nDaher lautet der Buchungssatz: Bank (11.662 €), Erlösschmälerungen (200 €) und Umsatzsteuer (38 €) an Forderungen a.L.u.L. (11.900 €).",
+      "src": "Buchführung - Skonto"
+    },
+    {
+      "q": "Das ... Realisationsprinzip besagt, dass Gewinne erst ausgewiesen werden dürfen, wenn sie realisiert sind, Verluste hingegen schon bei Absehbarkeit.",
+      "type": "fitb",
+      "o": [],
+      "c": "imparitätische",
+      "s": "Das Imparitätsprinzip sorgt für vorsichtigen Gewinnausweis zum Gläubigerschutz.",
+      "src": "Foliensatz BUF Kap. 1-3",
+      "acceptable": [
+        "imparitaetische",
+        "Imparitätsprinzip"
+      ]
+    },
+    {
+      "q": "Der Grundsatz der ... verbietet es, Posten der Aktivseite mit Posten der Passivseite oder Aufwendungen mit Erträgen zu verrechnen.",
+      "type": "fitb",
+      "o": [],
+      "c": "Saldierungsverbot",
+      "s": "Das Saldierungsverbot nach § 246 Abs. 2 HGB verlangt den Bruttoausweis aller Bilanzposten.",
+      "src": "Foliensatz BUF Kap. 1-3",
+      "acceptable": [
+        "Saldierungsverbots",
+        "Verrechnungsverbot"
+      ]
+    },
+    {
+      "q": "Aktive Rechnungsabgrenzungsposten (ARAP) dienen der zeitlichen Abgrenzung von Ausgaben, die ... dem Abschlussstichtag geleistet wurden, aber Aufwand des Folgejahres sind.",
+      "type": "fitb",
+      "o": [],
+      "c": "vor",
+      "s": "ARAP grenzt Ausgaben vor dem Stichtag ab, die erst danach wirtschaftlich als Aufwand anfallen.",
+      "src": "Foliensatz BUF Kap. 17.4",
+      "acceptable": []
+    },
+    {
+      "q": "Die Umsatzsteuerzahllast eines Unternehmens an das Finanzamt berechnet sich aus der verbuchten Umsatzsteuer minus der abziehbaren ... .",
+      "type": "fitb",
+      "o": [],
+      "c": "Vorsteuer",
+      "s": "Zahllast = Umsatzsteuer (Traglast des Kunden) - Vorsteuer (beim Einkauf gezahlt).",
+      "src": "Vorlesung Umsatzsteuerzahllast, Buchführung Kap. 5",
+      "acceptable": [
+        "VSt",
+        "Vorsteuern"
+      ]
+    },
+    {
+      "q": "Für ungewisse Verbindlichkeiten, deren Bestehen, Höhe oder Fälligkeit am Bilanzstichtag unsicher sind, müssen ... auf der Passivseite gebildet werden.",
+      "type": "fitb",
+      "o": [],
+      "c": "Rückstellungen",
+      "s": "Rückstellungen gehören zum Fremdkapital und dienen dem periodengerechten Aufwandsausweis.",
+      "src": "Vorlesung Rückstellungen, Buchführung Kap. 8",
+      "acceptable": []
     }
   ],
   "mawi1": [
@@ -3591,6 +3941,171 @@
       "c": 0,
       "s": "Der ökonomische Definitionsbereich schränkt die mathematischen Werte auf ökonomisch sinnvolle Bereiche ein. Da keine negative Menge produziert werden kann, gilt x ≥ 0. Oft ist er nach oben durch die Kapazitätsgrenze x_max beschränkt: D_ök = [0, x_max].",
       "src": "Wirtschaftsmathematik Grundlagen, Übungsblatt 2"
+    },
+    {
+      "q": "Gegeben ist die Kostenfunktion K(x) = 20x + 100 und die Preis-Absatz-Funktion p(x) = 100 - 2x. Bestimmen Sie den gewinnmaximierenden Preis p (Cournot'scher Preis) und die zugehörige Menge x (Cournot'sche Menge).",
+      "o": [
+        "Menge x = 20, Preis p = 60",
+        "Menge x = 25, Preis p = 50",
+        "Menge x = 15, Preis p = 70",
+        "Menge x = 30, Preis p = 40"
+      ],
+      "c": 0,
+      "s": "Erlösfunktion: E(x) = p(x)*x = 100x - 2x^2. Gewinnfunktion: G(x) = E(x) - K(x) = -2x^2 + 80x - 100. Erste Ableitung: G'(x) = -4x + 80 = 0 => x = 20. Cournot'scher Preis: p(20) = 100 - 2*(20) = 60.",
+      "src": "Wirtschaftsmathematik - Cournot'scher Punkt"
+    },
+    {
+      "q": "Gegeben ist die Nachfragefunktion x(p) = 200 - 4p. Berechnen Sie die direkte Preiselastizität der Nachfrage bei einem Preis von p = 10.",
+      "o": [
+        "Elastizität = -0,25 (unelastische Nachfrage)",
+        "Elastizität = -1,00 (fließendes Gleichgewicht)",
+        "Elastizität = -0,50 (unelastische Nachfrage)",
+        "Elastizität = -4,00 (sehr elastische Nachfrage)"
+      ],
+      "c": 0,
+      "s": "Elastizität = x'(p) * (p / x(p)). Ableitung x'(p) = -4. Bei p = 10 ist x(10) = 200 - 40 = 160. Elastizität = -4 * (10 / 160) = -0,25. Da der Betrag < 1 ist, reagiert die Nachfrage unelastisch.",
+      "src": "Wirtschaftsmathematik - Elastizitäten"
+    },
+    {
+      "q": "Eine Anfangsinvestition von 10.000 € führt in den kommenden zwei Jahren zu Einzahlungsüberschüssen von jeweils 5.500 €. Der Kalkulationszinssatz beträgt 10%. Berechnen Sie den Kapitalwert (Net Present Value, NPV) der Investition.",
+      "o": [
+        "Kapitalwert = -454,55 € (Die Investition ist unvorteilhaft)",
+        "Kapitalwert = +1.000,00 € (Die Investition ist vorteilhaft)",
+        "Kapitalwert = +500,00 € (Die Investition ist vorteilhaft)",
+        "Kapitalwert = -100,00 € (Die Investition ist unvorteilhaft)"
+      ],
+      "c": 0,
+      "s": "C0 = -I0 + CF1/(1+i) + CF2/(1+i)^2 = -10.000 + 5.500/(1,1) + 5.500/(1,21) = -10.000 + 5.000 + 4.545,45 = -454,55 €. Da C0 < 0 ist, ist die Investition unvorteilhaft.",
+      "src": "Wirtschaftsmathematik - Investitionsrechnung"
+    },
+    {
+      "q": "Eine reelle Funktion f(x) heißt an einer Stelle x0 ..., wenn der linksseitige Grenzwert, der rechtsseitige Grenzwert und der Funktionswert f(x0) existieren und alle übereinstimmen.",
+      "type": "fitb",
+      "o": [],
+      "c": "stetig",
+      "s": "Stetigkeit bedeutet anschaulich, dass man den Graphen der Funktion im Bereich x0 ohne Abzusetzen des Stiftes zeichnen kann.",
+      "src": "WiMa 1 Kap. 3",
+      "acceptable": []
+    },
+    {
+      "q": "Gegeben sei die Erlösfunktion E(x) = 160x und die Gesamtkostenfunktion K(x) = 2x^2 + 40x + 800 für ein Unternehmen.\n\nBestimmen Sie die gewinnmaximale Produktionsmenge x* und den maximal erreichbaren Gewinn G(x*).",
+      "type": "mc",
+      "points": 8,
+      "o": [
+        "Gewinnmaximum bei x* = 30; Maximaler Gewinn G(x*) = 1.000 €",
+        "Gewinnmaximum bei x* = 30; Maximaler Gewinn G(x*) = 1.800 €",
+        "Gewinnmaximum bei x* = 20; Maximaler Gewinn G(x*) = 800 €",
+        "Gewinnmaximum bei x* = 40; Maximaler Gewinn G(x*) = 1.200 €"
+      ],
+      "c": 0,
+      "s": "Gewinnfunktion: G(x) = E(x) - K(x) = 160x - (2x^2 + 40x + 800) = -2x^2 + 120x - 800.\nUm das Maximum zu finden, setzen wir die erste Ableitung gleich Null:\nG'(x) = -4x + 120 = 0  =>  4x = 120  =>  x* = 30.\nHinreichende Bedingung: G''(x) = -4 < 0 (Maximum liegt vor).\nMaximaler Gewinn: G(30) = -2(30)^2 + 120(30) - 800 = -2(900) + 3600 - 800 = -1800 + 3600 - 800 = 1.000 €.",
+      "src": "WiMa 1 Kap. 2"
+    },
+    {
+      "q": "Ein homogenes lineares Gleichungssystem Ax = 0 besitzt genau dann nichttriviale Lösungen (also unendlich viele Lösungen), wenn die Determinante der Koeffizientenmatrix A gleich ... ist.",
+      "type": "fitb",
+      "o": [],
+      "c": "0",
+      "s": "Ist det(A) = 0, so ist die Matrix singulär (nicht regulär), und das homogene Gleichungssystem besitzt unendlich viele nichttriviale Lösungen.",
+      "src": "WiMa 1 Kap. 4",
+      "acceptable": [
+        "Null",
+        "null"
+      ]
+    },
+    {
+      "q": "Wird ein Kapital K0 mit einem Zinssatz i für n Jahre kontinuierlich (stetig) verzinst, lautet die Formel für das Endkapital Kn: Kn = K0 * e^(i * n). Die mathematische Konstante e nennt man ...sche Zahl.",
+      "type": "fitb",
+      "o": [],
+      "c": "Euler",
+      "s": "Die Eulersche Zahl e (ca. 2,71828) ist die Basis des natürlichen Logarithmus und wird bei der stetigen Verzinsung verwendet.",
+      "src": "WiMa 1 Kap. 1.2",
+      "acceptable": [
+        "Eulersche"
+      ]
+    },
+    {
+      "q": "Ein zweistufiger Produktionsprozess wird durch die Technologiematrizen A (Rohstoffe zu Zwischenprodukten) und B (Zwischenprodukte zu Endprodukten) beschrieben.\n\nA = [[2, 1], [0, 3]]\nB = [[1, 2], [3, 4]]\n\nFür die Produktion von 10 Einheiten des Endprodukts 1 und 20 Einheiten des Endprodukts 2: Wie viele Einheiten des Rohstoffs 1 werden benötigt?",
+      "type": "mc",
+      "points": 10,
+      "o": [
+        "210 Einheiten",
+        "180 Einheiten",
+        "250 Einheiten",
+        "330 Einheiten"
+      ],
+      "c": 0,
+      "s": "Endprodukte y = [10, 20]^T.\nZwischenprodukte z = B * y = [[1*10 + 2*20], [3*10 + 4*20]] = [50, 110]^T.\nRohstoffe x = A * z = [[2*50 + 1*110], [0*50 + 3*110]] = [210, 330]^T.\nEs werden also 210 Einheiten des Rohstoffs 1 benötigt.",
+      "src": "Vorlesung Matrizenrechnung Kap. 4, Übungsblatt 5"
+    },
+    {
+      "q": "Ein Student nimmt am Anfang seines Studiums einen Kredit über 10.000 € zu einem jährlichen Zinssatz von 4% auf (nachschüssige jährliche Verzinsung). Er vereinbart eine jährliche nachschüssige Annuitätentilgung über 5 Jahre. Wie hoch ist die jährliche Annuität?",
+      "type": "mc",
+      "points": 8,
+      "o": [
+        "2.246,27 €",
+        "2.000,00 €",
+        "2.185,40 €",
+        "2.310,50 €"
+      ],
+      "c": 0,
+      "s": "Kredit K = 10.000 €, i = 4% = 0,04, q = 1,04, Laufzeit n = 5 Jahre.\nAnnuitätenfaktor (Wiedergewinnungsfaktor) = [q^n * (q - 1)] / [q^n - 1] = [1,04^5 * 0,04] / [1,04^5 - 1] ≈ 0,224627.\nAnnuität A = K * Annuitätenfaktor ≈ 10.000 € * 0,224627 = 2.246,27 €.",
+      "src": "Vorlesung Finanzmathematik, Übungsblatt 2"
+    },
+    {
+      "q": "Eine quadratische Matrix A besitzt genau dann eine inverse Matrix A^(-1), wenn ihre Determinante ungleich ... ist.",
+      "type": "fitb",
+      "o": [],
+      "c": "0",
+      "s": "Ist det(A) = 0, so ist die Matrix singulär (nicht regulär) und kann nicht invertiert werden.",
+      "src": "WiMa 1 Kap. 4",
+      "acceptable": [
+        "null",
+        "Zero"
+      ]
+    },
+    {
+      "q": "Die erste mathematische Ableitung f'(x) einer Erlösfunktion E(x) nach der Menge x bezeichnet man als ... .",
+      "type": "fitb",
+      "o": [],
+      "c": "Grenzerlös",
+      "s": "Der Grenzerlös gibt an, wie stark der Erlös bei einer infinitesimalen Erhöhung der Absatzmenge steigt.",
+      "src": "WiMa 1 Kap. 2",
+      "acceptable": [
+        "Grenzerloes",
+        "Grenzumsatz"
+      ]
+    },
+    {
+      "q": "Eine nachschüssige, periodisch gleichbleibende jährliche Zahlung zur Tilgung eines Kredits (bestehend aus Zins- und Tilgungsanteil) heißt ... .",
+      "type": "fitb",
+      "o": [],
+      "c": "Annuität",
+      "s": "Die Annuität bleibt konstant, während der Zinsanteil sinkt und der Tilgungsanteil steigt.",
+      "src": "Vorlesung Finanzmathematik, Übungsblatt 2",
+      "acceptable": [
+        "Annuitaet"
+      ]
+    },
+    {
+      "q": "Eine Funktion f(x) ist an einer Stelle x0 ..., wenn der linksseitige Grenzwert, der rechtsseitige Grenzwert und der Funktionswert existieren und übereinstimmen.",
+      "type": "fitb",
+      "o": [],
+      "c": "stetig",
+      "s": "Stetigkeit bedeutet anschaulich, dass der Funktionsgraph an dieser Stelle keinen Sprung aufweist.",
+      "src": "WiMa 1 Kap. 3",
+      "acceptable": []
+    },
+    {
+      "q": "Die Methode der ...-Multiplikatoren wird zur Bestimmung von lokalen Extremstellen von Funktionen mehrerer Variablen unter Gleichungsnebenbedingungen verwendet.",
+      "type": "fitb",
+      "o": [],
+      "c": "Lagrange",
+      "s": "Die Lagrange-Multiplikation erweitert die Zielfunktion um die gewichtete Nebenbedingung.",
+      "src": "WiMa 1 Kap. 2",
+      "acceptable": [
+        "Lagrange-Multiplikation"
+      ]
     }
   ],
   "mawi2": [
@@ -4397,6 +4912,171 @@
       "c": 0,
       "s": "Für das arithmetische Mittel müssen die Abstände zwischen den Werten interpretierbar sein und mathematisch addiert werden können. Dies ist erst ab einer metrischen Skalierung (Intervall- oder Verhältnisskala) zulässig.",
       "src": "Statistik Vorlesung 4 'Lageparameter', S1_Vorl_04_Lagepar"
+    },
+    {
+      "q": "Was sagt ein Bravais-Pearson-Korrelationskoeffizient von r = -0,85 über den Zusammenhang zweier Merkmale X und Y aus?",
+      "o": [
+        "Es liegt ein starker, negativer linearer Zusammenhang vor.",
+        "Es besteht absolut kein linearer Zusammenhang.",
+        "Es liegt ein schwacher, positiver linearer Zusammenhang vor.",
+        "Die beiden Merkmale sind vollkommen stochastisch unabhängig."
+      ],
+      "c": 0,
+      "s": "Der Bravais-Pearson-Korrelationskoeffizient r liegt zwischen -1 und 1. Ein Wert nahe -1 (wie -0,85) zeigt einen starken, negativen linearen Zusammenhang an.",
+      "src": "Statistik - Korrelationsanalyse"
+    },
+    {
+      "q": "Ein Multiple-Choice-Test besteht aus 5 Fragen mit je 4 Antwortoptionen, von denen genau eine richtig ist. Ein Student rät bei allen Fragen rein zufällig. Wie hoch ist die Wahrscheinlichkeit, dass er genau 3 Fragen richtig beantwortet?",
+      "o": [
+        "ca. 8,79 %",
+        "ca. 20,00 %",
+        "ca. 15,62 %",
+        "ca. 2,15 %"
+      ],
+      "c": 0,
+      "s": "Es handelt sich um ein Bernoulli-Experiment mit n=5, k=3, p=0,25. P(X=3) = nCr(5,3) * 0,25^3 * 0,75^2 = 10 * 0,015625 * 0,5625 = 0,08789 => ca. 8,79 %.",
+      "src": "Statistik - Wahrscheinlichkeitsrechnung"
+    },
+    {
+      "q": "Welche Aussage beschreibt den Unterschied zwischen dem Median und dem arithmetischen Mittel bezüglich der Empfindlichkeit gegenüber Ausreißern korrekt?",
+      "o": [
+        "Das arithmetische Mittel ist sehr empfindlich (sensitiv) gegenüber Ausreißern, während der Median robust ist.",
+        "Der Median ist sehr empfindlich gegenüber Ausreißern, während das arithmetische Mittel robust ist.",
+        "Beide Kennwerte reagieren vollkommen identisch auf extreme Ausreißerwerte.",
+        "Weder Median noch arithmetisches Mittel werden von Ausreißern beeinflusst."
+      ],
+      "c": 0,
+      "s": "Das arithmetische Mittel bezieht alle Werte mit gleichem Gewicht ein, weshalb einzelne Ausreißer es stark verzerren können. Der Median halbiert die sortierte Datenreihe und ist daher äußerst robust gegenüber Ausreißern.",
+      "src": "Statistik - Lageparameter"
+    },
+    {
+      "q": "Das ... Mittel ist der berechnete Durchschnittswert einer Datenreihe. Es ist im Gegensatz zum Median stark anfällig für Ausreißer (Extremwerte).",
+      "type": "fitb",
+      "o": [],
+      "c": "arithmetische",
+      "s": "Das arithmetische Mittel ist die Summe aller Werte dividiert durch die Anzahl n. Es ist ausreißerempfindlich.",
+      "src": "Statistik Kap. 4",
+      "acceptable": [
+        "arithmetisches"
+      ]
+    },
+    {
+      "q": "Gegeben sei die geordnete Urliste der Klausurnoten einer Statistik-Übungsgruppe:\nNote: 1, 1, 2, 2, 3, 3, 3, 4, 4, 5 (n = 10).\n\nBerechnen Sie das arithmetische Mittel und den Median dieser Datenreihe.",
+      "type": "mc",
+      "points": 8,
+      "o": [
+        "Arithmetisches Mittel = 2,8; Median = 3,0",
+        "Arithmetisches Mittel = 3,0; Median = 3,0",
+        "Arithmetisches Mittel = 2,8; Median = 2,5",
+        "Arithmetisches Mittel = 3,0; Median = 2,5"
+      ],
+      "c": 0,
+      "s": "1. Arithmetisches Mittel:\nSumme der Noten = 1+1+2+2+3+3+3+4+4+5 = 28.\nArithmetisches Mittel = 28 / 10 = 2,8.\n\n2. Median (Zentralwert) bei geradem n=10:\nDer Median liegt in der Mitte zwischen dem 5. und 6. Wert.\n5. Wert = 3; 6. Wert = 3.\nMedian = (3 + 3) / 2 = 3,0.",
+      "src": "Statistik Kap. 4"
+    },
+    {
+      "q": "In der schließenden Statistik wird die Wahrscheinlichkeit, eine wahre Nullhypothese fälschlicherweise abzulehnen, als ...-Fehler (oder Fehler 1. Art) bezeichnet.",
+      "type": "fitb",
+      "o": [],
+      "c": "Alpha",
+      "s": "Der Fehler 1. Art (Alpha-Fehler) besteht darin, die Nullhypothese abzulehnen, obwohl sie wahr ist. Die Wahrscheinlichkeit dafür entspricht dem Signifikanzniveau alpha.",
+      "src": "Statistik Kap. 3",
+      "acceptable": [
+        "alpha",
+        "Typ-I-Fehler",
+        "Typ-I",
+        "Fehler 1. Art"
+      ]
+    },
+    {
+      "q": "Wird der Zusammenhang zwischen zwei metrisch skalierten Merkmalen untersucht, misst der Bravais-Pearson-Korrelationskoeffizient die Stärke des ... Zusammenhangs.",
+      "type": "fitb",
+      "o": [],
+      "c": "linearen",
+      "s": "Der Korrelationskoeffizient r misst ausschließlich lineare Zusammenhänge. Nichtlineare Zusammenhänge können trotz r = 0 existieren.",
+      "src": "Statistik - Korrelationsanalyse",
+      "acceptable": [
+        "lineare",
+        "linear"
+      ]
+    },
+    {
+      "q": "Ein medizinisches Labor testet Blutproben auf eine seltene Krankheit, an der 1% der Bevölkerung leidet. Der Test hat eine Sensitivität von 95% (Test schlägt bei Kranken an) und eine Spezifität von 90% (Test ist bei Gesunden negativ). Eine zufällige Person wird positiv getestet. Wie hoch ist die Wahrscheinlichkeit, dass diese Person tatsächlich krank ist?",
+      "type": "mc",
+      "points": 10,
+      "o": [
+        "8,76%",
+        "95,00%",
+        "50,00%",
+        "1,00%"
+      ],
+      "c": 0,
+      "s": "Satz von Bayes:\nP(Krank) = 0,01, P(Gesund) = 0,99.\nP(Positiv|Krank) = 0,95, P(Negativ|Gesund) = 0,90 => P(Positiv|Gesund) = 0,10.\nP(Krank|Positiv) = [P(Positiv|Krank) * P(Krank)] / [P(Positiv|Krank) * P(Krank) + P(Positiv|Gesund) * P(Gesund)]\n= [0,95 * 0,01] / [0,95 * 0,01 + 0,10 * 0,99] = 0,0095 / [0,0095 + 0,099] = 0,0095 / 0,1085 ≈ 0,0876 (8,76%).",
+      "src": "Statistik - Wahrscheinlichkeitsrechnung"
+    },
+    {
+      "q": "Für eine Datenreihe von Werbeausgaben (x) und Umsatz (y) wurden folgende Kennzahlen berechnet:\nVarianz von x = 4, Varianz von y = 25, Kovarianz(x,y) = 8.\n\nWie lautet die Steigung b (Regressionskoeffizient) der Regressionsgeraden y = a + b*x, und wie hoch ist das Bestimmtheitsmaß R^2?",
+      "type": "mc",
+      "points": 10,
+      "o": [
+        "b = 2; R^2 = 0,64 (64%)",
+        "b = 0,5; R^2 = 0,80 (80%)",
+        "b = 2; R^2 = 0,80 (80%)",
+        "b = 0,5; R^2 = 0,64 (64%)"
+      ],
+      "c": 0,
+      "s": "1) Steigung b = Kovarianz(x,y) / Varianz(x) = 8 / 4 = 2.\n2) Korrelationskoeffizient r = Kovarianz(x,y) / (Standardabweichung(x) * Standardabweichung(y))\n= 8 / (sqrt(4) * sqrt(25)) = 8 / (2 * 5) = 8 / 10 = 0,8.\n3) Bestimmtheitsmaß R^2 = r^2 = 0,8^2 = 0,64 (64%).",
+      "src": "Statistik - Korrelationsanalyse"
+    },
+    {
+      "q": "Der ... (oder Zentralwert) ist diejenige Merkmalsausprägung, die eine sortierte Datenreihe exakt in zwei gleich große Hälften teilt.",
+      "type": "fitb",
+      "o": [],
+      "c": "Median",
+      "s": "Der Median ist unempfindlich gegenüber extremen Ausreißern.",
+      "src": "Statistik Kap. 4",
+      "acceptable": [
+        "Zentralwert"
+      ]
+    },
+    {
+      "q": "Der Bravais-Pearson-Korrelationskoeffizient r misst die Stärke und Richtung des ... Zusammenhangs zwischen zwei metrisch skalierten Variablen.",
+      "type": "fitb",
+      "o": [],
+      "c": "linearen",
+      "s": "r misst ausschließlich lineare Beziehungen. Nicht-lineare Abhängigkeiten werden nicht erfasst.",
+      "src": "Statistik - Korrelationsanalyse",
+      "acceptable": [
+        "lineare",
+        "linear"
+      ]
+    },
+    {
+      "q": "Der Preisindex nach ... gewichtet die Preise der Berichtsperiode mit den repräsentativen Verbrauchsmengen der Basisperiode.",
+      "type": "fitb",
+      "o": [],
+      "c": "Laspeyres",
+      "s": "Laspeyres nutzt q0 als Gewichte, während Paasche q1 nutzt.",
+      "src": "Statistik Kap. 6",
+      "acceptable": []
+    },
+    {
+      "q": "Das Bestimmtheitsmaß R^2 in einer einfachen linearen Regression entspricht dem Quadrat des Korrelationskoeffizienten nach Bravais-... .",
+      "type": "fitb",
+      "o": [],
+      "c": "Pearson",
+      "s": "In der einfachen Regression gilt R^2 = r^2, wobei r der Bravais-Pearson-Korrelationskoeffizient ist.",
+      "src": "Statistik - Korrelationsanalyse",
+      "acceptable": []
+    },
+    {
+      "q": "Die Quadratwurzel aus der empirischen Varianz einer Datenreihe bezeichnet man als ... .",
+      "type": "fitb",
+      "o": [],
+      "c": "Standardabweichung",
+      "s": "Die Standardabweichung misst die Streuung in der ursprünglichen Maßeinheit der Daten.",
+      "src": "Statistik Kap. 5",
+      "acceptable": []
     }
   ],
   "vwl": [
@@ -4423,7 +5103,7 @@
       "c": 0,
       "s": "Komplemente werden gemeinsam konsumiert (Auto & Benzin, Senf & Frikadellen, Drucker & Tinte). Sinkt der Preis des einen Guts, STEIGT die Nachfrage nach dem Komplement (mehr Autos → mehr Benzin). Substitute (Butter/Margarine, Pizza/Burger) werden gegeneinander ausgetauscht: Steigt der Preis des einen, steigt die Nachfrage nach dem Substitute.",
       "src": "VWL Kap. C 'Angebot und Nachfrage', Folie 20-28; Quiz C",
-      "diagram": "supply-demand"
+      "diagram": ""
     },
     {
       "q": "Was ist ein Beispiel für Substitute?",
@@ -4436,7 +5116,7 @@
       "c": 0,
       "s": "Substitute ersetzen einander (Butter/Margarine, Pizza/Burger). Steigt der Preis des einen Guts, STEIGT die Nachfrage nach dem Substitute (Konsumenten weichen aus). Bei Komplementen (Auto/Benzin) ist es genau umgekehrt: Steigt der Preis des Autos, sinkt die Nachfrage nach Benzin.",
       "src": "VWL Kap. C, Folie 25-28; Quiz C",
-      "diagram": "supply-demand"
+      "diagram": ""
     },
     {
       "q": "Ein Streaming-Film (z.B. Netflix) ist am ehesten:",
@@ -4449,7 +5129,7 @@
       "c": 0,
       "s": "Clubgüter sind AUSSCHLIEßBAR (Anbieter kann Zugang kontrollieren), aber NICHT RIVALISIEREND (Nutzung durch eine Person schadet nicht anderen). Netflix-Filme sind ein klassisches Clubgut. Öffentliche Güter (Straßen) sind weder ausschließbar noch rivalisierend. Private Güter (Brot) sind beides.",
       "src": "VWL Kap. F 'Öffentliche Güter', Folie 45-50; Quiz F",
-      "diagram": "wirtschaftskreislauf"
+      "diagram": ""
     },
     {
       "q": "Was ist ein öffentliches Gut?",
@@ -4462,7 +5142,7 @@
       "c": 0,
       "s": "Öffentliche Güter sind NICHT AUSSCHLIEßBAR (niemand kann von der Nutzung ausgeschlossen werden) und NICHT RIVALISIEREND (Nutzung durch eine Person verringert nicht die Verfügbarkeit für andere). Beispiele: Landesverteidigung, Leuchtturm, saubere Luft. Problem: Trittbrettfahrerverhalten → Marktversagen.",
       "src": "VWL Kap. F, Folie 45-48; Quiz F",
-      "diagram": "wirtschaftskreislauf"
+      "diagram": ""
     },
     {
       "q": "Was besagt das Gesetz der Nachfrage?",
@@ -4475,7 +5155,7 @@
       "c": 0,
       "s": "Das Gesetz der Nachfrage: Zwischen Preis und nachgefragter Menge besteht ein umgekehrter Zusammenhang (ceteris paribus). Steigt der Preis, sinkt die Nachfrage (Substitutions- und Einkommenseffekt). Die Nachfragekurve verläuft fallend. Ausnahme: Giffen-Güter (theoretisch).",
       "src": "VWL Kap. C, Folie 20-25; Quiz C",
-      "diagram": "angebot-nachfrage-verschiebung"
+      "diagram": ""
     },
     {
       "q": "Was passiert, wenn der Preis ÜBER dem Gleichgewichtspreis liegt?",
@@ -4706,7 +5386,7 @@
       "c": 1,
       "s": "Komplemente (Komplementärgüter) werden gemeinsam konsumiert: Auto und Benzin. Effekt: Benzin teurer → weniger Autos gekauft. Bei Komplementen: Steigt der Preis des einen Guts, sinkt die Nachfrage nach dem anderen. Substitute hingegen ersetzen einander (Butter/Margarine).",
       "src": "VWL Kap. C 'Angebot und Nachfrage', Folie 25-28; Quiz C",
-      "diagram": "supply-demand"
+      "diagram": ""
     },
     {
       "q": "Smartphone und Hülle sind am ehesten ein Beispiel für welche Güterart?",
@@ -4719,7 +5399,7 @@
       "c": 0,
       "s": "Komplemente (Komplementärgüter) werden gemeinsam konsumiert: Smartphone und Hülle. Effekt: Hülle teurer → weniger Smartphones gekauft. Bei Komplementen: Steigt der Preis des einen Guts, sinkt die Nachfrage nach dem anderen. Substitute hingegen ersetzen einander (Butter/Margarine).",
       "src": "VWL Kap. C 'Angebot und Nachfrage', Folie 25-28; Quiz C",
-      "diagram": "supply-demand"
+      "diagram": ""
     },
     {
       "q": "Kaffee und Milch sind am ehesten ein Beispiel für welche Güterart?",
@@ -4732,7 +5412,7 @@
       "c": 0,
       "s": "Komplemente (Komplementärgüter) werden gemeinsam konsumiert: Kaffee und Milch. Effekt: Milch teurer → weniger Kaffee getrunken. Bei Komplementen: Steigt der Preis des einen Guts, sinkt die Nachfrage nach dem anderen. Substitute hingegen ersetzen einander (Butter/Margarine).",
       "src": "VWL Kap. C 'Angebot und Nachfrage', Folie 25-28; Quiz C",
-      "diagram": "supply-demand"
+      "diagram": ""
     },
     {
       "q": "Handy und Ladegerät sind am ehesten ein Beispiel für welche Güterart?",
@@ -4745,7 +5425,7 @@
       "c": 3,
       "s": "Komplemente (Komplementärgüter) werden gemeinsam konsumiert: Handy und Ladegerät. Effekt: Ladegerät teurer → weniger Handys gekauft. Bei Komplementen: Steigt der Preis des einen Guts, sinkt die Nachfrage nach dem anderen. Substitute hingegen ersetzen einander (Butter/Margarine).",
       "src": "VWL Kap. C 'Angebot und Nachfrage', Folie 25-28; Quiz C",
-      "diagram": "supply-demand"
+      "diagram": ""
     },
     {
       "q": "Pizza und Burger sind ein Beispiel für welche Güterart?",
@@ -4758,7 +5438,7 @@
       "c": 3,
       "s": "Substitute ersetzen einander: Pizza und Burger. Effekt: Pizza teurer → mehr Burger gekauft. Bei Substituten: Steigt der Preis des einen Guts, STEIGT die Nachfrage nach dem Substitute (Konsumenten weichen aus). Bei Komplementen (Auto/Benzin) ist es umgekehrt.",
       "src": "VWL Kap. C, Folie 25-28; Quiz C",
-      "diagram": "supply-demand"
+      "diagram": ""
     },
     {
       "q": "Coca-Cola und Pepsi sind ein Beispiel für welche Güterart?",
@@ -4771,7 +5451,7 @@
       "c": 1,
       "s": "Substitute ersetzen einander: Coca-Cola und Pepsi. Effekt: Coca-Cola teurer → mehr Pepsi gekauft. Bei Substituten: Steigt der Preis des einen Guts, STEIGT die Nachfrage nach dem Substitute (Konsumenten weichen aus). Bei Komplementen (Auto/Benzin) ist es umgekehrt.",
       "src": "VWL Kap. C, Folie 25-28; Quiz C",
-      "diagram": "supply-demand"
+      "diagram": ""
     },
     {
       "q": "Bahn und Flugzeug sind ein Beispiel für welche Güterart?",
@@ -4784,7 +5464,7 @@
       "c": 3,
       "s": "Substitute ersetzen einander: Bahn und Flugzeug. Effekt: Bahn teurer → mehr Flüge gebucht. Bei Substituten: Steigt der Preis des einen Guts, STEIGT die Nachfrage nach dem Substitute (Konsumenten weichen aus). Bei Komplementen (Auto/Benzin) ist es umgekehrt.",
       "src": "VWL Kap. C, Folie 25-28; Quiz C",
-      "diagram": "supply-demand"
+      "diagram": ""
     },
     {
       "q": "Netflix und Disney+ sind ein Beispiel für welche Güterart?",
@@ -4797,7 +5477,7 @@
       "c": 2,
       "s": "Substitute ersetzen einander: Netflix und Disney+. Effekt: Netflix teurer → mehr Disney+ Abos. Bei Substituten: Steigt der Preis des einen Guts, STEIGT die Nachfrage nach dem Substitute (Konsumenten weichen aus). Bei Komplementen (Auto/Benzin) ist es umgekehrt.",
       "src": "VWL Kap. C, Folie 25-28; Quiz C",
-      "diagram": "supply-demand"
+      "diagram": ""
     },
     {
       "q": "Was ist die Definition von 'BIP'?",
@@ -4810,7 +5490,7 @@
       "c": 3,
       "s": "'BIP': Gesamtwert aller in einer Volkswirtschaft produzierten Güter und Dienstleistungen.",
       "src": "VWL Kap. H-I 'BIP und Inflation', Folie 60-80",
-      "diagram": "bip-entwicklung"
+      "diagram": ""
     },
     {
       "q": "Was ist die Definition von 'BNE'?",
@@ -4823,7 +5503,7 @@
       "c": 2,
       "s": "'BNE': Einkommen aller Inländer, auch aus dem Ausland.",
       "src": "VWL Kap. H-I 'BIP und Inflation', Folie 60-80",
-      "diagram": "bip-entwicklung"
+      "diagram": ""
     },
     {
       "q": "Was ist die Definition von 'Inflation'?",
@@ -4836,7 +5516,7 @@
       "c": 0,
       "s": "'Inflation': Anhaltender Anstieg des allgemeinen Preisniveaus.",
       "src": "VWL Kap. H-I 'BIP und Inflation', Folie 60-80",
-      "diagram": "bip-entwicklung"
+      "diagram": ""
     },
     {
       "q": "Was ist die Definition von 'Deflation'?",
@@ -4849,7 +5529,7 @@
       "c": 1,
       "s": "'Deflation': Sinkendes allgemeines Preisniveau.",
       "src": "VWL Kap. H-I 'BIP und Inflation', Folie 60-80",
-      "diagram": "bip-entwicklung"
+      "diagram": ""
     },
     {
       "q": "Was ist die Definition von 'VPI'?",
@@ -4862,7 +5542,7 @@
       "c": 2,
       "s": "'VPI': Verbraucherpreisindex – misst Inflation.",
       "src": "VWL Kap. H-I 'BIP und Inflation', Folie 60-80",
-      "diagram": "bip-entwicklung"
+      "diagram": ""
     },
     {
       "q": "Was ist die Definition von 'Stagflation'?",
@@ -4875,7 +5555,7 @@
       "c": 2,
       "s": "'Stagflation': Inflation + stagnierendes Wachstum.",
       "src": "VWL Kap. H-I 'BIP und Inflation', Folie 60-80",
-      "diagram": "bip-entwicklung"
+      "diagram": ""
     },
     {
       "q": "Was ist die Definition von 'Disinflation'?",
@@ -4888,7 +5568,7 @@
       "c": 2,
       "s": "'Disinflation': Verlangsamung der Inflationsrate.",
       "src": "VWL Kap. H-I 'BIP und Inflation', Folie 60-80",
-      "diagram": "bip-entwicklung"
+      "diagram": ""
     },
     {
       "q": "Was ist die Definition von 'Realzins'?",
@@ -4901,7 +5581,7 @@
       "c": 2,
       "s": "'Realzins': Nominalzins minus Inflationsrate.",
       "src": "VWL Kap. H-I 'BIP und Inflation', Folie 60-80",
-      "diagram": "bip-entwicklung"
+      "diagram": ""
     },
     {
       "q": "Was ist FALSCH: Ein gutes ökonomisches Modell...",
@@ -5192,7 +5872,7 @@
       "c": 1,
       "s": "Clubgut = AUSSCHLIEẞBAR (Paywall) aber NICHT RIVALISIEREND (Nutzung durch eine Person schadet nicht anderen). Netflix ist ein klassisches Clubgut.",
       "src": "VWL Kap. F; Probeklausur EVWL, Aufgabe 1.4",
-      "diagram": "wirtschaftskreislauf"
+      "diagram": ""
     },
     {
       "q": "Die Kreuzfahrtbranche hat negative Externalitäten. Die sozialen Grenzkosten liegen...",
@@ -5293,7 +5973,7 @@
       "src": "VWL Kap. C"
     },
     {
-      "q": "Bei sinkendem Zuckerpreis: Was geschieht mit Marktgleichgewichtsmenge und Marktgleichgewichtspreis?",
+      "q": "Wenn der Zuckerpreis (ein wichtiger Produktionsfaktor bzw. Input für Printen) sinkt, was geschieht im neuen Gleichgewicht auf dem Printenmarkt mit Marktgleichgewichtsmenge und Marktgleichgewichtspreis?",
       "o": [
         "Groessere GGW-Menge, kleinerer GGW-Preis",
         "Groessere GGW-Menge, groesserer GGW-Preis",
@@ -5317,7 +5997,7 @@
       "src": "VWL Kap. C"
     },
     {
-      "q": "Bei sinkendem Lebkuchenpreis: Was geschieht mit Marktgleichgewichtsmenge und -preis?",
+      "q": "Wenn der Preis für Lebkuchen (ein Substitut für Printen) deutlich sinkt, was geschieht im neuen Gleichgewicht auf dem Printenmarkt mit Marktgleichgewichtsmenge und Marktgleichgewichtspreis?",
       "o": [
         "Kleinere GGW-Menge, kleinerer GGW-Preis",
         "Kleinere GGW-Menge, groesserer GGW-Preis",
@@ -5341,7 +6021,7 @@
       "src": "VWL Kap. D"
     },
     {
-      "q": "Wie hoch sind Produzenten- und Konsumentenrente im Gleichgewicht (in Tsd. Euro)?",
+      "q": "Gegeben sei ein Markt für Schokolade mit der Nachfragefunktion QD = 5 - 0,5*P und der Angebotsfunktion QS = 0,5*P - 1 (Menge Q in Tsd. Packungen, Preis P in Euro). Wie hoch sind Produzentenrente (PR) und Konsumentenrente (KR) im Marktgleichgewicht (in Tsd. Euro)?",
       "o": [
         "PR=KR=4",
         "PR=KR=8",
@@ -5377,7 +6057,7 @@
       "src": "VWL Kap. D"
     },
     {
-      "q": "Wie veraendern sich Konsumentenrente und Produzentenrente bei sinkendem Marshmallows-Preis?",
+      "q": "Angenommen, der Schokoladenmarkt befindet sich im Anfangsgleichgewicht bei P* = 4 Euro und Q* = 2000 Pkg. Nun sinkt der Preis für Marshmallows (ein Komplementärgut zu Schokolade), was die Nachfrage nach Schokolade erhöht. Wie verändern sich das neue Marktgleichgewicht sowie die Konsumentenrente (KR) und Produzentenrente (PR) auf dem Schokoladenmarkt?",
       "o": [
         "P*=5 Euro; Q*=2500 Pkg.; KR und PR steigen",
         "P*=4 Euro; Q*=2000 Pkg.; KR und PR steigen",
@@ -5385,7 +6065,7 @@
         "P*=4 Euro; Q*=2000 Pkg.; KR und PR sinken"
       ],
       "c": 0,
-      "s": "Die Nachfrageschiebung nach rechts erhoeht sowohl Gleichgewichtspreis als auch -menge, wodurch beide Renten steigen.",
+      "s": "Da Marshmallows und Schokolade Komplementärgüter sind, führt ein Sinken des Marshmallows-Preises zu einer Erhöhung der Nachfrage nach Schokolade (Rechtsverschiebung). Bei einer Rechtsverschiebung der Nachfrage steigen sowohl der Gleichgewichtspreis (auf P*=5 Euro) als auch die Gleichgewichtsmenge (auf Q*=2500 Pkg.). Dadurch vergrößern sich sowohl die Konsumenten- als auch die Produzentenrente (beide steigen).",
       "src": "VWL Kap. D"
     },
     {
@@ -5932,6 +6612,181 @@
       "s": "Eine Subvention verschiebt die gehandelte Menge ueber das effiziente Marktgleichgewicht hinaus. Fuer die zusaetzlichen Einheiten liegen die Produktionskosten ueber der Zahlungsbereitschaft der Konsumenten. Dies erzeugt einen Nettowohlfahrtsverlust (DWL), da die Ausgaben des Staates groesser sind als die Zunahme an KR und PR.",
       "src": "VWL Kap. D / E - Wohlfahrt und Staatseingriffe",
       "diagram": "konsumenten-produzenten-rente"
+    },
+    {
+      "q": "Wenn der Nominalzins 5% betraegt und die Inflationsrate bei 3% liegt, wie hoch ist der Realzins nach der Fisher-Gleichung?",
+      "type": "mc",
+      "o": [
+        "2%",
+        "8%",
+        "1.5%",
+        "1.67%"
+      ],
+      "c": 0,
+      "s": "Nach der Fisher-Gleichung gilt: Realzins = Nominalzins - Inflationsrate = 5% - 3% = 2%.",
+      "src": "VWL Inflation"
+    },
+    {
+      "q": "Welcher Begriff beschreibt eine Verlangsamung der Inflationsrate (z. B. ein Sinken von 5% auf 2%), waehrend das Preisniveau weiterhin steigt?",
+      "type": "mc",
+      "o": [
+        "Disinflation",
+        "Deflation",
+        "Stagflation",
+        "Hyperinflation"
+      ],
+      "c": 0,
+      "s": "Disinflation ist das Sinken der Inflationsrate (Preise steigen langsamer). Deflation hingegen bezeichnet ein Sinken des allgemeinen Preisniveaus.",
+      "src": "VWL Inflation"
+    },
+    {
+      "q": "Wie wird ein Markt bezeichnet, auf dem viele kleine Anbieter vielen kleinen Nachfragern gegenüberstehen (vollkommene Konkurrenz)?",
+      "o": [
+        "Polypol",
+        "Oligopol",
+        "Monopol",
+        "Monopson"
+      ],
+      "c": 0,
+      "s": "Ein Markt mit vielen Anbietern und vielen Nachfragern heißt Polypol (griechisch für 'viele Verkäufer').",
+      "src": "VWL - Marktformen"
+    },
+    {
+      "q": "Was versteht man unter dem Gesetz des abnehmenden Grenznutzens (1. Gossen'sches Gesetz)?",
+      "o": [
+        "Der Nutzen, den der Konsum einer zusätzlichen Einheit eines Gutes stiftet, nimmt mit zunehmender Sättigung ab.",
+        "Der Gesamtnutzen sinkt ab der ersten konsumierten Einheit kontinuierlich.",
+        "Je mehr Einheiten eines Gutes konsumiert werden, desto höher ist der Grenznutzen der letzten Einheit.",
+        "Konsumenten versuchen stets, ihren Grenznutzen auf Null zu reduzieren."
+      ],
+      "c": 0,
+      "s": "Das 1. Gossen'sche Gesetz besagt, dass die Größe eines und desselben Genusses, wenn wir mit Bereitung des Genusses ununterbrochen fortfahren, fortwährend abnimmt, bis Sättigung eintritt.",
+      "src": "VWL - Haushaltstheorie"
+    },
+    {
+      "q": "Die Situation, in der private Akteure die Allokation von Ressourcen ohne staatliche Eingriffe durch direkte Verhandlungen effizient lösen können (sofern keine Transaktionskosten existieren), nennt man das ...-Theorem.",
+      "type": "fitb",
+      "o": [],
+      "c": "Coase",
+      "s": "Das Coase-Theorem besagt, dass private Marktteilnehmer Externalitäten eigenständig und effizient lösen können, wenn Eigentumsrechte klar definiert sind und keine Transaktionskosten anfallen.",
+      "src": "VWL Kap. F - Externalitäten",
+      "acceptable": [
+        "Coase-Theorem",
+        "Coase Theorem"
+      ]
+    },
+    {
+      "q": "Gegeben sei ein Inlandsmarkt für Schokolade mit den Gleichungen:\nNachfrage: QD = 100 - P\nAngebot: QS = P - 20\n\nDer Staat führt nun eine Mengensteuer von t = 20 pro Einheit ein, die bei den Verkäufern erhoben wird.\n\nBerechnen Sie das neue Gleichgewicht (den Preis Pt, den Käufer zahlen, und die gehandelte Menge Qt) sowie den Nettowohlfahrtsverlust (DWL) dieser Steuer.",
+      "type": "mc",
+      "points": 10,
+      "o": [
+        "Pt = 70; Qt = 30; DWL = 100",
+        "Pt = 60; Qt = 40; DWL = 100",
+        "Pt = 70; Qt = 30; DWL = 200",
+        "Pt = 60; Qt = 40; DWL = 50"
+      ],
+      "c": 0,
+      "s": "1. Anfangsgleichgewicht:\n100 - P = P - 20  =>  2P = 120  =>  P* = 60; Q* = 40.\n\n2. Mit Steuer t=20 auf Verkäufer:\nDas Angebot verschiebt sich nach oben: QS_tax = (P - 20) - 20 = P - 40.\nNeues Gleichgewicht: Nachfrage = QS_tax\n100 - Pt = Pt - 40  =>  2Pt = 140  =>  Pt = 70 (Käuferpreis).\nVerkäuferpreis: Pt - t = 70 - 20 = 50.\nMenge: Qt = 100 - Pt = 100 - 70 = 30.\n\n3. Nettowohlfahrtsverlust (DWL):\nDWL = 0,5 * Steuer * (Q* - Qt) = 0,5 * 20 * (40 - 30) = 10 * 10 = 100.",
+      "src": "VWL Kap. E - Preiskontrollen und Steuern",
+      "diagram": "steuerlast"
+    },
+    {
+      "q": "Eine Marktstruktur mit nur einem einzigen Anbieter und sehr vielen Nachfragern nennt man ein ... .",
+      "type": "fitb",
+      "o": [],
+      "c": "Monopol",
+      "s": "Ein Monopolist ist Preissetzer (kein Preisnehmer) und steht keiner Konkurrenz gegenüber, was oft zu Ineffizienzen führt.",
+      "src": "VWL - Marktformen",
+      "acceptable": [
+        "Angebotsmonopol"
+      ]
+    },
+    {
+      "q": "Güter, die sowohl Ausschließbarkeit als auch Rivalität im Konsum aufweisen, bezeichnet man als ... Güter.",
+      "type": "fitb",
+      "o": [],
+      "c": "private",
+      "s": "Private Güter (wie Lebensmittel, Kleidung) schließen andere vom Konsum aus und führen zu Rivalität (was ich esse, kann kein anderer essen).",
+      "src": "VWL Kap. F - Oeffentliche Gueter",
+      "acceptable": [
+        "private Güter",
+        "privat"
+      ]
+    },
+    {
+      "q": "Ein Markt wird beschrieben durch die Nachfrage QD = 120 - 2P und das Angebot QS = 2P.\nDer Staat führt nun einen bindenden Mindestpreis von P_min = 40 ein.\n\nWie hoch ist der dadurch entstehende Wohlfahrtsverlust (Nettowohlfahrtsverlust, DWL)?",
+      "type": "mc",
+      "points": 10,
+      "o": [
+        "DWL = 200",
+        "DWL = 100",
+        "DWL = 50",
+        "Kein DWL, da der Mindestpreis zu einem Marktüberschuss führt"
+      ],
+      "c": 0,
+      "s": "1) Gleichgewicht ohne Eingriff: 120 - 2P = 2P => P* = 30; Q* = 60.\n2) Mindestpreis P_min = 40:\n- Nachgefragte Menge QD(40) = 120 - 2*40 = 40.\n- Angebotene Menge QS(40) = 2*40 = 80.\n- Gehandelte Menge im Markt ist das Minimum: Qt = 40.\n3) Wohlfahrtsverlust (DWL):\nDer Preis auf der Nachfragekurve bei Q=40 ist 40. Der Preis auf der Angebotskurve bei Q=40 ist P = Q/2 = 20.\nDWL = 0,5 * (P_nachfrage - P_angebot) * (Q* - Qt) = 0,5 * (40 - 20) * (60 - 40) = 0,5 * 20 * 20 = 200.",
+      "src": "VWL Kap. E - Preiskontrollen und Steuern",
+      "diagram": "preiskontrolle"
+    },
+    {
+      "q": "Ein Gut, bei dem weder Rivalität im Konsum noch Ausschließbarkeit besteht, nennt man ein ... Gut.",
+      "type": "fitb",
+      "o": [],
+      "c": "öffentliches",
+      "s": "Öffentliche Güter (wie Landesverteidigung) führen zum Trittbrettfahrer-Problem.",
+      "src": "VWL Kap. F",
+      "acceptable": [
+        "oeffentliches",
+        "öffentliche",
+        "oeffentliche"
+      ]
+    },
+    {
+      "q": "Das Gesetz der Nachfrage besagt, dass ceteris paribus die nachgefragte Menge sinkt, wenn der Preis ... .",
+      "type": "fitb",
+      "o": [],
+      "c": "steigt",
+      "s": "Preise und nachgefragte Menge verhalten sich gegenläufig (negative Steigung).",
+      "src": "VWL Kap. C",
+      "acceptable": [
+        "ansteigt",
+        "erhöht wird"
+      ]
+    },
+    {
+      "q": "Ein bindender Mindestpreis (Preisuntergrenze) liegt stets ... dem Gleichgewichtspreis und erzeugt einen Angebotsüberschuss.",
+      "type": "fitb",
+      "o": [],
+      "c": "über",
+      "s": "Liegt der Mindestpreis über dem Marktpreis, kann der Markt nicht ins Gleichgewicht sinken.",
+      "src": "VWL Kap. E",
+      "acceptable": [
+        "überhalb",
+        "ueber",
+        "oberhalb"
+      ]
+    },
+    {
+      "q": "Das ...-Theorem besagt, dass private Verhandlungen bei klaren Eigentumsrechten und ohne Transaktionskosten stets zu einer effizienten Lösung führen.",
+      "type": "fitb",
+      "o": [],
+      "c": "Coase",
+      "s": "Das Coase-Theorem zeigt, dass Marktversagen durch Externalitäten privat gelöst werden kann.",
+      "src": "VWL Kap. F",
+      "acceptable": [
+        "Coase-Theorem"
+      ]
+    },
+    {
+      "q": "Das ... BIP bewertet die Produktion von Gütern zu konstanten Preisen eines festgelegten Basisjahres, um Inflationseffekte auszuschließen.",
+      "type": "fitb",
+      "o": [],
+      "c": "reale",
+      "s": "Das reale BIP misst die tatsächliche Mengenänderung (Wachstum) unabhängig von Preissteigerungen.",
+      "src": "VWL Kap. H",
+      "acceptable": [
+        "real"
+      ]
     }
   ],
   "wpr": [
@@ -7424,6 +8279,145 @@
       "c": "Annahme",
       "s": "Ein Vertrag setzt zwei korrespondierende Willenserklaerungen voraus: Das Angebot (oder Antrag, paragraph 145 BGB) und die Annahme (paragraph 147 BGB).",
       "src": "WPR Grundlagen"
+    },
+    {
+      "q": "Ein 16-jähriger Jugendlicher kauft sich ohne Wissen seiner Eltern ein teures Smartphone für 800 €. Welcher rechtliche Status kommt diesem Kaufvertrag zu?",
+      "o": [
+        "Der Vertrag ist schwebend unwirksam gem. § 108 I BGB, bis die Eltern zustimmen.",
+        "Der Vertrag ist von Anfang an voll wirksam, da Jugendliche über beschränkte Geschäftsfähigkeit verfügen.",
+        "Der Vertrag ist nichtig, da Minderjährige generell geschäftsunfähig sind.",
+        "Der Vertrag ist wirksam, sofern das Smartphone im Rahmen des Taschengeldparagraphen (§ 110 BGB) bar bezahlt wird, selbst wenn dies die Mittel des Jugendlichen übersteigt."
+      ],
+      "c": 0,
+      "s": "Minderjährige im Alter von 7 bis 17 Jahren sind nach § 106 BGB beschränkt geschäftsfähig. Ein Vertrag, der nicht lediglich rechtlich vorteilhaft ist (§ 107), ist bis zur Genehmigung der gesetzlichen Vertreter schwebend unwirksam (§ 108 I BGB).",
+      "src": "Wirtschaftsprivatrecht - Rechts- und Geschäftsfähigkeit"
+    },
+    {
+      "q": "Welche gesetzliche Regelung greift im BGB, wenn eine vertraglich geschuldete Leistung aufgrund von Unmöglichkeit (§ 275 I BGB) nicht erbracht werden kann?",
+      "o": [
+        "Der Schuldner wird von der Leistungspflicht frei, verliert aber im Gegenzug den Anspruch auf die Gegenleistung (§ 326 I BGB).",
+        "Der Gläubiger kann die Leistung weiterhin erzwingen, muss aber Schadensersatz zahlen.",
+        "Der Schuldner muss die Leistung unter allen Umständen beschaffen, notfalls durch eine Neuanfertigung.",
+        "Der Vertrag wird automatisch rückwirkend in einen Schenkungsvertrag umgewandelt."
+      ],
+      "c": 0,
+      "s": "Bei Unmöglichkeit nach § 275 BGB entfällt die Leistungspflicht des Schuldners. Nach § 326 I BGB entfällt damit im Gegenzug grundsätzlich auch der Anspruch des Schuldners auf die Gegenleistung (Kaufpreis).",
+      "src": "Wirtschaftsprivatrecht - Leistungsstörungsrecht"
+    },
+    {
+      "q": "Ein Rechtsgeschäft, das gegen die guten Sitten verstößt, ist nach paragraph 138 I BGB von Anfang an ...",
+      "type": "fitb",
+      "o": [],
+      "c": "nichtig",
+      "s": "Nach paragraph 138 I BGB ist ein sittenwidriges Rechtsgeschäft nichtig. Die Nichtigkeit wirkt von Anfang an (ex tunc) und für jedermann.",
+      "src": "WPR Rechtsgeschaeftslehre",
+      "acceptable": [
+        "unwirksam"
+      ]
+    },
+    {
+      "q": "Der 17-jährige M kauft ohne Wissen seiner Eltern ein Smartphone für 400 € von dem volljährigen V. M bezahlt bar mit Geld, das er von seinen Eltern ausschließlich für den Kauf von Schulbüchern erhalten hat. Die Eltern verweigern nach Kenntnisnahme die Genehmigung des Kaufs.\n\nWie ist die Rechtslage bezüglich des Kaufvertrags und der Übereignung des Smartphones?",
+      "type": "mc",
+      "points": 10,
+      "o": [
+        "Der Kaufvertrag ist unwirksam; die Übereignung des Smartphones an M ist jedoch wirksam. M muss das Smartphone nach § 812 BGB herausgeben.",
+        "Sowohl Kaufvertrag als auch Übereignung des Smartphones sind von Anfang an wirksam (Taschengeldparagraph).",
+        "Sowohl Kaufvertrag als auch Übereignung des Smartphones sind unwirksam.",
+        "Der Kaufvertrag ist wirksam; die Übereignung ist wegen fehlender Zustimmung der Eltern unwirksam."
+      ],
+      "c": 0,
+      "s": "Erklärung:\n1. Kaufvertrag: Da M minderjährig (§ 106 BGB) ist, benötigt er die Einwilligung der Eltern (§ 107 BGB). Der Vertrag ist zunächst schwebend unwirksam. Der Taschengeldparagraph (§ 110 BGB) greift hier nicht, weil das Geld zweckgebunden (für Schulbücher) überlassen wurde. Durch die Verweigerung der Genehmigung der Eltern wird der Kaufvertrag endgültig unwirksam.\n2. Übereignung (Verfügungsgeschäft): Die Übereignung des Smartphones an M ist für ihn rechtlich lediglich vorteilhaft (§ 107 BGB), da er dadurch Eigentümer wird, ohne rechtliche Pflichten einzugehen. Daher ist das Verfügungsgeschäft wirksam (Abstraktionsprinzip).\n3. Folge: V hat sein Eigentum verloren. Da der Kaufvertrag unwirksam ist, hat M das Smartphone ohne Rechtsgrund erhalten. V kann das Smartphone nach Bereicherungsrecht (§ 812 I 1 Alt. 1 BGB) herausverlangen.",
+      "src": "WPR Rechtsgeschaeftslehre"
+    },
+    {
+      "q": "Das gesetzliche Schuldverhältnis aus unerlaubter Handlung (Schadensersatzpflicht wegen Verletzung von Leben, Körper, Gesundheit, Eigentum etc.) ist im BGB in Paragraph ... geregelt (bitte nur die Paragraphennummer angeben).",
+      "type": "fitb",
+      "o": [],
+      "c": "823",
+      "s": "Paragraph 823 BGB ist die zentrale Anspruchsgrundlage des deutschen Deliktrechts für Schadensersatzansprüche aus unerlaubter Handlung.",
+      "src": "WPR Schuldrecht / BGB AT",
+      "acceptable": [
+        "823 I BGB",
+        "823 BGB"
+      ]
+    },
+    {
+      "q": "Ein Vertrag, der unter einer aufschiebenden Bedingung geschlossen wird, wird nach Paragraph 158 Absatz 1 BGB erst mit dem ... der Bedingung wirksam.",
+      "type": "fitb",
+      "o": [],
+      "c": "Eintritt",
+      "s": "Mit dem Eintritt der aufschiebenden Bedingung tritt die vertraglich vereinbarte Rechtswirkung ein (§ 158 I BGB).",
+      "src": "WPR Rechtsgeschaeftslehre",
+      "acceptable": [
+        "Eintreffen"
+      ]
+    },
+    {
+      "q": "A beauftragt B, ein antikes Gemälde im Wert von bis zu 5.000 € zu erwerben, und erteilt ihm schriftliche Innenvollmacht. B geht zu Kunsthändler C und kauft im Namen des A ein Gemälde für 6.500 €, wobei er C die unbeschränkte schriftliche Vollmachtsurkunde vorlegt. C wusste nicht, dass B seine interne Grenze von 5.000 € überschritten hat. A verweigert die Genehmigung.\n\nWie ist die Rechtslage bezüglich des Kaufvertrags?",
+      "type": "mc",
+      "points": 10,
+      "o": [
+        "Der Kaufvertrag ist wirksam für und gegen A zustande gekommen; C hat einen Anspruch auf Zahlung von 6.500 € gegen A.",
+        "Der Kaufvertrag ist unwirksam; C kann Schadensersatz von B als Vertreter ohne Vertretungsmacht (§ 179 BGB) fordern.",
+        "Der Kaufvertrag ist wegen Missbrauchs der Vertretungsmacht von Anfang an nichtig.",
+        "Der Kaufvertrag ist schwebend unwirksam und B haftet unbeschränkt mit seinem Privatvermögen."
+      ],
+      "c": 0,
+      "s": "Hier liegt ein Missbrauch der Vertretungsmacht vor (Abweichung zwischen dem rechtlichen Dürfen im Innenverhältnis und dem Können im Außenverhältnis). Da dem Geschäftspartner C die schriftliche Vollmacht vorgelegt wurde und dieser gutgläubig war (keine Kenntnis vom Limit), greift der Schutz des Außenverhältnisses. A wird wirksam vertreten und muss zahlen. Er kann jedoch im Innenverhältnis Schadensersatz von B fordern.",
+      "src": "WPR Stellvertretung"
+    },
+    {
+      "q": "Die Rechtsfähigkeit eines Menschen beginnt nach Paragraph ... des BGB mit der Vollendung der Geburt (bitte als Zahl angeben).",
+      "type": "fitb",
+      "o": [],
+      "c": "1",
+      "s": "Gemäß § 1 BGB ist jeder Mensch ab Geburt rechtsfähig und damit Träger von Rechten und Pflichten.",
+      "src": "WPR BGB AT",
+      "acceptable": [
+        "1 BGB"
+      ]
+    },
+    {
+      "q": "Ein Minderjähriger, der das siebente Lebensjahr vollendet hat, ist nach Paragraph 106 BGB in seiner Geschäftsfähigkeit ... .",
+      "type": "fitb",
+      "o": [],
+      "c": "beschränkt",
+      "s": "Minderjährige von 7 bis 17 Jahren sind beschränkt geschäftsfähig.",
+      "src": "WPR BGB AT",
+      "acceptable": [
+        "beschraenkt"
+      ]
+    },
+    {
+      "q": "Die regelmäßige Verjährungsfrist für zivilrechtliche Ansprüche beträgt nach Paragraph 195 BGB ... Jahre (bitte als Zahl angeben).",
+      "type": "fitb",
+      "o": [],
+      "c": "3",
+      "s": "Die regelmäßige Verjährungsfrist beträgt 3 Jahre und beginnt mit dem Ende des Jahres, in dem der Anspruch entstand.",
+      "src": "WPR Verjaehrung",
+      "acceptable": [
+        "drei"
+      ]
+    },
+    {
+      "q": "Die Vertretungsmacht im Außenverhältnis, die durch ein Rechtsgeschäft erteilt wird, heißt gesetzlich ... .",
+      "type": "fitb",
+      "o": [],
+      "c": "Vollmacht",
+      "s": "Die Vollmacht ist eine rechtsgeschäftlich erteilte Vertretungsmacht (§ 166 Abs. 2 BGB).",
+      "src": "WPR Stellvertretung",
+      "acceptable": []
+    },
+    {
+      "q": "Kaufleute im Sinne des Handelsrechts sind im ... (Abkürzung des Gesetzes) geregelt.",
+      "type": "fitb",
+      "o": [],
+      "c": "HGB",
+      "s": "Das Handelsgesetzbuch (HGB) ist das Sonderprivatrecht der Kaufleute.",
+      "src": "WPR Handelsrecht",
+      "acceptable": [
+        "Handelsgesetzbuch"
+      ]
     }
   ],
   "perso": [
@@ -8650,6 +9644,190 @@
       "c": 0,
       "s": "Nach Friedrich Glasl gibt es 9 Stufen des Konflikts: Stufe 1-3 entspricht Win-Win (Selbsthilfe, Moderation möglich), Stufe 4-6 entspricht Win-Lose (Mediation nötig), Stufe 7-9 entspricht Lose-Lose.",
       "src": "Vorlesung Konflikt, 05_Team & Konflikt MENTI"
+    },
+    {
+      "q": "Welche der folgenden Teamrollen nach Belbin gehoert zu den handlungsorientierten Rollen (Action-oriented)?",
+      "type": "mc",
+      "o": [
+        "Umsetzer (Implementer)",
+        "Koordinator (Coordinator)",
+        "Erfinder (Plant)",
+        "Spezialist (Specialist)"
+      ],
+      "c": 0,
+      "s": "Zu den handlungsorientierten Rollen nach Belbin gehoeren: Shaper (Macher), Implementer (Umsetzer) und Completer Finisher (Perfektionist).",
+      "src": "Perso Folie 05 TeamKonflikt"
+    },
+    {
+      "q": "Welche der folgenden Teamrollen nach Belbin gehoert zu den wissensorientierten bzw. denkenden Rollen (Thought-oriented)?",
+      "type": "mc",
+      "o": [
+        "Erfinder (Plant)",
+        "Wegbereiter (Resource Investigator)",
+        "Macher (Shaper)",
+        "Mitspieler (Teamworker)"
+      ],
+      "c": 0,
+      "s": "Zu den denkenden / wissensorientierten Rollen gehoeren: Plant (Erfinder), Monitor Evaluator (Beobachter) und Specialist (Spezialist).",
+      "src": "Perso Folie 05 TeamKonflikt"
+    },
+    {
+      "q": "Wie viele Teamrollen unterscheidet Dr. Meredith Belbin in seinem klassischen Modell der Teameffizienz?",
+      "type": "mc",
+      "o": [
+        "9",
+        "5",
+        "12",
+        "7"
+      ],
+      "c": 0,
+      "s": "Belbin unterscheidet 9 spezifische Teamrollen, aufgeteilt in handlungsorientierte, kommunikations-/personenorientierte und wissens-/denkende Rollen.",
+      "src": "Perso Folie 05 TeamKonflikt"
+    },
+    {
+      "q": "Welche Aussage beschreibt den Kern der Zwei-Faktoren-Theorie der Motivation nach Frederick Herzberg korrekt?",
+      "o": [
+        "Es wird zwischen Hygienefaktoren (verhindern Unzufriedenheit) und Motivatoren (erzeugen echte Motivation) unterschieden.",
+        "Motivation entsteht ausschließlich durch finanzielle Anreize und physische Arbeitsbedingungen.",
+        "Jeder Mitarbeiter durchläuft eine hierarchische Bedürfnispyramide von physiologischen Bedürfnissen bis zur Selbstverwirklichung.",
+        "Mitarbeiter lassen sich strikt in faule Theorie-X-Typen und engagierte Theorie-Y-Typen unterteilen."
+      ],
+      "c": 0,
+      "s": "Frederick Herzberg unterscheidet Hygienefaktoren (Kontextfaktoren wie Gehalt, Sicherheit, Führungsstil), deren Fehlen Unzufriedenheit erzeugt, und Motivatoren (Inhaltsfaktoren wie Anerkennung, Verantwortung, Leistungserfolg), die echte Arbeitszufriedenheit stiften.",
+      "src": "Vorlesung Organisation, 10_Menti_Orgaformen"
+    },
+    {
+      "q": "Was kennzeichnet eine funktionale Organisationsstruktur (Verrichtungsprinzip)?",
+      "o": [
+        "Die Gliederung der zweiten Hierarchieebene erfolgt nach verrichtungsbezogenen Funktionen wie Beschaffung, Produktion und Vertrieb.",
+        "Die Gliederung erfolgt nach Divisionen bzw. Produktgruppen, Kundengruppen oder Regionen.",
+        "Jeder Mitarbeiter hat mehrere Vorgesetzte gleichzeitig, wodurch ein komplexes Matrixgitter entsteht.",
+        "Die Organisationsstruktur löst sich vollständig in dynamischen, zeitlich begrenzten Projektteams auf."
+      ],
+      "c": 0,
+      "s": "Bei der funktionalen Organisation wird das Unternehmen auf der zweiten Hierarchieebene nach Funktionen bzw. Aufgabenbereichen (Verrichtungen) gegliedert (z.B. Einkauf, Fertigung, Marketing).",
+      "src": "Vorlesung Organisation, 10_Menti_Orgaformen"
+    },
+    {
+      "q": "Die Zweifaktorentheorie der Arbeitsmotivation nach Frederick Herzberg unterscheidet systematisch zwischen Motivatoren und sogenannten ...-Faktoren.",
+      "type": "fitb",
+      "o": [],
+      "c": "Hygienefaktoren",
+      "s": "Hygienefaktoren (wie Gehalt, Arbeitsbedingungen, Unternehmenspolitik) verhindern bei Vorhandensein Unzufriedenheit, führen aber nicht selbst zu echter Motivation. Letztere wird nur durch Motivatoren (wie Anerkennung, Leistungserfolg, Verantwortung) erzielt.",
+      "src": "Vorlesung Organisation, 10_Menti_Orgaformen",
+      "acceptable": [
+        "Hygiene-Faktoren",
+        "Hygienefaktoren",
+        "Hygienefaktor"
+      ]
+    },
+    {
+      "q": "Ein internationaler Konzern stellt ein neues agiles Projektteam zusammen. Nach einer kurzen Kennenlernphase zeigt das Team erhebliche Reibungen: Es kommt zu heftigen Konflikten über die Verteilung von Rollen, Aufgaben und Kompetenzen. Die Leistung stagniert.\n\nIn welcher Phase des Phasenmodells der Teamentwicklung nach Bruce Tuckman befindet sich das Team und wie sollte sich eine Führungskraft hier verhalten?",
+      "type": "mc",
+      "points": 8,
+      "o": [
+        "Storming-Phase; Führungskraft muss als Coach/Mediator Konflikte moderieren, Regeln vereinbaren und Rollen klären.",
+        "Forming-Phase; Führungskraft muss sich zurückhalten und das Team ungestört wachsen lassen.",
+        "Norming-Phase; Führungskraft muss als starker Macher autoritär Aufgaben zuteilen.",
+        "Performing-Phase; Führungskraft muss als Delegierender das operative Geschäft steuern."
+      ],
+      "c": 0,
+      "s": "Die Phase der Konflikte und Rollenkämpfe ist das 'Storming' (Nahkampfphase). Hier ist die Führungskraft als Coach gefordert, um Konflikte zu kanalisieren, Spielregeln zu etablieren und Rollen zu klären. Ohne konstruktive Bewältigung des Stormings erreicht ein Team nie die produktiven Phasen (Norming/Performing).",
+      "src": "Vorlesung Organisation, 10_Menti_Orgaformen"
+    },
+    {
+      "q": "Nach dem klassischen Personalkonzept von Taylor (Scientific Management) wird der Mensch vor allem als rein rationaler Nutzenmaximierer gesehen. Dieses Menschenbild bezeichnet man als ... .",
+      "type": "fitb",
+      "o": [],
+      "c": "Homo oeconomicus",
+      "s": "Das Menschenbild des Homo oeconomicus unterstellt rationale Entscheidungen und rein monetäre Motivationsanreize (Akkordlohn).",
+      "src": "Vorlesung Organisation, 10_Menti_Orgaformen",
+      "acceptable": [
+        "Homo Oeconomicus",
+        "economic man"
+      ]
+    },
+    {
+      "q": "Die Organisationsform, bei der Stellen nach zwei Kriterien gleichzeitig strukturiert werden (z.B. Funktionen und Produkte) und somit Mehrfachunterstellungen entstehen, heißt ...organisation.",
+      "type": "fitb",
+      "o": [],
+      "c": "Matrixorganisation",
+      "s": "Die Matrixorganisation ist eine mehrdimensionale Organisationsstruktur, bei der funktionale Abteilungen und Produktbereiche gekreuzt werden. Sie führt zu Schnittstellenkonflikten.",
+      "src": "Vorlesung Organisation, 10_Menti_Orgaformen",
+      "acceptable": [
+        "Matrix-Organisation",
+        "Matrix"
+      ]
+    },
+    {
+      "q": "Die Schwangere S arbeitet in einem Betrieb mit 15 Vollzeitmitarbeitern seit 2 Jahren. Der Arbeitgeber spricht am 01.09. eine ordentliche betriebsbedingte Kündigung aus. S teilt dem Arbeitgeber am 10.09. ihre Schwangerschaft mit.\n\nWie ist die Rechtslage bezüglich der ausgesprochenen Kündigung?",
+      "type": "mc",
+      "points": 10,
+      "o": [
+        "Die Kündigung ist unwirksam, da der Sonderkündigungsschutz nach dem Mutterschutzgesetz (§ 17 MuSchG) greift.",
+        "Die Kündigung ist wirksam, da der Arbeitgeber zum Kündigungszeitpunkt keine Kenntnis der Schwangerschaft hatte.",
+        "Die Kündigung ist schwebend unwirksam und wird erst mit der Entbindung wirksam.",
+        "Die Kündigung ist wirksam, da der Betrieb weniger als 20 Mitarbeiter hat und somit kein Kündigungsschutz besteht."
+      ],
+      "c": 0,
+      "s": "Nach § 17 Mutterschutzgesetz (MuSchG) ist die Kündigung während der Schwangerschaft unzulässig, wenn dem Arbeitgeber die Schwangerschaft bekannt war oder innerhalb von 2 Wochen nach Erhalt der Kündigung mitgeteilt wird. Da die Mitteilung innerhalb von 9 Tagen erfolgte, ist die Kündigung nichtig (§ 134 BGB i.V.m. § 17 MuSchG). Dies gilt unabhängig von der Betriebsgröße.",
+      "src": "WPR Foliensatz Kap. 2, §§ 104-105 BGB"
+    },
+    {
+      "q": "Nach der Zwei-Faktoren-Theorie von Frederick ... verhindern Hygienefaktoren lediglich Unzufriedenheit, während erst Motivatoren echte Motivation erzeugen.",
+      "type": "fitb",
+      "o": [],
+      "c": "Herzberg",
+      "s": "Herzberg trennt in Hygienefaktoren (Kontext) und Motivatoren (Inhalt der Arbeit).",
+      "src": "Personal & Organisation - Motivationstheorien",
+      "acceptable": [
+        "herzberg"
+      ]
+    },
+    {
+      "q": "Nach Tuckmans Modell durchläuft jedes Team fünf Phasen. Die erste Phase des gegenseitigen Kennenlernens heißt ... .",
+      "type": "fitb",
+      "o": [],
+      "c": "Forming",
+      "s": "Forming ist die Einstiegs- und Orientierungsphase im Teambildungsprozess.",
+      "src": "Perso Folie 05 TeamKonflikt",
+      "acceptable": [
+        "forming"
+      ]
+    },
+    {
+      "q": "Das ... Gleichbehandlungsgesetz (AGG) schützt Beschäftigte vor Diskriminierungen am Arbeitsplatz.",
+      "type": "fitb",
+      "o": [],
+      "c": "Allgemeine",
+      "s": "Das AGG verbietet Benachteiligungen aufgrund von Geschlecht, Rasse, Herkunft, Religion, Alter, Behinderung etc.",
+      "src": "Perso Folie 06 Arbeitsrecht",
+      "acceptable": [
+        "Allgemeines",
+        "AGG"
+      ]
+    },
+    {
+      "q": "In Lewins Phasenmodell des organisatorischen Wandels folgt auf das Auftauen (Unfreezing) das Verändern (Changing) und schließlich das ... (Refreezing).",
+      "type": "fitb",
+      "o": [],
+      "c": "Einfrieren",
+      "s": "Refreezing stabilisiert und integriert die neuen Verhaltensmuster dauerhaft.",
+      "src": "Perso Folie 11 Organisationsentwicklung",
+      "acceptable": [
+        "Wiedereinfrieren"
+      ]
+    },
+    {
+      "q": "Die Organisationsform, bei der Stellen nach zwei Dimensionen gleichzeitig gegliedert werden (z.B. Funktionen und Sparten), heißt ...organisation.",
+      "type": "fitb",
+      "o": [],
+      "c": "Matrixorganisation",
+      "s": "Die Matrixorganisation führt zu einer doppelten Weisungslinie und hohen Abstimmungsbedarfen.",
+      "src": "Vorlesung Organisation, 10_Menti_Orgaformen",
+      "acceptable": [
+        "Matrix-Organisation"
+      ]
     }
   ]
 }

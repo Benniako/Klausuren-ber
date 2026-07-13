@@ -31,16 +31,20 @@ def gen_questions_js(bank_name, questions):
         diag = q.get("diagram", "")
         diag_str = f",diagram:'{diag}'" if diag else ""
         
+        pts = q.get("points")
+        if not pts:
+            pts = 5 if q_type == "fitb" else (4 if len(q.get("o", [])) >= 4 else 3)
+        
         if q_type == "fitb":
             correct_val = f"'{js_string(str(q['c']))}'"
             acc_list = q.get("acceptable", [])
             acc_js = ", ".join(f"'{js_string(a)}'" for a in acc_list)
             acc_str = f",acceptable:[{acc_js}]" if acc_list else ""
-            lines.append(f"{{id:'{bank_name}_{i}',type:'fitb',points:5,question:'{js_string(q['q'])}',options:[],correct:{correct_val},solution:'{sol}',source:'{src}'{diag_str}{acc_str}}}")
+            lines.append(f"{{id:'{bank_name}_{i}',type:'fitb',points:{pts},question:'{js_string(q['q'])}',options:[],correct:{correct_val},solution:'{sol}',source:'{src}'{diag_str}{acc_str}}}")
         else:
             opts = [js_string(o) for o in q["o"]]
             opts_str = ", ".join(f"'{o}'" for o in opts)
-            lines.append(f"{{id:'{bank_name}_{i}',type:'mc',points:{4 if len(opts)>=4 else 3},question:'{js_string(q['q'])}',options:[{opts_str}],correct:{q['c']},solution:'{sol}',source:'{src}'{diag_str}}}")
+            lines.append(f"{{id:'{bank_name}_{i}',type:'mc',points:{pts},question:'{js_string(q['q'])}',options:[{opts_str}],correct:{q['c']},solution:'{sol}',source:'{src}'{diag_str}}}")
     return f"var QUESTION_BANK_{bank_name} = [{', '.join(lines)}];"
 
 # Generiere Fragen-JS
@@ -128,9 +132,18 @@ HTML = """<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>📚 Klausuren-Trainer – FH Aachen</title>
+<script>
+  (function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      document.documentElement.classList.add('light');
+    }
+  })();
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#0a0e1a;--bg2:#111827;--bg3:#1a2332;--bg4:#1e293b;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;--accent:#38bdf8;--accent2:#818cf8;--accent3:#34d399;--danger:#ef4444;--warning:#f59e0b;--success:#22c55e;--border:#1e293b;--radius:12px;--radius-sm:8px;--font:'Inter','Segoe UI',system-ui,sans-serif}
+:root.light{--bg:#f8fafc;--bg2:#ffffff;--bg3:#f1f5f9;--bg4:#e2e8f0;--text:#0f172a;--text2:#475569;--text3:#64748b;--accent:#0284c7;--accent2:#4f46e5;--accent3:#16a34a;--danger:#ef4444;--warning:#d97706;--success:#16a34a;--border:#cbd5e1}
 html{font-size:15px}
 body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg2)}::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
@@ -205,6 +218,11 @@ input,select{font-family:inherit}
 .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);z-index:1000;justify-content:center;align-items:center;padding:20px}
 .overlay.show{display:flex;animation:fadeIn .3s}
 .result-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);max-width:700px;width:100%;max-height:90vh;overflow-y:auto;padding:40px}
+.confirm-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);max-width:450px;width:100%;padding:30px;text-align:center;box-shadow:0 10px 25px -5px rgba(0,0,0,0.5);animation:fadeIn .2s}
+.confirm-icon{font-size:3rem;margin-bottom:16px}
+.confirm-title{font-size:1.25rem;font-weight:700;color:var(--text);margin-bottom:8px}
+.confirm-message{font-size:.95rem;color:var(--text2);margin-bottom:24px;line-height:1.5}
+.confirm-buttons{display:flex;gap:12px;justify-content:center}
 .result-grade{text-align:center;padding:20px 0}
 .result-grade .grade{font-size:5rem;font-weight:800;line-height:1}
 .result-grade .grade.passed{background:linear-gradient(135deg,var(--success),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -377,10 +395,10 @@ input,select{font-family:inherit}
 .learn-card .option.checked-correct{background:rgba(34,197,94,.12);border-color:var(--success)}
 .learn-card .option.checked-wrong{background:rgba(239,68,68,.12);border-color:var(--danger)}
 .learn-card .option.missed-correct{background:rgba(56,189,248,.08);border-color:var(--accent);border-style:dashed}
-.learn-card .ft-input{width:100%;padding:12px 16px;border-radius:var(--radius-sm);background:var(--bg4);color:var(--text);border:2px solid var(--border);font-size:1rem;transition:border-color .2s}
-.learn-card .ft-input:focus{border-color:var(--accent);outline:none}
-.learn-card .ft-input.correct{border-color:var(--success);background:rgba(34,197,94,.05)}
-.learn-card .ft-input.wrong{border-color:var(--danger);background:rgba(239,68,68,.05)}
+.ft-input{width:100%;padding:12px 16px;border-radius:var(--radius-sm);background:var(--bg4);color:var(--text);border:2px solid var(--border);font-size:1rem;transition:border-color .2s}
+.ft-input:focus{border-color:var(--accent);outline:none}
+.ft-input.correct{border-color:var(--success);background:rgba(34,197,94,.05)}
+.ft-input.wrong{border-color:var(--danger);background:rgba(239,68,68,.05)}
 .learn-card .answer-status{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;font-size:.85rem;font-weight:600;margin-bottom:16px}
 .learn-card .answer-status.correct{background:rgba(34,197,94,.15);color:var(--success)}
 .learn-card .answer-status.wrong{background:rgba(239,68,68,.15);color:var(--danger)}
@@ -521,43 +539,242 @@ input,select{font-family:inherit}
   background: var(--accent);
   box-shadow: 0 0 10px var(--accent);
 }
+
+/* Exam question progress bar */
+.exam-progress-container {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.exam-progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.exam-progress-text {
+  color: var(--text2);
+}
+.exam-progress-text strong {
+  color: var(--text);
+}
+.exam-progress-percentage {
+  color: var(--accent);
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+.exam-progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: var(--bg4);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.exam-progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  width: 0%;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+}
+
+/* Dashboard Styles */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 28px;
+}
+.stat-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.stat-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--accent), var(--accent2));
+}
+.stat-card .title {
+  font-size: .75rem;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.stat-card .value {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.stat-card .sub {
+  font-size: .75rem;
+  color: var(--text2);
+}
+
+.subject-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .subject-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.subj-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
+}
+.subj-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent);
+}
+.subj-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.subj-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.subj-card-icon {
+  font-size: 1.5rem;
+}
+.strength-badge {
+  font-size: .7rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.strength-badge.strength {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--success);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+.strength-badge.solid {
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+.strength-badge.weakness {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--danger);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.subj-card-metric {
+  display: flex;
+  justify-content: space-between;
+  font-size: .85rem;
+  color: var(--text2);
+  margin-bottom: 8px;
+}
+.subj-card-metric strong {
+  color: var(--text);
+}
+.subj-card-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--bg4);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+.subj-card-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 3px;
+  transition: width .3s ease;
+}
 	</style>
 </head>
 <body>
 <div class="mobile-header">
   <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
-  <div class="brand-title">📚 Klausuren-Trainer</div>
+  <div class="brand-title" style="cursor:pointer" onclick="showWelcomeDashboard()">📚 Klausuren-Trainer</div>
   <div style="width: 42px;"></div>
 </div>
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
 <div class="app">
 <nav class="sidebar" id="appSidebar">
-<div class="sidebar-brand">📚 <span>Klausuren-Trainer</span></div>
+<div class="sidebar-brand" style="cursor:pointer" onclick="showWelcomeDashboard()">📚 <span>Klausuren-Trainer</span></div>
 <button class="subj-btn" data-subject="bwl" onclick="selectSubject('bwl')"><span class="icon">🏢</span><div>BWL<small class="sub">inkl. Buchführung · 2 Teile</small></div><span class="badge" id="badge-bwl">0</span></button>
 <button class="subj-btn" data-subject="mawi" onclick="selectSubject('mawi')"><span class="icon">📐</span><div>Mathe & Statistik<small class="sub">2 Teile · je 45 min</small></div><span class="badge" id="badge-mawi">0</span></button>
 <button class="subj-btn" data-subject="vwl" onclick="selectSubject('vwl')"><span class="icon">🌍</span><div>VWL<small class="sub">Volkswirtschaftslehre</small></div><span class="badge" id="badge-vwl">0</span></button>
 <button class="subj-btn" data-subject="wpr" onclick="selectSubject('wpr')"><span class="icon">⚖️</span><div>WPR<small class="sub">Wirtschaftsprivatrecht</small></div><span class="badge" id="badge-wpr">0</span></button>
 <button class="subj-btn" data-subject="perso" onclick="selectSubject('perso')"><span class="icon">👥</span><div>Perso<small class="sub">Personal & Organisation</small></div><span class="badge" id="badge-perso">0</span></button>
 <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border)">
+<div style="font-size:.7rem;color:var(--text3);padding:0 8px 8px">📊 LEISTUNGSÜBERSICHT</div>
+	<button class="tab-btn active" id="tab-dashboard" onclick="showWelcomeDashboard()">📊 Mein Dashboard</button>
+</div>
+<div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border)">
 <div style="font-size:.7rem;color:var(--text3);padding:0 8px 8px">📚 LERNMATERIALIEN</div>
-	<button class="tab-btn active" id="tab-exam" onclick="switchTab('exam')">📝 Klausur-Modus</button>
+	<button class="tab-btn" id="tab-exam" onclick="switchTab('exam')">📝 Klausur-Modus</button>
 	<button class="tab-btn" id="tab-learn" onclick="switchTab('learn')">🎯 Lern-Modus</button>
-	<button class="tab-btn" id="tab-summary" onclick="switchTab('summary')">📖 Wichtige Gesetze & Formeln</button>
+	<button class="tab-btn" id="tab-summary" onclick="switchTab('summary')">📖 Alle Themen</button>
 	<button class="tab-btn" id="tab-materials" onclick="switchTab('materials')">📁 Original-Materialien</button>
 </div>
-<div style="margin-top:auto;padding-top:16px;border-top:1px solid var(--border);font-size:.7rem;color:var(--text3);text-align:center">FH Aachen · SS 2026</div>
+<div style="margin-top:auto;padding-top:16px;border-top:1px solid var(--border)">
+	<button id="themeToggleBtn" class="subj-btn" onclick="toggleTheme()" style="background:var(--bg3);justify-content:center;font-weight:600;margin-bottom:12px;width:100%">
+		<span class="icon" id="themeIcon">☀️</span><span id="themeText">Hellmodus</span>
+	</button>
+	<div style="font-size:.7rem;color:var(--text3);text-align:center">FH Aachen · SS 2026</div>
+</div>
 </nav>
 <main class="main">
-	<div class="welcome" id="welcome"><div class="icon">📚</div><h1>Klausuren-Trainer</h1><p>Wähle links ein Fach aus und starte eine <strong>realistische Probeklausur</strong> basierend auf deinen Vorlesungsmaterialien. Mit Timer, Benotung und ausführlichen Lösungen.<br><br>Oder nutze den <strong>"🎯 Lern-Modus"</strong>, um ohne Zeitdruck alle Fragen durchzugehen – mit sofortigem Feedback nach jeder Antwort.<br><br>Wechsle zu <strong>"📖 Wichtige Gesetze & Formeln"</strong>, um die wichtigsten Zusammenfassungen pro Fach zu sehen.</p></div>
+	<div class="welcome" id="welcome"></div>
 <div id="examContent" style="display:none">
 <div class="timer-bar"><div class="timer-display" id="timerDisplay">45:00</div><div class="timer-settings"><input type="number" id="timerMinutes" value="45" min="5" max="180" onchange="updateTimerFromInput()"><span>Min</span><select id="timerPartSelect" onchange="onPartSelectChange()" style="display:none"></select></div><div class="timer-controls"><button class="timer-btn success" id="btnStartTimer" onclick="toggleTimer()">▶ Start</button><button class="timer-btn" onclick="resetTimer()">↺</button></div><div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:100%"></div></div></div>
 <div class="parts-container" id="partsSelectorContainer" style="display:none"></div>
 <div class="exam-header"><div class="exam-title" id="examTitle">Klausur</div><div class="exam-meta"><span id="examPartInfo">📝</span><span>📄 <span id="questionCount">0</span> Fragen</span><span>⭐ <span id="totalPoints">0</span> Punkte</span><span><span class="dot"></span> <span id="difficultyDisplay">Standard</span></span></div></div>
+<div class="exam-progress-container" id="examProgressContainer" style="display:none">
+  <div class="exam-progress-info">
+    <div class="exam-progress-text">Bearbeitungsfortschritt: <strong id="examAnsweredCount">0</strong> von <strong id="examTotalCount">0</strong> Fragen beantwortet</div>
+    <div class="exam-progress-percentage" id="examProgressPct">0%</div>
+  </div>
+  <div class="exam-progress-bar-bg">
+    <div class="exam-progress-bar-fill" id="examProgressBarFill"></div>
+  </div>
+</div>
 <div class="questions" id="questionsContainer"></div>
 <div class="submit-area"><button class="btn btn-primary" id="btnSubmit" onclick="submitExam()">📨 Klausur abgeben & bewerten</button><button class="btn btn-secondary" onclick="generateNewExam()">🔄 Neue Klausur generieren</button></div>
 </div>
 	<div id="summaryContent" style="display:none">
-	<div class="exam-header"><div class="exam-title" id="summaryTitle">📖 Wichtige Gesetze & Formeln</div><div class="exam-meta"><span id="summarySubject">Wähle ein Fach</span></div></div>
+	<div class="exam-header"><div class="exam-title" id="summaryTitle">📖 Alle Themen</div><div class="exam-meta"><span id="summarySubject">Wähle ein Fach</span></div></div>
 	<div class="summary-box" id="summaryBox"><p style="color:var(--text3);text-align:center;padding:40px">Bitte wähle links ein Fach aus.</p></div>
 	</div>
 	<div id="learnContent" style="display:none">
@@ -606,6 +823,17 @@ input,select{font-family:inherit}
 </main>
 </div>
 <div class="overlay" id="resultsOverlay"><div class="result-card" id="resultCard"></div></div>
+<div class="overlay" id="confirmOverlay">
+  <div class="confirm-card">
+    <div class="confirm-icon">⚠️</div>
+    <div class="confirm-title" id="confirmTitle">Bestätigung erforderlich</div>
+    <div class="confirm-message" id="confirmMessage">Bist du sicher?</div>
+    <div class="confirm-buttons">
+      <button class="btn btn-secondary" id="confirmBtnCancel">Abbrechen</button>
+      <button class="btn btn-primary" id="confirmBtnConfirm" style="background:linear-gradient(135deg,var(--danger),#dc2626);box-shadow:0 4px 16px rgba(220,38,38,.25)">Ja, fortfahren</button>
+    </div>
+  </div>
+</div>
 <script>
 // === FRAGEN ===
 __QUESTIONS_JS__
@@ -629,6 +857,46 @@ const SUBJECTS = {
 };
 
 let state={currentSubject:null,currentPart:0,questions:[],selectedAnswers:{},examStarted:false,examSubmitted:false,timer:null,timerRunning:false,timerSeconds:0,timerTotal:0,stats:JSON.parse(localStorage.getItem('klausurenStats')||'{}'),currentTab:'exam',learn:{questions:[],currentIdx:0,answered:{},total:0}};
+
+function showCustomConfirm(title, message, onConfirm, onCancel) {
+  const overlay = document.getElementById('confirmOverlay');
+  if(!overlay) return;
+  document.getElementById('confirmTitle').textContent = title;
+  document.getElementById('confirmMessage').innerHTML = message;
+  overlay.classList.add('show');
+  
+  const btnConfirm = document.getElementById('confirmBtnConfirm');
+  const btnCancel = document.getElementById('confirmBtnCancel');
+  
+  const newConfirm = btnConfirm.cloneNode(true);
+  const newCancel = btnCancel.cloneNode(true);
+  btnConfirm.parentNode.replaceChild(newConfirm, btnConfirm);
+  btnCancel.parentNode.replaceChild(newCancel, btnCancel);
+  
+  newConfirm.onclick = function() {
+    overlay.classList.remove('show');
+    if(onConfirm) onConfirm();
+  };
+  newCancel.onclick = function() {
+    overlay.classList.remove('show');
+    if(onCancel) onCancel();
+  };
+}
+
+function toggleTheme() {
+  const isLight = document.documentElement.classList.toggle('light');
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  updateThemeUI(isLight);
+}
+
+function updateThemeUI(isLight) {
+  const themeIcon = document.getElementById('themeIcon');
+  const themeText = document.getElementById('themeText');
+  if (themeIcon && themeText) {
+    themeIcon.textContent = isLight ? '🌙' : '☀️';
+    themeText.textContent = isLight ? 'Dunkelmodus' : 'Hellmodus';
+  }
+}
 
 function toggleSidebar() {
   const sidebar = document.getElementById('appSidebar');
@@ -658,12 +926,18 @@ function switchTab(tab){
   document.getElementById('tab-learn').classList.toggle('active',tab==='learn');
   document.getElementById('tab-summary').classList.toggle('active',tab==='summary');
   document.getElementById('tab-materials').classList.toggle('active',tab==='materials');
-  document.getElementById('welcome').style.display='none';
+  if (document.getElementById('tab-dashboard')) {
+    document.getElementById('tab-dashboard').classList.toggle('active',tab==='dashboard');
+  }
+  
+  document.getElementById('welcome').style.display=tab==='dashboard'?'block':'none';
   document.getElementById('examContent').style.display=tab==='exam'?'block':'none';
   document.getElementById('learnContent').style.display=tab==='learn'?'block':'none';
   document.getElementById('summaryContent').style.display=tab==='summary'?'block':'none';
   document.getElementById('materialsContent').style.display=tab==='materials'?'block':'none';
-  if(tab==='learn'&&state.currentSubject){enterLearnMode();}
+  
+  if(tab==='dashboard'){renderDashboard();}
+  else if(tab==='learn'&&state.currentSubject){enterLearnMode();}
   else if(tab==='summary'){showSummary();}
   else if(tab==='exam'&&state.currentSubject){generateNewExam();}
   else if(tab==='materials'){showMaterials();}
@@ -731,7 +1005,9 @@ function selectSubject(key){
   document.querySelector('.subj-btn[data-subject="'+key+'"]').classList.add('active');
   document.getElementById('welcome').style.display='none';
   const cfg=SUBJECTS[key];
-  if(state.currentTab==='learn'){
+  if(state.currentTab==='dashboard'){
+    switchTab('exam');
+  }else if(state.currentTab==='learn'){
     document.getElementById('examContent').style.display='none';
     document.getElementById('summaryContent').style.display='none';
     document.getElementById('learnContent').style.display='block';
@@ -780,12 +1056,22 @@ function renderPartsSelector(){
 function selectExamPart(partIdx){
   if(partIdx===state.currentPart)return;
   const hasAnswers=Object.keys(state.selectedAnswers).length>0;
+  
+  const proceed = () => {
+    if(state.timerRunning)toggleTimer();
+    state.currentPart=partIdx;
+    generateNewExam();
+  };
+
   if(hasAnswers&&!state.examSubmitted){
-    if(!confirm('⚠️ Möchtest du wirklich zum anderen Klausurteil wechseln? Deine bisherigen Antworten gehen dabei verloren.'))return;
+    showCustomConfirm(
+      'Klausurteil wechseln',
+      '⚠️ Möchtest du wirklich zum anderen Klausurteil wechseln?<br><br>Deine bisherigen Antworten in diesem Teil gehen dabei verloren.',
+      proceed
+    );
+  } else {
+    proceed();
   }
-  if(state.timerRunning)toggleTimer();
-  state.currentPart=partIdx;
-  generateNewExam();
 }
 
 function generateNewExam(){
@@ -816,6 +1102,7 @@ function generateNewExam(){
   document.getElementById('timerMinutes').value=time;
   resetTimer();
   document.getElementById('btnSubmit').disabled=false;
+  updateExamProgress();
 }
 
 // === Achsen-Bausteine mit Ticks ===
@@ -932,13 +1219,13 @@ function getDiagram(type){
     'externality': AX.bg+AX.xAxis+AX.yAxis+AX.xLabel+AX.yLabel+AX.title('Negative Externalität & Wohlfahrtsverlust')+
       // Nachfrage D: P = 8 - 0.15Q
       '<line x1="'+px(0)+'" y1="'+py(8)+'" x2="'+px(50)+'" y2="'+py(0.5)+'" stroke="url(#demandGrad)" stroke-width="2.5"/>'+
-      '<text x="330" y="65" fill="#38bdf8" font-size="9" font-weight="bold" font-family="system-ui">Nachfrage D (PrivatNutzen)</text>'+
+      '<text x="'+px(5)+'" y="'+(py(7.25)-10)+'" fill="#38bdf8" font-size="9" font-weight="bold" font-family="system-ui">Nachfrage D (PrivatNutzen)</text>'+
       // Private Kosten PK: P = 0.1Q
       '<line x1="'+px(0)+'" y1="'+py(0)+'" x2="'+px(50)+'" y2="'+py(5)+'" stroke="url(#supplyGrad)" stroke-width="2.5"/>'+
-      '<text x="340" y="165" fill="#f59e0b" font-size="9" font-weight="bold" font-family="system-ui">S = Private Kosten (PK)</text>'+
+      '<text x="'+px(40)+'" y="'+(py(4)+16)+'" fill="#f59e0b" font-size="9" font-weight="bold" font-family="system-ui">S = Private Kosten (PK)</text>'+
       // Soziale Kosten SK: P = 0.1Q + 2 (externer Schaden = 2)
       '<line x1="'+px(0)+'" y1="'+py(2)+'" x2="'+px(50)+'" y2="'+py(7)+'" stroke="url(#socialGrad)" stroke-width="2.5" stroke-dasharray="5,3"/>'+
-      '<text x="310" y="105" fill="#f87171" font-size="9" font-weight="bold" font-family="system-ui">Soziale Kosten (SK)</text>'+
+      '<text x="'+px(40)+'" y="'+(py(6)-10)+'" fill="#f87171" font-size="9" font-weight="bold" font-family="system-ui">Soziale Kosten (SK)</text>'+
       // Wohlfahrtsverlust-Dreieck schattieren: zwischen Q=24 und Q=32, oberhalb Nachfrage und unterhalb Soziale Kosten
       '<path d="M'+px(24)+','+py(4.4)+' L'+px(32)+','+py(5.2)+' L'+px(32)+','+py(3.2)+' Z" fill="url(#socialGrad)" fill-opacity="0.3" stroke="#f87171" stroke-width="1.25"/>'+
       '<text x="'+px(29.5)+'" y="'+py(4.25)+'" fill="#f8fafc" font-size="8" font-weight="bold" font-family="system-ui" text-anchor="middle">DWL</text>'+
@@ -952,15 +1239,15 @@ function getDiagram(type){
       '<text x="'+px(24)+'" y="272" fill="#ef4444" font-size="9" font-weight="bold" text-anchor="middle" font-family="system-ui">Q_Opt=24</text>'+
       // Externer Schaden Kennzeichnung
       '<line x1="'+px(15)+'" y1="'+py(1.5)+'" x2="'+px(15)+'" y2="'+py(3.5)+'" stroke="#ef4444" stroke-width="1.5"/>'+
-      '<polygon points="15,143 12,148 18,148" fill="#ef4444" transform="rotate(0,15,143)"/>'+
-      '<polygon points="15,199 12,194 18,194" fill="#ef4444" transform="rotate(0,15,199)"/>'+
+      '<polygon points="'+px(15)+','+py(3.5)+' '+(px(15)-3)+','+(py(3.5)+6)+' '+(px(15)+3)+','+(py(3.5)+6)+'" fill="#ef4444"/>'+
+      '<polygon points="'+px(15)+','+py(1.5)+' '+(px(15)-3)+','+(py(1.5)-6)+' '+(px(15)+3)+','+(py(1.5)-6)+'" fill="#ef4444"/>'+
       '<text x="'+px(17)+'" y="'+py(2.5)+'" fill="#f87171" font-size="8" font-weight="bold" font-family="system-ui">Schaden (d)</text>',
 
     'angebot-nachfrage-diagramm': AX.bg+AX.xAxis+AX.yAxis+AX.xLabel+AX.yLabel+AX.title('Angebot &amp; Nachfrage')+
       '<line x1="'+px(0)+'" y1="'+py(10)+'" x2="'+px(50)+'" y2="'+py(0)+'" stroke="url(#demandGrad)" stroke-width="3"/>'+
-      '<text x="330" y="45" fill="#38bdf8" font-size="10" font-weight="bold" font-family="system-ui">D (Nachfrage)</text>'+
+      '<text x="'+px(43)+'" y="'+(py(1.4)-5)+'" fill="#38bdf8" font-size="10" font-weight="bold" font-family="system-ui">D</text>'+
       '<line x1="'+px(0)+'" y1="'+py(0)+'" x2="'+px(50)+'" y2="'+py(5)+'" stroke="url(#supplyGrad)" stroke-width="3"/>'+
-      '<text x="330" y="150" fill="#f59e0b" font-size="10" font-weight="bold" font-family="system-ui">S (Angebot)</text>',
+      '<text x="'+px(45)+'" y="'+(py(4.5)-8)+'" fill="#f59e0b" font-size="10" font-weight="bold" font-family="system-ui">S</text>',
 
     'konsumenten-produzenten-rente': AX.bg+AX.xAxis+AX.yAxis+AX.xLabel+AX.yLabel+AX.title('Konsumenten- &amp; Produzentenrente')+
       // Konsumentenrente-Fläche: Dreieck über P=3.3, unter D-Linie (0,10)->(33,3.3)->(0,3.3)
@@ -985,13 +1272,13 @@ function getDiagram(type){
     'steuerlast': AX.bg+AX.xAxis+AX.yAxis+AX.xLabel+AX.yLabel+AX.title('Steuerlast &amp; Wohlfahrtsverlust')+
       // S+Steuer: P = 0.1Q + 2 (Steuer = 2)
       '<line x1="'+px(0)+'" y1="'+py(2)+'" x2="'+px(50)+'" y2="'+py(7)+'" stroke="url(#supplyGrad)" stroke-width="2.5" stroke-dasharray="4,2" opacity="0.8"/>'+
-      '<text x="310" y="80" fill="#f59e0b" font-size="9" font-family="system-ui">S + Steuer</text>'+
+      '<text x="'+px(42)+'" y="'+(py(6.2)-8)+'" fill="#f59e0b" font-size="9" font-family="system-ui" font-weight="bold">S + Steuer</text>'+
       // S original
       '<line x1="'+px(0)+'" y1="'+py(0)+'" x2="'+px(50)+'" y2="'+py(5)+'" stroke="url(#supplyGrad)" stroke-width="2.5"/>'+
-      '<text x="345" y="165" fill="#f59e0b" font-size="9" font-family="system-ui">S (Angebot)</text>'+
+      '<text x="'+px(42)+'" y="'+(py(4.2)+15)+'" fill="#f59e0b" font-size="9" font-family="system-ui" font-weight="bold">S (Angebot)</text>'+
       // Nachfrage D
       '<line x1="'+px(0)+'" y1="'+py(10)+'" x2="'+px(50)+'" y2="'+py(0)+'" stroke="url(#demandGrad)" stroke-width="2.5"/>'+
-      '<text x="345" y="45" fill="#38bdf8" font-size="9" font-family="system-ui">D (Nachfrage)</text>'+
+      '<text x="'+px(42)+'" y="'+(py(1.6)-8)+'" fill="#38bdf8" font-size="9" font-family="system-ui" font-weight="bold">D</text>'+
       // Steuereinnahmen (Rechteck von 0 bis Q=27, zwischen P_S=2.7 und P_C=4.7)
       '<path d="M'+px(0)+','+py(4.7)+' L'+px(27)+','+py(4.7)+' L'+px(27)+','+py(2.7)+' L'+px(0)+','+py(2.7)+' Z" fill="url(#taxGrad)"/>'+
       '<rect x="65" y="145" width="100" height="18" rx="3" fill="#3b0764" stroke="#a855f7" stroke-width="0.75" opacity="0.9"/>'+
@@ -1012,39 +1299,48 @@ function getDiagram(type){
     'elastizitaet': AX.bg+AX.xAxis+AX.yAxis+AX.xLabel+AX.yLabel+AX.title('Preiselastizität der Nachfrage')+
       // D elastisch (flach)
       '<line x1="'+px(5)+'" y1="'+py(7.5)+'" x2="'+px(45)+'" y2="'+py(2.5)+'" stroke="url(#demandGrad)" stroke-width="3" filter="url(#glow)"/>'+
-      '<text x="300" y="85" fill="#38bdf8" font-size="9" font-weight="bold" font-family="system-ui">D1 (elastisch)</text>'+
+      '<text x="'+px(38)+'" y="'+(py(3.3)-8)+'" fill="#38bdf8" font-size="9" font-weight="bold" font-family="system-ui">D1 (elastisch)</text>'+
       // D unelastisch (steil)
       '<line x1="'+px(15)+'" y1="'+py(9)+'" x2="'+px(25)+'" y2="'+py(1)+'" stroke="#818cf8" stroke-width="3" filter="url(#glow)"/>'+
-      '<text x="'+px(15)+'" y="'+py(9.5)+'" fill="#818cf8" font-size="9" font-weight="bold" font-family="system-ui">D2 (unelastisch)</text>'+
+      '<text x="165" y="73" fill="#818cf8" font-size="9" font-weight="bold" font-family="system-ui">D2 (unelastisch)</text>'+
       // Angebot
       '<line x1="'+px(0)+'" y1="'+py(0)+'" x2="'+px(50)+'" y2="'+py(5)+'" stroke="url(#supplyGrad)" stroke-width="2"/>'+
-      '<text x="350" y="160" fill="#f59e0b" font-size="9" font-weight="bold" font-family="system-ui">S (Angebot)</text>'+
+      '<text x="'+px(42)+'" y="'+(py(4.2)-8)+'" fill="#f59e0b" font-size="9" font-weight="bold" font-family="system-ui">S</text>'+
       // Schnittpunkt
       '<circle cx="'+px(20)+'" cy="'+py(5)+'" r="4.5" fill="#f8fafc"/>',
 
     'angebot-nachfrage-verschiebung': AX.bg+AX.xAxis+AX.yAxis+AX.xLabel+AX.yLabel+AX.title('Rechtsverschiebung der Nachfrage')+
-      // Angebot S
+      // Angebot S: P = 0.1 Q
       '<line x1="'+px(0)+'" y1="'+py(0)+'" x2="'+px(50)+'" y2="'+py(5)+'" stroke="url(#supplyGrad)" stroke-width="2.5"/>'+
-      // D1
-      '<line x1="'+px(0)+'" y1="'+py(7.5)+'" x2="'+px(42)+'" y2="'+py(0.5)+'" stroke="url(#demandGrad)" stroke-width="2.5" opacity="0.5"/>'+
-      '<text x="260" y="70" fill="#38bdf8" fill-opacity="0.6" font-size="9" font-weight="bold" font-family="system-ui">Nachfrage D1</text>'+
-      // D2 (nach rechts verschoben)
-      '<line x1="'+px(8)+'" y1="'+py(10)+'" x2="'+px(50)+'" y2="'+py(3)+'" stroke="url(#demandGrad)" stroke-width="3" filter="url(#glow)"/>'+
-      '<text x="310" y="50" fill="#38bdf8" font-size="9" font-weight="bold" font-family="system-ui">Nachfrage D2</text>'+
-      // Verschiebungs-Pfeil
-      '<path d="M '+px(20)+' '+py(4.25)+' L '+px(28)+' '+py(5.5)+'" stroke="#ef4444" stroke-width="2.5" marker-end="url(#arrow)" fill="none"/>'+
-      '<line x1="'+px(20)+'" y1="'+py(4.25)+'" x2="'+px(28)+'" y2="'+py(5.5)+'" stroke="#ef4444" stroke-width="2"/>'+
-      '<polygon points="'+px(28)+','+py(5.5)+' '+(px(28)-6)+','+(py(5.5)-2)+' '+(px(28)-4)+','+(py(5.5)+4)+'" fill="#ef4444"/>'+
-      // Gleichgewichte
-      '<circle cx="'+px(25)+'" cy="'+py(2.5)+'" r="3.5" fill="#38bdf8" opacity="0.6"/>'+
-      '<circle cx="'+px(34)+'" cy="'+py(3.4)+'" r="4.5" fill="#ef4444"/>'+
-      '<text x="350" y="180" fill="#f59e0b" font-size="9" font-weight="bold" font-family="system-ui">S</text>',
+      '<text x="'+px(42)+'" y="'+(py(4.2)+15)+'" fill="#f59e0b" font-size="9" font-weight="bold" font-family="system-ui">S</text>'+
+      // D1: P = 7.5 - 0.2 Q
+      '<line x1="'+px(0)+'" y1="'+py(7.5)+'" x2="'+px(37.5)+'" y2="'+py(0)+'" stroke="url(#demandGrad)" stroke-width="2.5" opacity="0.5"/>'+
+      '<text x="'+px(30)+'" y="'+(py(1.5)-8)+'" fill="#38bdf8" fill-opacity="0.7" font-size="9" font-weight="bold" font-family="system-ui">D1</text>'+
+      // D2: P = 10.5 - 0.2 Q
+      '<line x1="'+px(15)+'" y1="'+py(7.5)+'" x2="'+px(50)+'" y2="'+py(0.5)+'" stroke="url(#demandGrad)" stroke-width="3" filter="url(#glow)"/>'+
+      '<text x="'+px(45)+'" y="'+(py(1.5)-8)+'" fill="#38bdf8" font-size="9" font-weight="bold" font-family="system-ui">D2</text>'+
+      // Verschiebungs-Pfeil (horizontal von Q=15,P=4.5 auf Q=30,P=4.5)
+      '<line x1="'+px(15)+'" y1="'+py(4.5)+'" x2="'+px(30)+'" y2="'+py(4.5)+'" stroke="#f87171" stroke-width="1.5" stroke-dasharray="3,3"/>'+
+      '<line x1="'+px(18)+'" y1="'+py(4.5)+'" x2="'+px(27)+'" y2="'+py(4.5)+'" stroke="#ef4444" stroke-width="2.5"/>'+
+      '<polygon points="'+px(27)+','+py(4.5)+' '+(px(27)-6)+','+(py(4.5)-3.5)+' '+(px(27)-6)+','+(py(4.5)+3.5)+'" fill="#ef4444"/>'+
+      // Erstes Gleichgewicht (E1): Q1=25, P1=2.5
+      '<line x1="'+px(25)+'" y1="255" x2="'+px(25)+'" y2="'+py(2.5)+'" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>'+
+      '<line x1="55" y1="'+py(2.5)+'" x2="'+px(25)+'" y2="'+py(2.5)+'" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>'+
+      '<circle cx="'+px(25)+'" cy="'+py(2.5)+'" r="4.5" fill="#38bdf8"/>'+
+      '<text x="'+px(25)+'" y="272" fill="#38bdf8" font-size="9" font-weight="bold" text-anchor="middle" font-family="system-ui">Q1 = 25</text>'+
+      '<text x="42" y="'+(py(2.5)+3)+'" fill="#38bdf8" font-size="9" font-weight="bold" text-anchor="end" font-family="system-ui">P1 = 2.5</text>'+
+      // Zweites Gleichgewicht (E2): Q2=35, P2=3.5
+      '<line x1="'+px(35)+'" y1="255" x2="'+px(35)+'" y2="'+py(3.5)+'" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3" opacity="0.8"/>'+
+      '<line x1="55" y1="'+py(3.5)+'" x2="'+px(35)+'" y2="'+py(3.5)+'" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3" opacity="0.8"/>'+
+      '<circle cx="'+px(35)+'" cy="'+py(3.5)+'" r="5.5" fill="#ef4444"/>'+
+      '<text x="'+px(35)+'" y="272" fill="#ef4444" font-size="9" font-weight="bold" text-anchor="middle" font-family="system-ui">Q2 = 35</text>'+
+      '<text x="42" y="'+(py(3.5)+3)+'" fill="#ef4444" font-size="9" font-weight="bold" text-anchor="end" font-family="system-ui">P2 = 3.5</text>',
 
     'preiskontrolle': AX.bg+AX.xAxis+AX.yAxis+AX.xLabel+AX.yLabel+AX.title('Preisobergrenze &amp; Marktknappheit')+
       '<line x1="'+px(0)+'" y1="'+py(10)+'" x2="'+px(50)+'" y2="'+py(0)+'" stroke="url(#demandGrad)" stroke-width="2.5"/>'+
-      '<text x="340" y="45" fill="#38bdf8" font-size="9" font-weight="bold" font-family="system-ui">D</text>'+
+      '<text x="'+px(45)+'" y="'+(py(1)-5)+'" fill="#38bdf8" font-size="9" font-weight="bold" font-family="system-ui">D</text>'+
       '<line x1="'+px(0)+'" y1="'+py(0)+'" x2="'+px(50)+'" y2="'+py(5)+'" stroke="url(#supplyGrad)" stroke-width="2.5"/>'+
-      '<text x="340" y="165" fill="#f59e0b" font-size="9" font-weight="bold" font-family="system-ui">S</text>'+
+      '<text x="'+px(45)+'" y="'+(py(4.5)-8)+'" fill="#f59e0b" font-size="9" font-weight="bold" font-family="system-ui">S</text>'+
       // Marktgleichgewicht
       '<circle cx="'+px(33)+'" cy="'+py(3.3)+'" r="3.5" fill="#94a3b8" opacity="0.6"/>'+
       // Höchstpreis-Schranke bei P=2 (bindend)
@@ -1547,19 +1843,32 @@ function renderQuestions(){
     const card=document.createElement('div');
     card.className='question-card';
     card.id='qcard-'+idx;
-    let html='<div class="q-number">Frage '+(idx+1)+' · '+q.points+' Punkte</div>';
+    let html='<div class="q-number">Frage '+(idx+1)+' · '+q.points+' Punkte'+(q.type==='fitb'?' · <span style="color:var(--accent3)">Lückentext</span>':'')+'</div>';
     html+='<div class="q-source">📖 '+q.source+'</div>';
     if(q.diagram){html+='<div class="diagram-box">'+getDiagram(q.diagram)+'</div>';}
     html+='<div class="q-text">'+q.question+'</div>';
-    html+='<div class="options" id="opts-'+idx+'">';
-    q.options.forEach((opt,oi)=>{
-      html+='<div class="option" id="opt-'+idx+'-'+oi+'" onclick="selectOption('+idx+','+oi+')"><div class="radio"></div><span>'+opt+'</span></div>';
-    });
-    html+='</div>';
-    html+='<div class="solution" id="sol-'+idx+'"><h4>💡 Musterlösung</h4><p>'+(q.solution||'Siehe Vorlesungsmaterial')+'</p><div class="ref">📖 Quelle: '+q.source+'</div></div>';
+    if(q.type==='fitb'){
+      const userVal=state.selectedAnswers[idx]||'';
+      html+='<div style="margin-top: 12px; margin-bottom: 12px;">';
+      html+='<input type="text" class="ft-input" id="fitb-'+idx+'" oninput="changeFitbAnswer('+idx+', this.value)" value="'+userVal+'" placeholder="Antwort eingeben..." '+(state.examSubmitted?'disabled':'')+'/>';
+      html+='</div>';
+    }else{
+      html+='<div class="options" id="opts-'+idx+'">';
+      q.options.forEach((opt,oi)=>{
+        html+='<div class="option" id="opt-'+idx+'-'+oi+'" onclick="selectOption('+idx+','+oi+')"><div class="radio"></div><span>'+opt+'</span></div>';
+      });
+      html+='</div>';
+    }
+    html+='<div class="solution" id="sol-'+idx+'"><h4>💡 Musterlösung</h4><p>'+(q.solution||'Siehe Vorlesungsmaterial')+'</p>'+(q.type==='fitb'?'<p style="margin-top:8px">✔️ Richtige Antwort: <strong>'+(q.correct||'')+'</strong></p>':'')+'<div class="ref">📖 Quelle: '+q.source+'</div></div>';
     card.innerHTML=html;
     container.appendChild(card);
   });
+}
+
+function changeFitbAnswer(idx, val){
+  if(state.examSubmitted)return;
+  state.selectedAnswers[idx]=val;
+  updateExamProgress();
 }
 
 function selectOption(qIdx,optIdx){
@@ -1567,36 +1876,87 @@ function selectOption(qIdx,optIdx){
   state.selectedAnswers[qIdx]=optIdx;
   const opts=document.getElementById('opts-'+qIdx);
   if(opts){opts.querySelectorAll('.option').forEach((el,i)=>el.classList.toggle('selected',i===optIdx));}
+  updateExamProgress();
+}
+
+function updateExamProgress(){
+  const container=document.getElementById('examProgressContainer');
+  if(!container)return;
+  if(!state.questions||state.questions.length===0){
+    container.style.display='none';
+    return;
+  }
+  container.style.display='flex';
+  const answeredCount=Object.keys(state.selectedAnswers).length;
+  const totalCount=state.questions.length;
+  const pct=totalCount>0?(answeredCount/totalCount)*100:0;
+  
+  document.getElementById('examAnsweredCount').textContent=answeredCount;
+  document.getElementById('examTotalCount').textContent=totalCount;
+  document.getElementById('examProgressPct').textContent=Math.round(pct)+'%';
+  document.getElementById('examProgressBarFill').style.width=pct+'%';
 }
 
 function submitExam(auto){
   if(state.examSubmitted)return;
   const unanswered=[];
   state.questions.forEach((q,idx)=>{if(state.selectedAnswers[idx]===undefined)unanswered.push(idx+1);});
-  if(!auto&&unanswered.length>0){if(!confirm('⚠️ '+unanswered.length+' Frage(n) nicht beantwortet (Nr. '+unanswered.join(', ')+'). Trotzdem abgeben?'))return;}
-  if(state.timerRunning)toggleTimer();
-  state.examSubmitted=true;
-  document.getElementById('btnSubmit').disabled=true;
-  let correct=0,totalPoints=0,earnedPoints=0;
-  state.questions.forEach((q,idx)=>{
-    const sel=state.selectedAnswers[idx];
-    const isCorrect=sel===q.correct;
-    if(isCorrect){correct++;earnedPoints+=q.points;}
-    totalPoints+=q.points;
-    const card=document.getElementById('qcard-'+idx);
-    if(card){card.classList.add(isCorrect?'correct':'incorrect');}
-    const opts=document.getElementById('opts-'+idx);
-    if(opts){opts.querySelectorAll('.option').forEach((el,i)=>{
-      if(i===q.correct)el.classList.add('correct-answer');
-      if(i===sel&&sel!==q.correct)el.classList.add('wrong-answer');
-    });}
-    const sol=document.getElementById('sol-'+idx);
-    if(sol)sol.classList.add('show');
-  });
-  const pct=totalPoints>0?(earnedPoints/totalPoints)*100:0;
-  const grade=calcGrade(pct,state.currentSubject);
-  updateStats(state.currentSubject,pct>=passThreshold(state.currentSubject));
-  showResults(correct,state.questions.length,earnedPoints,totalPoints,pct,grade);
+  
+  const proceed = () => {
+    if(state.timerRunning)toggleTimer();
+    state.examSubmitted=true;
+    document.getElementById('btnSubmit').disabled=true;
+    let correct=0,totalPoints=0,earnedPoints=0;
+    state.questions.forEach((q,idx)=>{
+      const sel=state.selectedAnswers[idx];
+      let isCorrect=false;
+      if(q.type==='fitb'){
+        const userAns=String(sel||'').trim().toLowerCase();
+        const corAns=String(q.correct).trim().toLowerCase();
+        let matched=false;
+        if(q.acceptable&&Array.isArray(q.acceptable)){
+          for(let a of q.acceptable){
+            if(userAns===String(a).trim().toLowerCase()){matched=true;break;}
+          }
+        }
+        isCorrect=matched||userAns===corAns;
+        
+        const input=document.getElementById('fitb-'+idx);
+        if(input){
+          input.classList.add(isCorrect?'correct':'wrong');
+          input.disabled=true;
+        }
+      }else{
+        isCorrect=sel===q.correct;
+        const opts=document.getElementById('opts-'+idx);
+        if(opts){opts.querySelectorAll('.option').forEach((el,i)=>{
+          if(i===q.correct)el.classList.add('correct-answer');
+          if(i===sel&&sel!==q.correct)el.classList.add('wrong-answer');
+        });}
+      }
+      
+      if(isCorrect){correct++;earnedPoints+=q.points;}
+      totalPoints+=q.points;
+      const card=document.getElementById('qcard-'+idx);
+      if(card){card.classList.add(isCorrect?'correct':'incorrect');}
+      const sol=document.getElementById('sol-'+idx);
+      if(sol)sol.classList.add('show');
+    });
+    const pct=totalPoints>0?(earnedPoints/totalPoints)*100:0;
+    const grade=calcGrade(pct,state.currentSubject);
+    updateStats(state.currentSubject,pct>=passThreshold(state.currentSubject),pct);
+    showResults(correct,state.questions.length,earnedPoints,totalPoints,pct,grade);
+  };
+
+  if(!auto&&unanswered.length>0){
+    showCustomConfirm(
+      'Klausur abgeben',
+      '⚠️ Du hast <strong>'+unanswered.length+' Frage(n) nicht beantwortet</strong> (Nr. '+unanswered.join(', ')+').<br><br>Möchtest du die Klausur trotzdem abgeben und bewerten lassen?',
+      proceed
+    );
+  } else {
+    proceed();
+  }
 }
 
 function calcGrade(pct,subj){
@@ -1667,12 +2027,228 @@ function onPartSelectChange(){
   generateNewExam();
 }
 
-function updateStats(subj,passed){
-  if(!state.stats[subj])state.stats[subj]={attempts:0,passed:0};
+function getSubjectLearnProgress(subjKey){
+  const topics = getTopicsForSubject ? getTopicsForSubject(subjKey) : [];
+  let totalQs = 0;
+  topics.forEach(t => {
+    totalQs += countQuestionsForTopic ? countQuestionsForTopic(subjKey, t.filter) : 0;
+  });
+  
+  const progress = JSON.parse(localStorage.getItem('learnProgress') || '{}');
+  const subjProgress = progress[subjKey] || {};
+  let answered = 0;
+  let correct = 0;
+  for(let qId in subjProgress) {
+    answered++;
+    if(subjProgress[qId].correct) correct++;
+  }
+  return {
+    total: totalQs,
+    answered: answered,
+    correct: correct
+  };
+}
+
+function getAvgScoreChartSvg(score) {
+  const width = 280;
+  const height = 18;
+  const fillWidth = (score / 100) * width;
+  let gradStart = "var(--danger)";
+  let gradEnd = "#ef4444";
+  if (score >= 75) {
+    gradStart = "var(--success)";
+    gradEnd = "#10b981";
+  } else if (score >= 50) {
+    gradStart = "#3b82f6";
+    gradEnd = "#60a5fa";
+  }
+  return `
+    <svg viewBox="0 0 ${width} ${height}" class="w-full h-4 rounded" style="display:block; overflow:hidden">
+      <defs>
+        <linearGradient id="barGrad-${Math.round(score)}" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="${gradStart}"/>
+          <stop offset="100%" stop-color="${gradEnd}"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="${width}" height="${height}" fill="var(--bg4)" rx="4"/>
+      <rect x="0" y="0" width="${fillWidth}" height="${height}" fill="url(#barGrad-${Math.round(score)})" rx="4"/>
+      <text x="${width - 8}" y="13" fill="var(--text)" font-size="10" font-weight="bold" font-family="system-ui" text-anchor="end">${score.toFixed(0)}%</text>
+    </svg>
+  `;
+}
+
+function getOverallPerformanceChartSvg(subjectScores) {
+  const width = 500;
+  const rowHeight = 35;
+  const padding = 20;
+  const height = (subjectScores.length * rowHeight) + padding * 2;
+  let rows = '';
+  subjectScores.forEach((s, idx) => {
+    const y = padding + (idx * rowHeight);
+    const barWidth = (s.score / 100) * 280;
+    let barColor = "var(--danger)";
+    if (s.score >= 75) barColor = "var(--success)";
+    else if (s.score >= 50) barColor = "#3b82f6";
+    else if (s.attempts === 0) barColor = "var(--text3)";
+    rows += `
+      <text x="20" y="${y + 12}" fill="var(--text)" font-size="11" font-weight="bold" font-family="system-ui">${s.icon} ${s.name}</text>
+      <rect x="160" y="${y}" width="280" height="14" fill="var(--bg4)" rx="3"/>
+      <rect x="160" y="${y}" width="${barWidth}" height="14" fill="${barColor}" rx="3"/>
+      <text x="450" y="${y + 12}" fill="var(--text)" font-size="11" font-weight="bold" font-family="system-ui" text-anchor="start">${s.attempts > 0 ? s.score.toFixed(0) + '%' : 'N/A'}</text>
+    `;
+  });
+  return `
+    <svg viewBox="0 0 ${width} ${height}" class="w-full rounded" style="display:block; overflow:hidden; background: var(--bg2); border: 1px solid var(--border); padding: 10px;">
+      <line x1="160" y1="5" x2="160" y2="${height - 5}" stroke="var(--border)" stroke-width="1" stroke-dasharray="2,2"/>
+      <line x1="300" y1="5" x2="300" y2="${height - 5}" stroke="var(--border)" stroke-width="1" stroke-dasharray="2,2"/>
+      <line x1="440" y1="5" x2="440" y2="${height - 5}" stroke="var(--border)" stroke-width="1" stroke-dasharray="2,2"/>
+      ${rows}
+    </svg>
+  `;
+}
+
+function renderDashboard() {
+  const container = document.getElementById('welcome');
+  if (!container) return;
+  let totalAttempts = 0;
+  let totalPassed = 0;
+  let totalLearnAnswered = 0;
+  let totalLearnQs = 0;
+  const subjectScores = [];
+  for (let key in SUBJECTS) {
+    const stats = state.stats[key] || { attempts: 0, passed: 0 };
+    totalAttempts += stats.attempts;
+    totalPassed += stats.passed;
+    const learnProg = getSubjectLearnProgress(key);
+    totalLearnAnswered += learnProg.answered;
+    totalLearnQs += learnProg.total;
+    let avgScore = 0;
+    if (stats.scores && stats.scores.length > 0) {
+      avgScore = stats.scores.reduce((sum, s) => sum + s, 0) / stats.scores.length;
+    } else if (stats.attempts > 0) {
+      avgScore = ((stats.passed * 70) + ((stats.attempts - stats.passed) * 30)) / stats.attempts;
+    }
+    subjectScores.push({
+      key: key,
+      name: SUBJECTS[key].name,
+      icon: SUBJECTS[key].icon,
+      score: avgScore,
+      attempts: stats.attempts,
+      passed: stats.passed,
+      learnProg: learnProg
+    });
+  }
+  const overallPassRate = totalAttempts > 0 ? (totalPassed / totalAttempts * 100) : 0;
+  const overallLearnPct = totalLearnQs > 0 ? (totalLearnAnswered / totalLearnQs * 100) : 0;
+  let html = `
+    <div class="welcome-header" style="text-align: center; margin-bottom: 28px;">
+      <div class="icon" style="font-size: 3rem; margin-bottom: 12px;">🏆</div>
+      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 8px; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Dein Studien-Dashboard</h1>
+      <p style="color: var(--text2); max-width: 600px; margin: 0 auto; font-size: 1rem;">
+        Willkommen beim Klausuren-Trainer FH Aachen (SS 2026). Hier siehst du deinen Lernfortschritt, deine Stärken und Fächer, die noch Aufmerksamkeit benötigen.
+      </p>
+    </div>
+    <div style="background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 28px; display: flex; align-items: flex-start; gap: 16px;">
+      <div style="font-size: 2rem; background: var(--bg4); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">💡</div>
+      <div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 6px; color: var(--text);">Wie trainiere ich am besten?</h3>
+        <p style="color: var(--text2); font-size: .875rem; line-height: 1.5;">
+          1. Wähle links ein <strong>Fach</strong> aus.<br>
+          2. Nutze den <strong>🎯 Lern-Modus</strong>, um den Vorlesungsstoff Thema für Thema mit sofortigem Feedback zu üben.<br>
+          3. Teste dein Wissen im <strong>📝 Klausur-Modus</strong> unter realistischen Bedingungen (mit Timer &amp; FH-Bewertung).<br>
+          4. Schlage alle Vorlesungsinhalte und Gesetze im Tab <strong>📖 Alle Themen</strong> nach.
+        </p>
+      </div>
+    </div>
+    <div class="dashboard-grid">
+      <div class="stat-card">
+        <div class="title">Klausur-Versuche</div>
+        <div class="value">${totalAttempts}</div>
+        <div class="sub">${totalPassed} Klausuren bestanden (${overallPassRate.toFixed(0)}% Erfolgsquote)</div>
+      </div>
+      <div class="stat-card">
+        <div class="title">Lernfortschritt</div>
+        <div class="value">${overallLearnPct.toFixed(0)}%</div>
+        <div class="sub">${totalLearnAnswered} von ${totalLearnQs} Fragen trainiert</div>
+      </div>
+      <div class="stat-card" style="grid-column: 1 / -1">
+        <div class="title" style="margin-bottom: 12px;">Gesamt-Performance im Vergleich</div>
+        ${getOverallPerformanceChartSvg(subjectScores)}
+      </div>
+    </div>
+    <h2 style="font-size: 1.35rem; font-weight: 800; margin-top: 36px; margin-bottom: 16px; border-bottom: 2px solid var(--border); padding-bottom: 8px;">📊 Fächerspezifische Detailanalyse</h2>
+    <div class="subject-card-grid">
+  `;
+  subjectScores.forEach(s => {
+    let statusLabel = "⚠️ Fokus benötigt";
+    let statusClass = "weakness";
+    if (s.attempts > 0) {
+      if (s.score >= 70) {
+        statusLabel = "💪 Stärke";
+        statusClass = "strength";
+      } else if (s.score >= 40) {
+        statusLabel = "📈 Solide";
+        statusClass = "solid";
+      }
+    }
+    const learnPct = s.learnProg.total > 0 ? (s.learnProg.answered / s.learnProg.total * 100) : 0;
+    html += `
+      <div class="subj-card">
+        <div class="subj-card-header">
+          <div class="subj-card-title">
+            <span class="subj-card-icon">${s.icon}</span>
+            <span>${s.name}</span>
+          </div>
+          <span class="strength-badge ${statusClass}">${statusLabel}</span>
+        </div>
+        <div class="subj-card-metric">
+          <span>Klausuren absolviert:</span>
+          <strong>${s.attempts} Mal</strong>
+        </div>
+        <div class="subj-card-metric">
+          <span>Bestanden:</span>
+          <strong>${s.passed} von ${s.attempts} (${s.attempts > 0 ? Math.round(s.passed/s.attempts*100) : 0}%)</strong>
+        </div>
+        <div style="margin: 12px 0 6px 0; font-size: .8rem; color: var(--text3); display: flex; justify-content: space-between;">
+          <span>Durchschnittsnote (Klausur)</span>
+          <strong>${s.attempts > 0 ? (calcGrade(s.score, s.key) + ',0') : 'N/A'}</strong>
+        </div>
+        <div style="margin-bottom: 16px;">
+          ${s.attempts > 0 ? getAvgScoreChartSvg(s.score) : '<div style="font-size:.8rem;color:var(--text3);font-style:italic;text-align:center;padding:6px;background:var(--bg4);border-radius:4px">Noch keine Klausur abgelegt</div>'}
+        </div>
+        <div class="subj-card-metric" style="margin-top:auto;">
+          <span>Lern-Modus Fortschritt:</span>
+          <strong>${s.learnProg.answered} / ${s.learnProg.total} Fragen</strong>
+        </div>
+        <div class="subj-card-progress-bar">
+          <div class="subj-card-progress-fill" style="width: ${learnPct}%"></div>
+        </div>
+        <div style="display: flex; gap: 8px; margin-top: 12px;">
+          <button class="btn btn-primary" style="flex:1; padding: 8px; font-size: .8rem;" onclick="selectSubject('${s.key}'); switchTab('learn');">🎯 Lernen</button>
+          <button class="btn btn-success" style="flex:1; padding: 8px; font-size: .8rem;" onclick="selectSubject('${s.key}'); switchTab('exam');">📝 Klausur</button>
+        </div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+  container.innerHTML = html;
+}
+
+function showWelcomeDashboard(){
+  state.currentSubject = null;
+  document.querySelectorAll('.subj-btn').forEach(b=>b.classList.remove('active'));
+  switchTab('dashboard');
+}
+
+function updateStats(subj,passed,pct){
+  if(!state.stats[subj])state.stats[subj]={attempts:0,passed:0,scores:[]};
   state.stats[subj].attempts++;
   if(passed)state.stats[subj].passed++;
+  if(!state.stats[subj].scores)state.stats[subj].scores=[];
+  if(pct!==undefined)state.stats[subj].scores.push(pct);
   localStorage.setItem('klausurenStats',JSON.stringify(state.stats));
-  document.getElementById('badge-'+subj).textContent=state.stats[subj].attempts;
+  const badge=document.getElementById('badge-'+subj);
+  if(badge)badge.textContent=state.stats[subj].attempts;
 }
 
 function showMaterials(){
@@ -1769,6 +2345,15 @@ function filterMaterials(){
 }
 
 console.log('✅ Klausuren-Trainer geladen');
+for(let key in SUBJECTS){
+  const badge=document.getElementById('badge-'+key);
+  if(badge){
+    const count=(state.stats[key]||{attempts:0}).attempts||0;
+    badge.textContent=count;
+  }
+}
+showWelcomeDashboard();
+updateThemeUI(document.documentElement.classList.contains('light'));
 console.log('Fragen: BWL1='+QUESTION_BANK_bwl1.length+', BWL2='+QUESTION_BANK_bwl2.length+', MAWI1='+QUESTION_BANK_mawi1.length+', MAWI2='+QUESTION_BANK_mawi2.length+', VWL='+QUESTION_BANK_vwl.length+', WPR='+QUESTION_BANK_wpr.length+', PERSO='+QUESTION_BANK_perso.length);
 </script>
 </body>
